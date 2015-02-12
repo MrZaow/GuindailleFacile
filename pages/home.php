@@ -36,7 +36,7 @@
                          data-easing="Back.easeInOut"
                          data-endspeed="400"
                          data-endeasing="Back.easeIn"
-                         style="z-index: 14">Such swag, very design, wow.
+                         style="z-index: 14">LE site pour choisir vos alcools de soirée
                     </div>
 
                     <!-- LAYER NR. 3 -->
@@ -49,7 +49,7 @@
                          data-easing="Back.easeInOut"
                          data-endspeed="400"
                          data-endeasing="Back.easeIn"
-                         style="z-index: 14"><a class="button-large" href="index.html#">Sanic speed</a>
+                         style="z-index: 14"><a class="button-large" href="index.html#">Alcools</a>
                     </div>
                 </li>
                 <!-- SLIDE  -->
@@ -68,7 +68,7 @@
                          data-endspeed="500"
                          data-endeasing="Power4.easeIn"
                          data-captionhidden="on"
-                         style="z-index: 4">Oh yeah
+                         style="z-index: 4">Des bières aux cocktails
                     </div>
 
                     <!-- LAYER NR. 2 -->
@@ -81,7 +81,7 @@
                          data-easing="Back.easeInOut"
                          data-endspeed="400"
                          data-endeasing="Back.easeIn"
-                         style="z-index: 14">420 blaze it faggot
+                         style="z-index: 14">vous trouverez tout l'alcool nécessaire pour vos soirées ! 
                     </div>
 
                     <!-- LAYER NR. 3 -->
@@ -94,7 +94,7 @@
                          data-easing="Back.easeInOut"
                          data-endspeed="400"
                          data-endeasing="Back.easeIn"
-                         style="z-index: 14"><a class="button-large" href="index.html#">More meme</a><a class="button-large" href="index.html#">Get 360 noscoped</a>
+                         style="z-index: 14"><a class="button-large" href="index.html#">Bières</a><a class="button-large" href="index.html#">Cocktails</a>
                     </div>
                 </li>
                 <!-- SLIDE  -->
@@ -113,7 +113,7 @@
                          data-endspeed="500"
                          data-endeasing="Power4.easeIn"
                          data-captionhidden="on"
-                         style="z-index: 4">Marble is clean <br> and well commented
+                         style="z-index: 4">Avec des conseils <br> spécial étudiants !
                     </div>
 
                     <!-- LAYER NR. 2 -->
@@ -126,7 +126,7 @@
                          data-easing="Back.easeInOut"
                          data-endspeed="400"
                          data-endeasing="Back.easeIn"
-                         style="z-index: 14">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  <br> Donec odio. Quisque volutpat mattis eros
+                         style="z-index: 14">Quels sont les alcools au meilleur rapport défonce/prix ?  <br> Quels sont ceux qui plaisent le plus aux fille ?
                     </div>
 
                     <!-- LAYER NR. 3 -->
@@ -139,7 +139,7 @@
                          data-easing="Back.easeInOut"
                          data-endspeed="400"
                          data-endeasing="Back.easeIn"
-                         style="z-index: 14"><a class="button-large" href="index.html#">more info</a><a class="button-large" href="index.html#">get started</a>
+                         style="z-index: 14"><a class="button-large" href="index.html#">Coin étudiant</a><a class="button-large" href="index.html#">get started</a>
                     </div>
 
                     <!-- LAYER NR. 4 -->
@@ -187,7 +187,7 @@
                          data-endspeed="500"
                          data-endeasing="Power4.easeIn"
                          data-captionhidden="on"
-                         style="z-index: 4">we offer 24/7 support <br> Praesent placerat risus
+                         style="z-index: 4">Les meilleurs jeux d'alcools,  <br> que ce soit en regardant une série, avec un jeu de carte, ou en écoutant une chanson !
                     </div>
 
                     <!-- LAYER NR. 3 -->
@@ -200,7 +200,7 @@
                          data-easing="Back.easeInOut"
                          data-endspeed="400"
                          data-endeasing="Back.easeIn"
-                         style="z-index: 14">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  <br> Donec odio. Quisque volutpat mattis eros
+                         style="z-index: 14">Tout est là ! 
                     </div>
 
                     <!-- LAYER NR. 4 -->
@@ -213,7 +213,7 @@
                          data-easing="Back.easeInOut"
                          data-endspeed="400"
                          data-endeasing="Back.easeIn"
-                         style="z-index: 14"><a class="button-large" href="index.html#">get started</a>
+                         style="z-index: 14"><a class="button-large" href="index.html#">Jeux d'alcool</a>
                     </div>
                 </li>
             </ul>
@@ -227,29 +227,29 @@
                 <li class="active">
                     <a href="index.html#" class="btn slide-thumbs" id="slidethumb1" data-slide="1">
                         <span>1</span>
-                        <h2>We are trendy</h2>
-                        <p>Aliquam tincidunt mauris</p>
+                        <h2>Des pléthores d'alcool </h2>
+                        <p>Car on n'a jamais assez d'alcool</p>
                     </a>
                 </li>
                 <li>
                     <a href="index.html#" class="btn slide-thumbs" id="slidethumb2" data-slide="2">
                         <span>2</span>
-                        <h2>Planning</h2>
-                        <p>Vestibulum auctor dapibus</p>
+                        <h2>Bière, cocktails, on a tout !</h2>
+                        <p>Pour varier la défonce dans la joie</p>
                     </a>
                 </li>
                 <li>
                     <a href="index.html#" class="btn slide-thumbs" id="slidethumb3" data-slide="3">
                         <span>3</span>
-                        <h2>Development</h2>
-                        <p>Cras ornare tristique</p>
+                        <h2>Un site spécial étudiant !</h2>
+                        <p>Avec du contenu spécialement pour eux</p>
                     </a>
                 </li>
                 <li>
                     <a href="index.html#" class="btn slide-thumbs" id="slidethumb4" data-slide="4">
                         <span>4</span>
-                        <h2>24/7 Support</h2>
-                        <p>Praesent placerat risus</p>
+                        <h2>Boire en s'amusant</h2>
+                        <p>Des tonnes de jeu d'alcool</p>
                     </a>
                 </li>
             </ul>
