@@ -65,15 +65,15 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a class="active" href="#">Accueil</a></li>
-                        <li><a href="#">Coin étudiant</a></li>
+                        <li><a href="index.php?p=etudiant">Coin étudiant</a></li>
                         <li><a href="#">Alcools</a>
                             <ul class="drop-down">
-                                <li><a href="#">Cocktails</a></li>
-                                <li><a href="#">Bières</a></li>
-                                <li><a href="#">Alcools forts</a></li>
+                                <li><a href="index.php?p=cocktail">Cocktails</a></li>
+                                <li><a href="index.php?p=biere">Bières</a></li>
+                                <li><a href="index.php?p=alcoolfort">Alcools forts</a></li>
                             </ul>
                         </li>
-                        <li><a href="portfolio-4col.html">Jeux d'alcool</a></li>
+                        <li><a href="index.php?p=jeux">Jeux d'alcool</a></li>
                         <li class="drop"><a href="#" class="open-search"><i class="fa fa-search"></i></a>
                             <form class="form-search">
                                 <input type="search" placeholder="Rechercher un alcool:"/>
