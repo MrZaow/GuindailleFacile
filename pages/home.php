@@ -36,7 +36,7 @@
                          data-easing="Back.easeInOut"
                          data-endspeed="400"
                          data-endeasing="Back.easeIn"
-                         style="z-index: 14">LE site pour choisir vos alcools de soirée
+                         style="z-index: 14"> Le site pour choisir vos alcools de soirée
                     </div>
 
                     <!-- LAYER NR. 3 -->
@@ -49,7 +49,7 @@
                          data-easing="Back.easeInOut"
                          data-endspeed="400"
                          data-endeasing="Back.easeIn"
-                         style="z-index: 14"><a class="button-large" href="index.html#">Alcools</a>
+                         style="z-index: 14"><a class="button-large" href="index.php">Alcools</a>
                     </div>
                 </li>
                 <!-- SLIDE  -->
@@ -94,7 +94,7 @@
                          data-easing="Back.easeInOut"
                          data-endspeed="400"
                          data-endeasing="Back.easeIn"
-                         style="z-index: 14"><a class="button-large" href="index.html#">Bières</a><a class="button-large" href="index.html#">Cocktails</a>
+                         style="z-index: 14"><a class="button-large" href="index.php">Bières</a><a class="button-large" href="index.php">Cocktails</a>
                     </div>
                 </li>
                 <!-- SLIDE  -->
@@ -139,7 +139,7 @@
                          data-easing="Back.easeInOut"
                          data-endspeed="400"
                          data-endeasing="Back.easeIn"
-                         style="z-index: 14"><a class="button-large" href="index.html#">Coin étudiant</a><a class="button-large" href="index.html#">get started</a>
+                         style="z-index: 14"><a class="button-large" href="index.php">Coin étudiant</a>
                     </div>
 
                     <!-- LAYER NR. 4 -->
@@ -187,7 +187,7 @@
                          data-endspeed="500"
                          data-endeasing="Power4.easeIn"
                          data-captionhidden="on"
-                         style="z-index: 4">Les meilleurs jeux d'alcools,  <br> que ce soit en regardant une série, avec un jeu de carte, ou en écoutant une chanson !
+                         style="z-index: 4">Les meilleurs jeux d'alcools, <br> super simples et bibitifs à souhait 
                     </div>
 
                     <!-- LAYER NR. 3 -->
@@ -200,7 +200,7 @@
                          data-easing="Back.easeInOut"
                          data-endspeed="400"
                          data-endeasing="Back.easeIn"
-                         style="z-index: 14">Tout est là ! 
+                         style="z-index: 14">Une série TV, un jeu vidéo, des cartes, ou rien, tout est bon pour boire  
                     </div>
 
                     <!-- LAYER NR. 4 -->
@@ -213,7 +213,7 @@
                          data-easing="Back.easeInOut"
                          data-endspeed="400"
                          data-endeasing="Back.easeIn"
-                         style="z-index: 14"><a class="button-large" href="index.html#">Jeux d'alcool</a>
+                         style="z-index: 14"><a class="button-large" href="index.php">Jeux d'alcool</a>
                     </div>
                 </li>
             </ul>
@@ -225,28 +225,28 @@
             <!-- slide-buttons -->
             <ul class="slider-thumbnails">
                 <li class="active">
-                    <a href="index.html#" class="btn slide-thumbs" id="slidethumb1" data-slide="1">
+                    <a href="index.php" class="btn slide-thumbs" id="slidethumb1" data-slide="1">
                         <span>1</span>
                         <h2>Des pléthores d'alcool </h2>
                         <p>Car on n'a jamais assez d'alcool</p>
                     </a>
                 </li>
                 <li>
-                    <a href="index.html#" class="btn slide-thumbs" id="slidethumb2" data-slide="2">
+                    <a href="index.php" class="btn slide-thumbs" id="slidethumb2" data-slide="2">
                         <span>2</span>
                         <h2>Bière, cocktails, on a tout !</h2>
                         <p>Pour varier la défonce dans la joie</p>
                     </a>
                 </li>
                 <li>
-                    <a href="index.html#" class="btn slide-thumbs" id="slidethumb3" data-slide="3">
+                    <a href="index.php" class="btn slide-thumbs" id="slidethumb3" data-slide="3">
                         <span>3</span>
                         <h2>Un site spécial étudiant !</h2>
-                        <p>Avec du contenu spécialement pour eux</p>
+                        <p>Du contenu juste pour vous </p>
                     </a>
                 </li>
                 <li>
-                    <a href="index.html#" class="btn slide-thumbs" id="slidethumb4" data-slide="4">
+                    <a href="index.php" class="btn slide-thumbs" id="slidethumb4" data-slide="4">
                         <span>4</span>
                         <h2>Boire en s'amusant</h2>
                         <p>Des tonnes de jeu d'alcool</p>
@@ -268,8 +268,8 @@
     <div class="section-content services-section">
         <div class="title-section">
             <div class="container triggerAnimation animated" data-animate="bounceIn">
-                <h1>Top reasons to work with us</h1>
-                <p>Vestibulum commodo felis quis tortor.</p>
+                <h1>Pour des étudiants</h1>
+                <h1>Par des étudiants</h1>
             </div>
         </div>
         <div class="services-box parallax" data-stellar-background-ratio="0">
@@ -278,45 +278,45 @@
                     <div class="col-sm-3">
                         <div class="services-post triggerAnimation animated" data-animate="flipInY">
                             <div class="services-head">
-                                <a href="index.html#" class="icon"><i class="fa fa-thumbs-o-up"></i></a>
+                                <a href="index.php" class="icon"><i class="fa fa-thumbs-o-up"></i></a>
                                 <h2>High Quality</h2>
                                 <span>Vestibulum auctor dapibus neque.</span>
                             </div>
                             <p>Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis  </p>
-                            <a href="index.html#" class="button-one">Read More</a>
+                            <a href="index.php" class="button-one">Read More</a>
                         </div>
                     </div>
                     <div class="col-sm-3">
                         <div class="services-post triggerAnimation animated" data-animate="flipInY">
                             <div class="services-head">
-                                <a href="index.html#" class="icon"><i class="fa fa-tablet"></i></a>
+                                <a href="index.php" class="icon"><i class="fa fa-tablet"></i></a>
                                 <h2>Responsive Design</h2>
                                 <span>Etetur adipiscing elit. </span>
                             </div>
                             <p>Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis  </p>
-                            <a href="index.html#" class="button-one">Read More</a>
+                            <a href="index.php" class="button-one">Read More</a>
                         </div>
                     </div>
                     <div class="col-sm-3">
                         <div class="services-post triggerAnimation animated" data-animate="flipInY">
                             <div class="services-head">
-                                <a href="index.html#" class="icon"><i class="fa fa-eye"></i></a>
+                                <a href="index.php" class="icon"><i class="fa fa-eye"></i></a>
                                 <h2>Retina Ready</h2>
                                 <span>Cum sociis natoque penatibus et </span>
                             </div>
                             <p>Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis  </p>
-                            <a href="index.html#" class="button-one">Read More</a>
+                            <a href="index.php" class="button-one">Read More</a>
                         </div>
                     </div>
                     <div class="col-sm-3">
                         <div class="services-post triggerAnimation animated" data-animate="flipInY">
                             <div class="services-head">
-                                <a href="index.html#" class="icon"><i class="fa fa-stethoscope"></i></a>
+                                <a href="index.php" class="icon"><i class="fa fa-stethoscope"></i></a>
                                 <h2>Sales &amp; Support</h2>
                                 <span>Integer posuere erat a ante</span>
                             </div>
                             <p>Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis  </p>
-                            <a href="index.html#" class="button-one">Read More</a>
+                            <a href="index.php" class="button-one">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -330,7 +330,7 @@
         <div class="container triggerAnimation animated" data-animate="bounceIn">
             <h1>Top reasons to work with us</h1>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
-            <a class="button-two" href="index.html#"><span>Buy it now</span><i class="fa fa-angle-right"></i></a>
+            <a class="button-two" href="index.php"><span>Buy it now</span><i class="fa fa-angle-right"></i></a>
         </div>
     </div>
 
@@ -446,9 +446,9 @@
 
             </div>
             <div class="buttons">
-                <a class="owl-prev button-third" href="index.html#"><i class="fa fa-angle-left"></i></a>
-                <a class="button-third" href="index.html#">See All work</a>
-                <a class="owl-next button-third" href="index.html#"><i class="fa fa-angle-right"></i></a>
+                <a class="owl-prev button-third" href="index.php"><i class="fa fa-angle-left"></i></a>
+                <a class="button-third" href="index.php">See All work</a>
+                <a class="owl-next button-third" href="index.php"><i class="fa fa-angle-right"></i></a>
             </div>
         </div>
     </div>
@@ -460,7 +460,7 @@
             <div class="features-head triggerAnimation animated" data-animate="bounceIn">
                 <h1>We are committed towards our goal of delivering the best services</h1>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
-                <a class="button-two" href="index.html#"><span>Meet the Creative Team</span></a>
+                <a class="button-two" href="index.php"><span>Meet the Creative Team</span></a>
             </div>
 
             <div class="row">
@@ -590,7 +590,7 @@
                         </div>
                         <div class="content-data">
                             <h2><a href="single-post.html">Aliquam tincidunt mauris eu risus.</a></h2>
-                            <p>By: <a href="index.html#">Admin</a> | <a href="index.html#">05 Comments</a></p>
+                            <p>By: <a href="index.php">Admin</a> | <a href="index.php">05 Comments</a></p>
                         </div>
                     </div>
                 </div>
@@ -603,7 +603,7 @@
                         </div>
                         <div class="content-data">
                             <h2><a href="single-post.html">Vestibulum auctor dapibus neque</a></h2>
-                            <p>By: <a href="index.html#">Admin</a> | <a href="index.html#">05 Comments</a></p>
+                            <p>By: <a href="index.php">Admin</a> | <a href="index.php">05 Comments</a></p>
                         </div>
                     </div>
                 </div>
@@ -616,7 +616,7 @@
                         </div>
                         <div class="content-data">
                             <h2><a href="single-post.html">Cras ornare tristique elit</a></h2>
-                            <p>By: <a href="index.html#">Admin</a> | <a href="index.html#">05 Comments</a></p>
+                            <p>By: <a href="index.php">Admin</a> | <a href="index.php">05 Comments</a></p>
                         </div>
                     </div>
                 </div>
@@ -629,7 +629,7 @@
                         </div>
                         <div class="content-data">
                             <h2><a href="single-post.html">Aliquam tincidunt mauris eu risus.</a></h2>
-                            <p>By: <a href="index.html#">Admin</a> | <a href="index.html#">05 Comments</a></p>
+                            <p>By: <a href="index.php">Admin</a> | <a href="index.php">05 Comments</a></p>
                         </div>
                     </div>
                 </div>
@@ -642,7 +642,7 @@
                         </div>
                         <div class="content-data">
                             <h2><a href="single-post.html">Aliquam tincidunt mauris eu risus.</a></h2>
-                            <p>By: <a href="index.html#">Admin</a> | <a href="index.html#">05 Comments</a></p>
+                            <p>By: <a href="index.php">Admin</a> | <a href="index.php">05 Comments</a></p>
                         </div>
                     </div>
                 </div>
@@ -655,16 +655,16 @@
                         </div>
                         <div class="content-data">
                             <h2><a href="single-post.html">Aliquam tincidunt mauris eu risus.</a></h2>
-                            <p>By: <a href="index.html#">Admin</a> | <a href="index.html#">05 Comments</a></p>
+                            <p>By: <a href="index.php">Admin</a> | <a href="index.php">05 Comments</a></p>
                         </div>
                     </div>
                 </div>
 
             </div>
             <div class="buttons">
-                <a class="owl-prev button-third" href="index.html#"><i class="fa fa-angle-left"></i></a>
-                <a class="button-third" href="index.html#">See All Posts</a>
-                <a class="owl-next button-third" href="index.html#"><i class="fa fa-angle-right"></i></a>
+                <a class="owl-prev button-third" href="index.php"><i class="fa fa-angle-left"></i></a>
+                <a class="button-third" href="index.php">See All Posts</a>
+                <a class="owl-next button-third" href="index.php"><i class="fa fa-angle-right"></i></a>
             </div>
         </div>
     </div>
@@ -682,22 +682,22 @@
             <ul class="bxslider">
                 <li>
                     <ul class="client-list">
-                        <li><a href="index.html#"><img alt="" src="images/client1.png"></a></li>
-                        <li><a href="index.html#"><img alt="" src="images/client2.png"></a></li>
-                        <li><a href="index.html#"><img alt="" src="images/client3.png"></a></li>
-                        <li><a href="index.html#"><img alt="" src="images/client4.png"></a></li>
-                        <li><a href="index.html#"><img alt="" src="images/client5.png"></a></li>
-                        <li><a href="index.html#"><img alt="" src="images/client6.png"></a></li>
+                        <li><a href="index.php"><img alt="" src="images/client1.png"></a></li>
+                        <li><a href="index.php"><img alt="" src="images/client2.png"></a></li>
+                        <li><a href="index.php"><img alt="" src="images/client3.png"></a></li>
+                        <li><a href="index.php"><img alt="" src="images/client4.png"></a></li>
+                        <li><a href="index.php"><img alt="" src="images/client5.png"></a></li>
+                        <li><a href="index.php"><img alt="" src="images/client6.png"></a></li>
                     </ul>
                 </li>
                 <li>
                     <ul class="client-list">
-                        <li><a href="index.html#"><img alt="" src="images/client1.png"></a></li>
-                        <li><a href="index.html#"><img alt="" src="images/client2.png"></a></li>
-                        <li><a href="index.html#"><img alt="" src="images/client3.png"></a></li>
-                        <li><a href="index.html#"><img alt="" src="images/client4.png"></a></li>
-                        <li><a href="index.html#"><img alt="" src="images/client5.png"></a></li>
-                        <li><a href="index.html#"><img alt="" src="images/client6.png"></a></li>
+                        <li><a href="index.php"><img alt="" src="images/client1.png"></a></li>
+                        <li><a href="index.php"><img alt="" src="images/client2.png"></a></li>
+                        <li><a href="index.php"><img alt="" src="images/client3.png"></a></li>
+                        <li><a href="index.php"><img alt="" src="images/client4.png"></a></li>
+                        <li><a href="index.php"><img alt="" src="images/client5.png"></a></li>
+                        <li><a href="index.php"><img alt="" src="images/client6.png"></a></li>
                     </ul>
                 </li>
             </ul>
