@@ -1,16 +1,12 @@
 
 		<div id="content">
 
-			<!-- page-banner 
-				================================================== -->
 			<div class="section-content page-banner portfolio-page-banner">
 				<div class="container">
 					<h1>Portfolio</h1>
 				</div>
 			</div>
 
-			<!-- portfolio-section 
-				================================================== -->
 			<div class="section-content portfolio-section">
 				<div class="title-section white">
 					<div class="container triggerAnimation animated" data-animate="bounceIn">

@@ -14,7 +14,7 @@
 
                     <!-- LAYER NR. 1 -->
                     <div class="tp-caption large_bold_white skewfromrightshort customout"
-                         data-x="250"
+                         data-x="340"
                          data-y="274"
                          data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
                          data-speed="500"
@@ -28,9 +28,9 @@
 
                     <!-- LAYER NR. 2 -->
                     <div class="tp-caption medium_thin_white customin ltl"
-                         data-x="170"
+                         data-x="395"
                          data-y="340"
-                         data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                         data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:80% 0%;"
                          data-speed="1000"
                          data-start="1500"
                          data-easing="Back.easeInOut"
@@ -59,7 +59,7 @@
                     <!-- LAYERS -->
                     <!-- LAYER NR. 1 -->
                     <div class="tp-caption large_bold_white skewfromrightshort customout"
-                         data-x="350"
+                         data-x="240"
                          data-y="274"
                          data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
                          data-speed="500"
@@ -73,7 +73,7 @@
 
                     <!-- LAYER NR. 2 -->
                     <div class="tp-caption medium_thin_white customin ltl"
-                         data-x="170"
+                         data-x="330"
                          data-y="340"
                          data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
                          data-speed="1000"
@@ -178,21 +178,21 @@
 
                     <!-- LAYER NR. 2 -->
                     <div class="tp-caption large_bold_white skewfromrightshort customout"
-                         data-x="500"
+                         data-x="480"
                          data-y="200"
-                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.55;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:400;transformOrigin:55% 50%;"
                          data-speed="500"
                          data-start="1800"
                          data-easing="Back.easeOut"
                          data-endspeed="500"
                          data-endeasing="Power4.easeIn"
                          data-captionhidden="on"
-                         style="z-index: 4">Les meilleurs jeux d'alcools, <br> super simples et bibitifs à souhait 
+                         style="z-index: 10; font-size:50px">Les meilleurs jeux d'alcools, <br>super simples et bibitifs à souhait
                     </div>
 
                     <!-- LAYER NR. 3 -->
                     <div class="tp-caption medium_thin_white customin ltl"
-                         data-x="500"
+                         data-x="480"
                          data-y="350"
                          data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
                          data-speed="1000"
@@ -200,12 +200,12 @@
                          data-easing="Back.easeInOut"
                          data-endspeed="400"
                          data-endeasing="Back.easeIn"
-                         style="z-index: 14">Une série TV, un jeu vidéo, des cartes, ou rien, tout est bon pour boire  
+                         style="z-index: 12">Une série TV, un jeu vidéo, des cartes, ou rien, tout est bon pour boire
                     </div>
 
                     <!-- LAYER NR. 4 -->
                     <div class="tp-caption medium_thin_white customin ltl"
-                         data-x="490"
+                         data-x="470"
                          data-y="450"
                          data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
                          data-speed="1000"
