@@ -49,7 +49,7 @@
                          data-easing="Back.easeInOut"
                          data-endspeed="400"
                          data-endeasing="Back.easeIn"
-                         style="z-index: 14"><a class="button-large" href="index.php">Alcools</a>
+                         style="z-index: 14"><a class="button-large" href="index.php">Les alcools</a>
                     </div>
                 </li>
                 <!-- SLIDE  -->
@@ -68,7 +68,7 @@
                          data-endspeed="500"
                          data-endeasing="Power4.easeIn"
                          data-captionhidden="on"
-                         style="z-index: 4">Des bières aux cocktails
+                         style="z-index: 4">Bières, cocktails
                     </div>
 
                     <!-- LAYER NR. 2 -->
@@ -227,29 +227,29 @@
                 <li class="active">
                     <a href="index.php" class="btn slide-thumbs" id="slidethumb1" data-slide="1">
                         <span>1</span>
-                        <h2>Des pléthores d'alcool </h2>
-                        <p>Car on n'a jamais assez d'alcool</p>
+                        <h2>Découverte </h2>
+                        <p>Découvrir un max d'alcools</p>
                     </a>
                 </li>
                 <li>
                     <a href="index.php" class="btn slide-thumbs" id="slidethumb2" data-slide="2">
                         <span>2</span>
-                        <h2>Bière, cocktails, on a tout !</h2>
-                        <p>Pour varier la défonce dans la joie</p>
+                        <h2>Diversification </h2>
+                        <p>Varier la bibine de soirée</p>
                     </a>
                 </li>
                 <li>
                     <a href="index.php" class="btn slide-thumbs" id="slidethumb3" data-slide="3">
                         <span>3</span>
-                        <h2>Un site spécial étudiant !</h2>
+                        <h2>Etudiants </h2>
                         <p>Du contenu juste pour vous </p>
                     </a>
                 </li>
                 <li>
                     <a href="index.php" class="btn slide-thumbs" id="slidethumb4" data-slide="4">
                         <span>4</span>
-                        <h2>Boire en s'amusant</h2>
-                        <p>Des tonnes de jeu d'alcool</p>
+                        <h2>Amusement</h2>
+                        <p>Des tonnes de jeux d'alcool</p>
                     </a>
                 </li>
             </ul>
@@ -263,84 +263,13 @@
     ================================================== -->
 <div id="content">
 
-    <!-- sevices-section section
-        ================================================== -->
-    <div class="section-content services-section">
-        <div class="title-section">
-            <div class="container triggerAnimation animated" data-animate="bounceIn">
-                <h1>Pour des étudiants</h1>
-                <h1>Par des étudiants</h1>
-            </div>
-        </div>
-        <div class="services-box parallax" data-stellar-background-ratio="0">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-3">
-                        <div class="services-post triggerAnimation animated" data-animate="flipInY">
-                            <div class="services-head">
-                                <a href="index.php" class="icon"><i class="fa fa-thumbs-o-up"></i></a>
-                                <h2>High Quality</h2>
-                                <span>Vestibulum auctor dapibus neque.</span>
-                            </div>
-                            <p>Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis  </p>
-                            <a href="index.php" class="button-one">Read More</a>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="services-post triggerAnimation animated" data-animate="flipInY">
-                            <div class="services-head">
-                                <a href="index.php" class="icon"><i class="fa fa-tablet"></i></a>
-                                <h2>Responsive Design</h2>
-                                <span>Etetur adipiscing elit. </span>
-                            </div>
-                            <p>Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis  </p>
-                            <a href="index.php" class="button-one">Read More</a>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="services-post triggerAnimation animated" data-animate="flipInY">
-                            <div class="services-head">
-                                <a href="index.php" class="icon"><i class="fa fa-eye"></i></a>
-                                <h2>Retina Ready</h2>
-                                <span>Cum sociis natoque penatibus et </span>
-                            </div>
-                            <p>Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis  </p>
-                            <a href="index.php" class="button-one">Read More</a>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="services-post triggerAnimation animated" data-animate="flipInY">
-                            <div class="services-head">
-                                <a href="index.php" class="icon"><i class="fa fa-stethoscope"></i></a>
-                                <h2>Sales &amp; Support</h2>
-                                <span>Integer posuere erat a ante</span>
-                            </div>
-                            <p>Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis  </p>
-                            <a href="index.php" class="button-one">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- banner-section
-        ================================================== -->
-    <div class="section-content banner-section">
-        <div class="container triggerAnimation animated" data-animate="bounceIn">
-            <h1>Top reasons to work with us</h1>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
-            <a class="button-two" href="index.php"><span>Buy it now</span><i class="fa fa-angle-right"></i></a>
-        </div>
-    </div>
-
     <!-- portfolio-section
         ================================================== -->
     <div class="section-content portfolio-section">
         <div class="title-section">
             <div class="container triggerAnimation animated" data-animate="bounceIn">
-                <h1>Our latest work</h1>
-                <p>Vivamus molestie gravida turpis</p>
+                <h1>Les incontournables</h1>
+                <p>Alcools les plus populaires </p>
             </div>
         </div>
         <div class="portfolio-box triggerAnimation animated" data-animate="pulse">
@@ -355,7 +284,7 @@
                         </div>
                     </div>
                     <div class="project-content">
-                        <h2>Aliquam tincidunt mauris eu risus.</h2>
+                        <h2>Alcool 1.</h2>
                         <p>Vestibulum auctor dapibus neque.</p>
                     </div>
                 </div>
@@ -369,7 +298,7 @@
                         </div>
                     </div>
                     <div class="project-content">
-                        <h2>Aliquam tincidunt mauris eu risus.</h2>
+                        <h2>Alcool 2.</h2>
                         <p>Vestibulum auctor dapibus neque.</p>
                     </div>
                 </div>
@@ -383,7 +312,7 @@
                         </div>
                     </div>
                     <div class="project-content">
-                        <h2>Aliquam tincidunt mauris eu risus.</h2>
+                        <h2>Alcool 3.</h2>
                         <p>Vestibulum auctor dapibus neque.</p>
                     </div>
                 </div>
@@ -397,7 +326,7 @@
                         </div>
                     </div>
                     <div class="project-content">
-                        <h2>Aliquam tincidunt mauris eu risus.</h2>
+                        <h2>Alcool 4.</h2>
                         <p>Vestibulum auctor dapibus neque.</p>
                     </div>
                 </div>
@@ -411,7 +340,7 @@
                         </div>
                     </div>
                     <div class="project-content">
-                        <h2>Aliquam tincidunt mauris eu risus.</h2>
+                        <h2>Alcool 5.</h2>
                         <p>Vestibulum auctor dapibus neque.</p>
                     </div>
                 </div>
@@ -425,7 +354,7 @@
                         </div>
                     </div>
                     <div class="project-content">
-                        <h2>Aliquam tincidunt mauris eu risus.</h2>
+                        <h2>Alcool 6.</h2>
                         <p>Vestibulum auctor dapibus neque.</p>
                     </div>
                 </div>
@@ -439,7 +368,7 @@
                         </div>
                     </div>
                     <div class="project-content">
-                        <h2>Aliquam tincidunt mauris eu risus.</h2>
+                        <h2>Alcool 7.</h2>
                         <p>Vestibulum auctor dapibus neque.</p>
                     </div>
                 </div>
@@ -447,81 +376,12 @@
             </div>
             <div class="buttons">
                 <a class="owl-prev button-third" href="index.php"><i class="fa fa-angle-left"></i></a>
-                <a class="button-third" href="index.php">See All work</a>
                 <a class="owl-next button-third" href="index.php"><i class="fa fa-angle-right"></i></a>
             </div>
         </div>
     </div>
 
-    <!-- features-section
-        ================================================== -->
-    <div class="section-content features-section parallax" data-stellar-background-ratio="0">
-        <div class="container">
-            <div class="features-head triggerAnimation animated" data-animate="bounceIn">
-                <h1>We are committed towards our goal of delivering the best services</h1>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
-                <a class="button-two" href="index.php"><span>Meet the Creative Team</span></a>
-            </div>
-
-            <div class="row">
-                <div class="col-md-4">
-                    <ul class="feature-list triggerAnimation animated" data-animate="slideInLeft">
-                        <li>
-                            <span><i class="fa fa-leaf"></i></span>
-                            <div class="list-cont">
-                                <h3>Email Marketing</h3>
-                                <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris </p>
-                            </div>
-                        </li>
-                        <li>
-                            <span><i class="fa fa-bar-chart-o"></i></span>
-                            <div class="list-cont">
-                                <h3>Business</h3>
-                                <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris </p>
-                            </div>
-                        </li>
-                        <li>
-                            <span><i class="fa fa-coffee"></i></span>
-                            <div class="list-cont">
-                                <h3>Premium Design</h3>
-                                <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris </p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <div class="image-place triggerAnimation animated" data-animate="slideInUp">
-                        <img src="images/dev1.png" alt="">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <ul class="feature-list triggerAnimation animated" data-animate="slideInRight">
-                        <li>
-                            <span><i class="fa fa-heart"></i></span>
-                            <div class="list-cont">
-                                <h3>Made with Love</h3>
-                                <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris </p>
-                            </div>
-                        </li>
-                        <li>
-                            <span><i class="fa fa-cog"></i></span>
-                            <div class="list-cont">
-                                <h3>Clean Design</h3>
-                                <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris </p>
-                            </div>
-                        </li>
-                        <li>
-                            <span><i class="fa fa-trophy"></i></span>
-                            <div class="list-cont">
-                                <h3>Psd Theme</h3>
-                                <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris </p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+    
 
     <!-- statistic-section
         ================================================== -->
@@ -533,8 +393,8 @@
                         <div class="statistic-post">
                             <div class="statistic-counter">
                                 <i class="fa fa-heart-o"></i>
-                                <p><span class="timer" data-from="0" data-to="500"></span></p>
-                                <p>Finished Projects</p>
+                                <p><span class="timer" data-from="0" data-to="9001"></span></p>
+                                <p>Visiteurs du site</p>
                             </div>
                         </div>
                     </div>
@@ -542,8 +402,8 @@
                         <div class="statistic-post">
                             <div class="statistic-counter">
                                 <i class="fa fa-bell-o"></i>
-                                <p><span class="timer" data-from="0" data-to="68"></span></p>
-                                <p>Awards Won</p>
+                                <p><span class="timer" data-from="0" data-to="69"></span></p>
+                                <p>Alcools référencés</p>
                             </div>
                         </div>
                     </div>
@@ -551,8 +411,8 @@
                         <div class="statistic-post">
                             <div class="statistic-counter">
                                 <i class="fa fa-star-o"></i>
-                                <p><span class="timer" data-from="0" data-to="450"></span></p>
-                                <p>Happy Customers</p>
+                                <p><span class="timer" data-from="0" data-to="25"></span></p>
+                                <p>Jeux d'alcools</p>
                             </div>
                         </div>
                     </div>
@@ -560,8 +420,8 @@
                         <div class="statistic-post">
                             <div class="statistic-counter">
                                 <i class="fa fa-moon-o"></i>
-                                <p><span class="timer" data-from="0" data-to="840"></span></p>
-                                <p>Design Ideas</p>
+                                <p><span class="timer" data-from="0" data-to="1337"></span></p>
+                                <p>Degré d'alcool total</p>
                             </div>
                         </div>
                     </div>
@@ -575,8 +435,8 @@
     <div class="section-content blog-section">
         <div class="title-section">
             <div class="container triggerAnimation animated" data-animate="bounceIn">
-                <h1>Latest Post</h1>
-                <p>Vivamus molestie gravida turpis</p>
+                <h1>Posts récents</h1>
+                <p>Nous publions régulièrement des articles spécial étudiants</p>
             </div>
         </div>
         <div class="container triggerAnimation animated" data-animate="fadeInUp">
@@ -589,7 +449,7 @@
                             <p><span>22</span>apr</p>
                         </div>
                         <div class="content-data">
-                            <h2><a href="single-post.html">Aliquam tincidunt mauris eu risus.</a></h2>
+                            <h2><a href="single-post.html">Exemple post 1.</a></h2>
                             <p>By: <a href="index.php">Admin</a> | <a href="index.php">05 Comments</a></p>
                         </div>
                     </div>
@@ -602,7 +462,7 @@
                             <p><span>18</span>apr</p>
                         </div>
                         <div class="content-data">
-                            <h2><a href="single-post.html">Vestibulum auctor dapibus neque</a></h2>
+                            <h2><a href="single-post.html">Exemple post 2</a></h2>
                             <p>By: <a href="index.php">Admin</a> | <a href="index.php">05 Comments</a></p>
                         </div>
                     </div>
@@ -615,7 +475,7 @@
                             <p><span>05</span>apr</p>
                         </div>
                         <div class="content-data">
-                            <h2><a href="single-post.html">Cras ornare tristique elit</a></h2>
+                            <h2><a href="single-post.html">Exemple post  3</a></h2>
                             <p>By: <a href="index.php">Admin</a> | <a href="index.php">05 Comments</a></p>
                         </div>
                     </div>
@@ -628,7 +488,7 @@
                             <p><span>17</span>apr</p>
                         </div>
                         <div class="content-data">
-                            <h2><a href="single-post.html">Aliquam tincidunt mauris eu risus.</a></h2>
+                            <h2><a href="single-post.html">Exemple post 4.</a></h2>
                             <p>By: <a href="index.php">Admin</a> | <a href="index.php">05 Comments</a></p>
                         </div>
                     </div>
@@ -641,7 +501,7 @@
                             <p><span>29</span>apr</p>
                         </div>
                         <div class="content-data">
-                            <h2><a href="single-post.html">Aliquam tincidunt mauris eu risus.</a></h2>
+                            <h2><a href="single-post.html">Exemple post 5.</a></h2>
                             <p>By: <a href="index.php">Admin</a> | <a href="index.php">05 Comments</a></p>
                         </div>
                     </div>
@@ -654,7 +514,7 @@
                             <p><span>06</span>apr</p>
                         </div>
                         <div class="content-data">
-                            <h2><a href="single-post.html">Aliquam tincidunt mauris eu risus.</a></h2>
+                            <h2><a href="single-post.html">Exemple post 6.</a></h2>
                             <p>By: <a href="index.php">Admin</a> | <a href="index.php">05 Comments</a></p>
                         </div>
                     </div>
@@ -663,44 +523,9 @@
             </div>
             <div class="buttons">
                 <a class="owl-prev button-third" href="index.php"><i class="fa fa-angle-left"></i></a>
-                <a class="button-third" href="index.php">See All Posts</a>
+                <a class="button-third" href="index.php">Voir tous les posts</a>
                 <a class="owl-next button-third" href="index.php"><i class="fa fa-angle-right"></i></a>
             </div>
-        </div>
-    </div>
-
-    <!-- client-section
-        ================================================== -->
-    <div class="section-content client-section">
-        <div class="title-section">
-            <div class="container triggerAnimation animated" data-animate="bounceIn">
-                <h1>Our Prestigious clients</h1>
-                <p>Praesent placerat risus quis eros.</p>
-            </div>
-        </div>
-        <div class="container triggerAnimation animated" data-animate="shake">
-            <ul class="bxslider">
-                <li>
-                    <ul class="client-list">
-                        <li><a href="index.php"><img alt="" src="images/client1.png"></a></li>
-                        <li><a href="index.php"><img alt="" src="images/client2.png"></a></li>
-                        <li><a href="index.php"><img alt="" src="images/client3.png"></a></li>
-                        <li><a href="index.php"><img alt="" src="images/client4.png"></a></li>
-                        <li><a href="index.php"><img alt="" src="images/client5.png"></a></li>
-                        <li><a href="index.php"><img alt="" src="images/client6.png"></a></li>
-                    </ul>
-                </li>
-                <li>
-                    <ul class="client-list">
-                        <li><a href="index.php"><img alt="" src="images/client1.png"></a></li>
-                        <li><a href="index.php"><img alt="" src="images/client2.png"></a></li>
-                        <li><a href="index.php"><img alt="" src="images/client3.png"></a></li>
-                        <li><a href="index.php"><img alt="" src="images/client4.png"></a></li>
-                        <li><a href="index.php"><img alt="" src="images/client5.png"></a></li>
-                        <li><a href="index.php"><img alt="" src="images/client6.png"></a></li>
-                    </ul>
-                </li>
-            </ul>
         </div>
     </div>
 

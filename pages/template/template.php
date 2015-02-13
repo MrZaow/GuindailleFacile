@@ -64,7 +64,7 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a class="active" href="#">Accueil</a></li>
+                        <li><a class="active" href="index.php">Accueil</a></li>
                         <li><a href="index.php?p=etudiant">Coin étudiant</a></li>
                         <li><a href="#">Alcools</a>
                             <ul class="drop-down">
@@ -76,7 +76,7 @@
                         <li><a href="index.php?p=jeux">Jeux d'alcool</a></li>
                         <li class="drop"><a href="#" class="open-search"><i class="fa fa-search"></i></a>
                             <form class="form-search">
-                                <input type="search" placeholder="Rechercher un alcool:"/>
+                                <input type="search" placeholder="Chercher un alcool :"/>
                                 <button type="submit">
                                     <i class="fa fa-search"></i>
                                 </button>
@@ -99,76 +99,47 @@
     <footer>
         <div class="social-section">
             <ul class="social-icons triggerAnimation animated" data-animate="tada">
-                <li><a class="facebook" href="index.html#"><i class="fa fa-facebook"></i></a></li>
-                <li><a class="twitter" href="index.html#"><i class="fa fa-twitter"></i></a></li>
-                <li><a class="rss" href="index.html#"><i class="fa fa-rss"></i></a></li>
-                <li><a class="google" href="index.html#"><i class="fa fa-google-plus"></i></a></li>
-                <li><a class="linkedin" href="index.html#"><i class="fa fa-linkedin"></i></a></li>
-                <li><a class="pinterest" href="index.html#"><i class="fa fa-pinterest"></i></a></li>
+                <li><a class="facebook" href="index.php"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="twitter" href="index.php"><i class="fa fa-twitter"></i></a></li>
             </ul>
         </div>
         <div class="up-footer">
             <div class="container">
                 <div class="row">
 
-                    <div class="col-md-3">
+                    <div class="col-md-6">
                         <div class="widget footer-widget text-widget">
-                            <h1>About</h1>
-                            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-                            <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. </p>
+                            <h1>À propos</h1>
+                            <p>Guindaille facile est un site réalisé entièrement par des étudiants en informatique à Liège. </p>
+                            <p>En cherchant après des bonnes idées d'alcools à boire en soirée, un étudiant s'est rendu compte qu'il y avait peu de bons sites 
+                               qui présentent des listes de cocktails, bières ou alcools forts, d'une façon vraiment pratique et facile. Il a donc décidé de créer son propre site
+                               avec l'aide de quelques amis programmeurs, et c'est ainsi qu'est né Guindaille facile.  
+                            </p>
                             <img src="images/footer-logo.png" alt="">
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-6">
                         <div class="widget footer-widget tweets-widget">
                             <h1>Recent Tweets</h1>
                             <ul>
                                 <li>
                                     <i class="fa fa-twitter"></i>
-                                    <p>Photoshop to CSS3 magic - CSS Hat - <a href="index.html#">http://t.co/ad2CggDN</a> </p>
+                                    <p>Photoshop to CSS3 magic - CSS Hat - <a href="index.php">http://t.co/ad2CggDN</a> </p>
                                     <span>15 June 2012</span>
                                 </li>
                                 <li>
                                     <i class="fa fa-twitter"></i>
-                                    <p>CrossFit Advanced - another well done website, featured on CSSLuxury -  <a href="index.html#">http://t.co/ad2CggDN</a> </p>
+                                    <p>CrossFit Advanced - another well done website, featured on CSSLuxury -  <a href="index.php">http://t.co/ad2CggDN</a> </p>
                                     <span>15 June 2012</span>
                                 </li>
                             </ul>
                         </div>
                     </div>
-
-                    <div class="col-md-3">
-                        <div class="widget footer-widget flickr-widget">
-                            <h1>Flickr Stream</h1>
-                            <ul class="flickr">
-                                <li><a href="index.html#"><img alt="" src="upload/flickr1.jpg"></a></li>
-                                <li><a href="index.html#"><img alt="" src="upload/flickr2.jpg"></a></li>
-                                <li><a href="index.html#"><img alt="" src="upload/flickr3.jpg"></a></li>
-                                <li><a href="index.html#"><img alt="" src="upload/flickr4.jpg"></a></li>
-                                <li><a href="index.html#"><img alt="" src="upload/flickr5.jpg"></a></li>
-                                <li><a href="index.html#"><img alt="" src="upload/flickr6.jpg"></a></li>
-                                <li><a href="index.html#"><img alt="" src="upload/flickr2.jpg"></a></li>
-                                <li><a href="index.html#"><img alt="" src="upload/flickr3.jpg"></a></li>
-                                <li><a href="index.html#"><img alt="" src="upload/flickr1.jpg"></a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="widget footer-widget subscribe-widget">
-                            <h1>Subscribe</h1>
-                            <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. </p>
-                            <form class="subscribe-form">
-                                <input type="text" id="e-mail" name="e-mail" placeholder="Email Address"/>
-                                <input type="submit" id="submit" value="submit"/>
-                            </form>
-                        </div>
-                    </div>
-
                 </div>
                 <div class="footer-line">
-                    <p>Copyright 2014. "marble" by UpiFix. All rights reserved.</p>
+                    <p>Bootstrap theme used : Marble</p>
+                    <p>Made by : Guindaillefacile.com dev team</p>
                 </div>
             </div>
         </div>
