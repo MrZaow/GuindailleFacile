@@ -45,12 +45,9 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
-<<<<<<< HEAD
+
                         <li><a class="active" href="index.php">Accueil</a></li>
-=======
-                        <li><a class="active" href="?p=home">Accueil</a></li>
->>>>>>> origin/master
-                        <li><a href="index.php?p=etudiant">Coin étudiant</a></li>
+                        <li><a href="?p=etudiant">Coin étudiant</a></li>
                         <li><a href="#">Alcools</a>
                             <ul class="drop-down">
                                 <li><a href="?p=cocktail">Cocktails</a></li>
@@ -59,9 +56,10 @@
                             </ul>
                         </li>
                         <li><a href="index.php?p=jeux">Jeux d'alcool</a></li>
+                        <li><a href="?=seslimites">Connaitre ses limites</a></li>
                         <li class="drop"><a href="#" class="open-search"><i class="fa fa-search"></i></a>
                             <form class="form-search">
-                                <input type="search" placeholder="Chercher un alcool :"/>
+                                <input type="search" placeholder="Chercher un alcool"/>
                                 <button type="submit">
                                     <i class="fa fa-search"></i>
                                 </button>
