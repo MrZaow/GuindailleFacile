@@ -24,25 +24,6 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
 
 
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.migrate.js"></script>
-    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
-    <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
-    <script type="text/javascript" src="js/jquery.appear.js"></script>
-    <script type="text/javascript" src="js/jquery.countTo.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-    <script type="text/javascript" src="js/jquery.imagesloaded.min.js"></script>
-    <script type="text/javascript" src="js/retina-1.1.0.min.js"></script>
-    <script type="text/javascript" src="js/plugins-scroll.js"></script>
-    <script type="text/javascript" src="js/waypoint.min.js"></script>
-    <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
-
-    <!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
-    <script type="text/javascript" src="js/jquery.themepunch.plugins.min.js"></script>
-    <script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-
 </head>
 <body>
 
@@ -60,17 +41,21 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#"><img alt="" src="images/logo.png"></a>
+                    <a class="navbar-brand" href="?p=home"><img alt="" src="images/logo.png"></a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
+<<<<<<< HEAD
                         <li><a class="active" href="index.php">Accueil</a></li>
+=======
+                        <li><a class="active" href="?p=home">Accueil</a></li>
+>>>>>>> origin/master
                         <li><a href="index.php?p=etudiant">Coin étudiant</a></li>
                         <li><a href="#">Alcools</a>
                             <ul class="drop-down">
-                                <li><a href="index.php?p=cocktail">Cocktails</a></li>
-                                <li><a href="index.php?p=biere">Bières</a></li>
-                                <li><a href="index.php?p=alcoolfort">Alcools forts</a></li>
+                                <li><a href="?p=cocktail">Cocktails</a></li>
+                                <li><a href="?p=biere">Bières</a></li>
+                                <li><a href="?p=alcoolfort">Alcools forts</a></li>
                             </ul>
                         </li>
                         <li><a href="index.php?p=jeux">Jeux d'alcool</a></li>
@@ -151,6 +136,27 @@
 
 <!-- THE SCRIPT INITIALISATION -->
 <!-- LOOK THE DOCUMENTATION FOR MORE INFORMATIONS -->
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.migrate.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="js/jquery.appear.js"></script>
+<script type="text/javascript" src="js/jquery.countTo.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/jquery.imagesloaded.min.js"></script>
+<script type="text/javascript" src="js/retina-1.1.0.min.js"></script>
+<script type="text/javascript" src="js/plugins-scroll.js"></script>
+<script type="text/javascript" src="js/waypoint.min.js"></script>
+<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+
+<!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+<script type="text/javascript" src="js/jquery.themepunch.plugins.min.js"></script>
+<script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
 <script type="text/javascript">
 
     var revapi;
