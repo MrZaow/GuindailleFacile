@@ -1,5 +1,4 @@
 <div id="slider" class="slider1">
-
     <div class="tp-banner-container">
         <div class="tp-banner" >
             <ul>	<!-- SLIDE  -->
