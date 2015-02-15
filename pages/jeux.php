@@ -3,27 +3,26 @@
 
 			<div class="section-content page-banner portfolio-page-banner">
 				<div class="container">
-					<h1>Les Bières</h1>
+					<h1>Les Jeux</h1>
 				</div>
 			</div>
 
 			<div class="section-content portfolio-section">
 				<div class="title-section white">
 					<div class="container triggerAnimation animated" data-animate="bounceIn">
-						<h1>La bière est la preuve indéniable que Dieu nous aime et veut nous voir heureux</h1>
-						<p>Benjamin Franklin</p>
+						<h1>Connaître quelques bons jeux d'alcool est indispensable !</h1>
+						<p>Rien de tel pour faire monter l'ambiance en soirée</p>
 					</div>
 				</div>
 				<div class="portfolio-box">
 					<ul class="filter triggerAnimation animated" data-animate="bounceIn">
 						<li><a href="portfolio-4col.html#" class="active" data-filter="*">Popuparité</a></li>
-						<li><a href="portfolio-4col.html#" data-filter=".web-design">Prix</a></li>
-						<li><a href="portfolio-4col.html#" data-filter=".branding">Degré</a></li>
-						<li><a href="portfolio-4col.html#" data-filter=".photography">Pils</a></li>
-						<li><a href="portfolio-4col.html#" data-filter=".illustration">Spéciales</a></li>
-						<li><a href="portfolio-4col.html#" data-filter=".branding">Trappistes</a></li>
-						<li><a href="portfolio-4col.html#" data-filter=".branding">Fruitées</a></li>
-						<li><a href="portfolio-4col.html#" data-filter=".branding">NA</a></li>
+						<li><a href="portfolio-4col.html#" data-filter=".web-design">Cartes</a></li>
+						<li><a href="portfolio-4col.html#" data-filter=".branding">Dés</a></li>
+						<li><a href="portfolio-4col.html#" data-filter=".photography">Social</a></li>
+						<li><a href="portfolio-4col.html#" data-filter=".illustration">Jeu vidéo</a></li>
+						<li><a href="portfolio-4col.html#" data-filter=".branding">Série TV</a></li>
+						<li><a href="portfolio-4col.html#" data-filter=".branding">Chanson</a></li>
 					</ul>
 					<div class="masonry four-col triggerAnimation animated" data-animate="bounceIn">
           

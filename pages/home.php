@@ -77,7 +77,7 @@
                          data-easing="Back.easeInOut"
                          data-endspeed="400"
                          data-endeasing="Back.easeIn"
-                         style="z-index: 14">vous trouverez tout l'alcool nécessaire pour vos soirées ! 
+                         style="z-index: 14">vous trouverez forcément votre bonheur !
                     </div>
 
                     <!-- LAYER NR. 3 -->
@@ -122,7 +122,7 @@
                          data-easing="Back.easeInOut"
                          data-endspeed="400"
                          data-endeasing="Back.easeIn"
-                         style="z-index: 14">Quels sont les alcools au meilleur rapport défonce/prix ?  <br> Quels sont ceux qui plaisent le plus aux fille ?
+                         style="z-index: 14">Quels sont les alcools au meilleur rapport défonce/prix ?  <br> Quels sont ceux qui plaisent le plus aux filles ?
                     </div>
 
                     <!-- LAYER NR. 3 -->
@@ -183,7 +183,7 @@
                          data-endspeed="500"
                          data-endeasing="Power4.easeIn"
                          data-captionhidden="on"
-                         style="z-index: 10; font-size:50px">Les meilleurs jeux d'alcools, <br>super simples et bibitifs à souhait
+                         style="z-index: 10; font-size:50px">Les meilleurs jeux d'alcools, <br>super simples et bibitifs
                     </div>
 
                     <!-- LAYER NR. 3 -->

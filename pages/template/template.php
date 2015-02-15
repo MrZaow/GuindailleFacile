@@ -52,7 +52,7 @@
                             <ul class="drop-down">
                                 <li><a href="?p=cocktail">Cocktails</a></li>
                                 <li><a href="?p=biere">Bières</a></li>
-                                <li><a href="?p=alcoolfort">Alcools forts</a></li>
+                                <li><a href="?p=fort">Alcools forts</a></li>
                             </ul>
                         </li>
                         <li><a href="index.php?p=jeux">Jeux d'alcool</a></li>

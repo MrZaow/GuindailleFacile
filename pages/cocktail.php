@@ -3,27 +3,23 @@
 
 			<div class="section-content page-banner portfolio-page-banner">
 				<div class="container">
-					<h1>Les Bières</h1>
+					<h1>Les Cocktails</h1>
 				</div>
 			</div>
 
 			<div class="section-content portfolio-section">
 				<div class="title-section white">
 					<div class="container triggerAnimation animated" data-animate="bounceIn">
-						<h1>La bière est la preuve indéniable que Dieu nous aime et veut nous voir heureux</h1>
-						<p>Benjamin Franklin</p>
+						<h1>Un cocktail, si il est bien fait, est la meilleure façon de chauffer l'ambiance</h1>
+						<p>En plus c'est super bon !</p>
 					</div>
 				</div>
 				<div class="portfolio-box">
 					<ul class="filter triggerAnimation animated" data-animate="bounceIn">
 						<li><a href="portfolio-4col.html#" class="active" data-filter="*">Popuparité</a></li>
 						<li><a href="portfolio-4col.html#" data-filter=".web-design">Prix</a></li>
-						<li><a href="portfolio-4col.html#" data-filter=".branding">Degré</a></li>
-						<li><a href="portfolio-4col.html#" data-filter=".photography">Pils</a></li>
-						<li><a href="portfolio-4col.html#" data-filter=".illustration">Spéciales</a></li>
-						<li><a href="portfolio-4col.html#" data-filter=".branding">Trappistes</a></li>
-						<li><a href="portfolio-4col.html#" data-filter=".branding">Fruitées</a></li>
-						<li><a href="portfolio-4col.html#" data-filter=".branding">NA</a></li>
+						<li><a href="portfolio-4col.html#" data-filter=".branding">Défonce</a></li>
+						<li><a href="portfolio-4col.html#" data-filter=".photography">Difficulté</a></li>
 					</ul>
 					<div class="masonry four-col triggerAnimation animated" data-animate="bounceIn">
           

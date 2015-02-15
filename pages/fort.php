@@ -3,15 +3,15 @@
 
 			<div class="section-content page-banner portfolio-page-banner">
 				<div class="container">
-					<h1>Les Bières</h1>
+					<h1>Les Alcools Forts</h1>
 				</div>
 			</div>
 
 			<div class="section-content portfolio-section">
 				<div class="title-section white">
 					<div class="container triggerAnimation animated" data-animate="bounceIn">
-						<h1>La bière est la preuve indéniable que Dieu nous aime et veut nous voir heureux</h1>
-						<p>Benjamin Franklin</p>
+						<h1>Purs, dillués, ou ingrédients de cocktail, ces bouteilles sont sources de bonheur infini en soirée</h1>
+						<p>... et de belles mines</p>
 					</div>
 				</div>
 				<div class="portfolio-box">
@@ -19,11 +19,6 @@
 						<li><a href="portfolio-4col.html#" class="active" data-filter="*">Popuparité</a></li>
 						<li><a href="portfolio-4col.html#" data-filter=".web-design">Prix</a></li>
 						<li><a href="portfolio-4col.html#" data-filter=".branding">Degré</a></li>
-						<li><a href="portfolio-4col.html#" data-filter=".photography">Pils</a></li>
-						<li><a href="portfolio-4col.html#" data-filter=".illustration">Spéciales</a></li>
-						<li><a href="portfolio-4col.html#" data-filter=".branding">Trappistes</a></li>
-						<li><a href="portfolio-4col.html#" data-filter=".branding">Fruitées</a></li>
-						<li><a href="portfolio-4col.html#" data-filter=".branding">NA</a></li>
 					</ul>
 					<div class="masonry four-col triggerAnimation animated" data-animate="bounceIn">
           
