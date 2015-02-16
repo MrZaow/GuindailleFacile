@@ -103,20 +103,11 @@
                     </div>
 
                     <div class="col-md-6">
-                        <div class="widget footer-widget tweets-widget">
-                            <h1>Recent Tweets</h1>
-                            <ul>
-                                <li>
-                                    <i class="fa fa-twitter"></i>
-                                    <p>Photoshop to CSS3 magic - CSS Hat - <a href="index.php">http://t.co/ad2CggDN</a> </p>
-                                    <span>15 June 2012</span>
-                                </li>
-                                <li>
-                                    <i class="fa fa-twitter"></i>
-                                    <p>CrossFit Advanced - another well done website, featured on CSSLuxury -  <a href="index.php">http://t.co/ad2CggDN</a> </p>
-                                    <span>15 June 2012</span>
-                                </li>
-                            </ul>
+                        <div class="widget footer-widget contacts-widget">
+                            <h1>Contact</h1>
+                            <p>Pour contacter les développeurs du site, vous pouvez envoyer un mail à guindaillefacile@gmail.com. </p>
+                            <p>Toute question/remarque est la bienvenue, ce site est le nôtre autant que celui des utilisateurs, nous 
+                               prendrons tout avis pertinent en compte pour améliorer au maximum l'expérience de navigation.</p>
                         </div>
                     </div>
                 </div>

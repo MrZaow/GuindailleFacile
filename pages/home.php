@@ -33,19 +33,6 @@
                          data-endeasing="Back.easeIn"
                          style="z-index: 14"> Le site pour choisir vos alcools de soirée
                     </div>
-
-                    <!-- LAYER NR. 3 -->
-                    <div class="tp-caption medium_thin_white customin ltl"
-                         data-x="470"
-                         data-y="400"
-                         data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
-                         data-speed="1000"
-                         data-start="2000"
-                         data-easing="Back.easeInOut"
-                         data-endspeed="400"
-                         data-endeasing="Back.easeIn"
-                         style="z-index: 14"><a class="button-large" href="index.php">Les alcools</a>
-                    </div>
                 </li>
                 <!-- SLIDE  -->
                 <li data-transition="zoomout" data-slotamount="7" data-masterspeed="1000" >
@@ -368,10 +355,6 @@
                     </div>
                 </div>
 
-            </div>
-            <div class="buttons">
-                <a class="owl-prev button-third" href="index.php"><i class="fa fa-angle-left"></i></a>
-                <a class="owl-next button-third" href="index.php"><i class="fa fa-angle-right"></i></a>
             </div>
         </div>
     </div>
