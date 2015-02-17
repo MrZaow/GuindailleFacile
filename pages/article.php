@@ -1,5 +1,8 @@
-<!-- content 
-			================================================== -->
+<?php
+
+	$post = $db->prepare('SELECT * FROM articles WHERE id = ?', [$_GET['id']],'App\Table\Article' ,true);
+
+?>
 		<div id="content">
 
 			<!-- page-banner 
@@ -16,40 +19,27 @@
 				<div class="container">
           			<div class="blog-box">
           				<div class="row">
-          					<div class="col-md-9">
+          					<div class="col-md-12">
 
           						<div class="blog-post single-post triggerAnimation animated" data-animate="slideInUp">
-									<img alt="" src="upload/blog/blog2/blog1.jpg">
+									<!---<img alt="" src="upload/blog/blog2/blog1.jpg"> --->
 									<div class="post-content">
-										<div class="post-date">
-											<p><span>22</span>apr</p>
-										</div>
+
+										<?= $post->Date; ?>
+
 										<div class="content-data">
-											<h2><a href="single-post.html">Les meilleurs alcools pour draguer une fille</a></h2>
-											<p>By: <a href="single-post.html#">Admin</a> | <a href="single-post.html#">05 Comments</a></p>
+											<?= $post->Titre ; ?>
+											<?= $post->Auteur; ?>
 										</div>
-										<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
-										<p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</p>
-										<p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>
-										<p>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem </p>
-										<blockquote>
-											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
-										</blockquote>
-										<p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</p>
-										
+										<?= $post->Contenu; ?>
+
 										<div class="share-tag-box">
-											<ul class="post-tags">
-												<li><span>Tags:</span></li>
-												<li><a href="single-post.html#">journal,</a></li>
-												<li><a href="single-post.html#">ilustration,</a></li>
-												<li><a href="single-post.html#">design,</a></li>
-												<li><a href="single-post.html#">daily</a></li>
-											</ul>
-											<span>Share this post:</span>
+											<span>Partager cette article sur</span>
 											<ul class="social-box">
 												<li><a class="facebook" href="single-post.html#"><i class="fa fa-facebook"></i></a></li>
 											</ul>
 										</div>
+										<!----
 										<div class="pagination-boxer">
 											<div class="prev-post">
 												<a href="single-post.html#" class="button-third"><i class="fa fa-angle-left"></i> Précédent</a>
@@ -128,6 +118,7 @@
 											<input type="submit" id="submit_contact" value="Submit">
 										</form>
 									</div>
+									--->
 								</div>
 
           					</div>

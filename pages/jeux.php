@@ -185,17 +185,3 @@
 			</div>
 
 		</div>
-		<!-- End content -->
-		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<script type="text/javascript" src="js/jquery.migrate.js"></script>
-		<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
-		<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
-		<script type="text/javascript" src="js/jquery.appear.js"></script>
-		<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
-		<script type="text/javascript" src="js/bootstrap.js"></script>
-		<script type="text/javascript" src="js/jquery.imagesloaded.min.js"></script>
-		<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
-		<script type="text/javascript" src="js/retina-1.1.0.min.js"></script>
-		<script type="text/javascript" src="js/plugins-scroll.js"></script>
-		<script type="text/javascript" src="js/waypoint.min.js"></script>
-		<script type="text/javascript" src="js/script.js"></script>
