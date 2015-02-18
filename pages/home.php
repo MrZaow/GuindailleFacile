@@ -420,88 +420,23 @@
         <div class="container triggerAnimation animated" data-animate="fadeInUp">
             <div id="owl-demo2" class="owl-carousel owl-theme">
 
+                <?php foreach($db->query('SELECT * FROM ARTICLES ORDER BY date DESC LIMIT 6 ', 'App\Table\Article') as $post): ?>
                 <div class="item blog-post">
                     <img alt="" src="upload/blog/blog1.jpg">
                     <div class="post-content">
-                        <div class="post-date">
-                            <p><span>22</span>apr</p>
-                        </div>
+                        <?= $post->Date; ?>
                         <div class="content-data">
-                            <h2><a href="single-post.html">Exemple post 1.</a></h2>
-                            <p>By: <a href="index.php">Admin</a> | <a href="index.php">05 Comments</a></p>
+                            <?= $post->Titre; ?>
+                            <?= $post->Auteur; ?>
                         </div>
                     </div>
                 </div>
-
-                <div class="item blog-post">
-                    <img alt="" src="upload/blog/blog2.jpg">
-                    <div class="post-content">
-                        <div class="post-date">
-                            <p><span>18</span>apr</p>
-                        </div>
-                        <div class="content-data">
-                            <h2><a href="single-post.html">Exemple post 2</a></h2>
-                            <p>By: <a href="index.php">Admin</a> | <a href="index.php">05 Comments</a></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="item blog-post">
-                    <img alt="" src="upload/blog/blog3.jpg">
-                    <div class="post-content">
-                        <div class="post-date">
-                            <p><span>05</span>apr</p>
-                        </div>
-                        <div class="content-data">
-                            <h2><a href="single-post.html">Exemple post  3</a></h2>
-                            <p>By: <a href="index.php">Admin</a> | <a href="index.php">05 Comments</a></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="item blog-post">
-                    <img alt="" src="upload/blog/blog2.jpg">
-                    <div class="post-content">
-                        <div class="post-date">
-                            <p><span>17</span>apr</p>
-                        </div>
-                        <div class="content-data">
-                            <h2><a href="single-post.html">Exemple post 4.</a></h2>
-                            <p>By: <a href="index.php">Admin</a> | <a href="index.php">05 Comments</a></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="item blog-post">
-                    <img alt="" src="upload/blog/blog1.jpg">
-                    <div class="post-content">
-                        <div class="post-date">
-                            <p><span>29</span>apr</p>
-                        </div>
-                        <div class="content-data">
-                            <h2><a href="single-post.html">Exemple post 5.</a></h2>
-                            <p>By: <a href="index.php">Admin</a> | <a href="index.php">05 Comments</a></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="item blog-post">
-                    <img alt="" src="upload/blog/blog3.jpg">
-                    <div class="post-content">
-                        <div class="post-date">
-                            <p><span>06</span>apr</p>
-                        </div>
-                        <div class="content-data">
-                            <h2><a href="single-post.html">Exemple post 6.</a></h2>
-                            <p>By: <a href="index.php">Admin</a> | <a href="index.php">05 Comments</a></p>
-                        </div>
-                    </div>
-                </div>
+                <?php endforeach; ?>
 
             </div>
             <div class="buttons">
                 <a class="owl-prev button-third" href="index.php"><i class="fa fa-angle-left"></i></a>
-                <a class="button-third" href="index.php">Voir tous les posts</a>
+                <a class="button-third" href="?p=etudiant">Voir tous les posts</a>
                 <a class="owl-next button-third" href="index.php"><i class="fa fa-angle-right"></i></a>
             </div>
         </div>

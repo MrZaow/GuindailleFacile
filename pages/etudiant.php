@@ -16,6 +16,7 @@
 					<div class="container triggerAnimation animated" data-animate="bounceIn">
 						<h1>Posts récents</h1>
 						<ul class="filter">
+
 							<li><a href="blog-fullwidth.html#" data-filter="*">Tous</a></li>
 							<li><a href="blog-fullwidth.html#" data-filter=".drague">Drague</a></li>
 							<li><a href="blog-fullwidth.html#" data-filter=".bapteme">Baptême</a></li>
@@ -31,7 +32,7 @@
 			<div class="section-content blog-section second-style">
 				<div class="container">
           			<div class="blog-box masonry one-col triggerAnimation animated" data-animate="slideInUp">
-						<?php foreach($db->query('SELECT * FROM articles', 'App\Table\Article') as $post): ?>
+						<?php foreach($db->query('SELECT * FROM articles ORDER BY date DESC', 'App\Table\Article') as $post): ?>
 
 						<div class="blog-post <?= $post->categorie; ?>">
 							<?= $post->Date; ?>

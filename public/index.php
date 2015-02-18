@@ -9,7 +9,7 @@
         $p = "home";
 
 
-    //Bien changer les infos ici pour se connecter a la base de donnée
+    //Bien changer les infos ici pour se connecter a la base de données
     $db_name = 'Guindaille';
     $db_host = 'localhost';
     $db_user = 'root';
