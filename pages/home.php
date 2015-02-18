@@ -420,7 +420,7 @@
         <div class="container triggerAnimation animated" data-animate="fadeInUp">
             <div id="owl-demo2" class="owl-carousel owl-theme">
 
-                <?php foreach($db->query('SELECT * FROM ARTICLES ORDER BY date DESC LIMIT 6 ', 'App\Table\Article') as $post): ?>
+                <?php foreach(App\Table\Article::getLast() as $post): ?>
                 <div class="item blog-post">
                     <img alt="" src="upload/blog/blog1.jpg">
                     <div class="post-content">
