@@ -56,7 +56,7 @@
                             </ul>
                         </li>
                         <li><a href="index.php?p=jeux">Jeux d'alcool</a></li>
-                        <li><a href="?=seslimites">Connaitre ses limites</a></li>
+                        <li><a href="index.php?p=limite">Connaitre ses limites</a></li>
                         <li class="drop"><a href="#" class="open-search"><i class="fa fa-search"></i></a>
                             <form class="form-search">
                                 <input type="search" placeholder="Chercher un alcool"/>
