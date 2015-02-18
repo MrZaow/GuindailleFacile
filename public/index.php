@@ -9,11 +9,11 @@
         $p = "home";
 
 
-    //Bien changer les infos ici pour se connecter a la base de données
-    $db_name = 'Guindaille';
+    //Bien changer les infos ici pour se connecter a la base de donnée
+    $db_name = 'guindaillefacile';
     $db_host = 'localhost';
     $db_user = 'root';
-    $db_pass = 'root';
+    $db_pass = '';
 
     // Initialisation des objets
     $db = new App\Database($db_name, $db_user, $db_pass, $db_host);
