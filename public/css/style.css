@@ -1687,6 +1687,7 @@ a.button-third:hover {
 .title-section.white {
   background: #ffffff;
 }
+/*
 ul.filter {
   margin: 0;
   padding: 35px 0;
@@ -1717,7 +1718,7 @@ ul.filter li a:hover,
 ul.filter li a.active {
   color: #e74c3c;
   border-bottom: 1px solid #e74c3c;
-}
+}*/
 .masonry.three-col .project-post {
   width: 33.32%;
 }

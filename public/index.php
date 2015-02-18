@@ -9,16 +9,6 @@
         $p = "home";
 
 
-    //Bien changer les infos ici pour se connecter a la base de données
-    $db_name = 'Guindaille';
-    $db_host = 'localhost';
-    $db_user = 'root';
-    $db_pass = 'root';
-
-    // Initialisation des objets
-    $db = new App\Database($db_name, $db_user, $db_pass, $db_host);
-
-
     ob_start(); //on va enregistrer tout ce qui va etre affiché à partir de maintenant
 
     if(file_exists("../pages/".$p.".php"))
