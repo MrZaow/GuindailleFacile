@@ -6,9 +6,19 @@
  * Time: 20:45
  */
 namespace App\Table;
+use App\App;
 
 class Article
 {
+    public static function getLast()
+    {
+        return App::getDB()->query("
+        SELECT Articles.id, Articles.titre,Articles.date,Articles.auteur, Articles.contenu, Categories.titre as categorie
+        FROM Articles
+        LEFT JOIN Categories
+          ON category_id = Categories.id
+        ORDER BY date DESC", __CLASS__);
+    }
     /**
      * Fonction magique
      * @param $param
