@@ -16,14 +16,13 @@
 				</div>
 				<div class="portfolio-box">
 					<ul class="filter center triggerAnimation animated" data-animate="bounceIn">
-						<li class="item"><a href="portfolio-4col.html#" class="active" data-filter="*">Popuparité</a></li>
-						<li class="item"><a href="portfolio-4col.html#" data-filter=".web-design">Prix</a></li>
-						<li class="item"><a href="portfolio-4col.html#" data-filter=".branding">Degré</a></li>
-						<li class="item"><a href="portfolio-4col.html#" data-filter=".photography">Pils</a></li>
-						<li class="item"><a href="portfolio-4col.html#" data-filter=".illustration">Spéciales</a></li>
-						<li class="item"><a href="portfolio-4col.html#" data-filter=".branding">Trappistes</a></li>
-						<li class="item"><a href="portfolio-4col.html#" data-filter=".branding">Fruitées</a></li>
-						<li class="item"><a href="portfolio-4col.html#" data-filter=".branding">NA</a></li>
+						<li class="item"><a href="portfolio-4col.html#" class="active" data-filter="*">Tous</a></li>
+						<li class="item"><a href="portfolio-4col.html#" data-filter=".web-design">Cartes</a></li>
+						<li class="item"><a href="portfolio-4col.html#" data-filter=".branding">Dés</a></li>
+						<li class="item"><a href="portfolio-4col.html#" data-filter=".photography">Social</a></li>
+						<li class="item"><a href="portfolio-4col.html#" data-filter=".illustration">Chanson</a></li>
+						<li class="item"><a href="portfolio-4col.html#" data-filter=".branding">Jeu vidéo</a></li>
+						<li class="item"><a href="portfolio-4col.html#" data-filter=".branding">TV</a></li>
 					</ul>
 					<div class="masonry four-col triggerAnimation animated" data-animate="bounceIn">
           

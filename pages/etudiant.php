@@ -37,7 +37,7 @@
 						<div class="sidebar triggerAnimation animated" data-animate="slideInUp">
 							<div class="search-widget widget">
 								<form>
-									<input type="search" placeholder="Rechercher"/>
+									<input type="search" placeholder="Chercher un article"/>
 									<button type="submit">
 										<i class="fa fa-search"></i>
 									</button>
