@@ -7,11 +7,11 @@ class Categorie
 {
     private static $table = "Categories";
 
-    public static function all()
+    public static function getAll()
     {
         return App::getDB()->query("
         SELECT *
-        FROM ".self::$table, __CLASS__);
+        FROM ".self::$table,__CLASS__);
     }
 }
 ?>

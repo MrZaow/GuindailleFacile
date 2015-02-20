@@ -15,14 +15,15 @@
 					</div>
 				</div>
 				<div class="portfolio-box">
-					<ul class="filter triggerAnimation animated" data-animate="bounceIn">
-						<li><a href="portfolio-4col.html#" class="active" data-filter="*">Popuparité</a></li>
-						<li><a href="portfolio-4col.html#" data-filter=".web-design">Cartes</a></li>
-						<li><a href="portfolio-4col.html#" data-filter=".branding">Dés</a></li>
-						<li><a href="portfolio-4col.html#" data-filter=".photography">Social</a></li>
-						<li><a href="portfolio-4col.html#" data-filter=".illustration">Jeu vidéo</a></li>
-						<li><a href="portfolio-4col.html#" data-filter=".branding">Série TV</a></li>
-						<li><a href="portfolio-4col.html#" data-filter=".branding">Chanson</a></li>
+					<ul class="filter center triggerAnimation animated" data-animate="bounceIn">
+						<li class="item"><a href="portfolio-4col.html#" class="active" data-filter="*">Popuparité</a></li>
+						<li class="item"><a href="portfolio-4col.html#" data-filter=".web-design">Prix</a></li>
+						<li class="item"><a href="portfolio-4col.html#" data-filter=".branding">Degré</a></li>
+						<li class="item"><a href="portfolio-4col.html#" data-filter=".photography">Pils</a></li>
+						<li class="item"><a href="portfolio-4col.html#" data-filter=".illustration">Spéciales</a></li>
+						<li class="item"><a href="portfolio-4col.html#" data-filter=".branding">Trappistes</a></li>
+						<li class="item"><a href="portfolio-4col.html#" data-filter=".branding">Fruitées</a></li>
+						<li class="item"><a href="portfolio-4col.html#" data-filter=".branding">NA</a></li>
 					</ul>
 					<div class="masonry four-col triggerAnimation animated" data-animate="bounceIn">
           
