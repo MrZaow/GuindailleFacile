@@ -11,9 +11,9 @@ class App
 {
     private static $database;
 
-    const DB_NAME = 'Guindaille';
+    const DB_NAME = 'guindaillefacile';
     const DB_USER = 'root';
-    const DB_PASS = 'root';
+    const DB_PASS = '';
     const DB_HOST = 'localhost';
 
     public static function getDB()
