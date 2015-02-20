@@ -8,10 +8,12 @@
 namespace App\Table;
 use App\App;
 
+
 class Article
 {
     public static function getLast()
     {
+
         return App::getDB()->query("
         SELECT Articles.id, Articles.titre,Articles.date,Articles.auteur, Articles.contenu, Categories.titre as categorie
         FROM Articles
@@ -45,7 +47,7 @@ class Article
     public function getExtrait()
     {
         $html = '<p>'.substr($this->contenu, 0, 340).'...<p>';
-        $html .= '<p><a class="button-third" href="'.$this->getURL().'">Voir la suite</a></p>';
+        $html .= '<a class="button-third" href="'.$this->getURL().'">En savoir plus</a>';
         return $html;
     }
     public function getContenu()
@@ -61,5 +63,9 @@ class Article
     public function getAuteur()
     {
         return '<p>Par: '.$this->auteur.'</p>';
+    }
+    public static function getPopular()
+    {
+        return App::getDB()->query("SELECT * FROM Articles ORDER BY popularite DESC LIMIT 3", __CLASS__);
     }
 }

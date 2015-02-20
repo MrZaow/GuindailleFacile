@@ -4,7 +4,7 @@
         ================================================== -->
 	<div class="section-content page-banner blog-page-banner">
 		<div class="container">
-			<h1>Our Blog</h1>
+			<h1>Le coin étudiant</h1>
 		</div>
 	</div>
 
@@ -37,59 +37,36 @@
 						<div class="sidebar triggerAnimation animated" data-animate="slideInUp">
 							<div class="search-widget widget">
 								<form>
-									<input type="search" placeholder="Search:"/>
+									<input type="search" placeholder="Rechercher"/>
 									<button type="submit">
 										<i class="fa fa-search"></i>
 									</button>
 								</form>
 							</div>
 							<div class="category-widget widget">
-								<h3>Category</h3>
+								<h3>Catégories</h3>
 								<ul class="category-list filter">
 									<li><a href="blog-rightsidebar.html#" data-filter="*">Tout</a></li>
-									<li><a href="blog-rightsidebar.html#" data-filter=".Sexe">Sexe</a></li>
-									<li><a href="blog-rightsidebar.html#" data-filter=".tests">Videos</a></li>
-									<li><a href="blog-rightsidebar.html#">Lifestyle</a></li>
-									<li><a href="blog-rightsidebar.html#">Technology</a></li>
+									<?php foreach(App\Table\Categorie::getAll() as $categorie): ?>
+									<li><a href="#" data-filter=".<?= $categorie->titre; ?>"><?= ucfirst($categorie->titre); ?></a></li>
+									<?php endforeach; ?>
 								</ul>
 							</div>
 							<div class="popular-widget widget">
-								<h3>Popular Post</h3>
+								<h3>Articles populaires</h3>
 								<ul class="popular-list">
+									<?php foreach (App\Table\Article::getPopular() as $post): ?>
 									<li>
 										<img alt="" src="upload/blog/b1.jpg">
 										<div class="side-content">
-											<h2><a href="single-post.html">Alius est amet cons tanter finis </a></h2>
-											<p>April 27, 2014</p>
+											<?= $post->Titre; ?>
+											<?= $post->Date; ?>
 										</div>
 									</li>
-									<li>
-										<img alt="" src="upload/blog/b2.jpg">
-										<div class="side-content">
-											<h2><a href="single-post.html">Probo artium studiose rosa </a></h2>
-											<p>April 27, 2014</p>
-										</div>
-									</li>
-									<li>
-										<img alt="" src="upload/blog/b3.jpg">
-										<div class="side-content">
-											<h2><a href="single-post.html">Alius est amet cons tanter finis </a></h2>
-											<p>April 27, 2014</p>
-										</div>
-									</li>
+									<?php endforeach; ?>
 								</ul>
 							</div>
 
-							<div class="category-widget widget">
-								<h3>Archives</h3>
-								<ul class="category-list">
-									<li><a href="blog-rightsidebar.html#">April 2013</a></li>
-									<li><a href="blog-rightsidebar.html#">December 2013</a></li>
-									<li><a href="blog-rightsidebar.html#">Octomber 2012</a></li>
-									<li><a href="blog-rightsidebar.html#">November 2012</a></li>
-									<li><a href="blog-rightsidebar.html#">March 2014</a></li>
-								</ul>
-							</div>
 
 						</div>
 					</div>

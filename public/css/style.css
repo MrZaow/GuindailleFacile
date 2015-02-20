@@ -1130,6 +1130,38 @@ a.button-third:hover {
 .client-section .bx-wrapper .bx-controls-direction a:hover {
   border: 1px solid #999999;
 }
+
+ul.filter.center {
+  margin: 0;
+  padding: 35px 0;
+  background: #f9fafb;
+  text-align: center;
+}
+ul.filter.center li.item {
+  list-style: none;
+  display: inline-block;
+  margin-left: 25px;
+}
+ul.filter.center li.item a {
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  color: #3a3d41;
+  font-size: 12px;
+  font-weight: 700;
+  padding-bottom: 6px;
+  border-bottom: 1px solid transparent;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+}
+ul.filter.center li.item a:hover,
+ul.filter.center li.item a.active {
+  color: #e74c3c;
+  border-bottom: 1px solid #e74c3c;
+}
 /*-------------------------------------------------*/
 /* =  Home2
 /*-------------------------------------------------*/

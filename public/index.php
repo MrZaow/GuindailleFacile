@@ -1,15 +1,15 @@
 <?php
-    require '../app/Autoloader.php'; //Charge l'autoloader pour les futures class
+    require '../app/Autoloader.php';
 
-    App\Autoloader::register(); //
+    App\Autoloader::register();
 
-    if (isset($_GET['p']) && !empty($_GET['p'])) //On récupére la variable qui se trouve dans l'url...
+    if (isset($_GET['p']) && !empty($_GET['p']))
         $p = $_GET['p'];
     else
         $p = "home";
 
 
-    ob_start(); //on va enregistrer tout ce qui va etre affiché à partir de maintenant
+    ob_start();
 
     if(file_exists("../pages/".$p.".php"))
         require '../pages/'.$p.'.php';
@@ -19,8 +19,8 @@
         require '../pages/404.php';
         http_response_code(404);
     }
-    $content = ob_get_clean(); //On met tout dans la variable content et on nettoie l'écran
+    $content = ob_get_clean();
 
-    require '../pages/template/template.php'; //et on affiche le canvas de base
+    require '../pages/template/template.php';
 
 ?>

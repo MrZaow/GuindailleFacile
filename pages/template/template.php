@@ -70,15 +70,10 @@
             </div>
         </div>
     </header>
-    <!-- End Header -->
 
-    <!-- slider
-        ================================================== -->
    <?php echo $content; ?>
 
 
-    <!-- footer
-        ================================================== -->
     <footer>
         <div class="social-section">
             <ul class="social-icons triggerAnimation animated" data-animate="tada">
@@ -140,8 +135,6 @@
 <script type="text/javascript" src="js/waypoint.min.js"></script>
 <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
 <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
-
-<!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
 <script type="text/javascript" src="js/jquery.themepunch.plugins.min.js"></script>
 <script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
