@@ -99,15 +99,14 @@
                     <div class="col-md-6">
                         <div class="widget footer-widget contacts-widget">
                             <h1>Contact</h1>
-                            <p>Pour contacter les développeurs du site, vous pouvez envoyer un mail à guindaillefacile@gmail.com. </p>
+                            <p>Pour contacter les développeurs du site, vous pouvez envoyer un mail à <a href="mailto:guindaillefacile@gmail.com">guindaillefacile@gmail.com</a>. </p>
                             <p>Toute question/remarque est la bienvenue, ce site est le nôtre autant que celui des utilisateurs, nous 
                                prendrons tout avis pertinent en compte pour améliorer au maximum l'expérience de navigation.</p>
                         </div>
                     </div>
                 </div>
                 <div class="footer-line">
-                    <p>Bootstrap theme used : Marble</p>
-                    <p>Made by : Guindaillefacile.com dev team</p>
+                    <p>Made with <i class="fa fa-heart"></i> by GuindailleFacile Dev-Team </p>
                 </div>
             </div>
         </div>

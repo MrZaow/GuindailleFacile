@@ -421,8 +421,7 @@
             <div id="owl-demo2" class="owl-carousel owl-theme">
 
                 <?php foreach(App\Table\Article::getLast() as $post): ?>
-                <div class="item blog-post">
-                    <img alt="" src="upload/blog/blog1.jpg">
+                <div class="item blog-post ">
                     <div class="post-content">
                         <?= $post->Date; ?>
                         <div class="content-data">
