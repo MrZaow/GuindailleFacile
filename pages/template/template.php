@@ -40,7 +40,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="?p=home"><img alt="" src="images/logo4.png"></a>
+                    <a class="navbar-brand" href="?p=home"><img alt="" src="images/logo8.png"></a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
