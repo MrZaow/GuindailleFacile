@@ -1,6 +1,5 @@
 <!doctype html>
 
-
 <html lang="fr" class="no-js">
 <head>
     <title>Guindaille facile</title>
@@ -10,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,700,300,100,200' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700,300,100,200' rel='stylesheet' type='text/css'>
 
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="screen">
@@ -41,7 +40,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="?p=home"><img alt="" src="images/logo.png"></a>
+                    <a class="navbar-brand" href="?p=home"><img alt="" src="images/logo4.png"></a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">

@@ -68,7 +68,7 @@
 .navbar-nav > li > a {
   color: #333;
   font-size: 14px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   transition: all 0.2s ease-in-out;
@@ -148,7 +148,7 @@
   display: block;
   color: #ffffff;
   font-size: 12px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   padding: 16px 20px;
   text-transform: uppercase;
   font-weight: 700;
@@ -206,7 +206,7 @@ header.one-page .navbar-nav > li > a span {
 .form-search input[type="search"] {
   font-size: 13px;
   color: #dddddd;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 24px;
@@ -319,7 +319,7 @@ header.one-page .navbar-nav > li > a span {
 .slider1 .banner-thumbs ul.slider-thumbnails li a h2 {
   color: #3a3d41;
   font-size: 14px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 2px;
   text-transform: uppercase;
@@ -336,7 +336,7 @@ header.one-page .navbar-nav > li > a span {
 .slider1 .banner-thumbs ul.slider-thumbnails li a p {
   font-size: 13px;
   color: #dddddd;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 24px;
@@ -387,13 +387,13 @@ header.one-page .navbar-nav > li > a span {
 }
 .tp-caption.large_bold_white {
   font-size: 60px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
 }
 .tp-caption.medium_thin_white {
   color: #ffffff;
   font-size: 18px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .tp-caption.medium_thin_white .button-large {
   margin: 0 10px;
@@ -411,7 +411,7 @@ header.one-page .navbar-nav > li > a span {
 .tp-caption.medium_thin_grey {
   color: #999999;
   font-size: 18px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-align: center;
 }
 .slider3 .tp-leftarrow.default {
@@ -435,14 +435,14 @@ header.one-page .navbar-nav > li > a span {
 .title-section h1 {
   color: #3a3d41;
   font-size: 24px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 7px;
 }
 .title-section p {
   font-size: 13px;
   color: #dddddd;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 24px;
@@ -498,7 +498,7 @@ header.one-page .navbar-nav > li > a span {
 .services-section .services-box .services-post .services-head h2 {
   color: #3a3d41;
   font-size: 24px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 7px;
   color: #ffffff;
@@ -507,7 +507,7 @@ header.one-page .navbar-nav > li > a span {
 .services-section .services-box .services-post .services-head span {
   font-size: 13px;
   color: #dddddd;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 24px;
@@ -533,7 +533,7 @@ header.one-page .navbar-nav > li > a span {
 .services-section .services-box .services-post p {
   font-size: 13px;
   color: #dddddd;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 24px;
@@ -566,7 +566,7 @@ a.button-one {
   padding: 10px 15px;
   color: #ffffff;
   font-size: 12px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   -webkit-border-radius: 3px;
@@ -595,7 +595,7 @@ a.button-one:hover {
 .banner-section h1 {
   color: #3a3d41;
   font-size: 24px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 7px;
   color: #ffffff;
@@ -604,7 +604,7 @@ a.button-one:hover {
 .banner-section p {
   font-size: 13px;
   color: #dddddd;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 24px;
@@ -633,7 +633,7 @@ a.button-two span {
   padding: 10px 26px 9px;
   color: #ffffff;
   font-size: 12px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   transition: all 0.2s ease-in-out;
@@ -741,15 +741,14 @@ a.button-two:hover i {
 .portfolio-box .project-post .project-content h2 {
   color: #3a3d41;
   font-size: 14px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 2px;
-  text-transform: uppercase;
 }
 .portfolio-box .project-post .project-content p {
   font-size: 13px;
   color: #dddddd;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 24px;
@@ -795,7 +794,7 @@ a.button-third {
   padding: 10px 15px;
   color: #999999;
   font-size: 12px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   -webkit-border-radius: 3px;
@@ -842,7 +841,7 @@ a.button-third:hover {
 .features-section .container .features-head h1 {
   color: #3a3d41;
   font-size: 24px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 7px;
   color: #ffffff;
@@ -851,7 +850,7 @@ a.button-third:hover {
 .features-section .container .features-head p {
   font-size: 13px;
   color: #dddddd;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 24px;
@@ -889,14 +888,14 @@ a.button-third:hover {
 .features-section .container .feature-list li .list-cont h3 {
   color: #ffffff;
   font-size: 18px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 16px;
 }
 .features-section .container .feature-list li .list-cont p {
   font-size: 13px;
   color: #dddddd;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 24px;
@@ -956,7 +955,7 @@ a.button-third:hover {
 .blog-section .blog-post .post-content .post-date p {
   font-size: 13px;
   color: #dddddd;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 24px;
@@ -991,7 +990,7 @@ a.button-third:hover {
 .blog-section .blog-post .post-content .content-data h2 {
   color: #3a3d41;
   font-size: 14px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 2px;
   text-transform: uppercase;
@@ -1013,7 +1012,7 @@ a.button-third:hover {
 .blog-section .blog-post .post-content .content-data p {
   font-size: 13px;
   color: #dddddd;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 24px;
@@ -1078,7 +1077,7 @@ a.button-third:hover {
   height: 40px;
   color: #999999;
   font-size: 12px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   -webkit-border-radius: 3px;
@@ -1154,7 +1153,7 @@ ul.filter.center li.item a {
   font-weight: 700;
   padding-bottom: 6px;
   border-bottom: 1px solid transparent;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
 }
 ul.filter.center li.item a:hover,
@@ -1234,7 +1233,7 @@ ul.filter.center li.item a.active {
 .feature-list2 li .list-cont h3 {
   color: #ffffff;
   font-size: 18px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 16px;
   color: #3a3d41;
@@ -1242,7 +1241,7 @@ ul.filter.center li.item a.active {
 .feature-list2 li .list-cont p {
   font-size: 13px;
   color: #dddddd;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 24px;
@@ -1279,7 +1278,7 @@ ul.filter.center li.item a.active {
 }
 .feature-list2.white li .list-cont h3 {
   font-size: 18px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 16px;
   color: #ffffff;
@@ -1287,7 +1286,7 @@ ul.filter.center li.item a.active {
 .feature-list2.white li .list-cont p {
   font-size: 13px;
   color: #dddddd;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 24px;
@@ -1319,7 +1318,7 @@ ul.filter.center li.item a.active {
 .statistic-post p {
   font-size: 13px;
   color: #dddddd;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 24px;
@@ -1357,7 +1356,7 @@ ul.filter.center li.item a.active {
 .portfolio-box.portfolio-style2 .project-post .project-gal .hover-box .inner-hover h2 {
   color: #3a3d41;
   font-size: 14px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 2px;
   text-transform: uppercase;
@@ -1366,7 +1365,7 @@ ul.filter.center li.item a.active {
 .portfolio-box.portfolio-style2 .project-post .project-gal .hover-box .inner-hover p {
   font-size: 13px;
   color: #dddddd;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 24px;
@@ -1450,7 +1449,7 @@ ul.filter.center li.item a.active {
 .testimonial-post h2 {
   color: #3a3d41;
   font-size: 14px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 2px;
   text-transform: uppercase;
@@ -1460,7 +1459,7 @@ ul.filter.center li.item a.active {
 .testimonial-post p {
   font-size: 13px;
   color: #dddddd;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 24px;
@@ -1500,14 +1499,14 @@ ul.filter.center li.item a.active {
 .banner-section.style2 h1 {
   color: #3a3d41;
   font-size: 24px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 7px;
 }
 .banner-section.style2 p {
   font-size: 13px;
   color: #dddddd;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 24px;
@@ -1539,7 +1538,7 @@ ul.filter.center li.item a.active {
 .features-section3 .container h1 {
   color: #3a3d41;
   font-size: 24px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 7px;
   line-height: 28px;
@@ -1551,7 +1550,7 @@ ul.filter.center li.item a.active {
 .features-section3 .container p {
   font-size: 13px;
   color: #dddddd;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 24px;
@@ -1592,7 +1591,7 @@ ul.filter.center li.item a.active {
 .feature-list3 li .list-cont h3 {
   color: #ffffff;
   font-size: 18px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 16px;
   color: #3a3d41;
@@ -1602,7 +1601,7 @@ ul.filter.center li.item a.active {
 .feature-list3 li .list-cont p {
   font-size: 13px;
   color: #dddddd;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 24px;
@@ -1627,7 +1626,7 @@ ul.filter.center li.item a.active {
 .blog-section.second-style .blog-post .post-content > p {
   font-size: 13px;
   color: #dddddd;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 24px;
@@ -1651,7 +1650,7 @@ ul.filter.center li.item a.active {
 .blog-section.second-style .blog-post .post-date p {
   font-size: 13px;
   color: #dddddd;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 24px;
@@ -1694,7 +1693,7 @@ ul.filter.center li.item a.active {
 .page-banner .container h1 {
   color: #3a3d41;
   font-size: 24px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 7px;
   color: #ffffff;
@@ -1743,7 +1742,7 @@ ul.filter li a {
   font-weight: 700;
   padding-bottom: 6px;
   border-bottom: 1px solid transparent;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
 }
 ul.filter li a:hover,
@@ -2028,7 +2027,7 @@ a.go-top:hover {
 .blog-section.with-sidebar .blog-post .post-content > p {
   font-size: 13px;
   color: #dddddd;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 24px;
@@ -2062,7 +2061,7 @@ a.go-top:hover {
 .search-widget input[type="search"] {
   font-size: 13px;
   color: #dddddd;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 24px;
@@ -2099,7 +2098,7 @@ a.go-top:hover {
 .sidebar .widget h3 {
   color: #ffffff;
   font-size: 18px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 16px;
   color: #3a3d41;
@@ -2127,7 +2126,7 @@ a.go-top:hover {
   text-transform: uppercase;
   color: #3a3d41;
   font-size: 12px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   position: relative;
   font-weight: 700;
 }
@@ -2186,7 +2185,7 @@ a.go-top:hover {
 .sidebar .widget ul.popular-list li .side-content h2 {
   color: #3a3d41;
   font-size: 14px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 2px;
   text-transform: uppercase;
@@ -2209,7 +2208,7 @@ a.go-top:hover {
 .sidebar .widget ul.popular-list li .side-content p {
   font-size: 13px;
   color: #dddddd;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 24px;
@@ -2227,7 +2226,7 @@ a.go-top:hover {
 .sidebar .text-widget p {
   font-size: 13px;
   color: #dddddd;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 24px;
@@ -2258,7 +2257,7 @@ a.go-top:hover {
   border-radius: 2px;
   color: #999999;
   font-size: 12px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
 .sidebar ul.tags-list li a:hover {
@@ -2306,7 +2305,7 @@ a.go-top:hover {
 .single-post blockquote p {
   font-size: 13px;
   color: #dddddd;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 24px;
@@ -2344,7 +2343,7 @@ a.go-top:hover {
   -o-transition: all 0.2s ease-in-out;
   color: #3a3d41;
   font-size: 13px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .single-post .share-tag-box .post-tags li a:hover {
   color: #e74c3c;
@@ -2354,7 +2353,7 @@ a.go-top:hover {
   display: inline-block;
   color: #3a3d41;
   font-size: 13px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin-bottom: 8px;
 }
@@ -2381,7 +2380,7 @@ a.go-top:hover {
 .single-post .pagination-boxer .prev-post p {
   font-size: 13px;
   color: #dddddd;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 24px;
@@ -2406,7 +2405,7 @@ a.go-top:hover {
 .single-post .pagination-boxer .next-post p {
   font-size: 13px;
   color: #dddddd;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 24px;
@@ -2423,7 +2422,7 @@ a.go-top:hover {
 .single-post .comment-section h3 {
   color: #ffffff;
   font-size: 18px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 16px;
   color: #3a3d41;
@@ -2456,7 +2455,7 @@ a.go-top:hover {
 .single-post .comment-section ul li .comment-content h4 {
   color: #3a3d41;
   font-size: 14px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 2px;
   text-transform: uppercase;
@@ -2467,7 +2466,7 @@ a.go-top:hover {
 .single-post .comment-section ul li .comment-content span {
   color: #3a3d41;
   font-size: 14px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 2px;
   text-transform: uppercase;
@@ -2480,7 +2479,7 @@ a.go-top:hover {
 .single-post .comment-section ul li .comment-content p {
   font-size: 13px;
   color: #dddddd;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 24px;
@@ -2497,7 +2496,7 @@ a.go-top:hover {
   -o-transition: all 0.2s ease-in-out;
   color: #3a3d41;
   font-size: 14px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 2px;
   text-transform: uppercase;
@@ -2515,7 +2514,7 @@ a.go-top:hover {
 .single-post .comment-form h3 {
   color: #ffffff;
   font-size: 18px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 16px;
   color: #3a3d41;
@@ -2533,7 +2532,7 @@ a.go-top:hover {
   border-radius: 0;
   color: #999999;
   font-size: 13px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   border: 1px solid #e5e5e5;
   outline: none;
   margin: 0 0 20px;
@@ -2555,7 +2554,7 @@ a.go-top:hover {
   padding: 10px 47px;
   color: #999999;
   font-size: 12px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background: transparent;
   font-weight: 700;
   text-transform: uppercase;
@@ -2646,7 +2645,7 @@ a.go-top:hover {
 .single-project-content h1 {
   color: #3a3d41;
   font-size: 24px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 7px;
   margin-bottom: 0;
@@ -2654,7 +2653,7 @@ a.go-top:hover {
 .single-project-content h3 {
   color: #ffffff;
   font-size: 18px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 16px;
   color: #999999;
@@ -2664,7 +2663,7 @@ a.go-top:hover {
 .single-project-content p {
   font-size: 13px;
   color: #dddddd;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 24px;
@@ -2680,7 +2679,7 @@ a.go-top:hover {
 .project-sidebar h1 {
   color: #3a3d41;
   font-size: 24px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 7px;
   margin-bottom: 0;
@@ -2688,7 +2687,7 @@ a.go-top:hover {
 .project-sidebar h3 {
   color: #ffffff;
   font-size: 18px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 16px;
   color: #999999;
@@ -2737,7 +2736,7 @@ a.go-top:hover {
 .project-sidebar p {
   font-size: 13px;
   color: #dddddd;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 24px;
@@ -2802,7 +2801,7 @@ a.go-top:hover {
 .team-post .team-head h2 {
   color: #3a3d41;
   font-size: 14px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 2px;
   text-transform: uppercase;
@@ -2810,7 +2809,7 @@ a.go-top:hover {
 .team-post .team-head span {
   font-size: 13px;
   color: #dddddd;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 24px;
@@ -2831,7 +2830,7 @@ a.go-top:hover {
 .team-post > p {
   font-size: 13px;
   color: #dddddd;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 24px;
@@ -2905,7 +2904,7 @@ ul.team-social li a:hover i {
 .statistic-box.style2 .statistic-post .statistic-content p {
   font-size: 13px;
   color: #dddddd;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 24px;
@@ -2915,7 +2914,7 @@ ul.team-social li a:hover i {
 .statistic-box.style2 .statistic-post .statistic-content p span {
   font-size: 13px;
   color: #dddddd;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   margin: 0 0 24px;
   color: #666;
@@ -2934,7 +2933,7 @@ ul.team-social li a:hover i {
 .skills-accord-section .skills-box > h1 {
   color: #3a3d41;
   font-size: 24px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 7px;
 }
@@ -2942,7 +2941,7 @@ ul.team-social li a:hover i {
 .skills-accord-section .skills-box > p {
   font-size: 13px;
   color: #dddddd;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 24px;
@@ -2953,7 +2952,7 @@ ul.team-social li a:hover i {
 .skills-progress > p {
   color: #3a3d41;
   font-size: 14px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 2px;
   text-transform: uppercase;
@@ -2988,7 +2987,7 @@ ul.team-social li a:hover i {
   color: #ffffff;
   font-size: 14px;
   font-weight: 700;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background: #3a3d41;
   padding: 8px 3px 6px;
   -webkit-border-radius: 2px;
@@ -3050,7 +3049,7 @@ ul.team-social li a:hover i {
 .tab-box .container h1 {
   color: #3a3d41;
   font-size: 24px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 7px;
   color: #ffffff;
@@ -3060,7 +3059,7 @@ ul.team-social li a:hover i {
 .tab-box .container > p {
   font-size: 13px;
   color: #dddddd;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 24px;
@@ -3121,7 +3120,7 @@ ul.team-social li a:hover i {
 .nav-tabs li a h2 {
   color: #3a3d41;
   font-size: 14px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 2px;
   text-transform: uppercase;
@@ -3137,7 +3136,7 @@ ul.team-social li a:hover i {
 .nav-tabs li a p {
   font-size: 13px;
   color: #dddddd;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 24px;
@@ -3178,7 +3177,7 @@ ul.team-social li a:hover i {
 .tab-content .tab-pane h2 {
   color: #3a3d41;
   font-size: 14px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 2px;
   text-transform: uppercase;
@@ -3189,7 +3188,7 @@ ul.team-social li a:hover i {
 .tab-content .tab-pane p {
   font-size: 13px;
   color: #dddddd;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 24px;
@@ -3235,7 +3234,7 @@ ul.team-social li a:hover i {
 .pricing-box .pricing-item ul.pricing-table li p {
   font-size: 13px;
   color: #dddddd;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 24px;
@@ -3258,7 +3257,7 @@ ul.team-social li a:hover i {
 .pricing-box .pricing-item ul.pricing-table li:first-child h1 {
   color: #3a3d41;
   font-size: 24px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 7px;
   color: #ffffff;
@@ -3268,7 +3267,7 @@ ul.team-social li a:hover i {
   color: #ffffff;
   font-size: 14px;
   font-weight: 700;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
 }
 .pricing-box .pricing-item ul.pricing-table li:first-child p span {
@@ -3338,7 +3337,7 @@ ul.team-social li a:hover i {
 .contact-info h2 {
   color: #3a3d41;
   font-size: 14px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 2px;
   text-transform: uppercase;
@@ -3348,7 +3347,7 @@ ul.team-social li a:hover i {
 .contact-info p {
   font-size: 13px;
   color: #dddddd;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 24px;
@@ -3394,7 +3393,7 @@ ul.team-social li a:hover i {
 .contact-area #contact-form p {
   font-size: 13px;
   color: #dddddd;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 24px;
@@ -3415,7 +3414,7 @@ ul.team-social li a:hover i {
   border-radius: 0;
   color: #999999;
   font-size: 13px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   border: 1px solid #e5e5e5;
   outline: none;
   margin: 0 0 20px;
@@ -3437,7 +3436,7 @@ ul.team-social li a:hover i {
   padding: 10px 47px;
   color: #999999;
   font-size: 12px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background: transparent;
   font-weight: 700;
   text-transform: uppercase;
@@ -3463,7 +3462,7 @@ ul.team-social li a:hover i {
 .contact-area #contact-form .message {
   height: 30px;
   font-size: 13px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .contact-area #contact-form .message.error {
   color: #e74c3c;
@@ -3497,7 +3496,7 @@ ul.team-social li a:hover i {
   color: #ffffff;
   line-height: 150px;
   font-size: 60px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   position: relative;
 }
@@ -3522,7 +3521,7 @@ ul.team-social li a:hover i {
 .error-content h1 {
   color: #3a3d41;
   font-size: 24px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 7px;
   margin-bottom: 12px;
@@ -3530,7 +3529,7 @@ ul.team-social li a:hover i {
 .error-content p {
   font-size: 13px;
   color: #dddddd;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 24px;
@@ -3582,7 +3581,7 @@ ul.team-social li a:hover i {
 }
 .accord-title h2 {
   padding-right: 52px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 2px;
   text-transform: uppercase;
@@ -3606,7 +3605,7 @@ ul.team-social li a:hover i {
   text-align: center;
 }
 .accord-title a.accord-link:after {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   content: '+';
   font-size: 42px;
   color: #e74c3c;
@@ -3630,7 +3629,7 @@ ul.team-social li a:hover i {
 .accord-content p {
   font-size: 13px;
   color: #dddddd;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 24px;
@@ -3666,7 +3665,7 @@ ul.team-social li a:hover i {
 .shortcodes-section .shortcodes-elem .social-icons-area h1 {
   color: #3a3d41;
   font-size: 24px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 7px;
   padding-bottom: 20px;
@@ -3735,7 +3734,7 @@ a.button-large {
   padding: 12px 40px;
   color: #ffffff;
   font-size: 18px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
 }
 a.button-large:hover {
@@ -3766,7 +3765,7 @@ a.small-btn {
   padding: 10px 30px;
   color: #ffffff;
   font-size: 12px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -3861,7 +3860,7 @@ footer .up-footer {
 footer .up-footer h1 {
   color: #3a3d41;
   font-size: 24px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 7px;
   color: #ffffff;
@@ -3870,7 +3869,7 @@ footer .up-footer h1 {
 footer .up-footer p {
   font-size: 13px;
   color: #dddddd;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 24px;
@@ -3908,7 +3907,7 @@ footer .up-footer .tweets-widget ul li p a {
 footer .up-footer .tweets-widget ul li span {
   font-size: 13px;
   color: #dddddd;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 24px;
@@ -3949,7 +3948,7 @@ footer .up-footer .subscribe-form input[type="text"] {
   border-radius: 0;
   color: #c8c8c8;
   font-size: 13px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   min-width: 160px;
   border: none;
   outline: none;
@@ -3967,7 +3966,7 @@ footer .up-footer .subscribe-form input[type="submit"] {
   color: #ffffff;
   font-size: 12px;
   font-weight: 700;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   border: none;
   outline: none;

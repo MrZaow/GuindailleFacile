@@ -9,7 +9,7 @@
 
                     <!-- LAYER NR. 1 -->
                     <div class="tp-caption large_bold_white skewfromrightshort customout"
-                         data-x="338"
+                         data-x="370"
                          data-y="274"
                          data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
                          data-speed="500"
@@ -23,7 +23,7 @@
 
                     <!-- LAYER NR. 2 -->
                     <div class="tp-caption medium_thin_white customin ltl"
-                         data-x="395"
+                         data-x="430"
                          data-y="340"
                          data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:80% 0%;"
                          data-speed="1000"
@@ -41,7 +41,7 @@
                     <!-- LAYERS -->
                     <!-- LAYER NR. 1 -->
                     <div class="tp-caption large_bold_white skewfromrightshort customout"
-                         data-x="324"
+                         data-x="374"
                          data-y="274"
                          data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
                          data-speed="500"
@@ -55,8 +55,8 @@
 
                     <!-- LAYER NR. 2 -->
                     <div class="tp-caption medium_thin_white customin ltl"
-                         data-x="330"
-                         data-y="340"
+                         data-x="435"
+                         data-y="350"
                          data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
                          data-speed="1000"
                          data-start="1500"
@@ -68,7 +68,7 @@
 
                     <!-- LAYER NR. 3 -->
                     <div class="tp-caption medium_thin_white customin ltl"
-                         data-x="390"
+                         data-x="431"
                          data-y="400"
                          data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
                          data-speed="1000"
