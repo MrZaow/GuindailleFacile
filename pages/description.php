@@ -38,7 +38,16 @@
 
 								</div>
 							</div>
+							<div class="project-block triggerAnimation animated" data-animate="slideInLeft">
+								<div class="single-project-content">
+									<h1>Détails</h1>
+									<p>Degré : 12% </p>
+									<p>Prix/l : 7 euros </p>
+									<p>Note : 5/5 </p>
+								</div>
+							</div>
 						</div>
+
 						<div class="col-md-4">
 							<div class="project-sidebar triggerAnimation animated" data-animate="slideInRight">
 								<div class="item project-post">
@@ -50,18 +59,7 @@
 							</div>
 						</div>
 					</div>	
-					<div class="row">
-						<div class="col-md-8">
-							<div class="project-block triggerAnimation animated" data-animate="slideInLeft">
-								<div class="single-project-content">
-									<h1>Détails</h1>
-									<p>Degré : 12% </p>
-									<p>Prix/l : 7 euros </p>
-									<p>Note : 5/5 </p>
-								</div>
-							</div>
-						</div>
-					</div>				
+
 				</div>
 			</div>
 
