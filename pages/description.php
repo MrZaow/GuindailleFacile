@@ -6,7 +6,7 @@
 				================================================== -->
 			<div class="section-content page-banner portfolio-page-banner">
 				<div class="container">
-					<h1>Portfolio</h1>
+					<h1>Les Bières</h1>
 				</div>
 			</div>
 
@@ -24,7 +24,7 @@
 						<div class="col-md-8">
 							<div class="project-block triggerAnimation animated" data-animate="slideInLeft">
 								<div class="single-project-content">
-									<h1>Description de la bière</h1>
+									<h1>Description </h1>
 									
 									<p>La Chimay Bleue, baptisée
 										« Grande Réserve » en bouteille 75 cl, est une bière Trappiste foncée à l'arôme puissant, dont la saveur complexe continue à bonifier au fil des années. 
@@ -36,14 +36,6 @@
 										 tout en révélant une légère mais agréable note caramélisée.
 									</p>
 
-								</div>
-							</div>
-							<div class="project-block triggerAnimation animated" data-animate="slideInLeft">
-								<div class="single-project-content">
-									<h1>Détails</h1>
-									<p>Degré : 12% </p>
-									<p>Prix/l : 7 euros </p>
-									<p>Note : 5/5 </p>
 								</div>
 							</div>
 						</div>
@@ -60,6 +52,67 @@
 						</div>
 					</div>	
 
+				</div>
+			</div>
+
+			<div class="section-content shortcodes-section">
+				<div class="container">
+
+					<div class="shortcodes-elem">
+						<h1>À propos</h1>
+						<div class="row">
+							<div class="col-md-2 col-md-offset-1">
+								<ul class="feature-list2">
+									<li>
+										<span><i class="fa fa-bar-chart-o"></i></span>
+										<div class="list-cont">
+											<h3>9,0%</h3>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-2">
+								<ul class="feature-list2">
+									<li>
+										<span><i class="fa fa-eur"></i></span>
+										<div class="list-cont">
+											<h3>12 euros/litre</h3>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-2">
+								<ul class="feature-list2">
+									<li>
+										<span><i class="fa fa-beer"></i></span>
+										<div class="list-cont">
+											<h3>Trappiste</h3>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-2">
+								<ul class="feature-list2">
+									<li>
+										<span><i class="fa fa-globe"></i></span>
+										<div class="list-cont">
+											<h3>Belgique</h3>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-2">
+								<ul class="feature-list2">
+									<li>
+										<span><i class="fa fa-star"></i></span>
+										<div class="list-cont">
+											<h3>5/5</h3>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 
