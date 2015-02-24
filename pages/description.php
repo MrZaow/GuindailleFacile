@@ -26,28 +26,77 @@
 								<div class="single-project-content">
 									<h1>Description </h1>
 									
-									<p>La Chimay Bleue, baptisée
-										« Grande Réserve » en bouteille 75 cl, est une bière Trappiste foncée à l'arôme puissant, dont la saveur complexe continue à bonifier au fil des années. 
-										Elle fut brassée au départ comme bière de Noël, d'où la présence d'un « millésime ».
-									</p>
-									<p>
-										Cette bière belge authentique, dont l'odeur de levure fraîche associée à une légère touche fleurie rosacée, est particulièrement agréable. 
-										Son arôme, perçu lorsqu'on la déguste, ne fait qu'accentuer les agréables sensations décelées à l'odeur,
-										 tout en révélant une légère mais agréable note caramélisée.
+									<p>Avec la Chimay Bleue, pas besoin d'acheter 15 bières pour passer une soirée bien bourré, à peine 2 ou 3 de cette merveille de la nature
+												et vous êtes déjà bien dedans, et à partir de 5 vous êtes tout simplement défoncé. 
 									</p>
 
 								</div>
+
+								<div class="row">
+									<div class="col-md-4">
+										<div class="single-project-content">
+											<h1>Avantages </h1>
+											<ul class="feature-list2">
+												<br>
+												<li>
+													<div class="list">
+														<h3>Défonce rapidement</h3>
+													</div>
+												</li>
+												<li>
+													<div class="list">
+														<h3>Bon goût</h3>
+													</div>
+												</li>
+												<li>
+													<div class="list">
+														<h3>Patrimoine culturel</h3>
+													</div>
+												</li>
+											</ul>
+
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="single-project-content">
+											<h1>Inconvénients </h1>
+											
+											<ul class="feature-list2">
+												<br>
+												<li>
+													<div class="list">
+														<h3>Lourde à boire</h3>
+													</div>
+												</li>
+												<li>
+													<div class="list">
+														<h3>Honéreuse</h3>
+													</div>
+												</li>
+											</ul>
+
+										</div>
+									</div>
+								</div>
+
 							</div>
 						</div>
 
 						<div class="col-md-4">
-							<div class="project-sidebar triggerAnimation animated" data-animate="slideInRight">
-								<div class="item project-post">
-									<div class="project-gal">
-										<img alt="" src="upload/portfolio/img1.jpg">
-									</div>
+							<div class="project-block triggerAnimation animated" data-animate="slideInLeft">
+								<div class="flexslider">
+									<ul class="slides">
+										<li>
+											<img alt="" src="upload/portfolio/img1.jpg" />
+										</li>
+										<li>
+											<img alt="" src="upload/portfolio/img2.jpg" />
+										</li>
+										<li>
+											<img alt="" src="upload/portfolio/img3.jpg" />
+										</li>
+									</ul>
 								</div>
-								
 							</div>
 						</div>
 					</div>	
