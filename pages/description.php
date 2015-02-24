@@ -7,21 +7,24 @@
 			<div class="section-content page-banner portfolio-page-banner">
 				<div class="container">
 					<h1>Les Bières</h1>
+
 				</div>
 			</div>
 
 			<!-- single project -section 
 				================================================== -->
 			<div class="single-project">
-				<div class="title-section white">
-					<div class="container triggerAnimation animated" data-animate="bounceIn">
-						<h1>Chimay Bleue</h1>
-						<p>La plus forte des Chimay </p>
-					</div>
-				</div>
 				<div class="container">
+
+					<div class="title-section white">
+						<div class="container triggerAnimation animated" data-animate="bounceIn">
+							<h1>Chimay Bleue</h1>
+							<p>La plus forte des Chimay </p>
+						</div>
+					</div>
+
 					<div class="row">
-						<div class="col-md-8">
+						<div class="col-md-7">
 							<div class="project-block triggerAnimation animated" data-animate="slideInLeft">
 								<div class="single-project-content">
 									<h1>Description </h1>
@@ -82,83 +85,82 @@
 							</div>
 						</div>
 
-						<div class="col-md-4">
-							<div class="project-block triggerAnimation animated" data-animate="slideInLeft">
-								<div class="flexslider">
-									<ul class="slides">
-										<li>
-											<img alt="" src="upload/portfolio/img1.jpg" />
-										</li>
-										<li>
-											<img alt="" src="upload/portfolio/img2.jpg" />
-										</li>
-										<li>
-											<img alt="" src="upload/portfolio/img3.jpg" />
-										</li>
-									</ul>
-								</div>
+						<div class="col-md-5">
+							<div class="flexslider">
+								<ul class="slides">
+									<li>
+										<img alt="" src="upload/portfolio/img1.jpg" />
+									</li>
+									<li>
+										<img alt="" src="upload/portfolio/img2.jpg" />
+									</li>
+									<li>
+										<img alt="" src="upload/portfolio/img3.jpg" />
+									</li>
+								</ul>
 							</div>
 						</div>
-					</div>	
+					</div>
 
 				</div>
 			</div>
 
 			<div class="section-content shortcodes-section">
 				<div class="container">
-
-					<div class="shortcodes-elem">
-						<h1>À propos</h1>
-						<div class="row">
-							<div class="col-md-2 col-md-offset-1">
-								<ul class="feature-list2">
-									<li>
-										<span><i class="fa fa-bar-chart-o"></i></span>
-										<div class="list-cont">
-											<h3>9,0%</h3>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<div class="col-md-2">
-								<ul class="feature-list2">
-									<li>
-										<span><i class="fa fa-eur"></i></span>
-										<div class="list-cont">
-											<h3>12 euros/litre</h3>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<div class="col-md-2">
-								<ul class="feature-list2">
-									<li>
-										<span><i class="fa fa-beer"></i></span>
-										<div class="list-cont">
-											<h3>Trappiste</h3>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<div class="col-md-2">
-								<ul class="feature-list2">
-									<li>
-										<span><i class="fa fa-globe"></i></span>
-										<div class="list-cont">
-											<h3>Belgique</h3>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<div class="col-md-2">
-								<ul class="feature-list2">
-									<li>
-										<span><i class="fa fa-star"></i></span>
-										<div class="list-cont">
-											<h3>5/5</h3>
-										</div>
-									</li>
-								</ul>
+					<div class="col-md-12">
+						<div class="shortcodes-elem">
+							<h1>À propos</h1>
+							<div class="row">
+								<div class="col-md-2 col-md-offset-1">
+									<ul class="feature-list2">
+										<li>
+											<span><i class="fa fa-bar-chart-o"></i></span>
+											<div class="list-cont">
+												<h3>9,0%</h3>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-2">
+									<ul class="feature-list2">
+										<li>
+											<span><i class="fa fa-eur"></i></span>
+											<div class="list-cont">
+												<h3>12 euros/litre</h3>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-2">
+									<ul class="feature-list2">
+										<li>
+											<span><i class="fa fa-beer"></i></span>
+											<div class="list-cont">
+												<h3>Trappiste</h3>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-2">
+									<ul class="feature-list2">
+										<li>
+											<span><i class="fa fa-globe"></i></span>
+											<div class="list-cont">
+												<h3>Belgique</h3>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-2">
+									<ul class="feature-list2">
+										<li>
+											<span><i class="fa fa-star"></i></span>
+											<div class="list-cont">
+												<h3>5/5</h3>
+											</div>
+										</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>

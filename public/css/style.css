@@ -428,7 +428,8 @@ header.one-page .navbar-nav > li > a span {
   margin-top: -67px;
 }
 .title-section {
-  padding: 64px 56px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   text-align: center;
   background: #f9fafb;
 }
@@ -2628,9 +2629,7 @@ a.go-top:hover {
 /*-------------------------------------------------*/
 /* =  single-project
 /*-------------------------------------------------*/
-.single-project {
-  padding-bottom: 70px;
-}
+
 .project-block {
   padding-right: 50px;
   margin-bottom: 30px;

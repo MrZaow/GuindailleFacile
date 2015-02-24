@@ -18,6 +18,7 @@
     <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" media="screen">
     <link rel="stylesheet" type="text/css" href="css/magnific-popup.css" media="screen">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/flexslider.css" media="screen">
     <!-- REVOLUTION BANNER CSS SETTINGS -->
     <link rel="stylesheet" type="text/css" href="css/settings.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
@@ -131,6 +132,8 @@
 <script type="text/javascript" src="js/retina-1.1.0.min.js"></script>
 <script type="text/javascript" src="js/plugins-scroll.js"></script>
 <script type="text/javascript" src="js/waypoint.min.js"></script>
+<script type="text/javascript" src="js/jquery.flexslider.js"></script>
+
 <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
 <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
 <script type="text/javascript" src="js/jquery.themepunch.plugins.min.js"></script>
