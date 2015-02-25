@@ -46,7 +46,7 @@
 								<img alt="" src="upload/portfolio/img2.jpg">
 								<div class="hover-box">
 									<a class="zoom" href="upload/portfolio/img2.jpg"><i class="fa fa-search-plus"></i></a>
-									<a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
+									<a class="link" href="?p=descriptioncocktail"><i class="fa fa-link"></i></a>
 								</div>
 							</div>
 							<div class="project-content">
