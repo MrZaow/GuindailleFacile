@@ -262,12 +262,12 @@
                         <img alt="" src="upload/portfolio/img1.jpg">
                         <div class="hover-box">
                             <a class="zoom" href="upload/portfolio/img1.jpg"><i class="fa fa-search-plus"></i></a>
-                            <a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
+                            <a class="link" href="index.php?p=description"><i class="fa fa-link"></i></a>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h2>Alcool 1.</h2>
-                        <p>Vestibulum auctor dapibus neque.</p>
+                        <h2>Chimay Bleue</h2>
+                        <p>La plus mythique des Chimay</p>
                     </div>
                 </div>
 
@@ -276,12 +276,12 @@
                         <img alt="" src="upload/portfolio/img2.jpg">
                         <div class="hover-box">
                             <a class="zoom" href="upload/portfolio/img2.jpg"><i class="fa fa-search-plus"></i></a>
-                            <a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
+                            <a class="link" href="index.php?p=descriptioncocktail"><i class="fa fa-link"></i></a>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h2>Alcool 2.</h2>
-                        <p>Vestibulum auctor dapibus neque.</p>
+                        <h2>Mojito</h2>
+                        <p>Le dieu des cocktails</p>
                     </div>
                 </div>
 
@@ -295,7 +295,6 @@
                     </div>
                     <div class="project-content">
                         <h2>Alcool 3.</h2>
-                        <p>Vestibulum auctor dapibus neque.</p>
                     </div>
                 </div>
 
@@ -309,7 +308,6 @@
                     </div>
                     <div class="project-content">
                         <h2>Alcool 4.</h2>
-                        <p>Vestibulum auctor dapibus neque.</p>
                     </div>
                 </div>
 
@@ -323,7 +321,6 @@
                     </div>
                     <div class="project-content">
                         <h2>Alcool 5.</h2>
-                        <p>Vestibulum auctor dapibus neque.</p>
                     </div>
                 </div>
 
@@ -337,7 +334,6 @@
                     </div>
                     <div class="project-content">
                         <h2>Alcool 6.</h2>
-                        <p>Vestibulum auctor dapibus neque.</p>
                     </div>
                 </div>
 
@@ -351,7 +347,6 @@
                     </div>
                     <div class="project-content">
                         <h2>Alcool 7.</h2>
-                        <p>Vestibulum auctor dapibus neque.</p>
                     </div>
                 </div>
 
