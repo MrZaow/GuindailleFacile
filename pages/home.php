@@ -135,7 +135,7 @@
                          data-endspeed="500"
                          data-endeasing="Power4.easeIn"
                          data-captionhidden="on"
-                         style="z-index: 9"><img src="images/dev4.png" alt="">
+                         style="z-index: 9">
                     </div>
                 </li>
                 <!-- SLIDE  -->
@@ -155,7 +155,7 @@
                          data-endspeed="500"
                          data-endeasing="Power4.easeIn"
                          data-captionhidden="on"
-                         style="z-index: 9"><img src="images/dev3.png" alt="">
+                         style="z-index: 9">
                     </div>
 
                     <!-- LAYER NR. 2 -->
@@ -290,11 +290,12 @@
                         <img alt="" src="upload/portfolio/img3.jpg">
                         <div class="hover-box">
                             <a class="zoom" href="upload/portfolio/img3.jpg"><i class="fa fa-search-plus"></i></a>
-                            <a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
+                            <a class="link" href="index.php?p=descriptionfort"><i class="fa fa-link"></i></a>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h2>Alcool 3.</h2>
+                        <h2>Vodka</h2>
+                        <p>Pour la mère Russie !</p>
                     </div>
                 </div>
 
@@ -350,6 +351,11 @@
                     </div>
                 </div>
 
+            </div>
+            <div class="buttons">
+                <a class="owl-prev button-third" href="index.php"><i class="fa fa-angle-left"></i></a>
+                <a class="button-third" href="index.php?p=cocktail">Voir tous les cocktails</a>
+                <a class="owl-next button-third" href="index.php"><i class="fa fa-angle-right"></i></a>
             </div>
         </div>
     </div>
@@ -432,6 +438,40 @@
                 <a class="owl-prev button-third" href="index.php"><i class="fa fa-angle-left"></i></a>
                 <a class="button-third" href="?p=etudiant">Voir tous les posts</a>
                 <a class="owl-next button-third" href="index.php"><i class="fa fa-angle-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-content shortcodes-section">
+        <div class="container">
+
+            <div class="shortcodes-elem">
+                <h1>Ce que les gens pensent de Guindaille Facile</h1>
+                <div class="back-col">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="testimonial-post">
+                                <img src="upload/testim1.jpg" alt="">
+                                <h2> Philipe I - Roi de Belgique </h2>
+                                <p> “ Guindaille Facile m'aide à supporter les conneries de mes minitres. ”</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="testimonial-post">
+                                <img src="upload/testim2.jpg" alt="">
+                                <h2> Miley Cirus - Chanteuse </h2>
+                                <p> “ Je n'imaginais pas qu'on puisse se rendre plus ridicule que moi. Mais ça, c'était avant que je lise la rubrique "Coin étudiant". ”</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="testimonial-post">
+                                <img src="upload/testim3.jpg" alt="">
+                                <h2> Albert Einstein - Scientifique </h2>
+                                <p> “ Selon mes calculs, vous êtes garrantis de passer des soirées exponentiellement festives si vous consultez Guindaille Facile régulièrement. ”</p>
+                            </div>
+                        </div>
+                    </div>                          
+                </div>
             </div>
         </div>
     </div>
