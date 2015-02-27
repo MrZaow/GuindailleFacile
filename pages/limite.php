@@ -112,7 +112,7 @@
 							<div class="col-md-4">
 								<ul class="feature-list2">
 									<li>
-										<span><i class="fa fa-leaf"></i></span>
+										<span><i class="fa fa-question"></i></span>
 										<div class="list-cont">
 											<h3>Apprends tes limites</h3>
 											<p>Chacun tient l'alcool à sa façon, certain mieux que d'autres. Plus tu sortiras, plus facilement tu connaîtras tes limites. </p>
@@ -123,7 +123,7 @@
 							<div class="col-md-4">
 								<ul class="feature-list2">
 									<li>
-										<span><i class="fa fa-bar-chart-o"></i></span>
+										<span><i class="fa fa-clock-o"></i></span>
 										<div class="list-cont">
 											<h3>Fais des pauses</h3>
 											<p>Il n'y a pas de honte à s'avouer bourré et s'arrêter de boire un moment. Ça vaut bien mieux que poursuivre par fierté et aller tout vomir après. </p>
@@ -134,7 +134,7 @@
 							<div class="col-md-4">
 								<ul class="feature-list2">
 									<li>
-										<span><i class="fa fa-coffee"></i></span>
+										<span><i class="fa fa-stop"></i></span>
 										<div class="list-cont">
 											<h3>Si t'es malade, arrête</h3>
 											<p>Ça arrive à tout le monde d'avoir dépassé ses limites et s'être rendu malade. Il suffit de ne plus consommer d'alcool et si possible essayer de rentrer chez soi en.</p>
@@ -151,7 +151,7 @@
 							<div class="col-md-4">
 								<ul class="feature-list2">
 									<li>
-										<span><i class="fa fa-leaf"></i></span>
+										<span><i class="fa fa-trophy"></i></span>
 										<div class="list-cont">
 											<h3>Repousse tes limites</h3>
 											<p>Combien d'afonds d'affillées peux-tu tenir ? Combien de bière peux-tu boire en un soir ? Choisi des soirées opportuntes et essaie de battre tes records. </p>
@@ -162,7 +162,7 @@
 							<div class="col-md-4">
 								<ul class="feature-list2">
 									<li>
-										<span><i class="fa fa-bar-chart-o"></i></span>
+										<span><i class="fa fa-venus"></i></span>
 										<div class="list-cont">
 											<h3>Profite de l'alcool pour draguer</h3>
 											<p>En soirée les filles sont chaudes et les mecs sont dragueurs, profites-en ! Dans le pire des cas c'est oublié en une semaine et dans le meilleur tu finiras dans son lit. </p>
@@ -173,7 +173,7 @@
 							<div class="col-md-4">
 								<ul class="feature-list2">
 									<li>
-										<span><i class="fa fa-coffee"></i></span>
+										<span><i class="fa fa-heartbeat"></i></span>
 										<div class="list-cont">
 											<h3>Bouge ton corps</h3>
 											<p>La piste de danse est le cauchemar de beaucoup. Heureusement, l'alcool est là pour te sauver ! Après quelques verres et quand l'ambiance est chaude, lance-toi avec des amis et amuse-toi.</p>
