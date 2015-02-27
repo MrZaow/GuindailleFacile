@@ -452,7 +452,7 @@
                         <div class="col-sm-4">
                             <div class="testimonial-post">
                                 <img src="upload/testim1.jpg" alt="">
-                                <h2> Philipe I - Roi de Belgique </h2>
+                                <h2> Philippe I - Roi de Belgique </h2>
                                 <p> “ Guindaille Facile m'aide à supporter les conneries de mes minitres. ”</p>
                             </div>
                         </div>

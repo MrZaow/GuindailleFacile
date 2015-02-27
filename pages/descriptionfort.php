@@ -78,6 +78,36 @@
 
 										</div>
 									</div>
+									<div class="col-md-4">
+										<div class="single-project-content">
+											<h1>Les meilleures </h1>
+											
+											<ul class="feature-list2">
+												<br>
+												<li>
+													<div class="list">
+														<h3>Stolichnaya Cristall (22 euros/l)</h3>
+													</div>
+												</li>
+												<li>
+													<div class="list">
+														<h3>Stolichnaya (22 euros/l)</h3>
+													</div>
+												</li>
+												<li>
+													<div class="list">
+														<h3>Ketel One (38 euros/l)</h3>
+													</div>
+												</li>
+												<li>
+													<div class="list">
+														<h3>Absolut Vodka (25 euros/l)</h3>
+													</div>
+												</li>
+											</ul>
+
+										</div>
+									</div>
 								</div>
 
 							</div>
@@ -106,7 +136,7 @@
 								<div class="shortcodes-elem">
 									<h1>À propos</h1>
 									<div class="row">
-										<div class="col-md-3 col-md-offset-2">
+										<div class="col-md-4 col-md-offset-3">
 											<ul class="feature-list2">
 												<li>
 													<span><i class="fa fa-bar-chart-o"></i></span>
@@ -116,17 +146,7 @@
 												</li>
 											</ul>
 										</div>
-										<div class="col-md-3">
-											<ul class="feature-list2">
-												<li>
-													<span><i class="fa fa-eur"></i></span>
-													<div class="list-cont">
-														<h3>4,8 euros/litre</h3>
-													</div>
-												</li>
-											</ul>
-										</div>
-										<div class="col-md-3">
+										<div class="col-md-4">
 											<ul class="feature-list2">
 												<li>
 													<span><i class="fa fa-globe"></i></span>
