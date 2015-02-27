@@ -42,7 +42,7 @@
 						<div class="statistic-box style2">
 							<div class="statistic-post">
 								<div class="statistic-counter">
-									<i class="fa fa-heart-o"></i>
+									<i class="fa fa-beer"></i>
 									<p><span class="timer" data-from="0" data-to="10"></span></p>
 									<p>Verres/soirée</p>
 								</div>
@@ -77,7 +77,7 @@
 						<div class="statistic-box style2">
 							<div class="statistic-post">
 								<div class="statistic-counter">
-									<i class="fa fa-heart-o"></i>
+									<i class="fa fa-beer"></i>
 									<p><span class="timer" data-from="0" data-to="7"></span></p>
 									<p>Verres/soirée</p>
 								</div>
@@ -162,7 +162,7 @@
 							<div class="col-md-4">
 								<ul class="feature-list2">
 									<li>
-										<span><i class="fa fa-venus"></i></span>
+										<span><i class="fa fa-venus-mars"></i></span>
 										<div class="list-cont">
 											<h3>Profite de l'alcool pour draguer</h3>
 											<p>En soirée les filles sont chaudes et les mecs sont dragueurs, profites-en ! Dans le pire des cas c'est oublié en une semaine et dans le meilleur tu finiras dans son lit. </p>
