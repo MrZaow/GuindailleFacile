@@ -39,7 +39,7 @@
 								</div>
 
 								<div class="row">
-									<div class="col-md-4">
+									<div class="col-md-6">
 										<div class="single-project-content">
 											<h1>Avantages </h1>
 											<ul class="feature-list2">
@@ -63,7 +63,7 @@
 
 										</div>
 									</div>
-									<div class="col-md-4">
+									<div class="col-md-6">
 										<div class="single-project-content">
 											<h1>Inconvénients </h1>
 											

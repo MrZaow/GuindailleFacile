@@ -29,55 +29,76 @@
 								<div class="single-project-content">
 									<h1>Description </h1>
 									
-									<p>La vodka « petite eau » est une eau-de-vie alcoolisée (fermentée puis distillée), 
-										généralement produite à partir de céréales ou de pomme de terre, mais peut être élaborée à partir de 
-										n’importe quelle matière première agricole, comme des fruits ou des légumes (lire: les 400 principales vodkas du monde). 
-										Elle titre en moyenne 40° d’alcool.
+									<p>Ce jeu de cartes, aussi appelé le menteur, 
+										vous permettra de tester votre aptitude à mentir
+										. Rassurez-vous, nul besoin de réviser vos fiches sur
+										 l'Égypte antique pour jouer à ce jeu. 
+										 Que les honnêtes s'abstiennent !
 
 									</p>
 
-								</div>
+									<h1>Règles</h1>
+									<br>
+									<h3>Préparation du terrain</h3>
+									<p>
+										Tout d'abord, mélangez puis installez 13 cartes en pyramide et faces cachées
+									</p>
+									<img src="#" alt="photo1">
+									<p>
+										Ensuite, distribuez 5 cartes à chaque joueur 
+										(ou le reste des cartes en parts égales). Les joueurs peuvent regarder
+										 leurs cartes une seule et unique fois afin de les mémoriser. 
+										 Une fois leurs cartes mémorisées, les joueurs rangent celles-ci 
+										 en ligne devant eux faces cachées tout en retenant leurs positions.
+									</p>
+									<h3>Début du jeu</h3>
+									<p>Le jeu commence en retournant le carte tout en bas à droite de la pyramide.
 
-								<div class="row">
-									<div class="col-md-4">
-										<div class="single-project-content">
-											<h1>Avantages </h1>
-											<ul class="feature-list2">
-												<br>
-												<li>
-													<div class="list">
-														<h3>Pas chère</h3>
-													</div>
-												</li>
-												<li>
-													<div class="list">
-														<h3>Se mélange à quasi tout</h3>
-													</div>
-												</li>
-												<li>
-													<div class="list">
-														<h3>Un classique des alcools forts</h3>
-													</div>
-												</li>
-											</ul>
+										Le but du jeu est de faire croire aux joueurs adverses que vous avez cette carte et ainsi les faire boire.
 
-										</div>
-									</div>
-									<div class="col-md-4">
-										<div class="single-project-content">
-											<h1>Inconvénients </h1>
-											
-											<ul class="feature-list2">
-												<br>
-												<li>
-													<div class="list">
-														<h3>Mauvais goût sans mélange</h3>
-													</div>
-												</li>
-											</ul>
+										Donc, si vous avez la même carte que celle retournée, vous pouvez faire boire quelqu'un sans prendre de risques.
+										Si vous n'avez pas la carte dans votre jeu, vous pouvez bluffer/mentir mais gare à vous si vous êtes démasqué ! :)
 
-										</div>
-									</div>
+										Pour faire boire, que vous bluffiez ou pas, il suffit de désigner un joueur en lui disant : "tu bois".
+									</p>
+									<p>
+										Ce joueur a alors deux choix :
+
+										Il pense que vous avez la même carte que celle retournée, alors il vous dit "je te crois" et boit.
+										Remarque : c'est souvent un choix refuge pour le joueur car il risque de boire deux fois plus si vous avez la carte (explication au cas suivant).
+
+										Il pense que vous mentez, alors il vous dit "tu mens" et vous devez lui montrer votre carte (la même que celle retournée). On a alors deux nouveaux cas : 
+										Vous n'avez pas la carte retournée. Vous avez menti et vous devez boire 2 fois plus ! Ce n'est pas bien de mentir. ^^
+										Vous avez la carte retournée et vous devez la montrer au joueur. Mais souvenez-vous, vos cartes sont faces cachées ! À vous de retrouver la bonne comme il vous a été demandé de retenir au tout début. ;)
+										Attention, vous n'avez le droit qu'à un seul essai ! Après avoir retourné l'une de vos cartes, deux nouveaux cas se présentent:
+										Vous avez retourné la bonne carte ! Le joueur doit boire 2 fois plus ! Bien fait pour lui ! :)
+										Votre mémoire vous a joué des tours : vous n'avez pas retourné la bonne carte. Vous ferez mieux la prochaine fois, en attendant vous devez boire deux fois plus ! emoticone qui sourit
+										Remarque : quelque soit la carte que vous ayez retourné, cette carte restera devant vous (parmis vos autres cartes) face visible et n'est plus réutilisable.
+									</p>
+									<h3>Quelques remarques</h3>
+									<p>
+										- À chaque tour, vous n'êtes pas obligé de "défier" quelqu'un. Par contre, les autres joueurs peuvent vous défier à tout moment :p.
+
+										- Étant donné que chaque joueur peut défier qui il veut quand il veut, il y a très souvent (voir tous le temps) plusieurs défis dans un même tour.
+
+										- Si vous avez les deux mêmes cartes que celle retournée alors vous pouvez faire boire deux joueurs au même tour ! (en suivant les mêmes règles énoncées ci-dessus pour chaque joueur).
+										Par conséquent, vous pouvez aussi, en bluffant, faire boire plusieurs joueurs dans un même tour, mais vaux mieux être sûr de son coup ! 
+									</p>
+									<h3>Nombres de coups à boire</h3>
+									<p>
+										Jusque-là, on n'a rien dit sur le nombre de coups à boire. Eh bien c'est simple, vous avez besoin de deux chiffres:
+
+										- n = 1 uniquement pour le premier cas (le joueur vous croit et boit), 
+										n = 2 dans tous les autres cas (cas où vous ou le joueur se trompe).
+
+										- facteur pyramide : il dépend de la position de la carte retournée dans la pyramide.
+									</p>
+									<img src="#" alt="img2">
+									<h3>Et c'est parti !</h3>
+									<p>Il vous reste maintenant toutes les autres cartes de la pyramide à retourner en suivant le "circuit" ci-dessous :
+									</p>
+									<img src="#" alt="img3">
+
 								</div>
 
 							</div>
@@ -109,9 +130,9 @@
 										<div class="col-md-3 col-md-offset-2">
 											<ul class="feature-list2">
 												<li>
-													<span><i class="fa fa-bar-chart-o"></i></span>
+													<span><i class="fa fa-users"></i></span>
 													<div class="list-cont">
-														<h3>40,0%</h3>
+														<h3>2 joueurs minimum</h3>
 													</div>
 												</li>
 											</ul>
@@ -119,9 +140,9 @@
 										<div class="col-md-3">
 											<ul class="feature-list2">
 												<li>
-													<span><i class="fa fa-eur"></i></span>
+													<span><i class="fa fa-ticket"></i></span>
 													<div class="list-cont">
-														<h3>4,8 euros/litre</h3>
+														<h3>Jeux de cartes</h3>
 													</div>
 												</li>
 											</ul>
@@ -129,9 +150,9 @@
 										<div class="col-md-3">
 											<ul class="feature-list2">
 												<li>
-													<span><i class="fa fa-globe"></i></span>
+													<span><i class="fa fa-star"></i></span>
 													<div class="list-cont">
-														<h3>1er en alcools forts</h3>
+														<h3>4/5</h3>
 													</div>
 												</li>
 											</ul>
@@ -150,7 +171,7 @@
 			<div class="section-content portfolio-section">
 				<div class="title-section">
 					<div class="container triggerAnimation animated" data-animate="bounceIn">
-						<h1>Cocktails à base de cet alcool fort </h1>
+						<h1>Autres jeux d'alcool </h1>
 					</div>
 				</div>
 				<div class="portfolio-box triggerAnimation animated" data-animate="bounceIn">
@@ -257,7 +278,7 @@
 					</div>
 					<div class="buttons">
 						<a class="owl-prev button-third" href="single-project.html#"><i class="fa fa-angle-left"></i></a>
-						<a class="button-third" href="single-project.html#">Voir tous les cocktails</a>
+						<a class="button-third" href="single-project.html#">Voir tous les jeux d'alcool</a>
 						<a class="owl-next button-third" href="single-project.html#"><i class="fa fa-angle-right"></i></a>
 					</div>
 				</div>
