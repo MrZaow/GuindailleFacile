@@ -9,7 +9,8 @@ class Categorie
 
     public static function getAll()
     {
-        return App::getDB()->query("SELECT * FROM ".self::$table,__CLASS__);
+        return App::getDB()->query("SELECT * FROM ".self::$table, __CLASS__);
     }
+
 }
 ?>
