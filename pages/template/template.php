@@ -36,7 +36,7 @@
         <div class="navbar navbar-default navbar-fixed-top">
             <div class="container">
 				<div class="row">
-					<div class="col-lg-3 col-md-3 col-sm-3">
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
 						<div class="navbar-heade">
 							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 								<span class="icon-bar"></span>
@@ -46,7 +46,7 @@
 							<a class="navbar-brand" href="?p=home"><img alt="" src="images/logo8.png"></a>
 						</div>
 					</div>
-					<div class="col-lg-9 col-md-9 col-sm-9">
+					<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
 						<div class="navbar-collapse collapse">
 							<ul class="nav navbar-nav navbar-right">
 								<li><a class="active" href="index.php">Accueil</a></li>
