@@ -727,7 +727,7 @@ a.button-two:hover i {
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(255, 255, 255, 0.65);
+  background: rgba(255, 255, 255, 0.35);
   transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   -webkit-transition: all 0.2s linear;
@@ -742,15 +742,11 @@ a.button-two:hover i {
   -moz-transition: all 0.2s linear;
   -webkit-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
-  width: 40px;
-  height: 40px;
+  width: 150px;
+  height: 45px;
   text-align: center;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 70%;
-  background: #e74c3c;
-  top: 50%;
+  border-bottom : 1px solid #e74c3c;
+  top: 75%;
   margin-top: -20px;
   position: absolute;
 
@@ -760,21 +756,18 @@ a.button-two:hover i {
   -o-transition: all 0.2s linear;
 }
 .portfolio-box .project-post .project-gal .hover-box a i {
-  font-size: 14px;
-  color: #ffffff;
-  line-height: 40px;
+  font-size: 50px;
+  font-style : normal;
+  color: white !important;
+  line-height: 45px;
+  transition : color 0.2s;
 }
-.portfolio-box .project-post .project-gal .hover-box a:hover {
-  background: #3a3d41;
-}
-.portfolio-box .project-post .project-gal .hover-box a.zoom {
-  right: 50%;
-  margin-right: 35px;
-}
+
 .portfolio-box .project-post .project-gal .hover-box a.link {
-  left: 50%;
-  margin-left: 35px;
+  right: 60%;
+  margin-right: 80px;
 }
+
 .portfolio-box .project-post .project-content {
   padding: 25px 10px;
   background: #f9fafb;
@@ -809,12 +802,16 @@ a.button-two:hover i {
   -o-transform: rotate(0);
   transform: rotate(0);
 }
-.portfolio-box .project-post:hover .project-gal .hover-box a.zoom {
+
+.portfolio-box .project-post:hover .project-gal .hover-box a.link {
   margin-right: 5px;
 }
-.portfolio-box .project-post:hover .project-gal .hover-box a.link {
-  margin-left: 5px;
+
+.portfolio-box .project-post:hover .project-gal .hover-box a:hover i
+{
+	color : #e74c3c !important;
 }
+
 .portfolio-box .project-post:hover .project-content {
   border-bottom: 1px solid #e74c3c;
   background: #ffffff;
@@ -1420,14 +1417,12 @@ ul.filter.center li.item a.active {
   top: inherit;
   margin-bottom: 16px;
 }
-.portfolio-box.portfolio-style2 .project-post .project-gal .hover-box .inner-hover a.zoom {
-  right: inherit;
-  margin-right: 40;
-}
+
 .portfolio-box.portfolio-style2 .project-post .project-gal .hover-box .inner-hover a.link {
-  left: inherit;
-  margin-left: 40;
+  right: inherit;
+  margin-right: 50px;
 }
+
 .portfolio-box.portfolio-style2 .project-post:hover .project-gal .hover-box .inner-hover a.zomm {
   margin-right: 5px;
 }

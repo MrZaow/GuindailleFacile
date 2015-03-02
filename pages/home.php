@@ -261,8 +261,7 @@
                     <div class="project-gal">
                         <img alt="" src="upload/portfolio/img1.jpg">
                         <div class="hover-box">
-                            <a class="zoom" href="upload/portfolio/img1.jpg"><i class="fa fa-search-plus"></i></a>
-                            <a class="link" href="index.php?p=description"><i class="fa fa-link"></i></a>
+                            <a class="link" href="index.php?p=description"><i>Détails</i></a>
                         </div>
                     </div>
                     <div class="project-content">
@@ -275,8 +274,7 @@
                     <div class="project-gal">
                         <img alt="" src="upload/portfolio/img2.jpg">
                         <div class="hover-box">
-                            <a class="zoom" href="upload/portfolio/img2.jpg"><i class="fa fa-search-plus"></i></a>
-                            <a class="link" href="index.php?p=descriptioncocktail"><i class="fa fa-link"></i></a>
+                            <a class="link" href="index.php?p=descriptioncocktail"><i>Détails</i></a>
                         </div>
                     </div>
                     <div class="project-content">
@@ -289,8 +287,7 @@
                     <div class="project-gal">
                         <img alt="" src="upload/portfolio/img3.jpg">
                         <div class="hover-box">
-                            <a class="zoom" href="upload/portfolio/img3.jpg"><i class="fa fa-search-plus"></i></a>
-                            <a class="link" href="index.php?p=descriptionfort"><i class="fa fa-link"></i></a>
+                            <a class="link" href="index.php?p=descriptionfort"><i>Détails</i></a>
                         </div>
                     </div>
                     <div class="project-content">
@@ -303,8 +300,7 @@
                     <div class="project-gal">
                         <img alt="" src="upload/portfolio/img4.jpg">
                         <div class="hover-box">
-                            <a class="zoom" href="upload/portfolio/img4.jpg"><i class="fa fa-search-plus"></i></a>
-                            <a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
+                            <a class="link" href="single-project.html"><i>Détails</i></a>
                         </div>
                     </div>
                     <div class="project-content">
@@ -316,8 +312,7 @@
                     <div class="project-gal">
                         <img alt="" src="upload/portfolio/img5.jpg">
                         <div class="hover-box">
-                            <a class="zoom" href="upload/portfolio/img5.jpg"><i class="fa fa-search-plus"></i></a>
-                            <a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
+                            <a class="link" href="single-project.html"><i>Détails</i></a>
                         </div>
                     </div>
                     <div class="project-content">
@@ -329,8 +324,7 @@
                     <div class="project-gal">
                         <img alt="" src="upload/portfolio/img6.jpg">
                         <div class="hover-box">
-                            <a class="zoom" href="upload/portfolio/img6.jpg"><i class="fa fa-search-plus"></i></a>
-                            <a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
+                            <a class="link" href="single-project.html"><i>Détails</i></a>
                         </div>
                     </div>
                     <div class="project-content">
@@ -342,8 +336,7 @@
                     <div class="project-gal">
                         <img alt="" src="upload/portfolio/img7.jpg">
                         <div class="hover-box">
-                            <a class="zoom" href="upload/portfolio/img7.jpg"><i class="fa fa-search-plus"></i></a>
-                            <a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
+                            <a class="link" href="single-project.html"><i>Détails</i></a>
                         </div>
                     </div>
                     <div class="project-content">
