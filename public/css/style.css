@@ -80,19 +80,36 @@
 	}
 }
 
-@media all and (max-width : 991px) and (min-width : 768px)
+@media all and (max-width : 1200px) and (min-width : 768px)
 {
-	.navbar-nav > li > a 
+	.container
 	{
-		font-size : 10px !important;
+		width : 100% !important;
 	}
 	
+	.navbar-nav > li > a 
+	{
+		font-size : 13px !important;
+	}
+}
+
+@media all and (max-width : 991px) and (min-width : 768px)
+{	
+	.navbar-nav > li > a 
+	{
+		font-size : 11px !important;
+	}
+
 	.navbar-brand {
 	  height: auto;
 	  padding: 22px 15px;
 	}
 }
 
+.navbar-nav ul
+{
+	width : 100%;
+}
 .navbar-nav > li > a {
   color: #333;
   font-size: 14px;
