@@ -13,7 +13,6 @@ class Article
 {
     public static function getLast()
     {
-
         return App::getDB()->query("
         SELECT Articles.id, Articles.titre,Articles.date,Articles.auteur, Articles.contenu, Categories.titre as categorie
         FROM Articles
