@@ -103,6 +103,51 @@
 					<div class="row">
 						<div class="col-md-6">
 							<div class="single-project-content">
+								<h1>À propos</h1>
+								
+								<ul class="feature-list2">
+									<br>
+									<li>
+										<div class="list">
+											<h3>Degré d'alcool : 9 %</h3>
+										</div>
+									</li>
+									<li>
+										<div class="list">
+											<h3>Prix moyen : 12 euros/litre</h3>
+										</div>
+									</li>
+								</ul>
+
+							</div>
+						</div>
+						<div class="col-md-4 col-md-offset-2">
+							<div class="single-project-content">
+								<h1>Note des guindailleurs</h1>
+								
+								<ul class="feature-list2">
+									<br>
+									<li>
+										<span><i class="fa fa-star"></i></span>
+										<div class="list-cont">
+											<h3>5/5</h3>
+										</div>
+									</li>
+								</ul>
+
+							</div>
+						</div>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="title-section white">
+							<div class="container triggerAnimation animated" data-animate="bounceIn">
+								<h1>Comment le faire</h1>
+							</div>
+						</div>
+
+						<div class="col-md-4 ">
+							<div class="single-project-content">
 								<h1>Ingrédients </h1>
 								
 								<ul class="feature-list2">
@@ -136,7 +181,7 @@
 
 							</div>
 						</div>
-						<div class="col-md-6">
+						<div class="col-md-4 col-md-offset-4">
 							<div class="single-project-content">
 								<h1>Préparation </h1>
 								

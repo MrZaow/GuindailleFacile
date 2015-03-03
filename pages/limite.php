@@ -6,7 +6,7 @@
 				================================================== -->
 			<div class="section-content page-banner shortcodes-page-banner">
 				<div class="container">
-					<h1>Connaître ses limites</h1>
+					<h1>Le bibinomètre</h1>
 				</div>
 			</div>
 
@@ -23,7 +23,6 @@
 						</div>
 
 						<div class="single-project-content">
-							<h1>Le bibinomètre</h1>
 							<h3>Vous voulez connaître vos limites selon la sciences ? Faites le test et comparez-vous avec la moyenne !</h3>
 							<br><br><br>
 			                <form action="swag">
@@ -137,7 +136,7 @@
 										<span><i class="fa fa-stop"></i></span>
 										<div class="list-cont">
 											<h3>Si t'es malade, arrête</h3>
-											<p>Ça arrive à tout le monde d'avoir dépassé ses limites et s'être rendu malade. Il suffit de ne plus consommer d'alcool et si possible essayer de rentrer chez soi en.</p>
+											<p>Ça arrive à tout le monde d'avoir dépassé ses limites et s'être rendu malade. Il suffit de ne plus consommer d'alcool et si possible essayer de rentrer chez soi en sécurité.</p>
 										</div>
 									</li>
 								</ul>
