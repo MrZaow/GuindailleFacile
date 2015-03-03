@@ -143,10 +143,11 @@
 								</ul>
 
 							</div>
+
 						</div>
 					</div>
-
 				</div>
+
 			</div>
 
 			<!-- portfolio-section 
@@ -159,7 +160,7 @@
 				</div>
 				<div class="portfolio-box triggerAnimation animated" data-animate="bounceIn">
 					<div id="owl-demo" class="owl-carousel owl-theme">
-          
+
 						<div class="item project-post">
 							<div class="project-gal">
 								<img alt="" src="upload/portfolio/img1.jpg">
@@ -173,7 +174,7 @@
 								<p>Vestibulum auctor dapibus neque.</p>
 							</div>
 						</div>
-          
+
 						<div class="item project-post">
 							<div class="project-gal">
 								<img alt="" src="upload/portfolio/img2.jpg">
@@ -187,7 +188,7 @@
 								<p>Vestibulum auctor dapibus neque.</p>
 							</div>
 						</div>
-          
+
 						<div class="item project-post">
 							<div class="project-gal">
 								<img alt="" src="upload/portfolio/img3.jpg">
@@ -201,7 +202,7 @@
 								<p>Vestibulum auctor dapibus neque.</p>
 							</div>
 						</div>
-          
+
 						<div class="item project-post">
 							<div class="project-gal">
 								<img alt="" src="upload/portfolio/img4.jpg">
@@ -215,7 +216,7 @@
 								<p>Vestibulum auctor dapibus neque.</p>
 							</div>
 						</div>
-          
+
 						<div class="item project-post">
 							<div class="project-gal">
 								<img alt="" src="upload/portfolio/img5.jpg">
@@ -229,7 +230,7 @@
 								<p>Vestibulum auctor dapibus neque.</p>
 							</div>
 						</div>
-          
+
 						<div class="item project-post">
 							<div class="project-gal">
 								<img alt="" src="upload/portfolio/img6.jpg">
@@ -243,7 +244,7 @@
 								<p>Vestibulum auctor dapibus neque.</p>
 							</div>
 						</div>
-          
+
 						<div class="item project-post">
 							<div class="project-gal">
 								<img alt="" src="upload/portfolio/img7.jpg">
@@ -257,7 +258,7 @@
 								<p>Vestibulum auctor dapibus neque.</p>
 							</div>
 						</div>
-					 
+
 					</div>
 					<div class="buttons">
 						<a class="owl-prev button-third" href="single-project.html#"><i class="fa fa-angle-left"></i></a>
@@ -266,6 +267,61 @@
 					</div>
 				</div>
 			</div>
+			<div class="container comment-section">
+				<h3>4 Commentaires</h3>
+
+				<ul class="comment-tree">
+					<li>
+						<div class="comment-box">
+							<img alt="" src="upload/testim1.jpg">
+							<div class="comment-content">
+								<h4>John Doe</h4>
+								<span>July 6, 2013. 8:30 pm.</span>
+								<p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</p>
+								<a href="single-post.html#">Reply</a>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="comment-box">
+							<img alt="" src="upload/testim1.jpg">
+							<div class="comment-content">
+								<h4>John Doe</h4>
+								<span>July 6, 2013. 8:30 pm.</span>
+								<p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</p>
+								<a href="single-post.html#">Reply</a>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="comment-box">
+							<img alt="" src="upload/testim3.jpg">
+							<div class="comment-content">
+								<h4>John Doe</h4>
+								<span>July 6, 2013. 8:30 pm.</span>
+								<p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</p>
+								<a href="single-post.html#">Reply</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<form class="comment-form">
+					<h3>Laisser un commentaire</h3>
+					<div class="row">
+						<div class="col-md-6">
+							<input name="name" id="name" type="text" placeholder="Nom">
+						</div>
+						<div class="col-md-6">
+							<input name="mail" id="mail" type="text" placeholder="Prenom">
+						</div>
+					</div>
+					<textarea name="comment" id="comment" placeholder="Votre commentaire par rapport à la Chimay bleue"></textarea>
+					<input type="submit" id="submit_contact" value="Envoyer">
+				</form>
+			</div>
+
 
 		</div>
 		<!-- End content -->

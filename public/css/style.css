@@ -126,7 +126,7 @@
   color: #e74c3c !important;
 }
 .navbar-nav a.open-search {
-  padding-left: 0;
+  padding-left: -10;
 }
 .navbar-nav a.open-search i {
   color: #e74c3c;
@@ -2456,23 +2456,23 @@ a.go-top:hover {
 .single-post .pagination-boxer .next-post:hover {
   background: #ffffff;
 }
-.single-post .comment-section h3 {
+.comment-section h3 {
   color: #ffffff;
-  font-size: 18px;
+  font-size: 23px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 16px;
   color: #3a3d41;
   margin-bottom: 50px;
 }
-.single-post .comment-section ul {
+.comment-section ul {
   margin: 0;
   padding: 0;
 }
-.single-post .comment-section ul li {
+.comment-section ul li {
   list-style: none;
 }
-.single-post .comment-section ul li img {
+.comment-section ul li img {
   float: left;
   width: 60px;
   -webkit-border-radius: 50%;
@@ -2480,16 +2480,16 @@ a.go-top:hover {
   -o-border-radius: 50%;
   border-radius: 50%;
 }
-.single-post .comment-section ul li .comment-box {
+.comment-section ul li .comment-box {
   border-bottom: 1px solid #e5e5e5;
   padding-bottom: 42px;
   margin-bottom: 50px;
   overflow: hidden;
 }
-.single-post .comment-section ul li .comment-content {
+.comment-section ul li .comment-content {
   margin-left: 80px;
 }
-.single-post .comment-section ul li .comment-content h4 {
+.comment-section ul li .comment-content h4 {
   color: #3a3d41;
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
@@ -2500,7 +2500,7 @@ a.go-top:hover {
   font-size: 13px;
   text-transform: inherit;
 }
-.single-post .comment-section ul li .comment-content span {
+.comment-section ul li .comment-content span {
   color: #3a3d41;
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
@@ -2513,7 +2513,7 @@ a.go-top:hover {
   margin-bottom: 12px;
   text-transform: inherit;
 }
-.single-post .comment-section ul li .comment-content p {
+.comment-section ul li .comment-content p {
   font-size: 13px;
   color: #dddddd;
   font-family: 'Open Sans', sans-serif;
@@ -2524,7 +2524,7 @@ a.go-top:hover {
   color: #999999;
   margin-bottom: 10px;
 }
-.single-post .comment-section ul li .comment-content a {
+.comment-section ul li .comment-content a {
   display: inline-block;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
@@ -2542,23 +2542,23 @@ a.go-top:hover {
   font-weight: 300;
   text-transform: inherit;
 }
-.single-post .comment-section ul li .comment-content a:hover {
+.comment-section ul li .comment-content a:hover {
   color: #e74c3c;
 }
-.single-post .comment-section ul li .depth {
+.comment-section ul li .depth {
   margin-left: 80px;
 }
-.single-post .comment-form h3 {
+.comment-form h3 {
   color: #ffffff;
-  font-size: 18px;
+  font-size: 25px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 16px;
   color: #3a3d41;
   margin-bottom: 50px;
 }
-.single-post .comment-form input[type="text"],
-.single-post .comment-form textarea {
+.comment-form input[type="text"],
+.comment-form textarea {
   width: 100%;
   display: inline-block;
   padding: 11px;
@@ -2578,17 +2578,18 @@ a.go-top:hover {
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
 }
-.single-post .comment-form input[type="text"]:focus,
-.single-post .comment-form textarea:focus {
+.comment-form input[type="text"]:focus,
+.comment-form textarea:focus {
   border: 1px solid #e74c3c;
 }
-.single-post .comment-form textarea {
+.comment-form textarea {
   min-height: 122px;
 }
-.single-post .comment-form input[type="submit"] {
+.comment-form input[type="submit"] {
   display: inline-block;
   outline: none;
-  padding: 10px 47px;
+  padding: 10px 47px 10px;
+  margin-bottom: 40px;
   color: #999999;
   font-size: 12px;
   font-family: 'Open Sans', sans-serif;
@@ -2607,7 +2608,7 @@ a.go-top:hover {
   -o-transition: all 0.2s ease-in-out;
   background: #ffffff;
 }
-.single-post .comment-form input[type="submit"]:hover {
+.comment-form input[type="submit"]:hover {
   border: 1px solid #999999;
   border-bottom: 3px solid #999999;
 }
