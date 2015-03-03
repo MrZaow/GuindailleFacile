@@ -27,11 +27,16 @@
 						<div class="col-md-7">
 							<div class="project-block triggerAnimation animated" data-animate="slideInLeft">
 								<div class="single-project-content">
+
 									<h1>Description </h1>
+
+									<p>La Chimay Bleue est une bière Trappiste originaire de Belgique.</p>
 									
-									<p>Avec la Chimay Bleue, pas besoin d'acheter 15 bières pour passer une soirée bien bourré, à peine 2 ou 3 de cette merveille de la nature
+									<p>Avec ce brevage, pas besoin d'acheter 15 bières pour passer une soirée bien bourré, à peine 2 ou 3 de cette merveille de la nature
 												et vous êtes déjà bien dedans, et à partir de 5 vous êtes tout simplement défoncé. 
 									</p>
+									
+
 
 								</div>
 
@@ -102,68 +107,45 @@
 						</div>
 					</div>
 
-				</div>
-			</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="single-project-content">
+								<h1>À propos</h1>
+								
+								<ul class="feature-list2">
+									<br>
+									<li>
+										<div class="list">
+											<h3>Degré d'alcool : 9 %</h3>
+										</div>
+									</li>
+									<li>
+										<div class="list">
+											<h3>Prix moyen : 12 euros/litre</h3>
+										</div>
+									</li>
+								</ul>
 
-			<div class="section-content shortcodes-section">
-				<div class="container">
-					<div class="col-md-12">
-						<div class="shortcodes-elem">
-							<h1>À propos</h1>
-							<div class="row">
-								<div class="col-md-2 col-md-offset-1">
-									<ul class="feature-list2">
-										<li>
-											<span><i class="fa fa-bar-chart-o"></i></span>
-											<div class="list-cont">
-												<h3>9,0%</h3>
-											</div>
-										</li>
-									</ul>
-								</div>
-								<div class="col-md-2">
-									<ul class="feature-list2">
-										<li>
-											<span><i class="fa fa-eur"></i></span>
-											<div class="list-cont">
-												<h3>12 euros/litre</h3>
-											</div>
-										</li>
-									</ul>
-								</div>
-								<div class="col-md-2">
-									<ul class="feature-list2">
-										<li>
-											<span><i class="fa fa-beer"></i></span>
-											<div class="list-cont">
-												<h3>Trappiste</h3>
-											</div>
-										</li>
-									</ul>
-								</div>
-								<div class="col-md-2">
-									<ul class="feature-list2">
-										<li>
-											<span><i class="fa fa-globe"></i></span>
-											<div class="list-cont">
-												<h3>Belgique</h3>
-											</div>
-										</li>
-									</ul>
-								</div>
-								<div class="col-md-2">
-									<ul class="feature-list2">
-										<li>
-											<span><i class="fa fa-star"></i></span>
-											<div class="list-cont">
-												<h3>5/5</h3>
-											</div>
-										</li>
-									</ul>
-								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-md-offset-2">
+							<div class="single-project-content">
+								<h1>Note des guindailleurs</h1>
+								
+								<ul class="feature-list2">
+									<br>
+									<li>
+										<span><i class="fa fa-star"></i></span>
+										<div class="list-cont">
+											<h3>5/5</h3>
+										</div>
+									</li>
+								</ul>
+
 							</div>
 						</div>
 					</div>
+
 				</div>
 			</div>
 
