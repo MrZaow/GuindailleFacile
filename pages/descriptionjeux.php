@@ -28,6 +28,8 @@
 							<div class="project-block triggerAnimation animated" data-animate="slideInLeft">
 								<div class="single-project-content">
 									<h1>Description </h1>
+
+									<p>Nombre de joueurs : 2 minimum</p>
 									
 									<p>Ce jeu de cartes, aussi appelé le menteur, 
 										vous permettra de tester votre aptitude à mentir
@@ -118,47 +120,20 @@
 									</li>
 								</ul>
 							</div>
-						</div>
-					</div>
+							<br>
+							<div class="single-project-content">
+								<h1>Note des guindailleurs</h1>
+								
+								<ul class="feature-list2">
+									<br>
+									<li>
+										<span><i class="fa fa-star"></i></span>
+										<div class="list-cont">
+											<h3>4/5</h3>
+										</div>
+									</li>
+								</ul>
 
-					<div class="section-content shortcodes-section">
-						<div class="container">
-							<div class="col-md-12">
-								<div class="shortcodes-elem">
-									<h1>À propos</h1>
-									<div class="row">
-										<div class="col-md-3 col-md-offset-2">
-											<ul class="feature-list2">
-												<li>
-													<span><i class="fa fa-users"></i></span>
-													<div class="list-cont">
-														<h3>2 joueurs minimum</h3>
-													</div>
-												</li>
-											</ul>
-										</div>
-										<div class="col-md-3">
-											<ul class="feature-list2">
-												<li>
-													<span><i class="fa fa-ticket"></i></span>
-													<div class="list-cont">
-														<h3>Jeux de cartes</h3>
-													</div>
-												</li>
-											</ul>
-										</div>
-										<div class="col-md-3">
-											<ul class="feature-list2">
-												<li>
-													<span><i class="fa fa-star"></i></span>
-													<div class="list-cont">
-														<h3>4/5</h3>
-													</div>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
 							</div>
 						</div>
 					</div>

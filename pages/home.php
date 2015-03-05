@@ -31,7 +31,7 @@
                          data-easing="Back.easeInOut"
                          data-endspeed="400"
                          data-endeasing="Back.easeIn"
-                         style="z-index: 14"> Le site pour choisir vos alcools de soirée
+                         style="z-index: 14"> La référence pour choisir vos alcools de soirée
                     </div>
                 </li>
                 <!-- SLIDE  -->
@@ -76,7 +76,7 @@
                          data-easing="Back.easeInOut"
                          data-endspeed="400"
                          data-endeasing="Back.easeIn"
-                         style="z-index: 14"><a class="button-large" href="index.php">Bières</a><a class="button-large" href="index.php">Cocktails</a>
+                         style="z-index: 14"><a class="button-large" href="index.php">Les bières</a><a class="button-large" href="index.php">Les cocktails</a>
                     </div>
                 </li>
                 <!-- SLIDE  -->
@@ -95,7 +95,7 @@
                          data-endspeed="500"
                          data-endeasing="Power4.easeIn"
                          data-captionhidden="on"
-                         style="z-index: 4">Avec des conseils <br> spécial étudiants !
+                         style="z-index: 4">Avec un coin <br> spécial étudiants !
                     </div>
 
                     <!-- LAYER NR. 2 -->
@@ -108,7 +108,7 @@
                          data-easing="Back.easeInOut"
                          data-endspeed="400"
                          data-endeasing="Back.easeIn"
-                         style="z-index: 14">Quels sont les alcools au meilleur rapport défonce/prix ?  <br> Quels sont ceux qui plaisent le plus aux filles ?
+                         style="z-index: 14">Des pires soirées aux plus épiques, balancez tout !
                     </div>
 
                     <!-- LAYER NR. 3 -->
@@ -121,7 +121,7 @@
                          data-easing="Back.easeInOut"
                          data-endspeed="400"
                          data-endeasing="Back.easeIn"
-                         style="z-index: 14"><a class="button-large" href="index.php">Coin étudiant</a>
+                         style="z-index: 14"><a class="button-large" href="index.php">Le coin étudiant</a>
                     </div>
 
                     <!-- LAYER NR. 4 -->
@@ -195,7 +195,7 @@
                          data-easing="Back.easeInOut"
                          data-endspeed="400"
                          data-endeasing="Back.easeIn"
-                         style="z-index: 14"><a class="button-large" href="index.php">Jeux d'alcool</a>
+                         style="z-index: 14"><a class="button-large" href="index.php">Les jeux d'alcool</a>
                     </div>
                 </li>
             </ul>
@@ -209,14 +209,14 @@
                 <li class="active">
                     <a href="index.php" class="btn slide-thumbs" id="slidethumb1" data-slide="1">
                         <span>1</span>
-                        <h2>Découverte </h2>
-                        <p>Découvrir un max d'alcools</p>
+                        <h2>Alcools </h2>
+                        <p>Découvrir plein de boissons</p>
                     </a>
                 </li>
                 <li>
                     <a href="index.php" class="btn slide-thumbs" id="slidethumb2" data-slide="2">
                         <span>2</span>
-                        <h2>Diversification </h2>
+                        <h2>Découvertes </h2>
                         <p>Varier la bibine de soirée</p>
                     </a>
                 </li>
@@ -230,7 +230,7 @@
                 <li>
                     <a href="index.php" class="btn slide-thumbs" id="slidethumb4" data-slide="4">
                         <span>4</span>
-                        <h2>Amusement</h2>
+                        <h2>Fun</h2>
                         <p>Des tonnes de jeux d'alcool</p>
                     </a>
                 </li>
@@ -408,7 +408,7 @@
         <div class="title-section">
             <div class="container triggerAnimation animated" data-animate="bounceIn">
                 <h1>Posts récents</h1>
-                <p>Nous publions régulièrement des articles spécial étudiants</p>
+                <p>Publications récentes du Coin Étudiant</p>
             </div>
         </div>
         <div class="container triggerAnimation animated" data-animate="fadeInUp">
