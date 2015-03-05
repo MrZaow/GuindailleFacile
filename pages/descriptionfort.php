@@ -46,17 +46,17 @@
 												<br>
 												<li>
 													<div class="list">
-														<h3>Pas chère</h3>
+														<h3>- Pas chère</h3>
 													</div>
 												</li>
 												<li>
 													<div class="list">
-														<h3>Se mélange à quasi tout</h3>
+														<h3>- Se mélange à quasi tout</h3>
 													</div>
 												</li>
 												<li>
 													<div class="list">
-														<h3>Un classique des alcools forts</h3>
+														<h3>- Un classique des alcools forts</h3>
 													</div>
 												</li>
 											</ul>
@@ -71,7 +71,7 @@
 												<br>
 												<li>
 													<div class="list">
-														<h3>Mauvais goût sans mélange</h3>
+														<h3>- Mauvais goût sans mélange</h3>
 													</div>
 												</li>
 											</ul>
@@ -110,12 +110,12 @@
 									<br>
 									<li>
 										<div class="list">
-											<h3>Degré d'alcool : 40 %</h3>
+											<h3>- Degré d'alcool : 40 %</h3>
 										</div>
 									</li>
 									<li>
 										<div class="list">
-											<h3>Prix moyen : 22 euros/litre</h3>
+											<h3>- Prix moyen : 22 euros/litre</h3>
 										</div>
 									</li>
 								</ul>
@@ -149,22 +149,22 @@
 									<br>
 									<li>
 										<div class="list">
-											<h3>Stolichnaya Cristall (22 euros/l)</h3>
+											<h3>- Stolichnaya Cristall (22 euros/l)</h3>
 										</div>
 									</li>
 									<li>
 										<div class="list">
-											<h3>Stolichnaya (22 euros/l)</h3>
+											<h3>- Stolichnaya (22 euros/l)</h3>
 										</div>
 									</li>
 									<li>
 										<div class="list">
-											<h3>Ketel One (38 euros/l)</h3>
+											<h3>- Ketel One (38 euros/l)</h3>
 										</div>
 									</li>
 									<li>
 										<div class="list">
-											<h3>Absolut Vodka (25 euros/l)</h3>
+											<h3>- Absolut Vodka (25 euros/l)</h3>
 										</div>
 									</li>
 								</ul>

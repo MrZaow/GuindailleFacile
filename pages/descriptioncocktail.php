@@ -46,17 +46,17 @@
 												<br>
 												<li>
 													<div class="list">
-														<h3>Très populaire</h3>
+														<h3>- Très populaire</h3>
 													</div>
 												</li>
 												<li>
 													<div class="list">
-														<h3>Bon goût</h3>
+														<h3>- Bon goût</h3>
 													</div>
 												</li>
 												<li>
 													<div class="list">
-														<h3>Un classique des cocktails</h3>
+														<h3>- Un classique des cocktails</h3>
 													</div>
 												</li>
 											</ul>
@@ -71,7 +71,7 @@
 												<br>
 												<li>
 													<div class="list">
-														<h3>Lourde à boire</h3>
+														<h3>- Dosage du thé délicat</h3>
 													</div>
 												</li>
 											</ul>
@@ -109,12 +109,12 @@
 									<br>
 									<li>
 										<div class="list">
-											<h3>Degré d'alcool : 9 %</h3>
+											<h3>- Degré d'alcool : 9 %</h3>
 										</div>
 									</li>
 									<li>
 										<div class="list">
-											<h3>Prix moyen : 12 euros/litre</h3>
+											<h3>- Prix moyen : 12 euros/litre</h3>
 										</div>
 									</li>
 								</ul>
@@ -154,27 +154,27 @@
 									<br>
 									<li>
 										<div class="list">
-											<h3>6cl de rhum </h3>
+											<h3>- 6cl de rhum </h3>
 										</div>
 									</li>
 									<li>
 										<div class="list">
-											<h3>3cl de jus de citrons verts</h3>
+											<h3>- 3cl de jus de citrons verts</h3>
 										</div>
 									</li>
 									<li>
 										<div class="list">
-											<h3>7 feuilles de menthe</h3>
+											<h3>- 7 feuilles de menthe</h3>
 										</div>
 									</li>
 									<li>
 										<div class="list">
-											<h3>2 cuillers à café de sucre</h3>
+											<h3>- 2 cuillers à café de sucre</h3>
 										</div>
 									</li>
 									<li>
 										<div class="list">
-											<h3>Eau gazeuse</h3>
+											<h3>- Eau gazeuse</h3>
 										</div>
 									</li>
 								</ul>
@@ -189,37 +189,37 @@
 									<br>
 									<li>
 										<div class="list">
-											<h3>Placer les feuilles de menthe dans le verre</h3>
+											<h3>1) Placer les feuilles de menthe dans le verre</h3>
 										</div>
 									</li>
 									<li>
 										<div class="list">
-											<h3>Ajouter le sucre et le jus de citrons</h3>
+											<h3>2) Ajouter le sucre et le jus de citrons</h3>
 										</div>
 									</li>
 									<li>
 										<div class="list">
-											<h3>Piler doucement sans broyer les feuilles de menthe</h3>
+											<h3>3) Piler doucement sans broyer les feuilles de menthe</h3>
 										</div>
 									</li>
 									<li>
 										<div class="list">
-											<h3>Ajouter le rhum</h3>
+											<h3>4) Ajouter le rhum</h3>
 										</div>
 									</li>
 									<li>
 										<div class="list">
-											<h3>Remplir le verre à moitié de glaçons</h3>
+											<h3>5) Remplir le verre à moitié de glaçons</h3>
 										</div>
 									</li>
 									<li>
 										<div class="list">
-											<h3>Compléter le verre avec de l'eau gazeuse</h3>
+											<h3>6) Compléter le verre avec de l'eau gazeuse</h3>
 										</div>
 									</li>
 									<li>
 										<div class="list">
-											<h3>Mélanger doucement et servir avec une paille, c'est prêt !</h3>
+											<h3>7) Mélanger doucement et servir avec une paille, c'est prêt !</h3>
 										</div>
 									</li>
 								</ul>

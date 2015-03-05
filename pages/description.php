@@ -48,17 +48,17 @@
 												<br>
 												<li>
 													<div class="list">
-														<h3>Défonce rapidement</h3>
+														<h3>- Défonce rapidement</h3>
 													</div>
 												</li>
 												<li>
 													<div class="list">
-														<h3>Bon goût</h3>
+														<h3>- Bon goût</h3>
 													</div>
 												</li>
 												<li>
 													<div class="list">
-														<h3>Patrimoine culturel</h3>
+														<h3>- Patrimoine culturel</h3>
 													</div>
 												</li>
 											</ul>
@@ -73,12 +73,12 @@
 												<br>
 												<li>
 													<div class="list">
-														<h3>Lourde à boire</h3>
+														<h3>- Lourde à boire</h3>
 													</div>
 												</li>
 												<li>
 													<div class="list">
-														<h3>Honéreuse</h3>
+														<h3>- Honéreuse</h3>
 													</div>
 												</li>
 											</ul>
@@ -116,12 +116,12 @@
 									<br>
 									<li>
 										<div class="list">
-											<h3>Degré d'alcool : 9 %</h3>
+											<h3>- Degré d'alcool : 9 %</h3>
 										</div>
 									</li>
 									<li>
 										<div class="list">
-											<h3>Prix moyen : 12 euros/litre</h3>
+											<h3>- Prix moyen : 12 euros/litre</h3>
 										</div>
 									</li>
 								</ul>
