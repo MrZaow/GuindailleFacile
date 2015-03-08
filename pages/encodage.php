@@ -3,13 +3,13 @@
 if(isset($_POST["submit"]))
 {
     $arg = array($_POST["nom"], $_POST["resume"], $_POST["description"], $_POST["mesure"]);
-    App\App::getDB()->prepare("INSERT INTO INGREDIENTS (nom, resume, description, unitemesure) VALUES (?, ?, ?, ?)",$arg ,'', true, false);
+    App\App::getDB()->prepare("INSERT INTO ingredients (nom, resume, description, unitemesure) VALUES (?, ?, ?, ?)",$arg ,'', true, false);
 
     switch($_POST["categorie"])
     {
         case 'biere':
-            $arg = array($_POST["type"], $_POST["pays"]);
-            App\App::getDB()->prepare("INSERT INTO BIERES (type, paysorigine, idingredient) VALUES (?, ?, (SELECT idingredient FROM INGREDIENTS ORDER BY idingredient DESC LIMIT 1))",$arg ,'', true, false);
+            $arg = array($_POST["type"], $_POST["pays"], $_POST["couleur"]);
+            App\App::getDB()->prepare("INSERT INTO bieres (type, paysorigine,couleur, idingredient) VALUES (?, ?, ?, (SELECT idingredient FROM ingredients ORDER BY idingredient DESC LIMIT 1))",$arg ,'', true, false);
             break;
         case 'alcoolfort':
             App\App::getDB()->insert("INSERT INTO ALCOOLSFORTS VALUES ((SELECT idingredient FROM INGREDIENTS ORDER BY idingredient DESC LIMIT 1))");
@@ -57,6 +57,10 @@ if(isset($_POST["submit"]))
                         <div class="form-group">
                             <label>Pays d'origine</label><br>
                             <input type="text" class="form-control" name="pays" placeholder="Pays">
+                        </div>
+                        <div class="form-group">
+                            <label>Couleur</label><br>
+                            <input type="text" class="form-control" name="couleur" placeholder="Couleur">
                         </div>
                         <div class="form-group">
                             <label>Unité de mesure</label><br>
