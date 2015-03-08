@@ -42,8 +42,11 @@ class Database
         return $this->pdo;
 
     }
-
-    public function query($statement, $class_name = null)
+    public function insert($statement)
+    {
+        $this->getPDO()->query($statement);
+    }
+    public function query($statement, $class_name = '')
     {
         $req = $this->getPDO()->query($statement);
 
@@ -52,16 +55,19 @@ class Database
         return $datas;
     }
 
-    public function prepare ($statement, $attributes, $class_name, $one = false)
+    public function prepare ($statement, $attributes, $class_name, $one = false, $fetch = true)
     {
         $req = $this->getPDO()->prepare($statement);
         $req->execute($attributes);
         $req->setFetchMode(PDO::FETCH_CLASS, $class_name);
-        if($one)
-            $datas = $req->fetch();
-        else
-            $datas = $req->fetchAll();
-
+        $datas = NULL;
+        if($fetch)
+        {
+            if ($one)
+                $datas = $req->fetch();
+            else
+                $datas = $req->fetchAll();
+        }
         return $datas;
     }
 }

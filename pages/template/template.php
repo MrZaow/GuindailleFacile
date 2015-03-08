@@ -65,7 +65,8 @@
                                     </ul>
                                 </li>
                                 <li><a href="index.php?p=jeux">Jeux d'alcool</a></li>
-								
+                                <li><a href="index.php?p=encodage">Encodage</a></li>
+
 								<li class="drop"><a href="#" class="open-search"><i class="fa fa-search"></i></a>
 									<form class="form-search">
 										<input type="search" placeholder="Chercher un alcool"/>
@@ -83,7 +84,6 @@
     </header>
 
    <?php echo $content; ?>
-
 
     <footer>
         <div class="social-section">
@@ -130,6 +130,7 @@
 
 <!-- THE SCRIPT INITIALISATION -->
 <!-- LOOK THE DOCUMENTATION FOR MORE INFORMATIONS -->
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.migrate.js"></script>
