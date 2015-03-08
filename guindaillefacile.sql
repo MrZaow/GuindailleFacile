@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Dim 08 Mars 2015 à 22:11
+-- Généré le :  Dim 08 Mars 2015 à 23:16
 -- Version du serveur :  5.6.17
 -- Version de PHP :  5.5.12
 
@@ -30,6 +30,40 @@ CREATE TABLE IF NOT EXISTS `alcoolsforts` (
   `idingredient` int(11) NOT NULL,
   PRIMARY KEY (`idingredient`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Contenu de la table `alcoolsforts`
+--
+
+INSERT INTO `alcoolsforts` (`idingredient`) VALUES
+(2);
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `articles`
+--
+
+CREATE TABLE IF NOT EXISTS `articles` (
+  `id` int(11) NOT NULL,
+  `titre` varchar(255) COLLATE utf8_bin DEFAULT NULL,
+  `contenu` text COLLATE utf8_bin,
+  `date` date DEFAULT NULL,
+  `auteur` varchar(255) COLLATE utf8_bin DEFAULT NULL,
+  `popularite` int(11) NOT NULL DEFAULT '0',
+  `category_id` int(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Contenu de la table `articles`
+--
+
+INSERT INTO `articles` (`id`, `titre`, `contenu`, `date`, `auteur`, `popularite`, `category_id`) VALUES
+(100, 'Swag utlime', 'Imagine was you removal raising gravity. Unsatiable understood or expression dissimilar so sufficient. Its party every heard and event gay. Advice he indeed things adieus in number so uneasy. To many four fact in he fail. My hung it quit next do of. It fifteen charmed by private savings it mr. Favourable cultivated alteration entreaties yet met sympathize. Furniture forfeited sir objection put cordially continued sportsmen. ', '2015-02-03', 'Robin', 2, 2),
+(200, 'Un petit lapin meurt sauvagement', 'Ask especially collecting terminated may son expression. Extremely eagerness principle estimable own was man. Men received far his dashwood subjects new. My sufficient surrounded an companions dispatched in on. Connection too unaffected expression led son possession. New smiling friends and her another. Leaf she does none love high yet. Snug love will up bore as be. Pursuit man son musical general pointed. It surprise informed mr advanced do outweigh. ', '2015-02-05', 'Florent', 0, 1),
+(300, 'Petite gamine dort dans le sable', 'Certainly elsewhere my do allowance at. The address farther six hearted hundred towards husband. Are securing off occasion remember daughter replying. Held that feel his see own yet. Strangers ye to he sometimes propriety in. She right plate seven has. Bed who perceive judgment did marianne.', '2015-02-10', 'Axel', 4, 1),
+(400, 'La mère d''Axel a encore frappé !', 'Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought. \r\n\r\nShe suspicion dejection saw instantly. Well deny may real one told yet saw hard dear. Bed chief house rapid right the. Set noisy one state tears which. No girl oh part must fact high my he. Simplicity in excellence melancholy as remarkably discovered. Own partiality motionless was old excellence she inquietude contrasted. Sister giving so wicket cousin of an he rather marked. Of on game part body rich. Adapted mr savings venture it or comfort affixed friends. \r\n\r\nAgreed joy vanity regret met may ladies oppose who. Mile fail as left as hard eyes. Meet made call in mean four year it to. Prospect so branched wondered sensible of up. For gay consisted resolving pronounce sportsman saw discovery not. Northward or household as conveying we earnestly believing. No in up contrasted discretion inhabiting excellence. Entreaties we collecting unpleasant at everything conviction. \r\n\r\nSo by colonel hearted ferrars. Draw from upon here gone add one. He in sportsman household otherwise it perceived instantly. Is inquiry no he several excited am. Called though excuse length ye needed it he having. Whatever throwing we on resolved entrance together graceful. Mrs assured add private married removed believe did she. ', '2015-02-20', 'Robin', 0, 2);
 
 -- --------------------------------------------------------
 
@@ -84,6 +118,13 @@ CREATE TABLE IF NOT EXISTS `bieres` (
   PRIMARY KEY (`idingredient`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
+--
+-- Contenu de la table `bieres`
+--
+
+INSERT INTO `bieres` (`type`, `paysorigine`, `couleur`, `idingredient`) VALUES
+('Trappiste', 'Belgique', 'Brune', 1);
+
 -- --------------------------------------------------------
 
 --
@@ -100,6 +141,26 @@ CREATE TABLE IF NOT EXISTS `boissons` (
   `idingredient` int(11) NOT NULL,
   PRIMARY KEY (`idingredient`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `categories`
+--
+
+CREATE TABLE IF NOT EXISTS `categories` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `titre` varchar(255) COLLATE utf8_bin NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=3 ;
+
+--
+-- Contenu de la table `categories`
+--
+
+INSERT INTO `categories` (`id`, `titre`) VALUES
+(1, 'Sexe'),
+(2, 'Drague');
 
 -- --------------------------------------------------------
 
@@ -166,7 +227,16 @@ CREATE TABLE IF NOT EXISTS `ingredients` (
   `description` text COLLATE utf8_bin,
   `unitemesure` varchar(25) COLLATE utf8_bin DEFAULT NULL,
   PRIMARY KEY (`idingredient`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=4 ;
+
+--
+-- Contenu de la table `ingredients`
+--
+
+INSERT INTO `ingredients` (`idingredient`, `nom`, `resume`, `description`, `unitemesure`) VALUES
+(1, 'Chimay bleue ', 'La plus forte des Chimay', 'Avec ce brevage, pas besoin d''acheter 15 bières pour passer une soirée bien bourré, à peine 2 ou 3 de cette merveille de la nature et vous êtes déjà bien dedans, et à partir de 5 vous êtes tout simplement défoncé.', 'l'),
+(2, 'Vodka', 'Pour la mère Russie !', 'La vodka « petite eau » est une eau-de-vie alcoolisée (fermentée puis distillée), généralement produite à partir de céréales ou de pomme de terre, mais peut être élaborée à partir de n’importe quelle matière première agricole, comme des fruits ou des légumes (lire: les 400 principales vodkas du monde). Elle titre en moyenne 40° d’alcool.', 'l'),
+(3, 'Sucre', '', '', 'gr');
 
 -- --------------------------------------------------------
 
