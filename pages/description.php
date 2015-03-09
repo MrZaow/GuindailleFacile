@@ -35,8 +35,6 @@
 									<p>Avec ce brevage, pas besoin d'acheter 15 bières pour passer une soirée bien bourré, à peine 2 ou 3 de cette merveille de la nature
 												et vous êtes déjà bien dedans, et à partir de 5 vous êtes tout simplement défoncé. 
 									</p>
-									
-
 
 								</div>
 

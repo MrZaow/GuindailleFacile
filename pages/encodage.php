@@ -36,14 +36,14 @@ if(isset($_POST["submit"]))
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h1>Nouvel Bière</h1>
+                    <h1>Bière</h1>
                     <form action="?p=encodage" method="post">
                         <div class="form-group">
                             <label>Nom</label>
-                            <input type="text" class="form-control" name="nom" placeholder="Nom">
+                            <input type="text" class="form-control" name="nom" placeholder="Nom" autofocus>
                         </div>
                         <div class="form-group">
-                            <label>Résume</label><br>
+                            <label>Résumé</label><br>
                             <textarea cols="120" placeholder="Le résumé" name="resume" class="form-control"></textarea>
                         </div>
                         <div class="form-group">
@@ -71,18 +71,18 @@ if(isset($_POST["submit"]))
                             </select>
                         </div>
                         <input type="hidden" name="categorie" value="biere">
-                        <input type="submit" class="btn btn-default" name="submit" value="Envoyer"><br><br>
+                        <input type="submit" class="btn btn-primary" name="submit" value="Envoyer"><br><br>
                     </form>
                 </div>
                 <div class="col-md-6">
-                    <h1>Nouvel ingrédient</h1>
+                    <h1>Ingrédient</h1>
                     <form action="?p=encodage" method="post">
                         <div class="form-group">
                             <label>Nom</label>
                             <input type="text" class="form-control" name="nom" placeholder="Nom">
                         </div>
                         <div class="form-group">
-                            <label>Résume</label><br>
+                            <label>Résumé</label><br>
                             <textarea cols="120" placeholder="Le résumé" name="resume" class="form-control"></textarea>
                         </div>
                         <div class="form-group">
@@ -96,23 +96,26 @@ if(isset($_POST["submit"]))
                                 <option>l</option>
                                 <option>cl</option>
                                 <option>gr</option>
+                                <option>pincées</option>
+                                <option>cuillère à café</option>
+                                <option>cuillère à soupe</option>
                             </select>
                         </div>
                         <input type="hidden" name="categorie" value="simple">
-                        <input type="submit" class="btn btn-default" name="submit" value="Envoyer"><br><br>
+                        <input type="submit" class="btn btn-primary" name="submit" value="Envoyer"><br><br>
                     </form>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <h1>Nouvel alcool fort</h1>
+                    <h1>Alcool fort</h1>
                     <form action="?p=encodage" method="post">
                         <div class="form-group">
                             <label>Nom</label>
                             <input type="text" class="form-control" name="nom" placeholder="Nom">
                         </div>
                         <div class="form-group">
-                            <label>Résume</label><br>
+                            <label>Résumé</label><br>
                             <textarea cols="120" placeholder="Le résumé" name="resume" class="form-control"></textarea>
                         </div>
                         <div class="form-group">
@@ -129,7 +132,7 @@ if(isset($_POST["submit"]))
                             </select>
                         </div>
                         <input type="hidden" name="categorie" value="alcoolfort">
-                        <input type="submit" class="btn btn-default" name="submit" value="Envoyer"><br><br>
+                        <input type="submit" class="btn btn-primary" name="submit" value="Envoyer"><br><br>
                     </form>
                 </div>
 
