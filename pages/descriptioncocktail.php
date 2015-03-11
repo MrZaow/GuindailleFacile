@@ -121,7 +121,7 @@
 
 							</div>
 						</div>
-						<div class="col-md-4 col-md-offset-2">
+						<div class="col-md-4 col-md-offset-1">
 							<div class="single-project-content">
 								<h1>Note des guindailleurs</h1>
 								
@@ -146,11 +146,11 @@
 							</div>
 						</div>
 
-						<div class="col-md-4 ">
+						<div class="col-md-6 ">
 							<div class="single-project-content">
 								<h1>Ingrédients </h1>
 								
-								<ul class="feature-list2">
+								<ol class="feature-list2">
 									<br>
 									<li>
 										<div class="list">
@@ -177,15 +177,15 @@
 											<h3>- Eau gazeuse</h3>
 										</div>
 									</li>
-								</ul>
+								</ol>
 
 							</div>
 						</div>
-						<div class="col-md-4 col-md-offset-4">
+						<div class="col-md-6">
 							<div class="single-project-content">
 								<h1>Préparation </h1>
 								
-								<ul class="feature-list2">
+								<ol class="feature-list2">
 									<br>
 									<li>
 										<div class="list">
