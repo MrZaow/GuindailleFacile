@@ -5,7 +5,10 @@ if(isset($_POST["submit"]))
     $arg = array($_POST["nom"], $_POST["resume"], $_POST["description"], $_POST["mesure"]);
     App\App::getDB()->prepare("INSERT INTO ingredients (nom, resume, description, unitemesure) VALUES (?, ?, ?, ?)",$arg ,'', true, false);
 
-    $arg = array($_POST["pourcentagealcool"], $_POST["prixlitre"], $_POST["cotesur5"], $_POST['image1'], $_POST['image2'], $_POST['image3']);
+    $image1 = file_get_contents($_FILES['image1']['tmp_name']);
+    $image2 = file_get_contents($_FILES['image2']['tmp_name']);
+    $image3 = file_get_contents($_FILES['image3']['tmp_name']);
+    $arg = array($_POST["pourcentagealcool"], $_POST["prixlitre"], $_POST["cotesur5"],$image1,$image2 ,$image3);
     App\App::getDB()->prepare("INSERT INTO boissons (pourcentagealcool, prixlitre, cotesur5, image1, image2, image3, idingredient) VALUES (?, ?, ?, ?, ?, ?, (SELECT idingredient FROM ingredients ORDER BY idingredient DESC LIMIT 1))",$arg ,'', true, false);
 
     switch($_POST["categorie"])
@@ -72,7 +75,7 @@ if(isset($_POST["submit"]))
 
                 <div class="col-md-4">
                     <h1>Bière</h1>
-                    <form action="?p=encodage" method="post">
+                    <form action="?p=encodage" method="post" enctype="multipart/form-data">
                         <div class="form-group">
                             <label>Nom</label>
                             <input type="text" class="form-control" name="nom" placeholder="Nom" >

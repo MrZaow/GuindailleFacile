@@ -26,22 +26,26 @@
 						<li class="item"><a href="portfolio-4col.html#" data-filter=".branding">NA</a></li>
 					</ul>
 					<div class="masonry four-col triggerAnimation animated" data-animate="bounceIn">
-          
-						<div class="project-post web-design branding">
-							<div class="project-gal">
-								<img alt="" src="upload/portfolio/img1.jpg">
-								<div class="hover-box">
-									<a class="zoom" href="upload/portfolio/img1.jpg"><i class="fa fa-search-plus"></i></a>
-									<a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
+						<?php foreach(App\Table\biere::getAll() as $post): ?>
+							<div class="project-post web-design branding">
+								<div class="project-gal">
+									<img src="data:image/png;base64,<?= base64_encode($post->image1);?>">
+									<div class="hover-box">
+										<a class="zoom" href="upload/portfolio/img1.jpg"><i class="fa fa-search-plus"></i></a>
+										<a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
+									</div>
+								</div>
+								<div class="project-content">
+									<h2><?= $post->nom; ?></h2>
+									<p><?= $post->resume; ?></p>
 								</div>
 							</div>
-							<div class="project-content">
-								<h2>Aliquam tincidunt mauris eu risus.</h2>
-								<p>Vestibulum auctor dapibus neque.</p>
-							</div>
-						</div>
+					<?php endforeach; ?>
+
+
+
           
-						<div class="project-post web-design">
+						<!---<div class="project-post web-design">
 							<div class="project-gal">
 								<img alt="" src="upload/portfolio/img2.jpg">
 								<div class="hover-box">
@@ -179,7 +183,7 @@
 								<h2>Aliquam tincidunt mauris eu risus.</h2>
 								<p>Vestibulum auctor dapibus neque.</p>
 							</div>
-						</div>
+						</div>--->
 					 
 					</div>
 				</div>
