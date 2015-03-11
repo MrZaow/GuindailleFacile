@@ -261,7 +261,11 @@
                     <div class="project-gal">
                         <img alt="" src="upload/portfolio/img1.jpg">
                         <a href="#">
-							<p>Infos</p>
+							<p>
+							7°<br/>
+							4.5/5<br/>
+							Infos<br/>
+							</p>
 						</a>
                     </div>
                     <div class="project-content">
