@@ -264,7 +264,7 @@
 							<p>
 							7°<br/>
 							4.5/5<br/>
-							Infos<br/>
+							5.631 €/L<br/>
 							</p>
 						</a>
                     </div>
@@ -278,7 +278,11 @@
                     <div class="project-gal">
                         <img alt="" src="upload/portfolio/img2.jpg">
                         <a href="#">
-							<p>Infos</p>
+							<p>
+							7°<br/>
+							4.5/5<br/>
+							5.631 €/L<br/>
+							</p>
 						</a>
                     </div>
                     <div class="project-content">
