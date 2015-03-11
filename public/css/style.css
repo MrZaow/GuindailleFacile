@@ -766,7 +766,7 @@ a.button-two:hover i {
 	bottom : 15%;
 	text-align : center;
 	font-size : 40px;
-	color : #e74c3b;
+	color : white;
 	opacity : 0;
 	
 	transition : opacity 0.5s;
@@ -774,7 +774,7 @@ a.button-two:hover i {
 
 .project-gal a:hover
 {
-	background-color : rgba(255,255,255,0.2);
+	background-color : rgba(229,59,41,0.5);
 }
 
 .project-gal a:hover p
