@@ -260,11 +260,11 @@
                 <div class="item project-post">
                     <div class="project-gal">
                         <img alt="" src="upload/portfolio/img1.jpg">
-                        <a href="#">
+                        <a href="?p=description">
 							<p>
-							7°<br/>
-							4.5/5<br/>
-							5.631 €/L<br/>
+                            <i class="fa fa-star"></i> 4.5/5<br/>
+							<i class="fa fa-glass"></i> 7°<br/>
+							<i class="fa fa-eur"></i> 5.6 euros/l<br/>
 							</p>
 						</a>
                     </div>
@@ -277,13 +277,13 @@
                 <div class="item project-post">
                     <div class="project-gal">
                         <img alt="" src="upload/portfolio/img2.jpg">
-                        <a href="#">
-							<p>
-							7°<br/>
-							4.5/5<br/>
-							5.631 €/L<br/>
-							</p>
-						</a>
+                        <a href="?p=descriptioncocktail">
+                            <p>
+                            <i class="fa fa-star"></i> 4.5/5<br/>
+                            <i class="fa fa-glass"></i> 12°<br/>
+                            <i class="fa fa-eur"></i> 7.9 euros/l<br/>
+                            </p>
+                        </a>
                     </div>
                     <div class="project-content">
                         <h2>Mojito</h2>
@@ -294,9 +294,13 @@
                 <div class="item project-post">
                     <div class="project-gal">
                         <img alt="" src="upload/portfolio/img3.jpg">
-                        <a href="#">
-							<p>Infos</p>
-						</a>
+                        <a href="?p=descriptionfort">
+                            <p>
+                            <i class="fa fa-star"></i> 3.5/5<br/>
+                            <i class="fa fa-glass"></i> 40°<br/>
+                            <i class="fa fa-eur"></i> 22.4 euros/l<br/>
+                            </p>
+                        </a>
                     </div>
                     <div class="project-content">
                         <h2>Vodka</h2>
