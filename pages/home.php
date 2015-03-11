@@ -260,9 +260,9 @@
                 <div class="item project-post">
                     <div class="project-gal">
                         <img alt="" src="upload/portfolio/img1.jpg">
-                        <div class="hover-box">
-                            <a class="link" href="index.php?p=description"><i>Détails</i></a>
-                        </div>
+                        <a href="#">
+							<p>Infos</p>
+						</a>
                     </div>
                     <div class="project-content">
                         <h2>Chimay Bleue</h2>
@@ -273,9 +273,9 @@
                 <div class="item project-post">
                     <div class="project-gal">
                         <img alt="" src="upload/portfolio/img2.jpg">
-                        <div class="hover-box">
-                            <a class="link" href="index.php?p=descriptioncocktail"><i>Détails</i></a>
-                        </div>
+                        <a href="#">
+							<p>Infos</p>
+						</a>
                     </div>
                     <div class="project-content">
                         <h2>Mojito</h2>
@@ -286,9 +286,9 @@
                 <div class="item project-post">
                     <div class="project-gal">
                         <img alt="" src="upload/portfolio/img3.jpg">
-                        <div class="hover-box">
-                            <a class="link" href="index.php?p=descriptionfort"><i>Détails</i></a>
-                        </div>
+                        <a href="#">
+							<p>Infos</p>
+						</a>
                     </div>
                     <div class="project-content">
                         <h2>Vodka</h2>
@@ -299,9 +299,9 @@
                 <div class="item project-post ">
                     <div class="project-gal">
                         <img alt="" src="upload/portfolio/img4.jpg">
-                        <div class="hover-box">
-                            <a class="link" href="single-project.html"><i>Détails</i></a>
-                        </div>
+                        <a href="#">
+							<p>Infos</p>
+						</a>
                     </div>
                     <div class="project-content">
                         <h2>Alcool 4.</h2>
@@ -311,9 +311,9 @@
                 <div class="item project-post">
                     <div class="project-gal">
                         <img alt="" src="upload/portfolio/img5.jpg">
-                        <div class="hover-box">
-                            <a class="link" href="single-project.html"><i>Détails</i></a>
-                        </div>
+                        <a href="#">
+							<p>Infos</p>
+						</a>
                     </div>
                     <div class="project-content">
                         <h2>Alcool 5.</h2>
@@ -323,9 +323,9 @@
                 <div class="item project-post">
                     <div class="project-gal">
                         <img alt="" src="upload/portfolio/img6.jpg">
-                        <div class="hover-box">
-                            <a class="link" href="single-project.html"><i>Détails</i></a>
-                        </div>
+                        <a href="#">
+							<p>Infos</p>
+						</a>
                     </div>
                     <div class="project-content">
                         <h2>Alcool 6.</h2>
@@ -335,9 +335,9 @@
                 <div class="item project-post">
                     <div class="project-gal">
                         <img alt="" src="upload/portfolio/img7.jpg">
-                        <div class="hover-box">
-                            <a class="link" href="single-project.html"><i>Détails</i></a>
-                        </div>
+                        <a href="#">
+							<p>Infos</p>
+						</a>
                     </div>
                     <div class="project-content">
                         <h2>Alcool 7.</h2>

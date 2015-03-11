@@ -721,52 +721,7 @@ a.button-two:hover i {
 .portfolio-box .project-post .project-gal img {
   width: 100%;
 }
-.portfolio-box .project-post .project-gal .hover-box {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgba(255, 255, 255, 0.35);
-  transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -webkit-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  visibility: hidden;
-  opacity: 0;
-}
-.portfolio-box .project-post .project-gal .hover-box a {
-  display: inline-block;
-  text-decoration: none;
-  transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -webkit-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  width: 150px;
-  height: 45px;
-  text-align: center;
-  border-bottom : 1px solid #e74c3c;
-  top: 75%;
-  margin-top: -20px;
-  position: absolute;
 
-  transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -webkit-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-}
-.portfolio-box .project-post .project-gal .hover-box a i {
-  font-size: 50px;
-  font-style : normal;
-  color: white !important;
-  line-height: 45px;
-  transition : color 0.2s;
-}
-
-.portfolio-box .project-post .project-gal .hover-box a.link {
-  right: 60%;
-  margin-right: 80px;
-}
 
 .portfolio-box .project-post .project-content {
   padding: 25px 10px;
@@ -791,25 +746,40 @@ a.button-two:hover i {
   font-size: 12px;
   color: #999999;
 }
-.portfolio-box .project-post:hover .project-gal .hover-box {
-  visibility: visible;
-  opacity: 1;
-}
-.portfolio-box .project-post:hover .project-gal .hover-box a {
-  -webkit-transform: rotate(0);
-  -moz-transform: rotate(0);
-  -ms-transform: rotate(0);
-  -o-transform: rotate(0);
-  transform: rotate(0);
-}
 
-.portfolio-box .project-post:hover .project-gal .hover-box a.link {
-  margin-right: 5px;
-}
-
-.portfolio-box .project-post:hover .project-gal .hover-box a:hover i
+/** Hover Img **/
+.project-gal a
 {
-	color : #e74c3c !important;
+	position : absolute;
+	top : 0px;
+	left : 0px;
+	width : 100%;
+	height : 100%;
+
+	transition : background-color 0.5s;
+}
+
+.project-gal a p
+{
+	position : absolute;
+	width : 100%;
+	bottom : 20%;
+	text-align : center;
+	font-size : 70px;
+	color : orange;
+	opacity : 0;
+	
+	transition : opacity 0.5s;
+}
+
+.project-gal a:hover
+{
+	background-color : rgba(255,255,255,0.1);
+}
+
+.project-gal a:hover p
+{
+	opacity : 1;
 }
 
 .portfolio-box .project-post:hover .project-content {
