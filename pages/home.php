@@ -458,7 +458,7 @@
                             <div class="testimonial-post">
                                 <img src="upload/testim1.jpg" alt="">
                                 <h2> Philippe I - Roi de Belgique </h2>
-                                <p> “ Guindaille Facile m'aide à supporter les conneries de mes minitres. ”</p>
+                                <p> “ Guindaille Facile m'aide à supporter les conneries de mes ministres. ”</p>
                             </div>
                         </div>
                         <div class="col-sm-4">
@@ -472,7 +472,7 @@
                             <div class="testimonial-post">
                                 <img src="upload/testim3.jpg" alt="">
                                 <h2> Albert Einstein - Scientifique </h2>
-                                <p> “ Selon mes calculs, vous êtes garrantis de passer des soirées exponentiellement festives si vous consultez Guindaille Facile régulièrement. ”</p>
+                                <p> “ Selon mes calculs, vous êtes garantis de passer des soirées exponentiellement festives si vous consultez Guindaille Facile régulièrement. ”</p>
                             </div>
                         </div>
                     </div>                          

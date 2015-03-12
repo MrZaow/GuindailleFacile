@@ -76,7 +76,7 @@
 												</li>
 												<li>
 													<div class="list">
-														<h3>- Honéreuse</h3>
+														<h3>- Onéreuse</h3>
 													</div>
 												</li>
 											</ul>
