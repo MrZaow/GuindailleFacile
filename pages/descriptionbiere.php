@@ -34,8 +34,14 @@ $post = App\App::getDB()->prepare('SELECT *
 					<div class="row">
 						<div class="col-md-7">
 							<div class="project-block triggerAnimation animated" data-animate="slideInLeft">
-								<div class="single-project-content">
-									<?= $post->getDescription(); ?>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="single-project-content">
+											<h1>À propos</h1>
+											<h3>La <?= $post->nom; ?> est une bière <?= $post->type; ?> <?= $post->couleur; ?> originaire de <?= $post->paysorigine; ?>.
+											Elle contient <?= $post->pourcentagealcool; ?> % d'alcool et coûte en moyenne <?= $post->prixlitre; ?> euros/litre en magasin.</h3>
+										</div>
+									</div>
 								</div>
 
 								<div class="row">
@@ -84,27 +90,10 @@ $post = App\App::getDB()->prepare('SELECT *
 										</div>
 									</div>
 								</div>
+								<div class="single-project-content">
+									<p><?= $post->getDescription(); ?></p>
+								</div>
 								<div class="row">
-									<div class="col-md-6">
-										<div class="single-project-content">
-											<h1>À propos</h1>
-
-											<ul class="feature-list2">
-												<br>
-												<li>
-													<div class="list">
-														<h3>Degré d'alcool : <?= $post->pourcentagealcool; ?> %</h3>
-													</div>
-												</li>
-												<li>
-													<div class="list">
-														<h3>Prix moyen : <?= $post->prixlitre; ?> euros/litre</h3>
-													</div>
-												</li>
-											</ul>
-
-										</div>
-									</div>
 									<div class="col-md-6">
 										<div class="single-project-content">
 											<h1>Note des guindailleurs</h1>
