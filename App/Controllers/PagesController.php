@@ -14,6 +14,9 @@ class PagesController extends AppController
     }
 
     // On créer une fonction public avec le même nom que la page qu'on veut on aura accès à cette page avec l'url .../pages/articles
+    // C'est dans ces fonctions qu'on va récupérer / traiter des données
+    // Ici je créer juste la variable $posts qui va contenir les articles et j'envoie cette variable à la vue
+    // C'est le model qui va se charger de "remplire" cette variable en allant chercher ce qu'il faut en bdd
     public function articles()
     {
         // On charge le model dont on a besoin ici je veux récupérer des articles donc je charges articles
