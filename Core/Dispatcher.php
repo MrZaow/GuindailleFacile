@@ -19,7 +19,9 @@ class Dispatcher
             $controllerName = 'App\\Controllers\\' . ucfirst($this->Request->controller) . 'Controller';
 			$controller = new $controllerName;
 
-            extract(call_user_func([$controller,$this->Request->action]));
+            $data = call_user_func([$controller,$this->Request->action]);
+            if(!empty($data))
+                extract($data);
 
             ob_start();
             require('./App/Views/' . ucfirst($this->Request->controller) . '/' . $controller->view . '.php');
