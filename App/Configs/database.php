@@ -2,7 +2,7 @@
 
 return [
     'host'     => 'localhost',
-    'dbName'   => 'gindaillefacile',
+    'dbName'   => 'guindaillefacile',
     'username' => 'root',
     'password' => 'root',
     'options'  => [
