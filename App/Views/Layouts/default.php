@@ -11,17 +11,16 @@
 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700,300,100,200' rel='stylesheet' type='text/css'>
 
-
-    <link rel="stylesheet" type="text/css" href="./App/Assets/css/bootstrap.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="./App/Assets/css/owl.carousel.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="./App/Assets/css/owl.theme.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="./App/Assets/css/jquery.bxslider.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="./App/Assets/css/magnific-popup.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="./App/Assets/css/font-awesome.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="./App/Assets/css/flexslider.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="<?= ASSETS; ?>css/bootstrap.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="<?= ASSETS; ?>css/owl.carousel.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="<?= ASSETS; ?>css/owl.theme.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="<?= ASSETS; ?>css/jquery.bxslider.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="<?= ASSETS; ?>css/magnific-popup.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="<?= ASSETS; ?>css/font-awesome.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="<?= ASSETS; ?>css/flexslider.css" media="screen">
     <!-- REVOLUTION BANNER CSS SETTINGS -->
-    <link rel="stylesheet" type="text/css" href="./App/Assets/css/settings.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="./App/Assets/css/style.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="<?= ASSETS; ?>css/settings.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="<?= ASSETS; ?>css/style.css" media="screen">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
 </head>
@@ -43,7 +42,7 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="?p=home"><img alt="" src="./App/Assets/images/logo8.png"></a>
+                            <a class="navbar-brand" href="?p=home"><img alt="" src="<?= ASSETS; ?>images/logo8.png"></a>
                         </div>
                     </div>
                     <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
@@ -104,7 +103,7 @@
                                 qui présentent des listes de cocktails, bières ou alcools forts, d'une façon vraiment pratique et facile. Il a donc décidé de créer son propre site
                                 avec l'aide de quelques amis programmeurs, et c'est ainsi qu'est né Guindaille facile.
                             </p>
-                            <img src="./App/Assets/images/footer-logo.png" alt="">
+                            <img src="<?= ASSETS; ?>images/footer-logo.png" alt="">
                         </div>
                     </div>
 
@@ -130,25 +129,25 @@
 
 <!-- THE SCRIPT INITIALISATION -->
 <!-- LOOK THE DOCUMENTATION FOR MORE INFORMATIONS -->
-<script type="text/javascript" src="./App/Assets/js/jquery.min.js"></script>
-<script type="text/javascript" src="./App/Assets/js/jquery.migrate.js"></script>
-<script type="text/javascript" src="./App/Assets/js/owl.carousel.min.js"></script>
-<script type="text/javascript" src="./App/Assets/js/jquery.magnific-popup.min.js"></script>
-<script type="text/javascript" src="./App/Assets/js/jquery.bxslider.min.js"></script>
-<script type="text/javascript" src="./App/Assets/js/jquery.appear.js"></script>
-<script type="text/javascript" src="./App/Assets/js/jquery.countTo.js"></script>
-<script type="text/javascript" src="./App/Assets/js/bootstrap.js"></script>
-<script type="text/javascript" src="./App/Assets/js/jquery.imagesloaded.min.js"></script>
-<script type="text/javascript" src="./App/Assets/js/retina-1.1.0.min.js"></script>
-<script type="text/javascript" src="./App/Assets/js/plugins-scroll.js"></script>
-<script type="text/javascript" src="./App/Assets/js/waypoint.min.js"></script>
-<script type="text/javascript" src="./App/Assets/js/jquery.flexslider.js"></script>
+<script type="text/javascript" src="<?= ASSETS; ?>js/jquery.min.js"></script>
+<script type="text/javascript" src="<?= ASSETS; ?>js/jquery.migrate.js"></script>
+<script type="text/javascript" src="<?= ASSETS; ?>js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="<?= ASSETS; ?>js/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="<?= ASSETS; ?>js/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="<?= ASSETS; ?>js/jquery.appear.js"></script>
+<script type="text/javascript" src="<?= ASSETS; ?>js/jquery.countTo.js"></script>
+<script type="text/javascript" src="<?= ASSETS; ?>js/bootstrap.js"></script>
+<script type="text/javascript" src="<?= ASSETS; ?>js/jquery.imagesloaded.min.js"></script>
+<script type="text/javascript" src="<?= ASSETS; ?>js/retina-1.1.0.min.js"></script>
+<script type="text/javascript" src="<?= ASSETS; ?>js/plugins-scroll.js"></script>
+<script type="text/javascript" src="<?= ASSETS; ?>js/waypoint.min.js"></script>
+<script type="text/javascript" src="<?= ASSETS; ?>js/jquery.flexslider.js"></script>
 
-<script type="text/javascript" src="./App/Assets/js/jquery.stellar.min.js"></script>
-<script type="text/javascript" src="./App/Assets/js/jquery.isotope.min.js"></script>
-<script type="text/javascript" src="./App/Assets/js/jquery.themepunch.plugins.min.js"></script>
-<script type="text/javascript" src="./App/Assets/js/jquery.themepunch.revolution.min.js"></script>
-<script type="text/javascript" src="./App/Assets/js/script.js"></script>
+<script type="text/javascript" src="<?= ASSETS; ?>js/jquery.stellar.min.js"></script>
+<script type="text/javascript" src="<?= ASSETS; ?>js/jquery.isotope.min.js"></script>
+<script type="text/javascript" src="<?= ASSETS; ?>js/jquery.themepunch.plugins.min.js"></script>
+<script type="text/javascript" src="<?= ASSETS; ?>js/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="<?= ASSETS; ?>js/script.js"></script>
 
 
 <script type="text/javascript">
