@@ -20,19 +20,19 @@
 								<li><a href="etudiant.php">Coin étudiant</a></li>
 								<li><a href="#">Alcools</a>
 									<ul class="drop-down">
-										<li><a href="?p=cocktail">Cocktails</a></li>
-										<li><a href="?p=biere">Bières</a></li>
-										<li><a href="?p=fort">Alcools forts</a></li>
+										<li><a href="cocktail.php">Cocktails</a></li>
+										<li><a href="biere.php">Bières</a></li>
+										<li><a href="fort.php">Alcools forts</a></li>
 									</ul>
 								</li>
                                 <li><a href="#">Outils</a>
                                     <ul class="drop-down">
-                                        <li><a href="index.php?p=limite">Le Bibinomètre</a></li>
-                                        <li><a href="index.php?p=budget">Soirée à budget</a></li>
-                                        <li><a href="index.php?p=encodage">Encodage</a></li>
+                                        <li><a href="limite.php">Le Bibinomètre</a></li>
+                                        <li><a href="404.php">Soirée à budget</a></li>
+                                        <li><a href="encodage.php">Encodage</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="index.php?p=jeux">Jeux d'alcool</a></li>
+                                <li><a href="jeux.php">Jeux d'alcool</a></li>
 
 								<li class="drop"><a href="#" class="open-search"><i class="fa fa-search"></i></a>
 									<form class="form-search">

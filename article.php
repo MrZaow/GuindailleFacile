@@ -1,8 +1,12 @@
-<?php
+<!doctype html>
 
-	$post = App\App::getDB()->prepare('SELECT * FROM articles WHERE id = ?', [$_GET['id']],'App\Table\Article' ,true);
+<html lang="fr" class="no-js">
 
-?>
+<?php include("includes/head.php") ?>
+
+<body>
+<!-- Container -->
+<div id="container">
 		<div id="content">
 
 			<!-- page-banner 
@@ -22,16 +26,15 @@
           					<div class="col-md-12">
 
           						<div class="blog-post single-post triggerAnimation animated" data-animate="slideInUp">
-									<!---<img alt="" src="upload/blog/blog2/blog1.jpg"> --->
 									<div class="post-content">
 
-										<?= $post->Date; ?>
+										Date
 
 										<div class="content-data">
-											<?= $post->Titre ; ?>
-											<?= $post->Auteur; ?>
+											Titre
+											Auteur
 										</div>
-										<?= $post->Contenu; ?>
+										Contenu
 
 										<div class="share-tag-box">
 											<span>Partager cette article sur</span>
@@ -39,7 +42,6 @@
 												<li><a class="facebook" href="single-post.html#"><i class="fa fa-facebook"></i></a></li>
 											</ul>
 										</div>
-										<!----
 										<div class="pagination-boxer">
 											<div class="prev-post">
 												<a href="single-post.html#" class="button-third"><i class="fa fa-angle-left"></i> Précédent</a>
@@ -188,3 +190,13 @@
 
 		</div>
 		<!-- End content -->
+
+
+    <?php include("includes/footer.php") ?>
+
+</div>
+<!-- End Container -->
+<?php include("includes/script.php") ?>
+
+</body>
+</html>

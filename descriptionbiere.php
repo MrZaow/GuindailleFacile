@@ -1,13 +1,17 @@
-<?php
+<!doctype html>
 
-$post = App\App::getDB()->prepare('SELECT *
-                                    FROM bieres AS b INNER JOIN ingredients AS i
-                                    ON b.idingredient = i .idingredient
-                                    INNER JOIN boissons AS b2
-                                    ON b.idingredient = b2.idingredient
-                                    WHERE b.idingredient = ?', [$_GET['i']],'App\Table\biere' ,true);
+<html lang="fr" class="no-js">
 
-?>		<div id="content">
+<?php include("includes/head.php") ?>
+
+<body>
+<!-- Container -->
+<div id="container">
+ 
+
+    <?php include("includes/header.php") ?>
+
+	<div id="content">
 
 			<!-- page-banner 
 				================================================== -->
@@ -26,8 +30,8 @@ $post = App\App::getDB()->prepare('SELECT *
 
 					<div class="title-section white">
 						<div class="container triggerAnimation animated" data-animate="bounceIn">
-							<h1><?= $post->nom; ?></h1>
-							<p><?= $post->resume; ?></p>
+							<h1>Nom</h1>
+							<p>Resume</p>
 						</div>
 					</div>
 
@@ -38,8 +42,8 @@ $post = App\App::getDB()->prepare('SELECT *
 									<div class="col-md-12">
 										<div class="single-project-content">
 											<h1>À propos</h1>
-											<h3>La <?= $post->nom; ?> est une bière <?= $post->type; ?> <?= $post->couleur; ?> originaire de <?= $post->paysorigine; ?>.
-											Elle contient <?= $post->pourcentagealcool; ?> % d'alcool et coûte en moyenne <?= $post->prixlitre; ?> euros/litre en magasin.</h3>
+											<h3>La NOM est une bière TYPE COULEUR originaire de ORIGINE.
+											Elle contient POURCENTAGEALCOOL % d'alcool et coûte en moyenne PRIXLITRE euros/litre en magasin.</h3>
 										</div>
 									</div>
 								</div>
@@ -91,7 +95,7 @@ $post = App\App::getDB()->prepare('SELECT *
 									</div>
 								</div>
 								<div class="single-project-content">
-									<p><?= $post->getDescription(); ?></p>
+									<p>DESCRIPTION</p>
 								</div>
 								<div class="row">
 									<div class="col-md-6">
@@ -103,7 +107,7 @@ $post = App\App::getDB()->prepare('SELECT *
 												<li>
 													<span><i class="fa fa-star"></i></span>
 													<div class="list-cont">
-														<h3><?= $post->cotesur5; ?>/5</h3>
+														<h3>COTESUR5/5</h3>
 													</div>
 												</li>
 											</ul>
@@ -117,7 +121,7 @@ $post = App\App::getDB()->prepare('SELECT *
 						</div>
 
 						<div class="col-md-5">
-							<?= $post->getSlider() ;?>
+							SLIDER
 						</div>
 					</div>
 
@@ -303,3 +307,12 @@ $post = App\App::getDB()->prepare('SELECT *
 
 		</div>
 		<!-- End content -->
+
+    <?php include("includes/footer.php") ?>
+
+</div>
+<!-- End Container -->
+<?php include("includes/script.php") ?>
+
+</body>
+</html>

@@ -1,4 +1,15 @@
+<!doctype html>
 
+<html lang="fr" class="no-js">
+
+<?php include("includes/head.php") ?>
+
+<body>
+<!-- Container -->
+<div id="container">
+ 
+
+    <?php include("includes/header.php") ?>
 		<div id="content">
 
 			<div class="section-content page-banner portfolio-page-banner">
@@ -185,3 +196,12 @@
 			</div>
 
 		</div>
+
+    <?php include("includes/footer.php") ?>
+
+</div>
+<!-- End Container -->
+<?php include("includes/script.php") ?>
+
+</body>
+</html>

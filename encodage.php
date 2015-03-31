@@ -1,30 +1,14 @@
-<?php
+<!doctype html>
 
-if(isset($_POST["submit"]))
-{
-    $arg = array($_POST["nom"], $_POST["resume"], $_POST["description"], $_POST["mesure"]);
-    App\App::getDB()->prepare("INSERT INTO ingredients (nom, resume, description, unitemesure) VALUES (?, ?, ?, ?)",$arg ,'', true, false);
+<html lang="fr" class="no-js">
+<?php include("includes/head.php") ?>
 
-    $image1 = file_get_contents($_FILES['image1']['tmp_name']);
-    $image2 = file_get_contents($_FILES['image2']['tmp_name']);
-    $image3 = file_get_contents($_FILES['image3']['tmp_name']);
-    $arg = array($_POST["pourcentagealcool"], $_POST["prixlitre"], $_POST["cotesur5"],$image1,$image2 ,$image3);
-    App\App::getDB()->prepare("INSERT INTO boissons (pourcentagealcool, prixlitre, cotesur5, image1, image2, image3, idingredient) VALUES (?, ?, ?, ?, ?, ?, (SELECT idingredient FROM ingredients ORDER BY idingredient DESC LIMIT 1))",$arg ,'', true, false);
+<body>
+<!-- Container -->
+<div id="container">
+ 
 
-    switch($_POST["categorie"])
-    {
-        case 'biere':
-            $arg = array($_POST["type"], $_POST["pays"], $_POST["couleur"]);
-            App\App::getDB()->prepare("INSERT INTO bieres (type, paysorigine,couleur, idingredient) VALUES (?, ?, ?, (SELECT idingredient FROM ingredients ORDER BY idingredient DESC LIMIT 1))",$arg ,'', true, false);
-            break;
-        case 'alcoolfort':
-            App\App::getDB()->insert("INSERT INTO ALCOOLSFORTS VALUES ((SELECT idingredient FROM INGREDIENTS ORDER BY idingredient DESC LIMIT 1))");
-
-
-    }
-}
-
-?>
+    <?php include("includes/header.php") ?>
 <div id="content">
 
     <!-- page-banner
@@ -201,3 +185,13 @@ if(isset($_POST["submit"]))
     </div>
 
 </div>
+
+
+    <?php include("includes/footer.php") ?>
+
+</div>
+<!-- End Container -->
+<?php include("includes/script.php") ?>
+
+</body>
+</html>

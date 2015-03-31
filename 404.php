@@ -1,3 +1,11 @@
+<?php include("includes/head.php") ?>
+
+<body>
+<!-- Container -->
+<div id="container">
+ 
+
+    <?php include("includes/header.php") ?>
 <!-- content 
 	================================================== -->
 <div id="content">
@@ -28,3 +36,13 @@
 
 </div>
 <!-- End content -->
+
+
+    <?php include("includes/footer.php") ?>
+
+</div>
+<!-- End Container -->
+<?php include("includes/script.php") ?>
+
+</body>
+</html>
