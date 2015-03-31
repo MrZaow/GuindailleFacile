@@ -17,7 +17,7 @@
 						<div class="navbar-collapse collapse">
 							<ul class="nav navbar-nav navbar-right">
 								<li><a class="active" href="index.php">Accueil</a></li>
-								<li><a href="?p=etudiant">Coin étudiant</a></li>
+								<li><a href="etudiant.php">Coin étudiant</a></li>
 								<li><a href="#">Alcools</a>
 									<ul class="drop-down">
 										<li><a href="?p=cocktail">Cocktails</a></li>
