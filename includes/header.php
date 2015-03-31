@@ -29,10 +29,10 @@
                                     <ul class="drop-down">
                                         <li><a href="index.php?p=limite">Le Bibinomètre</a></li>
                                         <li><a href="index.php?p=budget">Soirée à budget</a></li>
+                                        <li><a href="index.php?p=encodage">Encodage</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="index.php?p=jeux">Jeux d'alcool</a></li>
-                                <li><a href="index.php?p=encodage">Encodage</a></li>
 
 								<li class="drop"><a href="#" class="open-search"><i class="fa fa-search"></i></a>
 									<form class="form-search">

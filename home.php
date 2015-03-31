@@ -1,10 +1,15 @@
 <!doctype html>
 
 <html lang="fr" class="no-js">
-<body>
 
+<?php include("includes/head.php") ?>
+
+<body>
 <!-- Container -->
 <div id="container">
+ 
+
+    <?php include("includes/header.php") ?>
 
     <div id="slider" class="slider1">
         <div class="tp-banner-container">
@@ -434,17 +439,16 @@
             <div class="container triggerAnimation animated" data-animate="fadeInUp">
                 <div id="owl-demo2" class="owl-carousel owl-theme">
 
-                    <?php foreach(App\Table\Article::getLast() as $post): ?>
+                    
                     <div class="item blog-post ">
                         <div class="post-content">
-                            <?= $post->Date; ?>
+                            Date
                             <div class="content-data">
-                                <?= $post->Titre; ?>
-                                <?= $post->Auteur; ?>
+                                Titre
+                                Auteur
                             </div>
                         </div>
                     </div>
-                    <?php endforeach; ?>
 
                 </div>
                 <div class="buttons">
@@ -491,8 +495,12 @@
 
     </div>
     <!-- End content -->
+
+    <?php include("includes/footer.php") ?>
+
 </div>
 <!-- End Container -->
+<?php include("includes/script.php") ?>
 
 </body>
 </html>
