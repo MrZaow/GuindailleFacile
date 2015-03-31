@@ -273,7 +273,7 @@
                     <div class="item project-post">
                         <div class="project-gal">
                             <img alt="" src="upload/portfolio/img1.jpg">
-                            <a href="?p=description">
+                            <a href="descriptionbiere.php">
     							<p>
                                 <i class="fa fa-star"></i> 4.5/5<br/>
     							<i class="fa fa-glass"></i> 7°<br/>
@@ -290,7 +290,7 @@
                     <div class="item project-post">
                         <div class="project-gal">
                             <img alt="" src="upload/portfolio/img2.jpg">
-                            <a href="?p=descriptioncocktail">
+                            <a href="descriptioncocktail.php">
                                 <p>
                                 <i class="fa fa-star"></i> 4.5/5<br/>
                                 <i class="fa fa-glass"></i> 12°<br/>
@@ -307,7 +307,7 @@
                     <div class="item project-post">
                         <div class="project-gal">
                             <img alt="" src="upload/portfolio/img3.jpg">
-                            <a href="?p=descriptionfort">
+                            <a href="descriptionfort.php">
                                 <p>
                                 <i class="fa fa-star"></i> 3.5/5<br/>
                                 <i class="fa fa-glass"></i> 40°<br/>
