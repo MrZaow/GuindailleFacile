@@ -28,7 +28,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <h1>Ingrédient</h1>
-                    <form action="?p=encodage" method="post">
+                    <form action="encodage.php" method="post">
                         <div class="form-group">
                             <label>Nom</label>
                             <input type="text" class="form-control" name="nom" placeholder="Nom" autofocus>
@@ -53,7 +53,7 @@
                                 <option>cuillère à soupe</option>
                             </select>
                         </div>
-                        <input type="hidden" name="categorie" value="simple">
+                        <input type="hidden" name="unitemesure" value="simple">
                         <input type="submit" class="btn btn-primary" name="submit" value="Envoyer"><br><br>
                     </form>
                 </div>

@@ -260,17 +260,6 @@
         ================================================== -->
     <div id="content">
 
-<?php
-$reponse = $bdd->query('SELECT * FROM bieres');
-$donnees = $reponse->fetch();
-
-echo "TEST";
-
-while($donnees = $reponse->fetch()){
-    echo $donnees['paysorigine'];
-}
-?>
-
         <!-- portfolio-section
             ================================================== -->
         <div class="section-content portfolio-section">

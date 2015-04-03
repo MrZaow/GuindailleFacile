@@ -29,10 +29,18 @@
                                     <ul class="drop-down">
                                         <li><a href="limite.php">Le Bibinomètre</a></li>
                                         <li><a href="404.php">Soirée à budget</a></li>
-                                        <li><a href="encodage.php">Encodage</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="jeux.php">Jeux d'alcool</a></li>
+                                <li><a href="#">Admin</a>
+                                    <ul class="drop-down">
+                                        <li><a href="encodageingredient.php">Ajout ingrédient</a></li>
+                                        <li><a href="encodagebiere.php">Ajout bière</a></li>
+                                        <li><a href="encodagecocktail.php">Ajout cocktail</a></li>
+                                        <li><a href="encodagefort.php">Ajout alcool fort</a></li>
+                                    </ul>
+                                </li>
+                                
 
 								<li class="drop"><a href="#" class="open-search"><i class="fa fa-search"></i></a>
 									<form class="form-search">

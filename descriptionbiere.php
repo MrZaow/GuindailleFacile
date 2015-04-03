@@ -43,8 +43,21 @@
 									<div class="col-md-12">
 										<div class="single-project-content">
 											<h1>À propos</h1>
-											<h3>La NOM est une bière TYPE COULEUR originaire de ORIGINE.
-											Elle contient POURCENTAGEALCOOL % d'alcool et coûte en moyenne PRIXLITRE euros/litre en magasin.</h3>
+											<?php
+											$reponse = $bdd->query('SELECT * FROM bieres');
+
+											while($donnees = $reponse->fetch()){
+											?>
+													    echo $donnees['paysorigine'];
+											<h3>La NOM est une bière <?php echo $donnees['type']; ?> <?php echo $donnees['couleur']; ?> 
+											originaire de <?php echo $donnees['origine']; ?>.
+											Elle contient POURCENTAGEALCOOL % d'alcool et coûte en moyenne PRIXLITRE euros/litre en magasin.
+										</h3>
+
+										<?php 
+										} 
+										$reponse->closeCursor(); // Termine le traitement de la requête
+										?>
 										</div>
 									</div>
 								</div>
