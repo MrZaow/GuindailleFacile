@@ -277,6 +277,7 @@
                             <img alt="" src="upload/portfolio/img1.jpg">
                             <a href="descriptionbiere.php">
     							<p>
+                                <br>
                                 <i class="fa fa-star"></i> 4.5/5<br/>
     							<i class="fa fa-glass"></i> 7°<br/>
     							<i class="fa fa-eur"></i> 5.6 euros/l<br/>
@@ -294,6 +295,7 @@
                             <img alt="" src="upload/portfolio/img2.jpg">
                             <a href="descriptioncocktail.php">
                                 <p>
+                                <br>
                                 <i class="fa fa-star"></i> 4.5/5<br/>
                                 <i class="fa fa-glass"></i> 12°<br/>
                                 <i class="fa fa-eur"></i> 7.9 euros/l<br/>
@@ -311,6 +313,7 @@
                             <img alt="" src="upload/portfolio/img3.jpg">
                             <a href="descriptionfort.php">
                                 <p>
+                                <br>
                                 <i class="fa fa-star"></i> 3.5/5<br/>
                                 <i class="fa fa-glass"></i> 40°<br/>
                                 <i class="fa fa-eur"></i> 22.4 euros/l<br/>

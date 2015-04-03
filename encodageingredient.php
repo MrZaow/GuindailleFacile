@@ -56,6 +56,7 @@ require_once("erreurencodageingredient.php");
                                 <option value="pincées">pincées</option>
                                 <option value="cuillères à café">cuillères à café</option>
                                 <option value="cuillères à soupe">cuillères à soupe</option>
+                                <option value="feuilles">feuilles</option>
                             </select>
                         </div>
                         <?php if(isset($error['unitemesure'])) echo $error['unitemesure']; ?>

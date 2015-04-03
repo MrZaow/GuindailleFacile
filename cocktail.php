@@ -43,8 +43,8 @@
 							<div class="project-gal">
 								<img alt="" src="upload/portfolio/img1.jpg">
 								<div class="hover-box">
-									<a class="zoom" href="upload/portfolio/img1.jpg"><i class="fa fa-search-plus"></i></a>
-									<a class="link" href="?p=description"><i class="fa fa-link"></i></a>
+									<a class="zoom" href="upload/portfolio/img1.jpg"></a>
+									<a class="link" href="descriptioncocktail.php"></a>
 								</div>
 							</div>
 							<div class="project-content">
@@ -57,8 +57,8 @@
 							<div class="project-gal">
 								<img alt="" src="upload/portfolio/img2.jpg">
 								<div class="hover-box">
-									<a class="zoom" href="upload/portfolio/img2.jpg"><i class="fa fa-search-plus"></i></a>
-									<a class="link" href="?p=descriptioncocktail"><i class="fa fa-link"></i></a>
+									<a class="zoom" href="upload/portfolio/img2.jpg"></a>
+									<a class="link" href="descriptioncocktail.php"></a>
 								</div>
 							</div>
 							<div class="project-content">
