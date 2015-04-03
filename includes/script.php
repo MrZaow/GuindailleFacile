@@ -1,38 +1,55 @@
-<!-- THE SCRIPT INITIALISATION -->
-	<!-- LOOK THE DOCUMENTATION FOR MORE INFORMATIONS -->
-	<script type="text/javascript">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.migrate.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="js/jquery.appear.js"></script>
+<script type="text/javascript" src="js/jquery.countTo.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/jquery.imagesloaded.min.js"></script>
+<script type="text/javascript" src="js/retina-1.1.0.min.js"></script>
+<script type="text/javascript" src="js/plugins-scroll.js"></script>
+<script type="text/javascript" src="js/waypoint.min.js"></script>
+<script type="text/javascript" src="js/jquery.flexslider.js"></script>
 
-		var revapi;
+<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+<script type="text/javascript" src="js/jquery.themepunch.plugins.min.js"></script>
+<script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 
-		jQuery(document).ready(function() {
 
-			   revapi = jQuery('.tp-banner').revolution(
-				{
-					delay:9000,
-					startwidth:1170,
-					startheight:738,
-					hideThumbs:10,
-					fullWidth:"on",
-					forceFullWidth:"on",
-					navigationType:"none",
-					navigationArrows:"none",
-					onHoverStop:"off"
-				});
+<script type="text/javascript">
 
-			   var slideThumb = $('.slide-thumbs');
+    var revapi;
 
-				slideThumb.on('click', function(){
-					var btn = $(this);
-					revapi.revshowslide(btn.data('slide'));
+    jQuery(document).ready(function() {
 
-				});
-				revapi.bind("revolution.slide.onchange", function (e,data) {
-					slideThumb.parent('li').removeClass('active');
-					$('#slidethumb' + data.slideIndex).parent('li').addClass('active');
-				});
+        revapi = jQuery('.tp-banner').revolution(
+            {
+                delay:9000,
+                startwidth:1170,
+                startheight:738,
+                hideThumbs:10,
+                fullWidth:"on",
+                forceFullWidth:"on",
+                navigationType:"none",
+                navigationArrows:"none",
+                onHoverStop:"off"
+            });
 
-		});	//ready
+        var slideThumb = $('.slide-thumbs');
 
-	</script>
+        slideThumb.on('click', function(){
+            var btn = $(this);
+            revapi.revshowslide(btn.data('slide'));
 
-	<!-- END REVOLUTION SLIDER -->
+        });
+        revapi.bind("revolution.slide.onchange", function (e,data) {
+            slideThumb.parent('li').removeClass('active');
+            $('#slidethumb' + data.slideIndex).parent('li').addClass('active');
+        });
+
+    });	//ready
+
+</script>
