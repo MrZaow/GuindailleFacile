@@ -28,7 +28,7 @@ require_once("erreurencodageingredient.php");
     <div class="section-content">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-8">
                     <h1>Ingrédient</h1>
                     <form action="encodageingredient.php" method="post">
                         <div class="form-group">
@@ -37,8 +37,8 @@ require_once("erreurencodageingredient.php");
                             <?php if(isset($error['resume'])) echo $error['resume']; ?>
                         </div>
                         <div class="form-group">
-                            <label>Résumé (=slogan)</label><br>
-                            <textarea cols="120" placeholder="Le résumé" name="resume" id="resume" value="<?php if(isset($resume)) echo $resume; ?>" class="form-control"></textarea>
+                            <label>Résumé/Slogan</label><br>
+                            <input type="text" placeholder="Le résumé" name="resume" id="resume" value="<?php if(isset($resume)) echo $resume; ?>" class="form-control">
                             <?php if(isset($error['resume'])) echo $error['resume']; ?>
                         </div>
                         <div class="form-group">
@@ -49,7 +49,7 @@ require_once("erreurencodageingredient.php");
 
                         <div class="form-group">
                             <label>Unité de mesure</label><br>
-                            <select class="form-control" name="mesure">
+                            <select class="form-control" name="unitemesure">
                                 <option value="l">l</option>
                                 <option value="cl">cl</option>
                                 <option value="gr">gr</option>
@@ -58,15 +58,12 @@ require_once("erreurencodageingredient.php");
                                 <option value="cuillères à soupe">cuillères à soupe</option>
                             </select>
                         </div>
-                        <input type="hidden" name="unitemesure" value="acoder">
                         <?php if(isset($error['unitemesure'])) echo $error['unitemesure']; ?>
                         <input type="submit" class="btn btn-primary" name="submit" value="Envoyer"><br><br>
                         <?php if(isset($_GET['ID']) || isset($_POST['ID'])) {
                             ?>
                             <input type="hidden" value='<?php if(isset($_GET['ID'])) echo $_GET['ID']; else echo $_POST['ID']; ?>' name="ID" id="ID" />
-                            <?php
-                        }
-                        echo $result; ?>
+                            <div class="alert alert-success" role="alert"> <?php } echo $result ?></div>
                     </form>
                 </div>
             </div>
