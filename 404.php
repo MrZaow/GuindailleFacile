@@ -1,4 +1,8 @@
+<?php include("includes/connectionpdo.php") ?>
 <?php include("includes/head.php") ?>
+<!doctype html>
+
+<html lang="fr" class="no-js">
 
 <body>
 <!-- Container -->

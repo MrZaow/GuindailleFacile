@@ -1,3 +1,5 @@
+<?php include("includes/connectionpdo.php") ?>
+
 <!doctype html>
 
 <html lang="fr" class="no-js">
@@ -89,7 +91,7 @@
                              data-easing="Back.easeInOut"
                              data-endspeed="400"
                              data-endeasing="Back.easeIn"
-                             style="z-index: 14"><a class="button-large" href="index.php">Les bières</a><a class="button-large" href="index.php">Les cocktails</a>
+                             style="z-index: 14"><a class="button-large" href="biere.php">Les bières</a><a class="button-large" href="cocktail.php">Les cocktails</a>
                         </div>
                     </li>
                     <!-- SLIDE  -->
@@ -134,7 +136,7 @@
                              data-easing="Back.easeInOut"
                              data-endspeed="400"
                              data-endeasing="Back.easeIn"
-                             style="z-index: 14"><a class="button-large" href="index.php">Le coin étudiant</a>
+                             style="z-index: 14"><a class="button-large" href="etudiant.php">Le coin étudiant</a>
                         </div>
 
                         <!-- LAYER NR. 4 -->
@@ -208,7 +210,7 @@
                              data-easing="Back.easeInOut"
                              data-endspeed="400"
                              data-endeasing="Back.easeIn"
-                             style="z-index: 14"><a class="button-large" href="index.php">Les jeux d'alcool</a>
+                             style="z-index: 14"><a class="button-large" href="jeux.php">Les jeux d'alcool</a>
                         </div>
                     </li>
                 </ul>
@@ -257,6 +259,17 @@
     <!-- content
         ================================================== -->
     <div id="content">
+
+<?php
+$reponse = $bdd->query('SELECT * FROM bieres');
+$donnees = $reponse->fetch();
+
+echo "TEST";
+
+while($donnees = $reponse->fetch()){
+    echo $donnees['paysorigine'];
+}
+?>
 
         <!-- portfolio-section
             ================================================== -->

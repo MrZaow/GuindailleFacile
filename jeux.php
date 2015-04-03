@@ -1,3 +1,4 @@
+<?php include("includes/connectionpdo.php") ?>
 <!doctype html>
 
 <html lang="fr" class="no-js">
