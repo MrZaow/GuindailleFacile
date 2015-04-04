@@ -44,7 +44,7 @@ if(!empty($_POST))
     {
         if(empty($ID))
         {
-            $result = "Ingrédient ajouté avec succès !";
+            
 
             $req = $bdd->prepare('INSERT INTO ingredients(idingredient, nom, resume, description, unitemesure) VALUES(:idingredient ,:nom, :resume, :description, :unitemesure)');
                     $req->execute(array(
@@ -55,6 +55,8 @@ if(!empty($_POST))
                             'unitemesure' => $unitemesure,
                         ));
             unset($nom, $resume, $description, $unitemesure);
+
+            $result = "Ingrédient ajouté avec succès !";
         }
     }
 }

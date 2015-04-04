@@ -10,7 +10,7 @@
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 							</button>
-							<a class="navbar-brand" href="?p=home"><img alt="" src="images/logo8.png"></a>
+							<a class="navbar-brand" href="index.php"><img alt="" src="images/logo8.png"></a>
 						</div>
 					</div>
 					<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
