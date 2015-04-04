@@ -23,27 +23,28 @@ require_once("erreurencodageingredient.php");
 
     </div>
 
-    <!-- contact section
-        ================================================== -->
     <div class="section-content">
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <h1>Ingrédient</h1>
+                    <?php if(!empty($result)){ echo '<div class="alert alert-success alert-dismissible" role="alert"> 
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>'; echo $result;  echo'</div>'; }?>
+                    
+
                     <form action="encodageingredient.php" method="post">
                         <div class="form-group">
                             <label>Nom</label>
-                            <input type="text" class="form-control" name="nom" id="nom" placeholder="Le nom" value="<?php if(isset($nom)) echo $nom; ?>" autofocus>
+                            <input type="text" required class="form-control" name="nom" id="nom" placeholder="Le nom" value="<?php if(isset($nom)) echo $nom; ?>" autofocus>
                             <?php if(isset($error['resume'])) echo $error['resume']; ?>
                         </div>
                         <div class="form-group">
                             <label>Résumé/Slogan</label><br>
-                            <input type="text" placeholder="Le résumé" name="resume" id="resume" value="<?php if(isset($resume)) echo $resume; ?>" class="form-control">
+                            <input type="text" required placeholder="Le résumé" name="resume" id="resume" value="<?php if(isset($resume)) echo $resume; ?>" class="form-control">
                             <?php if(isset($error['resume'])) echo $error['resume']; ?>
                         </div>
                         <div class="form-group">
                             <label>Description</label><br>
-                            <textarea col="120" placeholder="La description" name="description" id="description" value="<?php if(isset($description)) echo $description; ?>" class="form-control"></textarea>
+                            <textarea col="120" required placeholder="La description" name="description" id="description" value="<?php if(isset($description)) echo $description; ?>" class="form-control"></textarea>
                             <?php if(isset($error['description'])) echo $error['description']; ?>
                         </div>
 
@@ -64,7 +65,7 @@ require_once("erreurencodageingredient.php");
                         <?php if(isset($_GET['ID']) || isset($_POST['ID'])) {
                             ?>
                             <input type="hidden" value='<?php if(isset($_GET['ID'])) echo $_GET['ID']; else echo $_POST['ID']; ?>' name="ID" id="ID" />
-                            <div class="alert alert-success" role="alert"> <?php } echo $result ?></div>
+                            <?php }?>
                     </form>
                 </div>
             </div>
