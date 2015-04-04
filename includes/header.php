@@ -32,6 +32,7 @@
                                     </ul>
                                 </li>
                                 <li><a href="jeux.php">Jeux d'alcool</a></li>
+                                
                                 <li><a href="#">Admin</a>
                                     <ul class="drop-down">
                                         <li><a href="encodageingredient.php">Ajout ingrédient</a></li>

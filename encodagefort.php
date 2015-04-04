@@ -1,5 +1,5 @@
 <?php  
-require_once("erreurencodagebiere.php");
+require_once("erreurencodagefort.php");
 ?>
 <!doctype html>
 
@@ -18,7 +18,7 @@ require_once("erreurencodagebiere.php");
         ================================================== -->
     <div class="section-content page-banner error-page-banner">
         <div class="container">
-            <h1>Encodage de bière</h1>
+            <h1>Encodage d'alcool fort</h1>
         </div>
 
     </div>
@@ -30,7 +30,7 @@ require_once("erreurencodagebiere.php");
                     <?php if(!empty($result)){ echo '<div class="alert alert-success alert-dismissible" role="alert"> 
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>'; echo $result;  echo'</div>'; }?>
 
-                    <form action="encodagebiere.php" method="post" enctype="multipart/form-data">
+                    <form action="encodagefort.php" method="post" enctype="multipart/form-data">
                         <div class="form-group">
                             <label>Nom</label>
                             <input type="text" required class="form-control" name="nom" id="nom" placeholder="Le nom" value="<?php if(isset($nom)) echo $nom; ?>" autofocus>
@@ -59,34 +59,6 @@ require_once("erreurencodagebiere.php");
                                 <option value="feuilles">feuilles</option>
                             </select>
                             <?php if(isset($error['unitemesure'])) echo $error['unitemesure']; ?>
-                        </div>
-                        <div class="form-group">
-                            <label>Type</label><br>
-                            <select class="form-control" name="type">
-                                <option value="pils">pils</option>
-                                <option value="d'abbaye">d'abbaye</option>
-                                <option value="trappiste">trappiste</option>
-                                <option value="blanche">blanche</option>
-                                <option value="spéciale">spéciale</option>
-                                <option value="fruitée">fruitée</option>
-                            </select>
-                            <?php if(isset($error['type'])) echo $error['type']; ?>
-                        </div>
-                        <div class="form-group">
-                            <label>Pays d'origine</label><br>
-                            <input type="text" required placeholder="Le pays d'origine (en minuscules)" name="origine" id="origine" value="<?php if(isset($origine)) echo $origine; ?>" class="form-control">
-                            <?php if(isset($error['origine'])) echo $error['origine']; ?>
-                        </div>
-                        <div class="form-group">
-                            <label>Couleur</label><br>
-                            <select class="form-control" name="couleur">
-                                <option value="blonde">blonde</option>
-                                <option value="brune">brune</option>
-                                <option value="ambrée">ambrée</option>
-                                <option value="rosée">rosée</option>
-                                <option value="rouge">rouge</option>
-                            </select>
-                            <?php if(isset($error['couleur'])) echo $error['couleur']; ?>
                         </div>
                         <div class="form-group">
                             <label>Pourcentage d'alcool</label><br>
