@@ -26,27 +26,38 @@
 				================================================== -->
 			<div class="section-content shortcodes-section">
 				<div class="container">
-					<div class="single-project">
-						<div class="single-project-content">
-			                <h1>Maitrisez votre soif infinie</h1>
-			                <h3>Grâce à ce site, vous pouvez trouver de quoi allègrement vous en mettre plein la gueu** pendant des mois de soirée. Cependant, en tant que site principalement bibitif,
-								nous nous devions d'ajouter une page permettant à nos chers visiteurs de pouvoir maitriser au mieux leur pouvoir suprême de boisson, par bonne mesure. </h3>
-							<p align="right"><q>Beaucoup de gens boivent, très peu savent être bourrés</q> Père Toujoursoif, 1642</p>
-						</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="single-project">
+								<div class="single-project-content">
+					                <h1>Maitrisez votre soif infinie</h1>
+					                <h3>Grâce à ce site, vous pouvez trouver de quoi allègrement vous en mettre plein la gueu** pendant des mois de soirée. Cependant, en tant que site principalement bibitif,
+										nous nous devions d'ajouter une page permettant à nos chers visiteurs de pouvoir maitriser au mieux leur pouvoir suprême de boisson, par bonne mesure. </h3>
+									<p align="right"><q>Beaucoup de gens boivent, très peu savent être bourrés</q> Père Toujoursoif, 1642</p>
+								</div>
 
-						<div class="single-project-content">
-							<h3>Vous voulez connaître vos limites selon la sciences ? Faites le test et comparez-vous avec la moyenne !</h3>
-							<br><br><br>
-			                <form action="swag">
-			                	Age : 
-			                	<input type="number" name="age">
-			                	Poids :
-			                	<input type="number" name="poids">
-			                	Sexe : 
-			                	<input type="text" name="sexe">
-			                </form>
+								<div class="single-project-content">
+									<h3>Vous voulez connaître vos limites selon la sciences ? Faites le test et comparez-vous avec la moyenne !</h3>
+									<form class="form-inline" role="form">
+									  <div class="form-group">
+									    <label class="sr-only" for="age">Age </label>
+									    <input type="age" class="form-control" id="age" placeholder="Votre age" autofocus>
+									  </div>
+									  <div class="form-group">
+									    <label class="sr-only" for="poids">Poids </label>
+									    <input type="poids" class="form-control" id="poids" placeholder="Votre poids">
+									  </div>
+									  <div class="form-group">
+									    <label class="sr-only" for="sexe">Sexe </label>
+									    <input type="sexe" class="form-control" id="sexe" placeholder="Votre sexe">
+									  </div>
+									  <button type="submit" class="btn btn-primary">Envoyer</button>
+									</form>
+								</div>
+							</div>
 						</div>
 					</div>
+					<br><br>
 					<div class="shortcodes-elem">
 						<h1>Vos stats personnelles</h1>
 						<!-- Nav tabs -->
