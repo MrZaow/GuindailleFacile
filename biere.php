@@ -1,4 +1,6 @@
 <?php include("includes/connectionpdo.php") ?>
+
+
 <!doctype html>
 
 <html lang="fr" class="no-js">
@@ -34,11 +36,24 @@
 					<div class="masonry four-col triggerAnimation animated" data-animate="bounceIn">
 							<div class="project-post web-design ">
 								<div class="project-gal">
-									PHOTO
+									<?php
+									$dos = "images/min"; 
+									$dir = opendir($dos);
+									while($file = readdir($dir)){
+										$allow_ext = array("jpg", 'png', 'gif');
+										$ext = strtolower( substr($file, -3));
+										if(in_array($ext, $allow_ext)){
+											?>
+											<img src="images/min/<?php echo $file; ?>" alt="">
+											<?php  
+										}
+									}
+
+									?>
 									HOVER
 								</div>
 								<div class="project-content">
-									<h2><a href="">NOM</a></h2>
+									<h2><a href=""><?php echo $file['name']; ?></a></h2>
 									<p>RESUME</p>
 								</div>
 							</div>
