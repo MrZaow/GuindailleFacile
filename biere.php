@@ -29,39 +29,44 @@
 				</div>
 				<div class="portfolio-box">
 					<ul class="filter center triggerAnimation animated" data-animate="bounceIn">
-						<li class="item"><a href="portfolio-4col.html#" class="active" data-filter="*">Popuparité</a></li>
-							<li class="item"><a href="#" class="active" data-filter=".">TYPE</a></li>
+						<li class="item"><a href="portfolio-4col.html#" class="active" data-filter="*">Tout</a></li>
+						<?php
+							$sql = "SELECT DISTINCT type
+                                   FROM bieres";
+							foreach ($bdd->query($sql) as $row) : ?>
+								<li class="item"><a href="portfolio-4col.html#" data-filter=".<?php echo $row['type']; ?>"><?php echo $row['type']; ?></a></li>
+							<?php endforeach; ?>
+
 					</ul>
 					<div class="masonry four-col triggerAnimation animated" data-animate="bounceIn">
-							<div class="project-post web-design ">
-								<div class="project-gal">
-									<?php
-									
+							<?php
+								$sql = "SELECT *
+						   FROM bieres AS b INNER JOIN ingredients AS i
+						   ON b.idingredient = i .idingredient
+						   INNER JOIN boissons AS b2
+						   ON b.idingredient = b2.idingredient";
 
+							foreach ($bdd->query($sql) as $row) : ?>
 
-
-
-									$dos = "images/min"; 
-									$dir = opendir($dos);
-									while($file = readdir($dir)){
-										$allow_ext = array("jpg", 'png', 'gif');
-										$ext = strtolower( substr($file, -3));
-										if(in_array($ext, $allow_ext)){
-											?>
-											<img src="images/min/<?php echo $file; ?>" alt="">
-											<?php  
-										}
-									}
-
-									?>
-									HOVER
-								</div>
+								<div class="project-post web-design <?php echo $row['type']; ?>">
+									<div class="project-gal">
+										<img src="images/min/<?php echo $row['image1']; ?>" alt="#">
+										<a href="descriptionbiere.php?id=<?php echo $row['idingredient']; ?>">
+											<p>
+												<i class="fa fa-star"></i> <?php echo $row['cotesur5']; ?>/5<br/>
+												<i class="fa fa-glass"></i><?php echo $row['pourcentagealcool']; ?>°<br/>
+												<i class="fa fa-eur"></i><?php echo $row['prixlitre']; ?> euros/l<br/>
+											</p>
+										</a>
+									</div>
 								<div class="project-content">
-									<h2><a href=""><?php echo $file['name']; ?></a></h2>
-									<p>RESUME</p>
+									<h2><?php echo $row['nom']; ?></h2>
+									<p><?php echo $row['resume']; ?></p>
 								</div>
 							</div>
 
+						<?php endforeach;	?>
+						</div>
 					</div>
 				</div>
 			</div>
