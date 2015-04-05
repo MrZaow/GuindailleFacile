@@ -1,6 +1,5 @@
 <?php include("includes/connectionpdo.php") ?>
 
-
 <!doctype html>
 
 <html lang="fr" class="no-js">
@@ -37,6 +36,11 @@
 							<div class="project-post web-design ">
 								<div class="project-gal">
 									<?php
+									
+
+
+
+
 									$dos = "images/min"; 
 									$dir = opendir($dos);
 									while($file = readdir($dir)){
