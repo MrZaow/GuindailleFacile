@@ -39,6 +39,8 @@
                                         <li><a href="encodagebiere.php">Ajout bière</a></li>
                                         <li><a href="encodagecocktail.php">Ajout cocktail</a></li>
                                         <li><a href="encodagefort.php">Ajout alcool fort</a></li>
+                                        <li><a href="encodageavantage.php">Ajout avantage</a></li>
+                                        <li><a href="encodageinconvenient.php">Ajout inconvenient</a></li>
                                     </ul>
                                 </li>
                                 

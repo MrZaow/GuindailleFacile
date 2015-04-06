@@ -70,7 +70,7 @@ if(!empty($_FILES)){
 	}
 }
 
-/*Pour le non photo*/
+
 if(!empty($_POST))
 {
 	if(empty($nom))

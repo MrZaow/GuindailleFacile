@@ -7,9 +7,16 @@ $reponse = $bdd->prepare('SELECT *
 							ON b.idingredient = b2.idingredient
 							WHERE b.idingredient = ?');
 $reponse->execute(array($_GET['id']));
+$lid = $_GET['id'];
 $result = $reponse->fetch();
 if(!$result)
 	header("Location: cocktail.php");
+
+
+$sql = "SELECT nom 
+		FROM avantagesinconvenients AS a, avoir AS b
+		WHERE a.idavantage = b.idavantage
+		AND idingredient = $lid";
 
 
  ?>
@@ -71,21 +78,13 @@ if(!$result)
 											<h1>Avantages </h1>
 											<ul class="feature-list2">
 												<br>
+												<?php foreach ($bdd->query($sql) as $row) : ?>
 												<li>
 													<div class="list">
-														<h3>- Défonce rapidement</h3>
+														<h3>- <?php echo $row['nom']; ?></h3>
 													</div>
 												</li>
-												<li>
-													<div class="list">
-														<h3>- Bon goût</h3>
-													</div>
-												</li>
-												<li>
-													<div class="list">
-														<h3>- Patrimoine culturel</h3>
-													</div>
-												</li>
+												<?php endforeach;	?>
 											</ul>
 
 										</div>
