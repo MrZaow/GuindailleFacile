@@ -286,7 +286,7 @@
                     <div class="item project-post">
                         <div class="project-gal">
                             <img src="images/min/<?php echo $row['image1']; ?>" alt="#">
-                                <a href="descriptionbiere.php?id=<?php echo $row['idingredient']; ?>">
+                                <a href="descriptioncocktail.php?id=<?php echo $row['idingredient']; ?>">
                                     <p>
                                         <i class="fa fa-star"></i> <?php echo $row['cotesur5']; ?>/5<br/>
                                         <i class="fa fa-glass"></i><?php echo $row['pourcentagealcool']; ?>°<br/>
