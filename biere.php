@@ -44,7 +44,8 @@
 						   FROM bieres AS b INNER JOIN ingredients AS i
 						   ON b.idingredient = i .idingredient
 						   INNER JOIN boissons AS b2
-						   ON b.idingredient = b2.idingredient";
+						   ON b.idingredient = b2.idingredient
+						   ORDER BY b2.popularite DESC";
 
 							foreach ($bdd->query($sql) as $row) : ?>
 

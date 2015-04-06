@@ -1,4 +1,18 @@
-<?php include("includes/connectionpdo.php") ?>
+<?php include("includes/connectionpdo.php");
+
+$reponse = $bdd->prepare('SELECT *
+							FROM cocktails AS b INNER JOIN ingredients AS i
+							ON b.idingredient = i .idingredient
+							INNER JOIN boissons AS b2
+							ON b.idingredient = b2.idingredient
+							WHERE b.idingredient = ?');
+$reponse->execute(array($_GET['id']));
+$result = $reponse->fetch();
+if(!$result)
+	header("Location: cocktail.php");
+
+
+ ?>
 <!doctype html>
 
 <html lang="fr" class="no-js">
@@ -33,8 +47,8 @@
 
 					<div class="title-section white">
 						<div class="container triggerAnimation animated" data-animate="bounceIn">
-							<h1>nom</h1>
-							<p>resume</p>
+							<h1><?= $result['nom']; ?></h1>
+							<p><?= $result['resume']; ?></p>
 						</div>
 					</div>
 
@@ -45,7 +59,7 @@
 									<div class="col-md-12">
 										<div class="single-project-content">
 											<h1>À propos</h1>
-											<h3>Le nom est un cocktail contenant pourcentagealcool % d'alcool et coûtant en moyenne prixlitre euros/litre en
+											<h3>Le <?= $result['nom'];?> est un cocktail contenant <?= $result['pourcentagealcool']; ?> % d'alcool et coûtant en moyenne <?= $result['prixlitre']; ?> euros/litre en
 												le préparant soi-même.</h3>
 										</div>
 									</div>
@@ -98,7 +112,8 @@
 									</div>
 								</div>
 								<div class="single-project-content">
-									<p>description</p>
+									<h1>Description</h1>
+									<p><?= $result['description']; ?></p>
 								</div>
 								<div class="row">
 									<div class="col-md-6">
@@ -110,7 +125,7 @@
 												<li>
 													<span><i class="fa fa-star"></i></span>
 													<div class="list-cont">
-														<h3>cote sur 5</h3>
+														<h3><?= $result['cotesur5'];?>/5</h3>
 													</div>
 												</li>
 											</ul>
@@ -124,7 +139,19 @@
 						</div>
 
 						<div class="col-md-5">
-							slider
+							<div class="flexslider">
+								<ul class="slides">
+									<li>
+										<img src="images/min/<?= $result['image1']; ?>">
+									</li>
+									<li>
+										<img src="images/min/<?= $result['image2']; ?>">
+									</li>
+									<li>
+										<img src="images/min/<?= $result['image3']; ?>">
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 
@@ -392,7 +419,7 @@
 							<input name="mail" id="mail" type="text" placeholder="Prenom">
 						</div>
 					</div>
-					<textarea name="comment" id="comment" placeholder="Votre commentaire par rapport à la Chimay bleue"></textarea>
+					<textarea name="comment" id="comment" placeholder="Votre commentaire par rapport au cocktail <?= $result['nom'];?>"></textarea>
 					<input type="submit" id="submit_contact" value="Envoyer">
 				</form>
 			</div>

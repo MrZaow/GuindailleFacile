@@ -114,11 +114,14 @@ if(!empty($_POST))
                         ));
             unset($nom, $resume, $description, $unitemesure);
 
-            $req = $bdd->prepare('INSERT INTO boissons(pourcentagealcool, prixlitre, cotesur5, idingredient) VALUES(:pourcentagealcool ,:prixlitre, :cotesur5, (SELECT idingredient FROM ingredients ORDER BY idingredient DESC LIMIT 1))');
+            $req = $bdd->prepare('INSERT INTO boissons(pourcentagealcool, prixlitre, cotesur5, image1, image2, image3, idingredient) VALUES(:pourcentagealcool ,:prixlitre, :cotesur5, :image1, :image2, :image3, (SELECT idingredient FROM ingredients ORDER BY idingredient DESC LIMIT 1))');
                     $req->execute(array(
                             'pourcentagealcool' => $pourcentage,
                             'prixlitre' => $prixaulitre,
                             'cotesur5' => $cote,
+                            'image1' =>$image1['name'],
+                            'image2' =>$image2['name'],
+                            'image3' =>$image3['name'],
                         ));
             unset($pourcentage, $prixaulitre, $cote);
 
