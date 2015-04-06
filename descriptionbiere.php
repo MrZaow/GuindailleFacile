@@ -44,7 +44,7 @@ if(!$result)
 
 					<div class="title-section white">
 						<div class="container triggerAnimation animated" data-animate="bounceIn">
-							<h1><?= $result['nom']; ?>s</h1>
+							<h1><?= $result['nom']; ?></h1>
 							<p><?= $result['resume']; ?></p>
 						</div>
 					</div>
@@ -97,6 +97,7 @@ if(!$result)
 									</div>
 								</div>
 								<div class="single-project-content">
+									<h1>Description</h1>
 									<p><?= $result['description']; ?></p>
 								</div>
 								<div class="row">
@@ -126,13 +127,13 @@ if(!$result)
 							<div class="flexslider">
 								<ul class="slides">
 									<li>
-										<img src="images/<?= $result['image1']; ?>">
+										<img src="images/min/<?= $result['image1']; ?>">
 									</li>
 									<li>
-										<img src="images/<?= $result['image2']; ?>">
+										<img src="images/min/<?= $result['image2']; ?>">
 									</li>
 									<li>
-										<img src="images/<?= $result['image3']; ?>">
+										<img src="images/min/<?= $result['image3']; ?>">
 									</li>
 								</ul>
 							</div>
@@ -313,7 +314,7 @@ if(!$result)
 							<input name="mail" id="mail" type="text" placeholder="Prenom">
 						</div>
 					</div>
-					<textarea name="comment" id="comment" placeholder="Votre commentaire par rapport à la Chimay bleue"></textarea>
+					<textarea name="comment" id="comment" placeholder="Votre commentaire par rapport à la bière <?= $result['nom'];?>"></textarea>
 					<input type="submit" id="submit_contact" value="Envoyer">
 				</form>
 			</div>
