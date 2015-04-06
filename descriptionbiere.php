@@ -1,16 +1,29 @@
-<?php include("includes/connectionpdo.php") ?>
+<?php include("includes/connectionpdo.php");
+
+$reponse = $bdd->prepare('SELECT *
+							FROM bieres AS b INNER JOIN ingredients AS i
+							ON b.idingredient = i .idingredient
+							INNER JOIN boissons AS b2
+							ON b.idingredient = b2.idingredient
+							WHERE b.idingredient = ?');
+$reponse->execute(array($_GET['id']));
+$result = $reponse->fetch();
+if(!$result)
+	header("Location: biere.php");
+?>
 <!doctype html>
 
 <html lang="fr" class="no-js">
 
-<?php include("includes/head.php") ?>
+<?php include("includes/head.php"); ?>
 
 <body>
 <!-- Container -->
 <div id="container">
  
 
-    <?php include("includes/header.php") ?>
+    <?php include("includes/header.php");
+	?>
 
 	<div id="content">
 
@@ -31,8 +44,8 @@
 
 					<div class="title-section white">
 						<div class="container triggerAnimation animated" data-animate="bounceIn">
-							<h1>Nom</h1>
-							<p>Resume</p>
+							<h1><?= $result['nom']; ?>s</h1>
+							<p><?= $result['resume']; ?></p>
 						</div>
 					</div>
 
@@ -43,21 +56,11 @@
 									<div class="col-md-12">
 										<div class="single-project-content">
 											<h1>À propos</h1>
-											<?php
-											$reponse = $bdd->query('SELECT * FROM bieres');
-
-											while($donnees = $reponse->fetch()){
-											?>
-													    echo $donnees['paysorigine'];
-											<h3>La NOM est une bière <?php echo $donnees['type']; ?> <?php echo $donnees['couleur']; ?> 
-											originaire de <?php echo $donnees['origine']; ?>.
-											Elle contient POURCENTAGEALCOOL % d'alcool et coûte en moyenne PRIXLITRE euros/litre en magasin.
+											<h3>La <?= $result['nom'];?> est une bière <?= $result['type']; ?> <?= $result['couleur']; ?>
+											originaire de <?= $result['paysorigine']; ?>.
+											Elle contient <?= $result['pourcentagealcool']; ?> % d'alcool et coûte en moyenne <?= $result['prixlitre']; ?> euros/litre en magasin.
 										</h3>
 
-										<?php 
-										} 
-										$reponse->closeCursor(); // Termine le traitement de la requête
-										?>
 										</div>
 									</div>
 								</div>
@@ -70,17 +73,7 @@
 												<br>
 												<li>
 													<div class="list">
-														<h3>- Défonce rapidement</h3>
-													</div>
-												</li>
-												<li>
-													<div class="list">
-														<h3>- Bon goût</h3>
-													</div>
-												</li>
-												<li>
-													<div class="list">
-														<h3>- Patrimoine culturel</h3>
+														<h3>To do</h3>
 													</div>
 												</li>
 											</ul>
@@ -95,12 +88,7 @@
 												<br>
 												<li>
 													<div class="list">
-														<h3>- Lourde à boire</h3>
-													</div>
-												</li>
-												<li>
-													<div class="list">
-														<h3>- Honéreuse</h3>
+														<h3>Todo</h3>
 													</div>
 												</li>
 											</ul>
@@ -109,7 +97,7 @@
 									</div>
 								</div>
 								<div class="single-project-content">
-									<p>DESCRIPTION</p>
+									<p><?= $result['description']; ?></p>
 								</div>
 								<div class="row">
 									<div class="col-md-6">
@@ -121,7 +109,7 @@
 												<li>
 													<span><i class="fa fa-star"></i></span>
 													<div class="list-cont">
-														<h3>COTESUR5/5</h3>
+														<h3><?= $result['cotesur5'];?>/5</h3>
 													</div>
 												</li>
 											</ul>
@@ -135,7 +123,19 @@
 						</div>
 
 						<div class="col-md-5">
-							SLIDER
+							<div class="flexslider">
+								<ul class="slides">
+									<li>
+										<img src="images/<?= $result['image1']; ?>">
+									</li>
+									<li>
+										<img src="images/<?= $result['image2']; ?>">
+									</li>
+									<li>
+										<img src="images/<?= $result['image3']; ?>">
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 

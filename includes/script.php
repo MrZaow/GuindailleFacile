@@ -11,7 +11,6 @@
 <script type="text/javascript" src="js/plugins-scroll.js"></script>
 <script type="text/javascript" src="js/waypoint.min.js"></script>
 <script type="text/javascript" src="js/jquery.flexslider.js"></script>
-
 <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
 <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
 <script type="text/javascript" src="js/jquery.themepunch.plugins.min.js"></script>
