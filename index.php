@@ -278,8 +278,9 @@
               ON b.idingredient = i .idingredient
               INNER JOIN boissons AS b2
               ON b.idingredient = b2.idingredient
+
  
-              ORDER BY b2.popularite DESC";
+              ORDER BY b2.popularite DESC LIMIT 10";
 
                 foreach ($bdd->query($sql) as $row) : ?>
 
@@ -301,94 +302,10 @@
                     </div>
                 <?php endforeach;   ?>
 
-                    <div class="item project-post">
-                        <div class="project-gal">
-                            <img alt="" src="upload/portfolio/img2.jpg">
-                            <a href="descriptioncocktail.php">
-                                <p>
-                                <br>
-                                <i class="fa fa-star"></i> 4.5/5<br/>
-                                <i class="fa fa-glass"></i> 12°<br/>
-                                <i class="fa fa-eur"></i> 7.9 euros/l<br/>
-                                </p>
-                            </a>
-                        </div>
-                        <div class="project-content">
-                            <h2>Mojito</h2>
-                            <p>Le dieu des cocktails</p>
-                        </div>
-                    </div>
-
-                    <div class="item project-post">
-                        <div class="project-gal">
-                            <img alt="" src="upload/portfolio/img3.jpg">
-                            <a href="descriptionfort.php">
-                                <p>
-                                <br>
-                                <i class="fa fa-star"></i> 3.5/5<br/>
-                                <i class="fa fa-glass"></i> 40°<br/>
-                                <i class="fa fa-eur"></i> 22.4 euros/l<br/>
-                                </p>
-                            </a>
-                        </div>
-                        <div class="project-content">
-                            <h2>Vodka</h2>
-                            <p>Pour la mère Russie !</p>
-                        </div>
-                    </div>
-
-                    <div class="item project-post ">
-                        <div class="project-gal">
-                            <img alt="" src="upload/portfolio/img4.jpg">
-                            <a href="#">
-    							<p>Infos</p>
-    						</a>
-                        </div>
-                        <div class="project-content">
-                            <h2>Alcool 4.</h2>
-                        </div>
-                    </div>
-
-                    <div class="item project-post">
-                        <div class="project-gal">
-                            <img alt="" src="upload/portfolio/img5.jpg">
-                            <a href="#">
-    							<p>Infos</p>
-    						</a>
-                        </div>
-                        <div class="project-content">
-                            <h2>Alcool 5.</h2>
-                        </div>
-                    </div>
-
-                    <div class="item project-post">
-                        <div class="project-gal">
-                            <img alt="" src="upload/portfolio/img6.jpg">
-                            <a href="#">
-    							<p>Infos</p>
-    						</a>
-                        </div>
-                        <div class="project-content">
-                            <h2>Alcool 6.</h2>
-                        </div>
-                    </div>
-
-                    <div class="item project-post">
-                        <div class="project-gal">
-                            <img alt="" src="upload/portfolio/img7.jpg">
-                            <a href="#">
-    							<p>Infos</p>
-    						</a>
-                        </div>
-                        <div class="project-content">
-                            <h2>Alcool 7.</h2>
-                        </div>
-                    </div>
-
                 </div>
                 <div class="buttons">
                     <a class="owl-prev button-third" href="index.php"><i class="fa fa-angle-left"></i></a>
-                    <a class="button-third" href="index.php?p=cocktail">Voir tous les cocktails</a>
+                    <a class="button-third" href="cocktail.php">Voir tous les cocktails</a>
                     <a class="owl-next button-third" href="index.php"><i class="fa fa-angle-right"></i></a>
                 </div>
             </div>
