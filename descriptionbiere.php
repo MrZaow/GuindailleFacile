@@ -10,6 +10,21 @@ $reponse->execute(array($_GET['id']));
 $result = $reponse->fetch();
 if(!$result)
 	header("Location: biere.php");
+
+$lid = $_GET['id'];
+
+$sql = "SELECT nom 
+		FROM avantagesinconvenients AS a, avoir AS b
+		WHERE a.idavantage = b.idavantage
+		AND idingredient = $lid
+		AND a.avantageouinconvenient = 'A' ";
+
+$sql2 = "SELECT nom 
+		FROM avantagesinconvenients AS a, avoir AS b
+		WHERE a.idavantage = b.idavantage
+		AND idingredient = $lid
+		AND a.avantageouinconvenient = 'I' ";
+
 ?>
 <!doctype html>
 
@@ -71,11 +86,13 @@ if(!$result)
 											<h1>Avantages </h1>
 											<ul class="feature-list2">
 												<br>
+												<?php foreach ($bdd->query($sql) as $row) : ?>
 												<li>
 													<div class="list">
-														<h3>To do</h3>
+														<h3>- <?php echo $row['nom']; ?></h3>
 													</div>
 												</li>
+												<?php endforeach;	?>
 											</ul>
 
 										</div>
@@ -86,11 +103,13 @@ if(!$result)
 											
 											<ul class="feature-list2">
 												<br>
+												<?php foreach ($bdd->query($sql2) as $row) : ?>
 												<li>
 													<div class="list">
-														<h3>Todo</h3>
+														<h3>- <?php echo $row['nom']; ?></h3>
 													</div>
 												</li>
+												<?php endforeach;	?>
 											</ul>
 
 										</div>

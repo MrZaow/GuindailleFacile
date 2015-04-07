@@ -12,12 +12,24 @@ $result = $reponse->fetch();
 if(!$result)
 	header("Location: cocktail.php");
 
-
+/*Avantages*/
 $sql = "SELECT nom 
 		FROM avantagesinconvenients AS a, avoir AS b
 		WHERE a.idavantage = b.idavantage
-		AND idingredient = $lid";
+		AND idingredient = $lid
+		AND a.avantageouinconvenient = 'A' ";
 
+/*Inconvénients*/
+$sql2 = "SELECT nom 
+		FROM avantagesinconvenients AS a, avoir AS b
+		WHERE a.idavantage = b.idavantage
+		AND idingredient = $lid
+		AND a.avantageouinconvenient = 'I' ";
+
+/*Préparation*/
+$sql3 = "SELECT preparation 
+		FROM cocktails
+		WHERE cocktails.idingredient = $lid ";
 
  ?>
 <!doctype html>
@@ -95,16 +107,13 @@ $sql = "SELECT nom
 											
 											<ul class="feature-list2">
 												<br>
+												<?php foreach ($bdd->query($sql2) as $row) : ?>
 												<li>
 													<div class="list">
-														<h3>- Lourde à boire</h3>
+														<h3>- <?php echo $row['nom']; ?></h3>
 													</div>
 												</li>
-												<li>
-													<div class="list">
-														<h3>- Honéreuse</h3>
-													</div>
-												</li>
+												<?php endforeach;	?>
 											</ul>
 
 										</div>
@@ -204,45 +213,11 @@ $sql = "SELECT nom
 						<div class="col-md-6">
 							<div class="single-project-content">
 								<h1>Préparation </h1>
+								<br>
+								<?php foreach ($bdd->query($sql3) as $row) { ?>
+									<h3><?php echo $row['preparation']; ?></h3>
+								<?php } ?>
 								
-								<ul class="feature-list2">
-									<br>
-									<li>
-										<div class="list">
-											<h3>1) Placer les feuilles de menthe dans le verre</h3>
-										</div>
-									</li>
-									<li>
-										<div class="list">
-											<h3>2) Ajouter le sucre et le jus de citrons</h3>
-										</div>
-									</li>
-									<li>
-										<div class="list">
-											<h3>3) Piler doucement sans broyer les feuilles de menthe</h3>
-										</div>
-									</li>
-									<li>
-										<div class="list">
-											<h3>4) Ajouter le rhum</h3>
-										</div>
-									</li>
-									<li>
-										<div class="list">
-											<h3>5) Remplir le verre à moitié de glaçons</h3>
-										</div>
-									</li>
-									<li>
-										<div class="list">
-											<h3>6) Compléter le verre avec de l'eau gazeuse</h3>
-										</div>
-									</li>
-									<li>
-										<div class="list">
-											<h3>7) Mélanger doucement et servir avec une paille, c'est prêt !</h3>
-										</div>
-									</li>
-								</ul>
 
 							</div>
 						</div>

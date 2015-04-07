@@ -10,6 +10,26 @@ $reponse->execute(array($_GET['id']));
 $result = $reponse->fetch();
 if(!$result)
 	header("Location: fort.php");
+
+$lid = $_GET['id'];
+
+$sql = "SELECT nom 
+		FROM avantagesinconvenients AS a, avoir AS b
+		WHERE a.idavantage = b.idavantage
+		AND idingredient = $lid
+		AND a.avantageouinconvenient = 'A' ";
+
+$sql2 = "SELECT nom 
+		FROM avantagesinconvenients AS a, avoir AS b
+		WHERE a.idavantage = b.idavantage
+		AND idingredient = $lid
+		AND a.avantageouinconvenient = 'I' ";
+
+$sql3 = "SELECT *
+		FROM meilleursalcools AS a, exemplariser AS b
+		WHERE a.idmeilleuralcool = b.idmeilleuralcool
+		AND idingredient = $lid ";
+
 ?>
 
 <!doctype html>
@@ -68,21 +88,13 @@ if(!$result)
 											<h1>Avantages </h1>
 											<ul class="feature-list2">
 												<br>
+												<?php foreach ($bdd->query($sql) as $row) : ?>
 												<li>
 													<div class="list">
-														<h3>- Défonce rapidement</h3>
+														<h3>- <?php echo $row['nom'];?></h3>
 													</div>
 												</li>
-												<li>
-													<div class="list">
-														<h3>- Bon goût</h3>
-													</div>
-												</li>
-												<li>
-													<div class="list">
-														<h3>- Patrimoine culturel</h3>
-													</div>
-												</li>
+												<?php endforeach;	?>
 											</ul>
 
 										</div>
@@ -93,16 +105,13 @@ if(!$result)
 											
 											<ul class="feature-list2">
 												<br>
+												<?php foreach ($bdd->query($sql2) as $row) : ?>
 												<li>
 													<div class="list">
-														<h3>- Lourde à boire</h3>
+														<h3>- <?php echo $row['nom']; ?></h3>
 													</div>
 												</li>
-												<li>
-													<div class="list">
-														<h3>- Honéreuse</h3>
-													</div>
-												</li>
+												<?php endforeach;	?>
 											</ul>
 
 										</div>
@@ -164,26 +173,13 @@ if(!$result)
 								
 								<ul class="feature-list2">
 									<br>
+									<?php foreach ($bdd->query($sql3) as $row) : ?>
 									<li>
 										<div class="list">
-											<h3>- Stolichnaya Cristall (22 euros/l)</h3>
+											<h3>- <?php echo $row['nom']; ?>. Prix moyen :  <?php echo $row['prixlitre']; ?> euros/l </h3>
 										</div>
 									</li>
-									<li>
-										<div class="list">
-											<h3>- Stolichnaya (22 euros/l)</h3>
-										</div>
-									</li>
-									<li>
-										<div class="list">
-											<h3>- Ketel One (38 euros/l)</h3>
-										</div>
-									</li>
-									<li>
-										<div class="list">
-											<h3>- Absolut Vodka (25 euros/l)</h3>
-										</div>
-									</li>
+									<?php endforeach;	?>
 								</ul>
 
 							</div>

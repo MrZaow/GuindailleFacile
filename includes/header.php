@@ -41,6 +41,7 @@
                                         <li><a href="encodagefort.php">Ajout alcool fort</a></li>
                                         <li><a href="encodageavantage.php">Ajout avantage</a></li>
                                         <li><a href="encodageinconvenient.php">Ajout inconvenient</a></li>
+                                        <li><a href="encodagemeilleuralcool.php">Ajout de meilleur alcool</a></li>
                                     </ul>
                                 </li>
                                 
