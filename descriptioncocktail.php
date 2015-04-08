@@ -31,6 +31,22 @@ $sql3 = "SELECT preparation
 		FROM cocktails
 		WHERE cocktails.idingredient = $lid ";
 
+/*Cocktails similaires*/
+
+$sql4 = "SELECT *
+              FROM cocktails AS b INNER JOIN ingredients AS i
+              ON b.idingredient = i .idingredient
+              INNER JOIN boissons AS b2
+              ON b.idingredient = b2.idingredient
+              ORDER BY b2.popularite DESC LIMIT 10";
+
+/*Ingrédients*/
+$sql5 = "SELECT i.nom, qte, unitemesure
+              FROM cocktails AS c, contenir AS co, ingredients AS i
+              WHERE c.idingredient = co.idingredient
+              AND co.idingredient_INGREDIENTS = i.idingredient
+              ";
+
  ?>
 <!doctype html>
 
@@ -181,31 +197,13 @@ $sql3 = "SELECT preparation
 								
 								<ol class="feature-list2">
 									<br>
+									<?php foreach ($bdd->query($sql5) as $row) : ?>
 									<li>
 										<div class="list">
-											<h3>- 6cl de rhum </h3>
+											<h3>- <?php echo $row['qte']; ?> <?php echo $row['unitemesure']; ?> de <?php echo $row['nom']; ?></h3>
 										</div>
 									</li>
-									<li>
-										<div class="list">
-											<h3>- 3cl de jus de citrons verts</h3>
-										</div>
-									</li>
-									<li>
-										<div class="list">
-											<h3>- 7 feuilles de menthe</h3>
-										</div>
-									</li>
-									<li>
-										<div class="list">
-											<h3>- 2 cuillers à café de sucre</h3>
-										</div>
-									</li>
-									<li>
-										<div class="list">
-											<h3>- Eau gazeuse</h3>
-										</div>
-									</li>
+									<?php endforeach;	?>
 								</ol>
 
 							</div>
@@ -236,105 +234,26 @@ $sql3 = "SELECT preparation
 				</div>
 				<div class="portfolio-box triggerAnimation animated" data-animate="bounceIn">
 					<div id="owl-demo" class="owl-carousel owl-theme">
-          
-						<div class="item project-post">
-							<div class="project-gal">
-								<img alt="" src="upload/portfolio/img1.jpg">
-								<div class="hover-box">
-									<a class="zoom" href="single-project.html#"><i class="fa fa-search-plus"></i></a>
-									<a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
-								</div>
-							</div>
-							<div class="project-content">
-								<h2>Aliquam tincidunt mauris eu risus.</h2>
-								<p>Vestibulum auctor dapibus neque.</p>
-							</div>
-						</div>
-          
-						<div class="item project-post">
-							<div class="project-gal">
-								<img alt="" src="upload/portfolio/img2.jpg">
-								<div class="hover-box">
-									<a class="zoom" href="single-project.html#"><i class="fa fa-search-plus"></i></a>
-									<a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
-								</div>
-							</div>
-							<div class="project-content">
-								<h2>Aliquam tincidunt mauris eu risus.</h2>
-								<p>Vestibulum auctor dapibus neque.</p>
-							</div>
-						</div>
-          
-						<div class="item project-post">
-							<div class="project-gal">
-								<img alt="" src="upload/portfolio/img3.jpg">
-								<div class="hover-box">
-									<a class="zoom" href="single-project.html#"><i class="fa fa-search-plus"></i></a>
-									<a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
-								</div>
-							</div>
-							<div class="project-content">
-								<h2>Aliquam tincidunt mauris eu risus.</h2>
-								<p>Vestibulum auctor dapibus neque.</p>
-							</div>
-						</div>
-          
-						<div class="item project-post">
-							<div class="project-gal">
-								<img alt="" src="upload/portfolio/img4.jpg">
-								<div class="hover-box">
-									<a class="zoom" href="single-project.html#"><i class="fa fa-search-plus"></i></a>
-									<a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
-								</div>
-							</div>
-							<div class="project-content">
-								<h2>Aliquam tincidunt mauris eu risus.</h2>
-								<p>Vestibulum auctor dapibus neque.</p>
-							</div>
-						</div>
-          
-						<div class="item project-post">
-							<div class="project-gal">
-								<img alt="" src="upload/portfolio/img5.jpg">
-								<div class="hover-box">
-									<a class="zoom" href="single-project.html#"><i class="fa fa-search-plus"></i></a>
-									<a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
-								</div>
-							</div>
-							<div class="project-content">
-								<h2>Aliquam tincidunt mauris eu risus.</h2>
-								<p>Vestibulum auctor dapibus neque.</p>
-							</div>
-						</div>
-          
-						<div class="item project-post">
-							<div class="project-gal">
-								<img alt="" src="upload/portfolio/img6.jpg">
-								<div class="hover-box">
-									<a class="zoom" href="single-project.html#"><i class="fa fa-search-plus"></i></a>
-									<a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
-								</div>
-							</div>
-							<div class="project-content">
-								<h2>Aliquam tincidunt mauris eu risus.</h2>
-								<p>Vestibulum auctor dapibus neque.</p>
-							</div>
-						</div>
-          
-						<div class="item project-post">
-							<div class="project-gal">
-								<img alt="" src="upload/portfolio/img7.jpg">
-								<div class="hover-box">
-									<a class="zoom" href="single-project.html#"><i class="fa fa-search-plus"></i></a>
-									<a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
-								</div>
-							</div>
-							<div class="project-content">
-								<h2>Aliquam tincidunt mauris eu risus.</h2>
-								<p>Vestibulum auctor dapibus neque.</p>
-							</div>
-						</div>
-					 
+
+     					<?php foreach ($bdd->query($sql4) as $row) : ?>
+
+                    <div class="item project-post">
+                        <div class="project-gal">
+                            <img src="images/min/<?php echo $row['image1']; ?>" alt="#">
+                                <a href="descriptioncocktail.php?id=<?php echo $row['idingredient']; ?>">
+                                    <p>
+                                        <i class="fa fa-star"></i> <?php echo $row['cotesur5']; ?>/5<br/>
+                                        <i class="fa fa-glass"></i><?php echo $row['pourcentagealcool']; ?>°<br/>
+                                        <i class="fa fa-eur"></i><?php echo $row['prixlitre']; ?> euros/l<br/>
+                                    </p>
+                                </a>
+                        </div>
+                        <div class="project-content">
+                            <h2><?php echo $row['nom']; ?></h2>
+                            <p><?php echo $row['resume']; ?></p>
+                        </div>
+                    </div>
+                <?php endforeach;   ?>
 					</div>
 					<div class="buttons">
 						<a class="owl-prev button-third" href="single-project.html#"><i class="fa fa-angle-left"></i></a>
