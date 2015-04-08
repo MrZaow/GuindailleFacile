@@ -43,7 +43,7 @@
 								<img alt="" src="upload/portfolio/img1.jpg">
 								<div class="hover-box">
 									<a class="zoom" href="upload/portfolio/img1.jpg"><i class="fa fa-search-plus"></i></a>
-									<a class="link" href="index.php?p=descriptionjeux"><i class="fa fa-link"></i></a>
+									<a class="link" href="descriptionjeux.php"><i class="fa fa-link"></i></a>
 								</div>
 							</div>
 							<div class="project-content">
