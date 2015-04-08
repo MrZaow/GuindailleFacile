@@ -38,6 +38,7 @@ $sql4 = "SELECT *
               ON b.idingredient = i .idingredient
               INNER JOIN boissons AS b2
               ON b.idingredient = b2.idingredient
+              AND b.idingredient <> $lid
               ORDER BY b2.popularite DESC LIMIT 10";
 
 /*Ingrédients*/
@@ -257,7 +258,7 @@ $sql5 = "SELECT i.nom, qte, unitemesure
 					</div>
 					<div class="buttons">
 						<a class="owl-prev button-third" href="single-project.html#"><i class="fa fa-angle-left"></i></a>
-						<a class="button-third" href="single-project.html#">Voir tous les cocktails</a>
+						<a class="button-third" href="cocktail.php">Voir tous les cocktails</a>
 						<a class="owl-next button-third" href="single-project.html#"><i class="fa fa-angle-right"></i></a>
 					</div>
 				</div>

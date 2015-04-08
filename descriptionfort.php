@@ -30,6 +30,16 @@ $sql3 = "SELECT *
 		WHERE a.idmeilleuralcool = b.idmeilleuralcool
 		AND idingredient = $lid ";
 
+/*Cocktails à base de l'alcool fort*/
+$sql4 = "SELECT *
+              FROM cocktails AS c, boissons AS b, ingredients AS i, contenir 
+              WHERE c.idingredient = b.idingredient
+              AND b.idingredient = i.idingredient
+              AND c.idingredient = contenir.idingredient
+              AND contenir.idingredient_INGREDIENTS = $lid
+              ";
+
+
 ?>
 
 <!doctype html>
@@ -200,108 +210,30 @@ $sql3 = "SELECT *
 				<div class="portfolio-box triggerAnimation animated" data-animate="bounceIn">
 					<div id="owl-demo" class="owl-carousel owl-theme">
           
-						<div class="item project-post">
-							<div class="project-gal">
-								<img alt="" src="upload/portfolio/img1.jpg">
-								<div class="hover-box">
-									<a class="zoom" href="single-project.html#"><i class="fa fa-search-plus"></i></a>
-									<a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
-								</div>
-							</div>
-							<div class="project-content">
-								<h2>Aliquam tincidunt mauris eu risus.</h2>
-								<p>Vestibulum auctor dapibus neque.</p>
-							</div>
-						</div>
-          
-						<div class="item project-post">
-							<div class="project-gal">
-								<img alt="" src="upload/portfolio/img2.jpg">
-								<div class="hover-box">
-									<a class="zoom" href="single-project.html#"><i class="fa fa-search-plus"></i></a>
-									<a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
-								</div>
-							</div>
-							<div class="project-content">
-								<h2>Aliquam tincidunt mauris eu risus.</h2>
-								<p>Vestibulum auctor dapibus neque.</p>
-							</div>
-						</div>
-          
-						<div class="item project-post">
-							<div class="project-gal">
-								<img alt="" src="upload/portfolio/img3.jpg">
-								<div class="hover-box">
-									<a class="zoom" href="single-project.html#"><i class="fa fa-search-plus"></i></a>
-									<a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
-								</div>
-							</div>
-							<div class="project-content">
-								<h2>Aliquam tincidunt mauris eu risus.</h2>
-								<p>Vestibulum auctor dapibus neque.</p>
-							</div>
-						</div>
-          
-						<div class="item project-post">
-							<div class="project-gal">
-								<img alt="" src="upload/portfolio/img4.jpg">
-								<div class="hover-box">
-									<a class="zoom" href="single-project.html#"><i class="fa fa-search-plus"></i></a>
-									<a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
-								</div>
-							</div>
-							<div class="project-content">
-								<h2>Aliquam tincidunt mauris eu risus.</h2>
-								<p>Vestibulum auctor dapibus neque.</p>
-							</div>
-						</div>
-          
-						<div class="item project-post">
-							<div class="project-gal">
-								<img alt="" src="upload/portfolio/img5.jpg">
-								<div class="hover-box">
-									<a class="zoom" href="single-project.html#"><i class="fa fa-search-plus"></i></a>
-									<a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
-								</div>
-							</div>
-							<div class="project-content">
-								<h2>Aliquam tincidunt mauris eu risus.</h2>
-								<p>Vestibulum auctor dapibus neque.</p>
-							</div>
-						</div>
-          
-						<div class="item project-post">
-							<div class="project-gal">
-								<img alt="" src="upload/portfolio/img6.jpg">
-								<div class="hover-box">
-									<a class="zoom" href="single-project.html#"><i class="fa fa-search-plus"></i></a>
-									<a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
-								</div>
-							</div>
-							<div class="project-content">
-								<h2>Aliquam tincidunt mauris eu risus.</h2>
-								<p>Vestibulum auctor dapibus neque.</p>
-							</div>
-						</div>
-          
-						<div class="item project-post">
-							<div class="project-gal">
-								<img alt="" src="upload/portfolio/img7.jpg">
-								<div class="hover-box">
-									<a class="zoom" href="single-project.html#"><i class="fa fa-search-plus"></i></a>
-									<a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
-								</div>
-							</div>
-							<div class="project-content">
-								<h2>Aliquam tincidunt mauris eu risus.</h2>
-								<p>Vestibulum auctor dapibus neque.</p>
-							</div>
-						</div>
+						<?php foreach ($bdd->query($sql4) as $row) : ?>
+
+		                    <div class="item project-post">
+		                        <div class="project-gal">
+		                            <img src="images/min/<?php echo $row['image1']; ?>" alt="#">
+		                                <a href="descriptioncocktail.php?id=<?php echo $row['idingredient']; ?>">
+		                                    <p>
+		                                        <i class="fa fa-star"></i> <?php echo $row['cotesur5']; ?>/5<br/>
+		                                        <i class="fa fa-glass"></i><?php echo $row['pourcentagealcool']; ?>°<br/>
+		                                        <i class="fa fa-eur"></i><?php echo $row['prixlitre']; ?> euros/l<br/>
+		                                    </p>
+		                                </a>
+		                        </div>
+		                        <div class="project-content">
+		                            <h2><?php echo $row['nom']; ?></h2>
+		                            <p><?php echo $row['resume']; ?></p>
+		                        </div>
+		                    </div>
+		                <?php endforeach;   ?>
 					 
 					</div>
 					<div class="buttons">
 						<a class="owl-prev button-third" href="single-project.html#"><i class="fa fa-angle-left"></i></a>
-						<a class="button-third" href="single-project.html#">Voir tous les cocktails</a>
+						<a class="button-third" href="cocktail.php">Voir tous les cocktails</a>
 						<a class="owl-next button-third" href="single-project.html#"><i class="fa fa-angle-right"></i></a>
 					</div>
 				</div>
