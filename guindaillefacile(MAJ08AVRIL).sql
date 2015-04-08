@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Dim 08 Mars 2015 à 23:16
+-- Généré le :  Mer 08 Avril 2015 à 10:45
 -- Version du serveur :  5.6.17
 -- Version de PHP :  5.5.12
 
@@ -36,7 +36,9 @@ CREATE TABLE IF NOT EXISTS `alcoolsforts` (
 --
 
 INSERT INTO `alcoolsforts` (`idingredient`) VALUES
-(2);
+(2),
+(42),
+(47);
 
 -- --------------------------------------------------------
 
@@ -73,10 +75,29 @@ INSERT INTO `articles` (`id`, `titre`, `contenu`, `date`, `auteur`, `popularite`
 
 CREATE TABLE IF NOT EXISTS `avantagesinconvenients` (
   `idavantage` int(11) NOT NULL AUTO_INCREMENT,
-  `nom` varchar(50) COLLATE utf8_bin DEFAULT NULL,
-  `avantageouinconvenient` char(25) COLLATE utf8_bin DEFAULT NULL,
+  `nom` varchar(300) COLLATE utf8_bin DEFAULT NULL,
+  `avantageouinconvenient` char(25) COLLATE utf8_bin DEFAULT NULL COMMENT '"A" OU" I"',
   PRIMARY KEY (`idavantage`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=14 ;
+
+--
+-- Contenu de la table `avantagesinconvenients`
+--
+
+INSERT INTO `avantagesinconvenients` (`idavantage`, `nom`, `avantageouinconvenient`) VALUES
+(1, '', 'A'),
+(2, 'Test hihi', 'A'),
+(3, 'Le deuxième s''affiche aussi :D', 'A'),
+(4, 'Goût de coco écoeurant pour certaines personnes', 'I'),
+(5, 'Une bouteille qui donne autant envie qu''une belle ', 'A'),
+(6, 'Se boit tellement facilement qu''on ne s''en rend co', 'A'),
+(7, 'Dispo dans tout les formats !', 'A'),
+(8, 'Un poil chère', 'I'),
+(9, 'Nécessité de subtilement infirmer le doute sur vot', 'I'),
+(10, 'Sur-représenté dans les boums d''anniversaire du pr', 'I'),
+(11, 'Sur-représenté dans les boums d''anniversaire du premier cycle d''humanité', 'I'),
+(12, 'On fait du Mo-mo-mo-mojiiiiiiiiitooooooo avec !', 'A'),
+(13, 'On fait du Mo-mo-mo-mojiiiiiiiiitooooooo avec !', 'A');
 
 -- --------------------------------------------------------
 
@@ -90,6 +111,23 @@ CREATE TABLE IF NOT EXISTS `avoir` (
   PRIMARY KEY (`idingredient`,`idavantage`),
   KEY `FK_AVOIR_idavantage` (`idavantage`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Contenu de la table `avoir`
+--
+
+INSERT INTO `avoir` (`idingredient`, `idavantage`) VALUES
+(49, 2),
+(49, 3),
+(49, 4),
+(46, 5),
+(46, 6),
+(46, 7),
+(46, 8),
+(46, 9),
+(46, 10),
+(46, 11),
+(47, 13);
 
 -- --------------------------------------------------------
 
@@ -123,7 +161,20 @@ CREATE TABLE IF NOT EXISTS `bieres` (
 --
 
 INSERT INTO `bieres` (`type`, `paysorigine`, `couleur`, `idingredient`) VALUES
-('Trappiste', 'Belgique', 'Brune', 1);
+('Trappiste', 'Belgique', 'Brune', 1),
+('testt', 'test', 'test', 4),
+('pils', 'Belgique', 'blonde', 5),
+('pils', 'belgique', 'blonde', 6),
+('pils', 'zerze', 'blonde', 26),
+('pils', 'aze', 'blonde', 27),
+('pils', 'zerze', 'blonde', 28),
+('pils', 'ezr', 'blonde', 29),
+('pils', 'zer', 'blonde', 30),
+('pils', 'ze', 'blonde', 31),
+('pils', 'belgique', 'blonde', 32),
+('pils', 'belgique', 'blonde', 44),
+('pils', 'zerez', 'blonde', 45),
+('fruitée', 'belgique', 'ambrée', 46);
 
 -- --------------------------------------------------------
 
@@ -135,12 +186,37 @@ CREATE TABLE IF NOT EXISTS `boissons` (
   `pourcentagealcool` float DEFAULT NULL,
   `prixlitre` float DEFAULT NULL,
   `cotesur5` float DEFAULT NULL,
-  `image1` longblob,
-  `image2` longblob,
-  `image3` longblob,
+  `image1` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `image2` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `image3` varchar(50) COLLATE utf8_bin DEFAULT NULL,
   `idingredient` int(11) NOT NULL,
+  `popularite` tinyint(4) DEFAULT NULL,
   PRIMARY KEY (`idingredient`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Contenu de la table `boissons`
+--
+
+INSERT INTO `boissons` (`pourcentagealcool`, `prixlitre`, `cotesur5`, `image1`, `image2`, `image3`, `idingredient`, `popularite`) VALUES
+(5.2, 5.6, 4.2, '41254_1577211633682_2101103_n.jpg', '11043030_10205780300690209_8888143072815199797_n.j', 'lapin.jpg', 4, NULL),
+(5.2, 5.6, 4, '', '', '', 5, NULL),
+(1.2, 2.1, 3.5, '', '', '', 6, NULL),
+(4, 1, 2, NULL, NULL, NULL, 26, NULL),
+(4, 1, 2, NULL, NULL, NULL, 27, NULL),
+(4, 1, 2, NULL, NULL, NULL, 28, NULL),
+(1, 2, 1, NULL, NULL, NULL, 29, NULL),
+(1, 2, 3, NULL, NULL, NULL, 30, NULL),
+(2, 1, 4, NULL, NULL, NULL, 31, NULL),
+(5, 3, 4, NULL, NULL, NULL, 32, NULL),
+(40, 2.3, 4, NULL, NULL, NULL, 42, NULL),
+(12.2, 14.5, 4.9, NULL, NULL, NULL, 43, NULL),
+(4.8, 5, 4, 'Piedboeuf-Blond-75-1_1024x1024.jpg', 'Piedboeuf-Blond-75-1_1024x1024.jpg', 'Piedboeuf-Blond-75-1_1024x1024.jpg', 44, 3),
+(4, 5, 1, '632639721_small.jpg', 'br144.jpg', 'kaiserbeer.jpg', 45, 4),
+(5.4, 8.4, 4.2, '176-bouteille-desperados-33cl.jpg', 'Desperados.jpg', 'Desperados-ImagineOriginal.jpg', 46, 9),
+(14.6, 12.4, 3.5, '3571-1-poliakov-vodka.jpg', 'Brandons_Gin.jpg', 'hendricks-bottle.jpg', 47, 8),
+(8.6, 7.5, 4.9, 'e-liquide-mojito.jpg', 'detail_Skinny_Mojito.png', 'perfect_serve_smirnoff_mojito.jpg', 48, 10),
+(12.8, 14.5, 4.2, '847f14f4341f4a8284003202ea774a7d.jpg', 'recette-pina-colada.jpg', 'Pina-colada-cigar-and-beach.jpg', 49, 7);
 
 -- --------------------------------------------------------
 
@@ -174,6 +250,15 @@ CREATE TABLE IF NOT EXISTS `cocktails` (
   PRIMARY KEY (`idingredient`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
+--
+-- Contenu de la table `cocktails`
+--
+
+INSERT INTO `cocktails` (`preparation`, `idingredient`) VALUES
+('Lorem ipsum dolor sit ameh', 43),
+('Placer les feuilles de menthe dans le verre, ajoutez le sucre et le jus de citrons. Piler consciencieusement afin d''exprimer l''essence de la menthe mais sans la broyer. Ajouter le rhum, remplir le verre à moitié de glaçons et compléter avec de l''eau gazeuse. Mélanger doucement et servir avec une paille.', 48),
+('Dans un blender (mixer), versez les ingrédients avec 5 ou 6 glaçons et mixez le tout. C''est prêt ! Versez dans le verre et dégustez. Peut aussi se réaliser au shaker si c''est juste pour une personne.', 49);
+
 -- --------------------------------------------------------
 
 --
@@ -201,6 +286,13 @@ CREATE TABLE IF NOT EXISTS `exemplariser` (
   KEY `FK_EXEMPLARISER_idmeilleuralcool` (`idmeilleuralcool`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
+--
+-- Contenu de la table `exemplariser`
+--
+
+INSERT INTO `exemplariser` (`idingredient`, `idmeilleuralcool`) VALUES
+(47, 2);
+
 -- --------------------------------------------------------
 
 --
@@ -227,7 +319,7 @@ CREATE TABLE IF NOT EXISTS `ingredients` (
   `description` text COLLATE utf8_bin,
   `unitemesure` varchar(25) COLLATE utf8_bin DEFAULT NULL,
   PRIMARY KEY (`idingredient`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=50 ;
 
 --
 -- Contenu de la table `ingredients`
@@ -236,7 +328,40 @@ CREATE TABLE IF NOT EXISTS `ingredients` (
 INSERT INTO `ingredients` (`idingredient`, `nom`, `resume`, `description`, `unitemesure`) VALUES
 (1, 'Chimay bleue ', 'La plus forte des Chimay', 'Avec ce brevage, pas besoin d''acheter 15 bières pour passer une soirée bien bourré, à peine 2 ou 3 de cette merveille de la nature et vous êtes déjà bien dedans, et à partir de 5 vous êtes tout simplement défoncé.', 'l'),
 (2, 'Vodka', 'Pour la mère Russie !', 'La vodka « petite eau » est une eau-de-vie alcoolisée (fermentée puis distillée), généralement produite à partir de céréales ou de pomme de terre, mais peut être élaborée à partir de n’importe quelle matière première agricole, comme des fruits ou des légumes (lire: les 400 principales vodkas du monde). Elle titre en moyenne 40° d’alcool.', 'l'),
-(3, 'Sucre', '', '', 'gr');
+(3, 'Sucre', '', '', 'gr'),
+(4, 'Jupiler', 'Les hommes savent pourquoi', 'test', 'l'),
+(5, 'Jupiler', 'ezrez', 'Les hommes savent pourquoi', 'l'),
+(6, 'Piedboeuf blonde', 'A taaaaaaaable !', 'Prenez une Jupiler, retirez-lui 4% d''alcool et la moitié de son prix, mettez-la dans une bouteille 75 cl et tadaaaaaa ! Vous avez désormais entre vos main une bière très légère avec un bon goût de blonde bien comme on l''aime. Impossible de ne serait-ce que s''approcher d''un état d''hébriété avec ça cependant, mais pour passer une soirée au calme en sirotant son verre de bière ou en jouant à BoB, la Piedboeuf permet bien des choses.', 'l'),
+(18, 'Caca', 'miam', 'oh oui du bon gros caca \r\n', 'simple'),
+(19, 'Gros caca', 'azrazr', 'zerze zetze ', 'acoder'),
+(20, 'zerz', 'zetzetze', 'ezzeez', 'pincées'),
+(21, 'zerze ', 'zrzr ', 'zerzer ', 'gr'),
+(22, 'zer', 'ezrze', 'ezrze', 'l'),
+(23, 'ger', 'teztez', 'reter', 'l'),
+(24, 'ger', 'teztez', 'reter', 'l'),
+(25, 'testcaca', 'ezrtze', 'zetze', 'l'),
+(26, 'testcaca', 'ezrtze', 'zetze', 'l'),
+(27, 'testajout', 'ezr', 'zerze', 'l'),
+(28, 'ret', 'ezze', 'zer', 'l'),
+(29, 'zer', 'zer', 'ez', 'l'),
+(30, 'zer', 'ezr', 'zer', 'l'),
+(31, 'zer', 'zer', 'zer', 'l'),
+(32, 'Jupiler', 'Les hommes savent pourquoi', 'azraraz', 'l'),
+(33, 'zerze', 'zerze', 'ezzer', 'gr'),
+(34, 'ryt', 'er', 'ezrtze', 'cuillères à café'),
+(37, 'zreez', 'eztze', 'zerze', 'feuilles'),
+(38, 'testmagie', 'reze', 'rzeze', 'feuilles'),
+(39, 'rete', 'tree', 'ertt', 'feuilles'),
+(40, 'ezrz', 'terer', 'zez', 'cuillères à soupe'),
+(41, 'Sel', 'So salty', 'Du sel de cuisine classique', 'pincées'),
+(42, 'Vodka', 'Mother russia', 'zerze', 'l'),
+(43, 'Mojito', 'Aie Aie Aie', 'swag', 'l'),
+(44, 'Piedboeuf', 'swaggy', 'ezrzerzerze', 'l'),
+(45, 'Kaiser', 'zaeraze', 'ezrze', 'l'),
+(46, 'Desperados', 'Tout notre savoir-faire dans l''étiquette', '"Bière française (comme quoi ils font pas que du fromage et de la baguette) aromatisée à la téquila, au citron, citron vert et à la menthe, \r\navec un taux d''alcool de 5,9%. Ne goûte ni la bière française (heureusement d''ailleurs), ni la tequila, ni le citron ni la menthe, et encore moins l''alcool. Là est le génie créatif."', 'l'),
+(47, 'Gin', 'J''aime le gin', 'Le Gin, c''est cool. On peut faire du Mojito avec d''abord.\r\n', 'l'),
+(48, 'Mojito', 'Le Dieu des cocktails', 'Le big boss des cocktails ! Il faut aimer le goût de thé par contre, il paraît que ça déplaît à certains... N''empêche qu''on ne compte plus les soirées transformées de médiocres à excellentes grâce à ce classique.', 'l'),
+(49, 'Pina Colada', 'If you like Piiiiiiiina Coladaaas', 'If you like Piiiiiiiina Coladaaas, and getting caaaaaaaught in the rain, if you''re not into yogaaaaaaa, if you haaaaave half a brain... Ça ne vous dit rien? Récemment popularisée par "Les gardiens de la galaxie", cette chanson est la preuve même de l''inspiration géniale que peut apporter ce cocktail.', 'l');
 
 -- --------------------------------------------------------
 
@@ -249,7 +374,14 @@ CREATE TABLE IF NOT EXISTS `meilleursalcools` (
   `nom` varchar(25) COLLATE utf8_bin DEFAULT NULL,
   `prixlitre` float DEFAULT NULL,
   PRIMARY KEY (`idmeilleuralcool`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=3 ;
+
+--
+-- Contenu de la table `meilleursalcools`
+--
+
+INSERT INTO `meilleursalcools` (`idmeilleuralcool`, `nom`, `prixlitre`) VALUES
+(2, 'Gordon''s Gin', 21);
 
 --
 -- Contraintes pour les tables exportées
@@ -297,15 +429,15 @@ ALTER TABLE `cocktails`
 -- Contraintes pour la table `contenir`
 --
 ALTER TABLE `contenir`
-  ADD CONSTRAINT `FK_CONTENIR_idingredient_INGREDIENTS` FOREIGN KEY (`idingredient_INGREDIENTS`) REFERENCES `ingredients` (`idingredient`),
-  ADD CONSTRAINT `FK_CONTENIR_idingredient` FOREIGN KEY (`idingredient`) REFERENCES `ingredients` (`idingredient`);
+  ADD CONSTRAINT `FK_CONTENIR_idingredient` FOREIGN KEY (`idingredient`) REFERENCES `ingredients` (`idingredient`),
+  ADD CONSTRAINT `FK_CONTENIR_idingredient_INGREDIENTS` FOREIGN KEY (`idingredient_INGREDIENTS`) REFERENCES `ingredients` (`idingredient`);
 
 --
 -- Contraintes pour la table `exemplariser`
 --
 ALTER TABLE `exemplariser`
-  ADD CONSTRAINT `FK_EXEMPLARISER_idmeilleuralcool` FOREIGN KEY (`idmeilleuralcool`) REFERENCES `meilleursalcools` (`idmeilleuralcool`),
-  ADD CONSTRAINT `FK_EXEMPLARISER_idingredient` FOREIGN KEY (`idingredient`) REFERENCES `ingredients` (`idingredient`);
+  ADD CONSTRAINT `FK_EXEMPLARISER_idingredient` FOREIGN KEY (`idingredient`) REFERENCES `ingredients` (`idingredient`),
+  ADD CONSTRAINT `FK_EXEMPLARISER_idmeilleuralcool` FOREIGN KEY (`idmeilleuralcool`) REFERENCES `meilleursalcools` (`idmeilleuralcool`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
