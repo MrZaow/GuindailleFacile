@@ -1,7 +1,9 @@
 <?php include("includes/connectionpdo.php");
 
-$sql = "SELECT id, titre, auteur, DAY(date) AS jour, MONTH(date) AS mois, contenu
-		FROM articles
+$sql = "SELECT a.id, a.titre, a.auteur, DAY(a.date) AS jour, MONTH(a.date) AS mois, a.contenu, c.titre AS Categorie
+		FROM articles a
+		LEFT JOIN categories c
+		ON a.category_id = c.id
 		ORDER BY date DESC";
 
 $sql2 = "SELECT titre, DAY(date) AS jour, MONTH(date) AS mois, id
@@ -41,8 +43,8 @@ $sql3 = "SELECT *
 					<div class="row">
 						<div class="col-md-9">
 						<?php foreach($bdd->query($sql) as $row) : ?>
-							<div class="blog-post triggerAnimation animated" data-animate="slideInUp" >
-								<div class="post-content  ">
+							<div class="blog-post masonry triggerAnimation animated" data-animate="slideInUp">
+								<div class="post-content  <?php echo $row['Categorie']?>">
 									<div class="post-date">
 											<p><span><?php echo $row['jour']?></span><?php echo $row['mois']?></p>
 									</div>
