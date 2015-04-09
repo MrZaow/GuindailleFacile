@@ -1,4 +1,20 @@
-<?php include("includes/connectionpdo.php") ?>
+<?php include("includes/connectionpdo.php");
+
+$reponse = $bdd->prepare('SELECT *
+							FROM articles
+							WHERE articles.id = ?');
+$reponse->execute(array($_GET['id']));
+$result = $reponse->fetch();
+if(!$result)
+	header("Location: etudiant.php");
+
+$lid = $_GET['id'];
+
+$sql = "SELECT id, titre, auteur, DAY(date) AS jour, MONTH(date) AS mois, contenu
+		FROM articles
+		WHERE articles.id = $lid";
+
+?>
 <!doctype html>
 
 <html lang="fr" class="no-js">
@@ -8,6 +24,8 @@
 <body>
 <!-- Container -->
 <div id="container">
+	<?php include("includes/header.php");
+	?>
 		<div id="content">
 
 			<!-- page-banner 
@@ -28,14 +46,19 @@
 
           						<div class="blog-post single-post triggerAnimation animated" data-animate="slideInUp">
 									<div class="post-content">
+									<?php foreach($bdd->query($sql) as $row) : ?>
 
-										Date
+										<div class="post-date">
+											<p><span><?php echo $row['jour']?></span><?php echo $row['mois']?></p>
+										</div>
+
+
 
 										<div class="content-data">
-											Titre
-											Auteur
+											<h2><?php echo $row['titre'] ?></h2>
+											<p><?php echo $row['auteur'] ?></p>
 										</div>
-										Contenu
+										<p><?php echo $row['contenu']; ?></p>
 
 										<div class="share-tag-box">
 											<span>Partager cette article sur</span>
@@ -52,76 +75,9 @@
 												<a href="single-post.html#" class="button-third">Suivant <i class="fa fa-angle-right"></i></a>
 												<p>Le sexe anal avec la mère d'Axel, une expérience à découvrir et redécouvrir</p>
 											</div>
+									<?php endforeach; ?>
 										</div>
-										<div class="comment-section">
-											<h3>4 Comments</h3>
-
-											<ul class="comment-tree">
-												<li>
-													<div class="comment-box">
-														<img alt="" src="upload/testim1.jpg">
-														<div class="comment-content">
-															<h4>John Doe</h4>
-															<span>July 6, 2013. 8:30 pm.</span>
-															<p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</p>
-															<a href="single-post.html#">Reply</a>
-														</div>
-													</div>
-													<ul class="depth">
-														<li>
-															<div class="comment-box">
-																<img alt="" src="upload/testim2.jpg">
-																<div class="comment-content">
-																	<h4>John Doe</h4>
-																	<span>July 6, 2013. 8:30 pm.</span>
-																	<p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</p>
-																	<a href="single-post.html#">Reply</a>
-																</div>
-															</div>
-														</li>
-													</ul>
-												</li>
-
-												<li>
-													<div class="comment-box">
-														<img alt="" src="upload/testim1.jpg">
-														<div class="comment-content">
-															<h4>John Doe</h4>
-															<span>July 6, 2013. 8:30 pm.</span>
-															<p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</p>
-															<a href="single-post.html#">Reply</a>
-														</div>
-													</div>
-												</li>
-
-												<li>
-													<div class="comment-box">
-														<img alt="" src="upload/testim3.jpg">
-														<div class="comment-content">
-															<h4>John Doe</h4>
-															<span>July 6, 2013. 8:30 pm.</span>
-															<p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</p>
-															<a href="single-post.html#">Reply</a>
-														</div>
-													</div>
-												</li>
-											</ul>
-										</div>
-										<form class="comment-form">
-											<h3>Laisser un commentaire</h3>
-											<div class="row">
-												<div class="col-md-4">
-													<input name="name" id="name" type="text" placeholder="Nom">
-												</div>
-												<div class="col-md-4">
-													<input name="mail" id="mail" type="text" placeholder="Email">
-												</div>
-											</div>
-											<textarea name="comment" id="comment" placeholder="Votre Message"></textarea>
-											<input type="submit" id="submit_contact" value="Submit">
-										</form>
 									</div>
-									--->
 								</div>
 
           					</div>

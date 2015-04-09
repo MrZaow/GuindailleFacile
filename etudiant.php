@@ -1,8 +1,15 @@
 <?php include("includes/connectionpdo.php");
 
-$sql = "SELECT *
-		FROM articles";
+$sql = "SELECT id, titre, auteur, DAY(date) AS jour, MONTH(date) AS mois, contenu
+		FROM articles
+		ORDER BY date DESC";
 
+$sql2 = "SELECT titre, DAY(date) AS jour, MONTH(date) AS mois, id
+		FROM articles
+		ORDER BY popularite DESC
+		LIMIT 3";
+$sql3 = "SELECT *
+		FROM categories";
  ?>
 <!doctype html>
 
@@ -33,20 +40,18 @@ $sql = "SELECT *
 				<div class="blog-box">
 					<div class="row">
 						<div class="col-md-9">
-
-							<?php foreach($bdd->query($sql) as $row) : ?>
+						<?php foreach($bdd->query($sql) as $row) : ?>
 							<div class="blog-post triggerAnimation animated" data-animate="slideInUp" >
 								<div class="post-content  ">
 									<div class="post-date">
-											<p><?php echo $row['date'] ?></p>
-										</div>
+											<p><span><?php echo $row['jour']?></span><?php echo $row['mois']?></p>
+									</div>
 
 									<div class="content-data">
-										<h2><?php echo $row['titre'] ?></h2>
+										<h2><a href="article.php?id=<?php echo $row['id'] ?>"><?php echo $row['titre'] ?></a></h2>
 										<p><?php echo $row['auteur'] ?></p>
 									</div>
-									<p>Extrait</p>
-									<a class="button-third" href="#">Lire</a>
+									<p><?php echo substr($row['contenu'], 0, 340); ?></p>
 								</div>
 							</div>
 							<?php endforeach; ?>
@@ -61,25 +66,29 @@ $sql = "SELECT *
 										</button>
 									</form>
 								</div>
+
 								<div class="category-widget widget">
 									<h3>Catégories</h3>
 									<ul class="category-list filter">
 										<li><a href="blog-rightsidebar.html#" data-filter="*">Tout</a></li>
-										
-										<li></li>
-										
+										<?php foreach($bdd->query($sql3) as $row): ?>
+										<li><a href="#" data-filter=".<?php echo $row['titre'];?>"><?php echo ucfirst($row['titre']); ?></a></li>
+										<?php endforeach; ?>
 									</ul>
 								</div>
 								<div class="popular-widget widget">
 									<h3>Articles populaires</h3>
 									<ul class="popular-list">
+										<?php foreach($bdd->query($sql2) as $row): ?>
 										<li>
-											<img alt="" src="upload/blog/b1.jpg">
 											<div class="side-content">
-												Titre
-												Date
+												<h2><a href="article.php?id=<?php echo $row['id'] ?>"><?php echo $row['titre'] ?></a></h2>
+												<div class="post-date">
+													<p><?php echo $row['jour']?>/<?php echo $row['mois']?></p>
+												</div>
 											</div>
 										</li>
+									<?php endforeach; ?>
 									</ul>
 								</div>
 
