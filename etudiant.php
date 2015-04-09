@@ -1,4 +1,9 @@
-<?php include("includes/connectionpdo.php") ?>
+<?php include("includes/connectionpdo.php");
+
+$sql = "SELECT *
+		FROM articles";
+
+ ?>
 <!doctype html>
 
 <html lang="fr" class="no-js">
@@ -29,20 +34,22 @@
 					<div class="row">
 						<div class="col-md-9">
 
-
-							<div class="blog-post masonry triggerAnimation animated" data-animate="slideInUp" >
+							<?php foreach($bdd->query($sql) as $row) : ?>
+							<div class="blog-post triggerAnimation animated" data-animate="slideInUp" >
 								<div class="post-content  ">
-									Date
+									<div class="post-date">
+											<p><?php echo $row['date'] ?></p>
+										</div>
 
 									<div class="content-data">
-										Titre
-										Auteur
+										<h2><?php echo $row['titre'] ?></h2>
+										<p><?php echo $row['auteur'] ?></p>
 									</div>
-									Extrait
-
+									<p>Extrait</p>
+									<a class="button-third" href="#">Lire</a>
 								</div>
 							</div>
-
+							<?php endforeach; ?>
 						</div>
 						<div class="col-md-3">
 							<div class="sidebar triggerAnimation animated" data-animate="slideInUp">

@@ -33,7 +33,7 @@ if(!empty($_FILES)){
 	$allow_ext = array("jpg", 'png', 'gif');
 	if(in_array($ext, $allow_ext)){
 		move_uploaded_file($image1['tmp_name'], "images/".$image1['name']);
-		Img::creerMin("images/".$image1['name'], "images/min", $image1['name'], 339, 189);
+		Img::creerMin("images/".$image1['name'], "images/min", $image1['name'], 450, 250);
 	}
 	else{
 		$error['image1'] = "Votre fichier n'est pas une image au bon format";
@@ -45,7 +45,7 @@ if(!empty($_FILES)){
 	$allow_ext = array("jpg", 'png', 'gif');
 	if(in_array($ext, $allow_ext)){
 		move_uploaded_file($image2['tmp_name'], "images/".$image2['name']);
-		Img::creerMin("images/".$image2['name'], "images/min", $image2['name'], 339, 189);
+		Img::creerMin("images/".$image2['name'], "images/min", $image2['name'], 450, 250);
 	}
 	else{
 		$error['image2'] = "Votre fichier n'est pas une image au bon format";
@@ -57,7 +57,7 @@ if(!empty($_FILES)){
 	$allow_ext = array("jpg", 'png', 'gif');
 	if(in_array($ext, $allow_ext)){
 		move_uploaded_file($image3['tmp_name'], "images/".$image3['name']);
-		Img::creerMin("images/".$image3['name'], "images/min", $image3['name'], 339, 189);
+		Img::creerMin("images/".$image3['name'], "images/min", $image3['name'], 450, 250);
 	}
 	else{
 		$error['image3'] = "Votre fichier n'est pas une image au bon format";
