@@ -1,4 +1,21 @@
-<?php include("includes/connectionpdo.php") ?>
+<?php include("includes/connectionpdo.php");
+
+/*Les articles*/
+$sql3 = "SELECT id, titre, auteur, DAY(date) AS jour, MONTH(date) AS mois, contenu
+                FROM articles
+                ORDER BY date DESC";
+
+/*Le nombre d'alcool référencés*/
+$sql4 = "SELECT COUNT(idingredient) AS alcoolsreferences
+        FROM ingredients
+        WHERE EXISTS(SELECT * FROM boissons WHERE boissons.idingredient = ingredients.idingredient)
+";
+
+$sql5 = "SELECT SUM(idingredient) AS degretotal
+        FROM boissons
+";
+
+?>
 
 <!doctype html>
 
@@ -332,7 +349,9 @@
                             <div class="statistic-post">
                                 <div class="statistic-counter">
                                     <i class="fa fa-bell-o"></i>
-                                    <p><span class="timer" data-from="0" data-to="69"></span></p>
+                                    <?php foreach($bdd->query($sql4) as $row): ?>
+                                    <p><span class="timer" data-from="0" data-to="<?php echo $row['alcoolsreferences']; ?>"></span></p>
+                                    <?php endforeach; ?>
                                     <p>Alcools référencés</p>
                                 </div>
                             </div>
@@ -341,7 +360,9 @@
                             <div class="statistic-post">
                                 <div class="statistic-counter">
                                     <i class="fa fa-star-o"></i>
+                                    
                                     <p><span class="timer" data-from="0" data-to="25"></span></p>
+                                    
                                     <p>Jeux d'alcools</p>
                                 </div>
                             </div>
@@ -350,7 +371,9 @@
                             <div class="statistic-post">
                                 <div class="statistic-counter">
                                     <i class="fa fa-moon-o"></i>
-                                    <p><span class="timer" data-from="0" data-to="1337"></span></p>
+                                    <?php foreach($bdd->query($sql5) as $row): ?>
+                                    <p><span class="timer" data-from="0" data-to="<?php echo $row['degretotal']; ?>"></span></p>
+                                    <?php endforeach; ?>
                                     <p>Degré d'alcool total</p>
                                 </div>
                             </div>
@@ -372,21 +395,23 @@
             <div class="container triggerAnimation animated" data-animate="fadeInUp">
                 <div id="owl-demo2" class="owl-carousel owl-theme">
 
-                    
+                    <?php  foreach($bdd->query($sql3) as $row) : ?> 
                     <div class="item blog-post ">
                         <div class="post-content">
-                            Date
+                            <div class="post-date">
+                                    <p><span><?php echo $row['jour']?></span><?php echo $row['mois']?></p>
+                            </div>
                             <div class="content-data">
-                                Titre
-                                Auteur
+                                <h2><a href="article.php?id=<?php echo $row['id'] ?>"><?php echo $row['titre'] ?></a></h2>
+                                <p><?php echo $row['auteur']; ?></p>
                             </div>
                         </div>
                     </div>
-
+                    <?php endforeach; ?>
                 </div>
                 <div class="buttons">
                     <a class="owl-prev button-third" href="index.php"><i class="fa fa-angle-left"></i></a>
-                    <a class="button-third" href="?p=etudiant">Voir tous les posts</a>
+                    <a class="button-third" href="etudiant.php">Voir tous les posts</a>
                     <a class="owl-next button-third" href="index.php"><i class="fa fa-angle-right"></i></a>
                 </div>
             </div>
