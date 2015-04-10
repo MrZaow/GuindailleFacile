@@ -6,14 +6,19 @@ $sql3 = "SELECT id, titre, auteur, DAY(date) AS jour, MONTH(date) AS mois, conte
                 ORDER BY date DESC";
 
 /*Le nombre d'alcool référencés*/
-$sql4 = "SELECT COUNT(idingredient) AS alcoolsreferences
-        FROM ingredients
-        WHERE EXISTS(SELECT * FROM boissons WHERE boissons.idingredient = ingredients.idingredient)
+$sql4 = "SELECT COUNT(idingredient) AS cocktailsreferences
+        FROM cocktails
+";
+/*Bières référencées*/
+$sql6 = "SELECT COUNT(idingredient) AS bieresreferencees
+        FROM bieres
 ";
 
+/*Degré d'alcool total*/
 $sql5 = "SELECT SUM(idingredient) AS degretotal
         FROM boissons
 ";
+
 
 ?>
 
@@ -339,42 +344,44 @@ $sql5 = "SELECT SUM(idingredient) AS degretotal
                         <div class="col-md-3 col-sm-6">
                             <div class="statistic-post">
                                 <div class="statistic-counter">
-                                    <i class="fa fa-heart-o"></i>
-                                    <p><span class="timer" data-from="0" data-to="9001"></span></p>
-                                    <p>Visiteurs du site</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="statistic-post">
-                                <div class="statistic-counter">
-                                    <i class="fa fa-bell-o"></i>
-                                    <?php foreach($bdd->query($sql4) as $row): ?>
-                                    <p><span class="timer" data-from="0" data-to="<?php echo $row['alcoolsreferences']; ?>"></span></p>
+                                    <i class="fa fa-beer"></i>
+                                    <?php foreach($bdd->query($sql6) as $row): ?>
+                                    <p><span class="timer" data-from="0" data-to="<?php echo $row['bieresreferencees']; ?>"></span></p>
                                     <?php endforeach; ?>
-                                    <p>Alcools référencés</p>
+                                    <p>Bières référencées</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
                             <div class="statistic-post">
                                 <div class="statistic-counter">
-                                    <i class="fa fa-star-o"></i>
-                                    
-                                    <p><span class="timer" data-from="0" data-to="25"></span></p>
-                                    
-                                    <p>Jeux d'alcools</p>
+                                    <i class="fa fa-glass"></i>
+                                    <?php foreach($bdd->query($sql4) as $row): ?>
+                                    <p><span class="timer" data-from="0" data-to="<?php echo $row['cocktailsreferences']; ?>"></span></p>
+                                    <?php endforeach; ?>
+                                    <p>Cocktails référencés</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
                             <div class="statistic-post">
                                 <div class="statistic-counter">
-                                    <i class="fa fa-moon-o"></i>
+                                    <i class="fa fa-line-chart"></i>
                                     <?php foreach($bdd->query($sql5) as $row): ?>
                                     <p><span class="timer" data-from="0" data-to="<?php echo $row['degretotal']; ?>"></span></p>
                                     <?php endforeach; ?>
                                     <p>Degré d'alcool total</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="statistic-post">
+                                <div class="statistic-counter">
+                                    <i class="fa fa-star"></i>
+                                    
+                                    <p><span class="timer" data-from="0" data-to="25"></span></p>
+                                    
+                                    <p>Jeux d'alcools</p>
                                 </div>
                             </div>
                         </div>
