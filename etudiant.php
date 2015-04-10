@@ -1,17 +1,16 @@
 <?php include("includes/connectionpdo.php");
 
-$sql = "SELECT a.id, a.titre, a.auteur, DAY(a.date) AS jour, MONTH(a.date) AS mois, a.contenu, c.titre AS Categorie
-		FROM articles a
-		LEFT JOIN categories c
-		ON a.category_id = c.id
+$sql = "SELECT id, titre, auteur, DAY(date) AS jour, MONTH(date) AS mois, contenu, categorie
+		FROM articles 
 		ORDER BY date DESC";
 
 $sql2 = "SELECT titre, DAY(date) AS jour, MONTH(date) AS mois, id
 		FROM articles
 		ORDER BY popularite DESC
 		LIMIT 3";
-$sql3 = "SELECT *
-		FROM categories";
+
+$sql3 = "SELECT DISTINCT categorie
+		FROM articles";
  ?>
 <!doctype html>
 
@@ -42,11 +41,12 @@ $sql3 = "SELECT *
 				<div class="blog-box">
 					<div class="row">
 						<div class="col-md-9">
+
 						<?php foreach($bdd->query($sql) as $row) : ?>
 							<div class="blog-post masonry triggerAnimation animated" data-animate="slideInUp">
-								<div class="post-content  <?php echo $row['Categorie']?>">
+								<div class="post-content  <?php echo $row['categorie']?>">
 									<div class="post-date">
-											<p><span><?php echo $row['jour']?></span><?php echo $row['mois']?></p>
+											<p><span><?php echo $row['jour']?></span><?php echo date('M',$row['mois'])?></p>
 									</div>
 
 									<div class="content-data">
@@ -60,13 +60,17 @@ $sql3 = "SELECT *
 						</div>
 						<div class="col-md-3">
 							<div class="sidebar triggerAnimation animated" data-animate="slideInUp">
+								
 								<div class="search-widget widget">
 									<form>
-										<input type="search" placeholder="Chercher un article"/>
+										<input type="search" placeholder="Chercher un post"/>
 										<button type="submit">
 											<i class="fa fa-search"></i>
 										</button>
 									</form>
+								</div>
+								<div class="buttons">
+									<a class="button-third" href="encodagearticle.php"> <i class="fa fa-pencil"></i> Écrire un post</a>
 								</div>
 
 								<div class="category-widget widget">
@@ -74,7 +78,7 @@ $sql3 = "SELECT *
 									<ul class="category-list filter">
 										<li><a href="blog-rightsidebar.html#" data-filter="*">Tout</a></li>
 										<?php foreach($bdd->query($sql3) as $row): ?>
-										<li><a href="#" data-filter=".<?php echo $row['titre'];?>"><?php echo ucfirst($row['titre']); ?></a></li>
+										<li><a href="#" data-filter=".<?php echo $row['categorie'];?>"><?php echo ucfirst($row['categorie']); ?></a></li>
 										<?php endforeach; ?>
 									</ul>
 								</div>

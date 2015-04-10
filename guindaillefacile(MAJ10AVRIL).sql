@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Mer 08 Avril 2015 à 10:45
+-- Généré le :  Ven 10 Avril 2015 à 19:04
 -- Version du serveur :  5.6.17
 -- Version de PHP :  5.5.12
 
@@ -47,25 +47,26 @@ INSERT INTO `alcoolsforts` (`idingredient`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `articles` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `titre` varchar(255) COLLATE utf8_bin DEFAULT NULL,
   `contenu` text COLLATE utf8_bin,
   `date` date DEFAULT NULL,
   `auteur` varchar(255) COLLATE utf8_bin DEFAULT NULL,
   `popularite` int(11) NOT NULL DEFAULT '0',
-  `category_id` int(255) DEFAULT NULL,
+  `categorie` varchar(255) COLLATE utf8_bin NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=402 ;
 
 --
 -- Contenu de la table `articles`
 --
 
-INSERT INTO `articles` (`id`, `titre`, `contenu`, `date`, `auteur`, `popularite`, `category_id`) VALUES
-(100, 'Swag utlime', 'Imagine was you removal raising gravity. Unsatiable understood or expression dissimilar so sufficient. Its party every heard and event gay. Advice he indeed things adieus in number so uneasy. To many four fact in he fail. My hung it quit next do of. It fifteen charmed by private savings it mr. Favourable cultivated alteration entreaties yet met sympathize. Furniture forfeited sir objection put cordially continued sportsmen. ', '2015-02-03', 'Robin', 2, 2),
-(200, 'Un petit lapin meurt sauvagement', 'Ask especially collecting terminated may son expression. Extremely eagerness principle estimable own was man. Men received far his dashwood subjects new. My sufficient surrounded an companions dispatched in on. Connection too unaffected expression led son possession. New smiling friends and her another. Leaf she does none love high yet. Snug love will up bore as be. Pursuit man son musical general pointed. It surprise informed mr advanced do outweigh. ', '2015-02-05', 'Florent', 0, 1),
-(300, 'Petite gamine dort dans le sable', 'Certainly elsewhere my do allowance at. The address farther six hearted hundred towards husband. Are securing off occasion remember daughter replying. Held that feel his see own yet. Strangers ye to he sometimes propriety in. She right plate seven has. Bed who perceive judgment did marianne.', '2015-02-10', 'Axel', 4, 1),
-(400, 'La mère d''Axel a encore frappé !', 'Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought. \r\n\r\nShe suspicion dejection saw instantly. Well deny may real one told yet saw hard dear. Bed chief house rapid right the. Set noisy one state tears which. No girl oh part must fact high my he. Simplicity in excellence melancholy as remarkably discovered. Own partiality motionless was old excellence she inquietude contrasted. Sister giving so wicket cousin of an he rather marked. Of on game part body rich. Adapted mr savings venture it or comfort affixed friends. \r\n\r\nAgreed joy vanity regret met may ladies oppose who. Mile fail as left as hard eyes. Meet made call in mean four year it to. Prospect so branched wondered sensible of up. For gay consisted resolving pronounce sportsman saw discovery not. Northward or household as conveying we earnestly believing. No in up contrasted discretion inhabiting excellence. Entreaties we collecting unpleasant at everything conviction. \r\n\r\nSo by colonel hearted ferrars. Draw from upon here gone add one. He in sportsman household otherwise it perceived instantly. Is inquiry no he several excited am. Called though excuse length ye needed it he having. Whatever throwing we on resolved entrance together graceful. Mrs assured add private married removed believe did she. ', '2015-02-20', 'Robin', 0, 2);
+INSERT INTO `articles` (`id`, `titre`, `contenu`, `date`, `auteur`, `popularite`, `categorie`) VALUES
+(100, 'Swag utlime', 'Imagine was you removal raising gravity. Unsatiable understood or expression dissimilar so sufficient. Its party every heard and event gay. Advice he indeed things adieus in number so uneasy. To many four fact in he fail. My hung it quit next do of. It fifteen charmed by private savings it mr. Favourable cultivated alteration entreaties yet met sympathize. Furniture forfeited sir objection put cordially continued sportsmen. ', '2015-02-03', 'Robin', 2, 'coquin'),
+(200, 'Un petit lapin meurt sauvagement', 'Ask especially collecting terminated may son expression. Extremely eagerness principle estimable own was man. Men received far his dashwood subjects new. My sufficient surrounded an companions dispatched in on. Connection too unaffected expression led son possession. New smiling friends and her another. Leaf she does none love high yet. Snug love will up bore as be. Pursuit man son musical general pointed. It surprise informed mr advanced do outweigh. ', '2015-02-05', 'Florent', 1, 'soiree'),
+(300, 'Petite gamine dort dans le sable', 'Certainly elsewhere my do allowance at. The address farther six hearted hundred towards husband. Are securing off occasion remember daughter replying. Held that feel his see own yet. Strangers ye to he sometimes propriety in. She right plate seven has. Bed who perceive judgment did marianne.', '2015-02-10', 'Axel', 4, 'bourré'),
+(400, 'La mère d''Axel a encore frappé !', 'Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought. \r\n\r\nShe suspicion dejection saw instantly. Well deny may real one told yet saw hard dear. Bed chief house rapid right the. Set noisy one state tears which. No girl oh part must fact high my he. Simplicity in excellence melancholy as remarkably discovered. Own partiality motionless was old excellence she inquietude contrasted. Sister giving so wicket cousin of an he rather marked. Of on game part body rich. Adapted mr savings venture it or comfort affixed friends. \r\n\r\nAgreed joy vanity regret met may ladies oppose who. Mile fail as left as hard eyes. Meet made call in mean four year it to. Prospect so branched wondered sensible of up. For gay consisted resolving pronounce sportsman saw discovery not. Northward or household as conveying we earnestly believing. No in up contrasted discretion inhabiting excellence. Entreaties we collecting unpleasant at everything conviction. \r\n\r\nSo by colonel hearted ferrars. Draw from upon here gone add one. He in sportsman household otherwise it perceived instantly. Is inquiry no he several excited am. Called though excuse length ye needed it he having. Whatever throwing we on resolved entrance together graceful. Mrs assured add private married removed believe did she. ', '2015-02-20', 'Robin', 0, 'coquin'),
+(401, 'Des choses dans les bois', 'Dum haec in oriente aguntur, Arelate hiemem agens Constantius post theatralis ludos atque circenses ambitioso editos apparatu diem sextum idus Octobres, qui imperii eius annum tricensimum terminabat, insolentiae pondera gravius librans, siquid dubium deferebatur aut falsum, pro liquido accipiens et conperto, inter alia excarnificatum Gerontium Magnentianae comitem partis exulari maerore multavit.\r\n\r\nProinde die funestis interrogationibus praestituto imaginarius iudex equitum resedit magister adhibitis aliis iam quae essent agenda praedoctis, et adsistebant hinc inde notarii, quid quaesitum esset, quidve responsum, cursim ad Caesarem perferentes, cuius imperio truci, stimulis reginae exsertantis aurem subinde per aulaeum, nec diluere obiecta permissi nec defensi periere conplures.\r\n\r\nLatius iam disseminata licentia onerosus bonis omnibus Caesar nullum post haec adhibens modum orientis latera cuncta vexabat nec honoratis parcens nec urbium primatibus nec plebeiis.', '2015-04-01', 'Personne lolol', 0, 'coquin');
 
 -- --------------------------------------------------------
 
@@ -78,7 +79,7 @@ CREATE TABLE IF NOT EXISTS `avantagesinconvenients` (
   `nom` varchar(300) COLLATE utf8_bin DEFAULT NULL,
   `avantageouinconvenient` char(25) COLLATE utf8_bin DEFAULT NULL COMMENT '"A" OU" I"',
   PRIMARY KEY (`idavantage`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=14 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=15 ;
 
 --
 -- Contenu de la table `avantagesinconvenients`
@@ -97,7 +98,8 @@ INSERT INTO `avantagesinconvenients` (`idavantage`, `nom`, `avantageouinconvenie
 (10, 'Sur-représenté dans les boums d''anniversaire du pr', 'I'),
 (11, 'Sur-représenté dans les boums d''anniversaire du premier cycle d''humanité', 'I'),
 (12, 'On fait du Mo-mo-mo-mojiiiiiiiiitooooooo avec !', 'A'),
-(13, 'On fait du Mo-mo-mo-mojiiiiiiiiitooooooo avec !', 'A');
+(13, 'On fait du Mo-mo-mo-mojiiiiiiiiitooooooo avec !', 'A'),
+(14, '', 'I');
 
 -- --------------------------------------------------------
 
@@ -127,7 +129,8 @@ INSERT INTO `avoir` (`idingredient`, `idavantage`) VALUES
 (46, 9),
 (46, 10),
 (46, 11),
-(47, 13);
+(47, 13),
+(4, 14);
 
 -- --------------------------------------------------------
 
@@ -174,7 +177,10 @@ INSERT INTO `bieres` (`type`, `paysorigine`, `couleur`, `idingredient`) VALUES
 ('pils', 'belgique', 'blonde', 32),
 ('pils', 'belgique', 'blonde', 44),
 ('pils', 'zerez', 'blonde', 45),
-('fruitée', 'belgique', 'ambrée', 46);
+('fruitée', 'belgique', 'ambrée', 46),
+('pils', 'belgique', 'blonde', 51),
+('pils', 'belgique', 'blonde', 52),
+('spéciale', 'belgique', 'blonde', 53);
 
 -- --------------------------------------------------------
 
@@ -199,7 +205,6 @@ CREATE TABLE IF NOT EXISTS `boissons` (
 --
 
 INSERT INTO `boissons` (`pourcentagealcool`, `prixlitre`, `cotesur5`, `image1`, `image2`, `image3`, `idingredient`, `popularite`) VALUES
-(5.2, 5.6, 4.2, '41254_1577211633682_2101103_n.jpg', '11043030_10205780300690209_8888143072815199797_n.j', 'lapin.jpg', 4, NULL),
 (5.2, 5.6, 4, '', '', '', 5, NULL),
 (1.2, 2.1, 3.5, '', '', '', 6, NULL),
 (4, 1, 2, NULL, NULL, NULL, 26, NULL),
@@ -216,27 +221,10 @@ INSERT INTO `boissons` (`pourcentagealcool`, `prixlitre`, `cotesur5`, `image1`, 
 (5.4, 8.4, 4.2, '176-bouteille-desperados-33cl.jpg', 'Desperados.jpg', 'Desperados-ImagineOriginal.jpg', 46, 9),
 (14.6, 12.4, 3.5, '3571-1-poliakov-vodka.jpg', 'Brandons_Gin.jpg', 'hendricks-bottle.jpg', 47, 8),
 (8.6, 7.5, 4.9, 'e-liquide-mojito.jpg', 'detail_Skinny_Mojito.png', 'perfect_serve_smirnoff_mojito.jpg', 48, 10),
-(12.8, 14.5, 4.2, '847f14f4341f4a8284003202ea774a7d.jpg', 'recette-pina-colada.jpg', 'Pina-colada-cigar-and-beach.jpg', 49, 7);
-
--- --------------------------------------------------------
-
---
--- Structure de la table `categories`
---
-
-CREATE TABLE IF NOT EXISTS `categories` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `titre` varchar(255) COLLATE utf8_bin NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=3 ;
-
---
--- Contenu de la table `categories`
---
-
-INSERT INTO `categories` (`id`, `titre`) VALUES
-(1, 'Sexe'),
-(2, 'Drague');
+(12.8, 14.5, 4.2, '847f14f4341f4a8284003202ea774a7d.jpg', 'recette-pina-colada.jpg', 'Pina-colada-cigar-and-beach.jpg', 49, 7),
+(4.5, 7.8, 4.2, 'stella_artois_by_stavtov-d5bftr5.jpg', '5659796777_bf8d38c379_b.jpg', 'stella-artois.jpg', 51, 8),
+(3.4, 10.5, 2.1, '303282.jpg', 'bouteilles-vedett-blonde-6-x-33cl.jpg', 'Vedett-personnalisée.jpg', 52, 4),
+(6.8, 12.8, 4.1, '8289489243_7b5d8c64e8.jpg', '676.jpg', 'chouffe.jpg', 53, 7);
 
 -- --------------------------------------------------------
 
@@ -272,6 +260,15 @@ CREATE TABLE IF NOT EXISTS `contenir` (
   PRIMARY KEY (`idingredient`,`idingredient_INGREDIENTS`),
   KEY `FK_CONTENIR_idingredient_INGREDIENTS` (`idingredient_INGREDIENTS`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Contenu de la table `contenir`
+--
+
+INSERT INTO `contenir` (`qte`, `idingredient`, `idingredient_INGREDIENTS`) VALUES
+(2, 48, 3),
+(6, 48, 47),
+(7, 48, 50);
 
 -- --------------------------------------------------------
 
@@ -319,7 +316,7 @@ CREATE TABLE IF NOT EXISTS `ingredients` (
   `description` text COLLATE utf8_bin,
   `unitemesure` varchar(25) COLLATE utf8_bin DEFAULT NULL,
   PRIMARY KEY (`idingredient`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=50 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=54 ;
 
 --
 -- Contenu de la table `ingredients`
@@ -361,7 +358,11 @@ INSERT INTO `ingredients` (`idingredient`, `nom`, `resume`, `description`, `unit
 (46, 'Desperados', 'Tout notre savoir-faire dans l''étiquette', '"Bière française (comme quoi ils font pas que du fromage et de la baguette) aromatisée à la téquila, au citron, citron vert et à la menthe, \r\navec un taux d''alcool de 5,9%. Ne goûte ni la bière française (heureusement d''ailleurs), ni la tequila, ni le citron ni la menthe, et encore moins l''alcool. Là est le génie créatif."', 'l'),
 (47, 'Gin', 'J''aime le gin', 'Le Gin, c''est cool. On peut faire du Mojito avec d''abord.\r\n', 'l'),
 (48, 'Mojito', 'Le Dieu des cocktails', 'Le big boss des cocktails ! Il faut aimer le goût de thé par contre, il paraît que ça déplaît à certains... N''empêche qu''on ne compte plus les soirées transformées de médiocres à excellentes grâce à ce classique.', 'l'),
-(49, 'Pina Colada', 'If you like Piiiiiiiina Coladaaas', 'If you like Piiiiiiiina Coladaaas, and getting caaaaaaaught in the rain, if you''re not into yogaaaaaaa, if you haaaaave half a brain... Ça ne vous dit rien? Récemment popularisée par "Les gardiens de la galaxie", cette chanson est la preuve même de l''inspiration géniale que peut apporter ce cocktail.', 'l');
+(49, 'Pina Colada', 'If you like Piiiiiiiina Coladaaas', 'If you like Piiiiiiiina Coladaaas, and getting caaaaaaaught in the rain, if you''re not into yogaaaaaaa, if you haaaaave half a brain... Ça ne vous dit rien? Récemment popularisée par "Les gardiens de la galaxie", cette chanson est la preuve même de l''inspiration géniale que peut apporter ce cocktail.', 'l'),
+(50, 'Menthe', 'Mhm ça sent bon', 'La menthe se trouve dans ton cul bien profond', 'feuilles'),
+(51, 'Stella Artois', 'Belgique représente, ouesh !', 'La représentante officielle de la Belgique dans les rayons des pays étrangers. Et elle le fait bien ! Bon goût, forte juste comme il faut, elle a tout pour plaire. ', 'l'),
+(52, 'Vedett', 'Oh ouesh j''suis trop une vedett', 'Vous avez toujours rêvé d''avoir votre photo sur l''étiquette d''une bière? Eh ben Vedett en a fait son idée de marketting principale ! Alors bon, c''est fun, un peu, mais perso quand j''achète un bière je me fout de voir la tête de Micheline qui a réussi à se voir affichée après 34 769 essais parce qu''elle n''a que ça à faire de sa vie. En plus elle est moche Micheline. Ah, et le goût de la bière dans tout ça? Ben il passe, ça va. Mais toutes ces campagnes de pub rendent la bière chère et il est bizarre de la boire à la bouteille à cause de sa forme bizarre. ', 'l'),
+(53, 'Chouffe', 'La douceur ardennaise', 'La chouffe, brassée par de fiers ardennais (vous savez ceux qui font des concours de bras de fer avec les ours). Son goût fruité relevé par\r\nune touche de coriandre la fait passer comme du petit lait. Néanmoins ses 8% affichés vous feront très vite comprendre que ce \r\nn''est définitivement pas du lait qu''il y a dans votre verre. ', 'l');
 
 -- --------------------------------------------------------
 
