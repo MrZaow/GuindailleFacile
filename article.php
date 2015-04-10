@@ -73,7 +73,7 @@ $sql = "SELECT id, titre, auteur, DAY(date) AS jour, MONTH(date) AS mois, conten
 											</div>
 											<div class="next-post">
 												<a href="single-post.html#" class="button-third">Suivant <i class="fa fa-angle-right"></i></a>
-												<p>Le sexe anal avec la mère d'Axel, une expérience à découvrir et redécouvrir</p>
+												<p>Manger une carotte chaque matin pour mieux supporter l'alcool</p>
 											</div>
 									<?php endforeach; ?>
 										</div>

@@ -3,7 +3,8 @@
 /*Les articles*/
 $sql3 = "SELECT id, titre, auteur, DAY(date) AS jour, MONTH(date) AS mois, contenu
                 FROM articles
-                ORDER BY date DESC";
+                ORDER BY date DESC
+                LIMIT 10";
 
 /*Le nombre d'alcool référencés*/
 $sql4 = "SELECT COUNT(idingredient) AS cocktailsreferences
