@@ -9,6 +9,7 @@ $error['unitemesure'] = "";
 $error['pourcentage'] = "";
 $error['prixaulitre'] = "";
 $error['cote'] = "";
+$error['popularite'] = "";
 $error['image1'] = "";
 $error['image2'] = "";
 $error['image3'] = "";
@@ -24,6 +25,7 @@ $unitemesure = (isset($_POST['unitemesure'])) ? $_POST['unitemesure'] : "";
 $pourcentage = (isset($_POST['pourcentage'])) ? $_POST['pourcentage'] : "";
 $prixaulitre = (isset($_POST['prixaulitre'])) ? $_POST['prixaulitre'] : "";
 $cote = (isset($_POST['cote'])) ? $_POST['cote'] : "";
+$popularite = (isset($_POST['popularite'])) ? $_POST['popularite'] : "";
 
 /*Pour les images*/
 if(!empty($_FILES)){
@@ -88,6 +90,9 @@ if(!empty($_POST))
 	if(empty($cote))
 		$error['cote'] = "Veuillez remplir la cote";
 
+	if(empty($popularite))
+		$error['popularite'] = "Veuillez remplir la popularite";
+
 	$test = 1;
 
 	foreach($error as $err)
@@ -114,16 +119,17 @@ if(!empty($_POST))
                         ));
             unset($nom, $resume, $description, $unitemesure);
 
-            $req = $bdd->prepare('INSERT INTO boissons(pourcentagealcool, prixlitre, cotesur5, image1, image2, image3, idingredient) VALUES(:pourcentagealcool ,:prixlitre, :cotesur5, :image1, :image2, :image3, (SELECT idingredient FROM ingredients ORDER BY idingredient DESC LIMIT 1))');
+            $req = $bdd->prepare('INSERT INTO boissons(pourcentagealcool, prixlitre, cotesur5, popularite, image1, image2, image3, idingredient) VALUES(:pourcentagealcool ,:prixlitre, :cotesur5, :popularite, :image1, :image2, :image3, (SELECT idingredient FROM ingredients ORDER BY idingredient DESC LIMIT 1))');
                     $req->execute(array(
                             'pourcentagealcool' => $pourcentage,
                             'prixlitre' => $prixaulitre,
                             'cotesur5' => $cote,
+                            'popularite' => $popularite,
                             'image1' =>$image1['name'],
                             'image2' =>$image2['name'],
                             'image3' =>$image3['name'],
                         ));
-            unset($pourcentage, $prixaulitre, $cote);
+            unset($pourcentage, $prixaulitre, $cote, $popularite);
 
             $req = $bdd->prepare('INSERT INTO alcoolsforts(idingredient) VALUES((SELECT idingredient FROM ingredients ORDER BY idingredient DESC LIMIT 1))');
                     $req->execute(array(

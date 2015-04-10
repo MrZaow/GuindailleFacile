@@ -76,6 +76,13 @@ require_once("erreurencodagefort.php");
                             <?php if(isset($error['cote'])) echo $error['cote']; ?>
                         </div>
                         <div class="form-group">
+                            <label>Popularité</label><br>
+                            <input type="number" required placeholder="La popularité (de 1 à 10 en nombre entier)" name="popularite" id="popularite" value="<?php if(isset($popularite)) echo $popularite; ?>" class="form-control">
+                            <?php if(isset($error['popularite'])) echo $error['popularite']; ?>
+                        </div>
+                        <h3>Les images</h3>
+                        <p>Note : les images doivent être au format jpg et leur titre ne doit pas comporter d'accent ni caractère spécial.</p>
+                        <div class="form-group">
                             <label>Image 1</label><br>
                             <input type="file" required name="image1" id="image1" class="form-control">
                             <?php if(isset($error['image1'])) echo $error['image1']; ?>

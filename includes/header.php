@@ -17,6 +17,28 @@
 						<div class="navbar-collapse collapse">
 							<ul class="nav navbar-nav navbar-right">
 								<li><a class="active" href="index.php">Accueil</a></li>
+
+								<li><a href="#">Admin</a>
+                                    <ul class="drop-down">
+                                    	<li class="drop"><a href="#">Ajout</a>
+                                    		<ul class="drop-down level3">
+												<li><a href="encodageingredient.php">Ingrédient</a></li>
+		                                        <li><a href="encodagebiere.php">Bière</a></li>
+		                                        <li><a href="encodagecocktail.php">Cocktail</a></li>
+		                                        <li><a href="encodagefort.php">Alcool fort</a></li>
+		                                        <li><a href="encodageavantage.php">Avantage</a></li>
+		                                        <li><a href="encodageinconvenient.php">Inconvenient</a></li>
+		                                        <li><a href="encodagemeilleuralcool.php">Meilleur alcool</a></li>
+		                                        <li><a href="encodageingredientcocktail.php">Ingrédient pour cocktail</a></li>
+											</ul>
+										</li>
+										<li class="drop"><a href="#">Suppression</a>
+                                    		<ul class="drop-down level3">
+												<li><a href="404.php">Bière</a></li>
+											</ul>
+										</li>
+                                    </ul>
+                                </li>
 								<li><a href="etudiant.php">Coin étudiant</a></li>
 								<li><a href="#">Alcools</a>
 									<ul class="drop-down">
@@ -32,19 +54,6 @@
                                     </ul>
                                 </li>
                                 <li><a href="jeux.php">Jeux d'alcool</a></li>
-                                
-                                <li><a href="#">Admin</a>
-                                    <ul class="drop-down">
-                                        <li><a href="encodageingredient.php">Ajout ingrédient</a></li>
-                                        <li><a href="encodagebiere.php">Ajout bière</a></li>
-                                        <li><a href="encodagecocktail.php">Ajout cocktail</a></li>
-                                        <li><a href="encodagefort.php">Ajout alcool fort</a></li>
-                                        <li><a href="encodageavantage.php">Ajout avantage</a></li>
-                                        <li><a href="encodageinconvenient.php">Ajout inconvenient</a></li>
-                                        <li><a href="encodagemeilleuralcool.php">Ajout de meilleur alcool</a></li>
-                                        <li><a href="encodageingredientcocktail.php">Ajout d'ingrédient pour cocktail</a></li>
-                                    </ul>
-                                </li>
                                 
 
 								<li class="drop"><a href="#" class="open-search"><i class="fa fa-search"></i></a>
