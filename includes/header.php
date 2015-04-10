@@ -34,7 +34,7 @@
 										</li>
 										<li class="drop"><a href="#">Suppression</a>
                                     		<ul class="drop-down level3">
-												<li><a href="404.php">Bière</a></li>
+												<li><a href="suppressionbiere.php">Bière</a></li>
 											</ul>
 										</li>
                                     </ul>
