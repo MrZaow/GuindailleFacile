@@ -46,7 +46,7 @@ $sql3 = "SELECT DISTINCT categorie
 							<div class="blog-post masonry triggerAnimation animated" data-animate="slideInUp">
 								<div class="post-content  <?php echo $row['categorie']?>">
 									<div class="post-date">
-											<p><span><?php echo $row['jour']?></span><?php echo date('M',$row['mois'])?></p>
+											<p><span><?php echo $row['jour']?></span><?php echo $row['mois']?></p>
 									</div>
 
 									<div class="content-data">
@@ -87,11 +87,10 @@ $sql3 = "SELECT DISTINCT categorie
 									<ul class="popular-list">
 										<?php foreach($bdd->query($sql2) as $row): ?>
 										<li>
+											<img alt="" src="upload/blog/b1.jpg">
 											<div class="side-content">
 												<h2><a href="article.php?id=<?php echo $row['id'] ?>"><?php echo $row['titre'] ?></a></h2>
-												<div class="post-date">
-													<p><?php echo $row['jour']?>/<?php echo $row['mois']?></p>
-												</div>
+												<p><?php echo $row['jour']?>/<?php echo $row['mois']?></p>
 											</div>
 										</li>
 									<?php endforeach; ?>

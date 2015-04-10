@@ -19,11 +19,12 @@ if(!empty($_POST)){
 
 $result = "Histoire envoyée ! Les admins vont vérifier qu'elle est correcte (si ils ne sont pas saouls) puis elle sera postée.";
 
-$req = $bdd->prepare('INSERT INTO articles(id, titre, contenu, date, categorie, auteur) VALUES(:id ,:titre, :contenu, $date, :categorie, :auteur)');
+$req = $bdd->prepare('INSERT INTO articles(id, titre, contenu, date, categorie, auteur) VALUES(:id ,:titre, :contenu, :date, :categorie, :auteur)');
                     $req->execute(array(
                             'id' => '',
                             'titre' => $titre,
                             'contenu' => $contenu,
+                            'date' => $date,
                             'categorie' => $categorie,
                             'auteur' => $auteur,
                         ));
@@ -77,10 +78,10 @@ $req = $bdd->prepare('INSERT INTO articles(id, titre, contenu, date, categorie, 
                         <div class="form-group">
                             <label>Catégorie</label><br>
                             <select class="form-control" name="categorie">
-                                <option value="Soirée">soirée</option>
-                                <option value="Bourré">bourré</option>
-                                <option value="Coquin">coquin</option>
-                                <option value="Études">études</option>
+                                <option value="soirée">Soirée</option>
+                                <option value="bourré">Bourré</option>
+                                <option value="coquin">Coquin</option>
+                                <option value="études">Études</option>
                             </select>
                             <?php if(isset($error['categorie'])) echo $error['categorie']; ?>
                         </div>
