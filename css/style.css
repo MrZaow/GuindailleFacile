@@ -777,41 +777,11 @@ a.button-two:hover i {
 {
 	.project-gal a p
 	{
-		font-size : 60px;
+		font-size : 9vw;
 	}
 }
 
-@media all and (max-width : 650px)
-{
-	.project-gal a p
-	{
-		font-size : 50px;
-	}
-}
 
-@media all and (max-width : 550px)
-{
-	.project-gal a p
-	{
-		font-size : 40px;
-	}
-}
-
-@media all and (max-width : 450px)
-{
-	.project-gal a p
-	{
-		font-size : 30px;
-	}
-}
-
-@media all and (max-width : 350px)
-{
-	.project-gal a p
-	{
-		font-size : 20px;
-	}
-}
 
 .project-gal a:hover
 {
