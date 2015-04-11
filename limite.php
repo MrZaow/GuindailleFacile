@@ -1,4 +1,79 @@
-<?php include("includes/connectionpdo.php") ?>
+<?php include("includes/connectionpdo.php");
+
+$error['age'] = "";
+$error['poids'] = "";
+$error['sexe'] = "";
+
+$result = "";
+
+$age = (isset($_POST['age'])) ? $_POST['age'] : "";
+$poids = (isset($_POST['poids'])) ? $_POST['poids'] : "";
+$sexe = (isset($_POST['sexe'])) ? $_POST['sexe'] : "";
+
+
+if(!empty($_POST))
+{
+	if(empty($age))
+		$error['age'] = "L'age ne peut pas être vide";
+
+	if(empty($poids))
+		$error['poids'] = "Le poids ne peut pas être vide";
+
+	if(empty($sexe))
+		$error['sexe'] = "Vous devez avoir un sexe";
+
+
+	if($age < 12 || $age > 100)
+		$error['age'] = "Age impossible";
+
+	if($poids < 20 || $poids > 400)
+		$error['poids'] = "Poids impossible";
+
+	if($sexe != "mec" && $sexe != "fille")
+		$error['sexe'] = "Sexe impossible";
+
+
+	$test = 1;
+
+	foreach($error as $err)
+	{ 
+		if(!empty($err))
+			$test = 0;
+		else
+			$test = $test * 1;
+	}
+
+	if($test == 1)
+    {
+
+            $req = $bdd->prepare('INSERT INTO limite(id, age, poids, sexe) VALUES(:id ,:age, :poids, :sexe)');
+                    $req->execute(array(
+                            'id' => '',
+                            'age' => $age,
+                            'poids' => $poids,
+                            'sexe' => $sexe,
+                        ));
+
+            $result = "OK";
+
+
+    		$sql= "SELECT id
+    		FROM limite
+    		ORDER BY id DESC LIMIT 1";
+
+
+		 	foreach($bdd->query($sql) as $row) :
+
+            header("Location: resultatlimite.php?id=".$row['id']);
+
+            endforeach;
+
+    }
+}
+
+
+
+ ?>
 <!doctype html>
 
 <html lang="fr" class="no-js">
@@ -30,178 +105,37 @@
 						<div class="col-md-12">
 							<div class="single-project">
 								<div class="single-project-content">
-					                <h1>Maitrisez votre soif infinie</h1>
-					                <h3>Grâce à ce site, vous pouvez trouver de quoi allègrement vous en mettre plein la gueu** pendant des mois de soirée. Cependant, en tant que site principalement bibitif,
-										nous nous devions d'ajouter une page permettant à nos chers visiteurs de pouvoir maitriser au mieux leur pouvoir suprême de boisson, par bonne mesure. </h3>
-									<p align="right"><q>Beaucoup de gens boivent, très peu savent être bourrés</q> Père Toujoursoif, 1642</p>
+					                <h1>Le bibinomètre, c'est quoi ?</h1>
+					                <h3>Entrez votre age, votre poids ainsi que votre sexe, et le bibinomètre fera le reste. </h3>
 								</div>
-
+							</div>	
+						</div>
+					</div>
+					<?php if(!empty($result)){ echo '<div class="alert alert-success alert-dismissible" role="alert"> 
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>'; echo $result;  echo'</div>'; }?>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="single-project">
 								<div class="single-project-content">
-									<h3>Vous voulez connaître vos limites selon la sciences ? Faites le test et comparez-vous avec la moyenne !</h3>
-									<form class="form-inline" role="form">
-									  <div class="form-group">
-									    <label class="sr-only" for="age">Age </label>
-									    <input type="age" class="form-control" id="age" placeholder="Votre age" autofocus>
-									  </div>
-									  <div class="form-group">
-									    <label class="sr-only" for="poids">Poids </label>
-									    <input type="poids" class="form-control" id="poids" placeholder="Votre poids">
-									  </div>
-									  <div class="form-group">
-									    <label class="sr-only" for="sexe">Sexe </label>
-									    <input type="sexe" class="form-control" id="sexe" placeholder="Votre sexe">
-									  </div>
-									  <button type="submit" class="btn btn-primary">Envoyer</button>
-									</form>
+					                <form action="limite.php" class="form-inline" method="post">
+					                	<div class="form-group">
+				                            <input type="number" required class="form-control" name="age" id="age" placeholder="Age" autofocus value="<?php if(isset($age)) echo $age; ?>" autofocus>
+				                            <?php if(isset($error['age'])) echo $error['age']; ?>
+				                        </div>
+				                        <div class="form-group">
+				                            <input type="number" required class="form-control" name="poids" id="poids" placeholder="Poids en kg" value="<?php if(isset($poids)) echo $poids; ?>" autofocus>
+				                            <?php if(isset($error['poids'])) echo $error['poids']; ?>
+				                        </div>
+				                        <div class="form-group">
+				                            <select class="form-control" name="sexe">
+				                                <option value="mec">Je suis un mec</option>
+				                                <option value="fille">Je suis une fille</option>
+				                            </select>
+				                            <?php if(isset($error['sexe'])) echo $error['sexe']; ?>
+				                        </div>
+				                        <input type="submit" class="btn btn-default" name="submit" value="Envoyer"><br><br>
+					                </form>
 								</div>
-							</div>
-						</div>
-					</div>
-					<br><br>
-					<div class="shortcodes-elem">
-						<h1>Vos stats personnelles</h1>
-						<!-- Nav tabs -->
-						<div class="statistic-box style2">
-							<div class="statistic-post">
-								<div class="statistic-counter">
-									<i class="fa fa-beer"></i>
-									<p><span class="timer" data-from="0" data-to="10"></span></p>
-									<p>Verres/soirée</p>
-								</div>
-							</div>
-							<div class="statistic-post">
-								<div class="statistic-counter">
-									<i class="fa fa-moon-o"></i>
-									<p><span class="timer" data-from="0" data-to="478"></span></p>
-									<p>Awards Won</p>
-								</div>
-							</div>
-							<div class="statistic-post">
-								<div class="statistic-counter">
-									<i class="fa fa-star-o"></i>
-									<p><span class="timer" data-from="0" data-to="28"></span></p>
-									<p>Happy Customers</p>
-								</div>
-							</div>
-							<div class="statistic-post">
-								<div class="statistic-counter">
-									<i class="fa fa-bell-o"></i>
-									<p><span class="timer" data-from="0" data-to="759"></span></p>
-									<p>Design Ideas</p>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="shortcodes-elem">
-						<h1>La moyenne</h1>
-						<!-- Nav tabs -->
-						<div class="statistic-box style2">
-							<div class="statistic-post">
-								<div class="statistic-counter">
-									<i class="fa fa-beer"></i>
-									<p><span class="timer" data-from="0" data-to="7"></span></p>
-									<p>Verres/soirée</p>
-								</div>
-							</div>
-							<div class="statistic-post">
-								<div class="statistic-counter">
-									<i class="fa fa-moon-o"></i>
-									<p><span class="timer" data-from="0" data-to="478"></span></p>
-									<p>Awards Won</p>
-								</div>
-							</div>
-							<div class="statistic-post">
-								<div class="statistic-counter">
-									<i class="fa fa-star-o"></i>
-									<p><span class="timer" data-from="0" data-to="28"></span></p>
-									<p>Happy Customers</p>
-								</div>
-							</div>
-							<div class="statistic-post">
-								<div class="statistic-counter">
-									<i class="fa fa-bell-o"></i>
-									<p><span class="timer" data-from="0" data-to="759"></span></p>
-									<p>Design Ideas</p>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="shortcodes-elem">
-						<h1>Sache être raisonnable...</h1>
-						<div class="row">
-							<div class="col-md-4">
-								<ul class="feature-list2">
-									<li>
-										<span><i class="fa fa-question"></i></span>
-										<div class="list-cont">
-											<h3>Apprends tes limites</h3>
-											<p>Chacun tient l'alcool à sa façon, certain mieux que d'autres. Plus tu sortiras, plus facilement tu connaîtras tes limites. </p>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<div class="col-md-4">
-								<ul class="feature-list2">
-									<li>
-										<span><i class="fa fa-clock-o"></i></span>
-										<div class="list-cont">
-											<h3>Fais des pauses</h3>
-											<p>Il n'y a pas de honte à s'avouer bourré et s'arrêter de boire un moment. Ça vaut bien mieux que poursuivre par fierté et aller tout vomir après. </p>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<div class="col-md-4">
-								<ul class="feature-list2">
-									<li>
-										<span><i class="fa fa-stop"></i></span>
-										<div class="list-cont">
-											<h3>Si t'es malade, arrête</h3>
-											<p>Ça arrive à tout le monde d'avoir dépassé ses limites et s'être rendu malade. Il suffit de ne plus consommer d'alcool et si possible essayer de rentrer chez soi en sécurité.</p>
-										</div>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-
-					<div class="shortcodes-elem">
-						<h1>mais aussi audacieux !</h1>
-						<div class="row">
-							<div class="col-md-4">
-								<ul class="feature-list2">
-									<li>
-										<span><i class="fa fa-trophy"></i></span>
-										<div class="list-cont">
-											<h3>Repousse tes limites</h3>
-											<p>Combien d'afonds d'affillées peux-tu tenir ? Combien de bière peux-tu boire en un soir ? Choisi des soirées opportuntes et essaie de battre tes records. </p>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<div class="col-md-4">
-								<ul class="feature-list2">
-									<li>
-										<span><i class="fa fa-venus-mars"></i></span>
-										<div class="list-cont">
-											<h3>Profite de l'alcool pour draguer</h3>
-											<p>En soirée les filles sont chaudes et les mecs sont dragueurs, profites-en ! Dans le pire des cas c'est oublié en une semaine et dans le meilleur tu finiras dans son lit. </p>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<div class="col-md-4">
-								<ul class="feature-list2">
-									<li>
-										<span><i class="fa fa-heartbeat"></i></span>
-										<div class="list-cont">
-											<h3>Bouge ton corps</h3>
-											<p>La piste de danse est le cauchemar de beaucoup. Heureusement, l'alcool est là pour te sauver ! Après quelques verres et quand l'ambiance est chaude, lance-toi avec des amis et amuse-toi.</p>
-										</div>
-									</li>
-								</ul>
 							</div>
 						</div>
 					</div>
