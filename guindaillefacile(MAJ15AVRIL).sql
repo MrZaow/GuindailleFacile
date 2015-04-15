@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Sam 11 Avril 2015 à 20:17
+-- Généré le :  Mer 15 Avril 2015 à 23:24
 -- Version du serveur :  5.6.17
 -- Version de PHP :  5.5.12
 
@@ -55,7 +55,7 @@ CREATE TABLE IF NOT EXISTS `articles` (
   `popularite` int(11) NOT NULL DEFAULT '0',
   `categorie` varchar(255) COLLATE utf8_bin NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=403 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=404 ;
 
 --
 -- Contenu de la table `articles`
@@ -67,7 +67,8 @@ INSERT INTO `articles` (`id`, `titre`, `contenu`, `date`, `auteur`, `popularite`
 (300, 'Petite gamine dort dans le sable', 'Certainly elsewhere my do allowance at. The address farther six hearted hundred towards husband. Are securing off occasion remember daughter replying. Held that feel his see own yet. Strangers ye to he sometimes propriety in. She right plate seven has. Bed who perceive judgment did marianne.', '2015-02-10', 'Axel', 4, 'bourré'),
 (400, 'La mère d''Axel a encore frappé !', 'Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought. \r\n\r\nShe suspicion dejection saw instantly. Well deny may real one told yet saw hard dear. Bed chief house rapid right the. Set noisy one state tears which. No girl oh part must fact high my he. Simplicity in excellence melancholy as remarkably discovered. Own partiality motionless was old excellence she inquietude contrasted. Sister giving so wicket cousin of an he rather marked. Of on game part body rich. Adapted mr savings venture it or comfort affixed friends. \r\n\r\nAgreed joy vanity regret met may ladies oppose who. Mile fail as left as hard eyes. Meet made call in mean four year it to. Prospect so branched wondered sensible of up. For gay consisted resolving pronounce sportsman saw discovery not. Northward or household as conveying we earnestly believing. No in up contrasted discretion inhabiting excellence. Entreaties we collecting unpleasant at everything conviction. \r\n\r\nSo by colonel hearted ferrars. Draw from upon here gone add one. He in sportsman household otherwise it perceived instantly. Is inquiry no he several excited am. Called though excuse length ye needed it he having. Whatever throwing we on resolved entrance together graceful. Mrs assured add private married removed believe did she. ', '2015-02-20', 'Robin', 0, 'coquin'),
 (401, 'Des choses dans les bois', 'Dum haec in oriente aguntur, Arelate hiemem agens Constantius post theatralis ludos atque circenses ambitioso editos apparatu diem sextum idus Octobres, qui imperii eius annum tricensimum terminabat, insolentiae pondera gravius librans, siquid dubium deferebatur aut falsum, pro liquido accipiens et conperto, inter alia excarnificatum Gerontium Magnentianae comitem partis exulari maerore multavit.\r\n\r\nProinde die funestis interrogationibus praestituto imaginarius iudex equitum resedit magister adhibitis aliis iam quae essent agenda praedoctis, et adsistebant hinc inde notarii, quid quaesitum esset, quidve responsum, cursim ad Caesarem perferentes, cuius imperio truci, stimulis reginae exsertantis aurem subinde per aulaeum, nec diluere obiecta permissi nec defensi periere conplures.\r\n\r\nLatius iam disseminata licentia onerosus bonis omnibus Caesar nullum post haec adhibens modum orientis latera cuncta vexabat nec honoratis parcens nec urbium primatibus nec plebeiis.', '2015-04-01', 'Personne lolol', 0, 'coquin'),
-(402, 'zetrzetze', 'zetzetze', '2015-04-10', 'zerze', 0, 'coquin');
+(402, 'zetrzetze', 'zetzetze', '2015-04-10', 'zerze', 0, 'coquin'),
+(403, 'On est le 14 et il fait 23 degrés', '23 degrés, la vie est belle, bla bla blablabla, je compte bosser ce soir, avancer sur Guindaille et Socotra. Sauf que cette série sur les pirates est vachement cool donc on verra qui devra passer à la trappe #suspense. ', '2015-04-14', 'MrZaow', 0, 'études');
 
 -- --------------------------------------------------------
 
@@ -80,7 +81,7 @@ CREATE TABLE IF NOT EXISTS `avantagesinconvenients` (
   `nom` varchar(300) COLLATE utf8_bin DEFAULT NULL,
   `avantageouinconvenient` char(25) COLLATE utf8_bin DEFAULT NULL COMMENT '"A" OU" I"',
   PRIMARY KEY (`idavantage`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=15 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=19 ;
 
 --
 -- Contenu de la table `avantagesinconvenients`
@@ -100,7 +101,11 @@ INSERT INTO `avantagesinconvenients` (`idavantage`, `nom`, `avantageouinconvenie
 (11, 'Sur-représenté dans les boums d''anniversaire du premier cycle d''humanité', 'I'),
 (12, 'On fait du Mo-mo-mo-mojiiiiiiiiitooooooo avec !', 'A'),
 (13, 'On fait du Mo-mo-mo-mojiiiiiiiiitooooooo avec !', 'A'),
-(14, '', 'I');
+(14, '', 'I'),
+(15, 'Donne une très bonne impression de la maitrise de la brasserie belge', 'A'),
+(16, 'Se trouve beaucoup en canette mais pas tellement en bouteille, ce qui est dommage ', 'I'),
+(17, 'Bon goût, même en canette', 'A'),
+(18, 'Forte jusque comme il faut, ni trop ni trop peu', 'A');
 
 -- --------------------------------------------------------
 
@@ -131,7 +136,11 @@ INSERT INTO `avoir` (`idingredient`, `idavantage`) VALUES
 (46, 10),
 (46, 11),
 (47, 13),
-(4, 14);
+(4, 14),
+(51, 15),
+(51, 16),
+(51, 17),
+(51, 18);
 
 -- --------------------------------------------------------
 
@@ -216,15 +225,15 @@ INSERT INTO `boissons` (`pourcentagealcool`, `prixlitre`, `cotesur5`, `image1`, 
 (2, 1, 4, NULL, NULL, NULL, 31, NULL),
 (5, 3, 4, NULL, NULL, NULL, 32, NULL),
 (40, 2.3, 4, NULL, NULL, NULL, 42, NULL),
-(12.2, 14.5, 4.9, NULL, NULL, NULL, 43, NULL),
-(4.8, 5, 4, 'Piedboeuf-Blond-75-1_1024x1024.jpg', 'Piedboeuf-Blond-75-1_1024x1024.jpg', 'Piedboeuf-Blond-75-1_1024x1024.jpg', 44, 3),
+(12.2, 14.5, 4.9, '1227220704.jpg', 'how-to-make-blue-lagoon.jpg', '4d36d775dbf48-blue-lagoon.jpg', 43, 7),
+(4.8, 5, 4, '713.JPG', 'Piedboeuf-Blond-75-1_1024x1024.jpg', 'Piedboeuf-Blond-75-1_1024x1024.jpg', 44, 3),
 (4, 5, 1, '632639721_small.jpg', 'br144.jpg', 'kaiserbeer.jpg', 45, 4),
-(5.4, 8.4, 4.2, '176-bouteille-desperados-33cl.jpg', 'Desperados.jpg', 'Desperados-ImagineOriginal.jpg', 46, 9),
+(5.4, 8.4, 4.2, 'despe1.JPG', 'Desperados.jpg', 'Desperados-ImagineOriginal.jpg', 46, 9),
 (14.6, 12.4, 3.5, '3571-1-poliakov-vodka.jpg', 'Brandons_Gin.jpg', 'hendricks-bottle.jpg', 47, 8),
-(8.6, 7.5, 4.9, 'e-liquide-mojito.jpg', 'detail_Skinny_Mojito.png', 'perfect_serve_smirnoff_mojito.jpg', 48, 10),
-(12.8, 14.5, 4.2, '847f14f4341f4a8284003202ea774a7d.jpg', 'recette-pina-colada.jpg', 'Pina-colada-cigar-and-beach.jpg', 49, 7),
+(8.6, 7.5, 4.9, 'playa-y-fiesta-con.jpg', 'eliquid-mojito.jpg', 'perfect_serve_smirnoff_mojito.jpg', 48, 10),
+(12.8, 14.5, 4.2, '847f14f4341f4a8284003202ea774a7d.jpg', 'recette-pina-colada.jpg', 'Pina-colada-cigar-and-beach.jpg', 49, 9),
 (4.5, 7.8, 4.2, 'stella_artois_by_stavtov-d5bftr5.jpg', '5659796777_bf8d38c379_b.jpg', 'stella-artois.jpg', 51, 8),
-(3.4, 10.5, 2.1, '303282.jpg', 'bouteilles-vedett-blonde-6-x-33cl.jpg', 'Vedett-personnalisée.jpg', 52, 4),
+(3.4, 10.5, 2.1, '303282.jpg', 'bouteilles-vedett-blonde-6-x-33cl.jpg', 'vedett3.jpg', 52, 4),
 (6.8, 12.8, 4.1, '8289489243_7b5d8c64e8.jpg', '676.jpg', 'chouffe.jpg', 53, 7);
 
 -- --------------------------------------------------------
@@ -244,7 +253,7 @@ CREATE TABLE IF NOT EXISTS `cocktails` (
 --
 
 INSERT INTO `cocktails` (`preparation`, `idingredient`) VALUES
-('Lorem ipsum dolor sit ameh', 43),
+('Pressez le jus d''un demi-citron, ajoutez dans le shaker avec les autres ingrédients et des glaçons. Frappez puis versez dans le verre en filtrant. Afin qu''il soit plus frais et léger, remplissez auparavant le verre de glace pilée.', 43),
 ('Placer les feuilles de menthe dans le verre, ajoutez le sucre et le jus de citrons. Piler consciencieusement afin d''exprimer l''essence de la menthe mais sans la broyer. Ajouter le rhum, remplir le verre à moitié de glaçons et compléter avec de l''eau gazeuse. Mélanger doucement et servir avec une paille.', 48),
 ('Dans un blender (mixer), versez les ingrédients avec 5 ou 6 glaçons et mixez le tout. C''est prêt ! Versez dans le verre et dégustez. Peut aussi se réaliser au shaker si c''est juste pour une personne.', 49);
 
@@ -267,6 +276,7 @@ CREATE TABLE IF NOT EXISTS `contenir` (
 --
 
 INSERT INTO `contenir` (`qte`, `idingredient`, `idingredient_INGREDIENTS`) VALUES
+(4, 43, 25),
 (2, 48, 3),
 (6, 48, 47),
 (7, 48, 50);
@@ -353,7 +363,7 @@ INSERT INTO `ingredients` (`idingredient`, `nom`, `resume`, `description`, `unit
 (40, 'ezrz', 'terer', 'zez', 'cuillères à soupe'),
 (41, 'Sel', 'So salty', 'Du sel de cuisine classique', 'pincées'),
 (42, 'Vodka', 'Mother russia', 'zerze', 'l'),
-(43, 'Mojito', 'Aie Aie Aie', 'swag', 'l'),
+(43, 'Blue lagoon', 'Bleu je veux', 'Appelé aussi le "lagon bleu" par sa traduction. Il fut créé par Andy MacElhone au Harry’s Bar à Paris en 1960. Andy MacElhone n''est autre que le fils de Harry, fondateur du Harry''s Bar et inventeur du White Lady. Au moment de l''apparition du curaçao bleu sur le marché des liqueurs, il a voulu rendre hommage à son père en réalisant une variante du White Lady, en remplaçant le triple sec par du curaçao (qui est aussi un triple sec, mais bleu) et le gin par la vodka.', 'l'),
 (44, 'Piedboeuf', 'swaggy', 'ezrzerzerze', 'l'),
 (45, 'Kaiser', 'zaeraze', 'ezrze', 'l'),
 (46, 'Desperados', 'Tout notre savoir-faire dans l''étiquette', '"Bière française (comme quoi ils font pas que du fromage et de la baguette) aromatisée à la téquila, au citron, citron vert et à la menthe, \r\navec un taux d''alcool de 5,9%. Ne goûte ni la bière française (heureusement d''ailleurs), ni la tequila, ni le citron ni la menthe, et encore moins l''alcool. Là est le génie créatif."', 'l'),
@@ -377,7 +387,7 @@ CREATE TABLE IF NOT EXISTS `limite` (
   `poids` int(11) NOT NULL,
   `sexe` varchar(20) COLLATE utf8_bin NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=13 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=21 ;
 
 --
 -- Contenu de la table `limite`
@@ -395,7 +405,15 @@ INSERT INTO `limite` (`id`, `age`, `poids`, `sexe`) VALUES
 (9, 19, 78, 'mec'),
 (10, 19, 78, 'mec'),
 (11, 19, 80, 'mec'),
-(12, 19, 79, 'mec');
+(12, 19, 79, 'mec'),
+(13, 17, 60, 'fille'),
+(14, 19, 79, 'mec'),
+(15, 19, 78, 'mec'),
+(16, 19, 78, 'mec'),
+(17, 17, 56, 'fille'),
+(18, 19, 78, 'mec'),
+(19, 19, 65, 'fille'),
+(20, 22, 93, 'mec');
 
 -- --------------------------------------------------------
 
