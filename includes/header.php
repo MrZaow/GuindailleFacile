@@ -37,6 +37,11 @@
 												<li><a href="suppressionbiere.php">Bière</a></li>
 											</ul>
 										</li>
+										<li class="drop"><a href="#">Modification</a>
+                                    		<ul class="drop-down level3">
+												<li><a href="modificationimage.php">Image 2</a></li>
+											</ul>
+										</li>
                                     </ul>
                                 </li>
 								<li><a href="etudiant.php">Coin étudiant</a></li>
