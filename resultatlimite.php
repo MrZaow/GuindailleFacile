@@ -46,7 +46,7 @@ $sql = "SELECT *
 						<div class="statistic-box style2">
 							<div class="statistic-post">
 								<div class="statistic-counter">
-									<i class="fa fa-beer"></i>
+									<i class="fa fa-heartbeat"></i>
 									<?php foreach($bdd->query($sql) as $row): ?>
 									<?php 
 
@@ -68,32 +68,119 @@ $sql = "SELECT *
 							</div>
 							<div class="statistic-post">
 								<div class="statistic-counter">
-									<i class="fa fa-beer"></i>
+									<i class="fa fa-thumbs-up"></i>
 									<?php foreach($bdd->query($sql) as $row): ?>
-									<?php $idfois2 = $row['id'] * 2; ?>
-									<p><span class="timer" data-from="0" data-to="<?php echo $idfois2; ?>"></span></p>
+									<?php 
+									if($row['sexe'] == "mec"){
+										if($row['poids'] > 77){
+											if($row['age'] > 17)
+												$etrebien = 8;
+											else
+												$etrebien = 6;
+											}
+										else{
+											if($row['age'] > 17)
+												$etrebien = 7;
+											else
+												$etrebien = 5;
+										}	
+									}
+									else{
+										if($row['poids'] > 67){
+											if($row['age'] > 17)
+												$etrebien = 6;
+											else
+												$etrebien = 4;
+											}
+										else{
+											if($row['age'] > 17)
+												$etrebien = 5;
+											else
+												$etrebien = 3;
+										}	
+									}
+									 ?>
+									<p><span class="timer" data-from="0" data-to="<?php echo $etrebien; ?>"></span></p>
 									<?php endforeach; ?>
-									<p>Verres/soirée</p>
+									<p>Verres/soirée pour se mettre bien</p>
 								</div>
 							</div>
 							<div class="statistic-post">
 								<div class="statistic-counter">
 									<i class="fa fa-beer"></i>
 									<?php foreach($bdd->query($sql) as $row): ?>
-									<?php $idfois2 = $row['id'] * 2; ?>
-									<p><span class="timer" data-from="0" data-to="<?php echo $idfois2; ?>"></span></p>
+									<?php 
+									if($row['sexe'] == "mec"){
+										if($row['poids'] > 77){
+											if($row['age'] > 17)
+												$etrebourre = 12;
+											else
+												$etrebourre = 10;
+											}
+										else{
+											if($row['age'] > 17)
+												$etrebourre = 11;
+											else
+												$etrebourre = 9;
+										}	
+									}
+									else{
+										if($row['poids'] > 67){
+											if($row['age'] > 17)
+												$etrebourre = 10;
+											else
+												$etrebourre = 6;
+											}
+										else{
+											if($row['age'] > 17)
+												$etrebourre = 9;
+											else
+												$etrebourre = 7;
+										}	
+									}
+									 ?>
+									<p><span class="timer" data-from="0" data-to="<?php echo $etrebourre; ?>"></span></p>
 									<?php endforeach; ?>
-									<p>Verres/soirée</p>
+									<p>Verres/soirée pour être bourré</p>
 								</div>
 							</div>
 							<div class="statistic-post">
 								<div class="statistic-counter">
-									<i class="fa fa-beer"></i>
+									<i class="fa fa-ambulance"></i>
 									<?php foreach($bdd->query($sql) as $row): ?>
-									<?php $idfois2 = $row['id'] * 2; ?>
-									<p><span class="timer" data-from="0" data-to="<?php echo $idfois2; ?>"></span></p>
+									<?php 
+									if($row['sexe'] == "mec"){
+										if($row['poids'] > 77){
+											if($row['age'] > 17)
+												$etredefonce = 18;
+											else
+												$etredefonce = 15;
+											}
+										else{
+											if($row['age'] > 17)
+												$etredefonce = 16;
+											else
+												$etredefonce = 14;
+										}	
+									}
+									else{
+										if($row['poids'] > 67){
+											if($row['age'] > 17)
+												$etredefonce = 16;
+											else
+												$etredefonce = 14;
+											}
+										else{
+											if($row['age'] > 17)
+												$etredefonce = 15;
+											else
+												$etredefonce = 13;
+										}	
+									}
+									 ?>
+									<p><span class="timer" data-from="0" data-to="<?php echo $etredefonce; ?>"></span></p>
 									<?php endforeach; ?>
-									<p>Verres/soirée</p>
+									<p>Verres/soirée maximum avant blackout</p>
 								</div>
 							</div>
 						</div>
@@ -105,30 +192,30 @@ $sql = "SELECT *
 						<div class="statistic-box style2">
 							<div class="statistic-post">
 								<div class="statistic-counter">
+									<i class="fa fa-heartbeat"></i>
+									<p><span class="timer" data-from="0" data-to="2"></span></p>
+									<p>Verres/jour max selon l'OMS</p>
+								</div>
+							</div>
+							<div class="statistic-post">
+								<div class="statistic-counter">
+									<i class="fa fa-thumbs-up"></i>
+									<p><span class="timer" data-from="0" data-to="5"></span></p>
+									<p>Verres/soirée pour être bien</p>
+								</div>
+							</div>
+							<div class="statistic-post">
+								<div class="statistic-counter">
 									<i class="fa fa-beer"></i>
 									<p><span class="timer" data-from="0" data-to="7"></span></p>
-									<p>Verres/soirée</p>
+									<p>Verres/soirée pour être bourré</p>
 								</div>
 							</div>
 							<div class="statistic-post">
 								<div class="statistic-counter">
-									<i class="fa fa-moon-o"></i>
-									<p><span class="timer" data-from="0" data-to="478"></span></p>
-									<p>Awards Won</p>
-								</div>
-							</div>
-							<div class="statistic-post">
-								<div class="statistic-counter">
-									<i class="fa fa-star-o"></i>
-									<p><span class="timer" data-from="0" data-to="28"></span></p>
-									<p>Happy Customers</p>
-								</div>
-							</div>
-							<div class="statistic-post">
-								<div class="statistic-counter">
-									<i class="fa fa-bell-o"></i>
-									<p><span class="timer" data-from="0" data-to="759"></span></p>
-									<p>Design Ideas</p>
+									<i class="fa fa-ambulance"></i>
+									<p><span class="timer" data-from="0" data-to="13"></span></p>
+									<p>Verres/soirée maximum avant blackout</p>
 								</div>
 							</div>
 						</div>

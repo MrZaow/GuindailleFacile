@@ -46,6 +46,7 @@ $sql5 = "SELECT i.nom, qte, unitemesure
               FROM cocktails AS c, contenir AS co, ingredients AS i
               WHERE c.idingredient = co.idingredient
               AND co.idingredient_INGREDIENTS = i.idingredient
+              AND c.idingredient = $lid
               ";
 
  ?>

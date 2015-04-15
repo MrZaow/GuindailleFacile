@@ -30,8 +30,12 @@ if(!empty($_FILES)){
 if(!empty($_POST)){
 
 $result = "Modification d'image réalisée avec succes";
-$bdd->exec('UPDATE boissons SET image2 = $image2[\'name\'] WHERE idingredient == $identre');
     
+
+$req = $bdd->prepare("UPDATE boissons SET image2 = :image2 WHERE idingredient = $identre");
+                    $req->execute(array(
+                            'image2' =>$image2['name'],
+                        ));
 }
 
 
@@ -56,8 +60,6 @@ $bdd->exec('UPDATE boissons SET image2 = $image2[\'name\'] WHERE idingredient ==
             <h1>Modification d'image 2</h1>
         </div>
     </div>
-    
-    <?php echo $identre; ?>
 
     <div class="section-content">
         <div class="container">
@@ -66,7 +68,7 @@ $bdd->exec('UPDATE boissons SET image2 = $image2[\'name\'] WHERE idingredient ==
                     <?php if(!empty($result)){ echo '<div class="alert alert-success alert-dismissible" role="alert"> 
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>'; echo $result;  echo'</div>'; }?>
 
-                    <form action="modificationimage.php" method="post" enctype="multipart/form-data">
+                    <form action="modificationimage2.php" method="post" enctype="multipart/form-data">
 
                         <div class="form-group">
                             <label>ID de l'ingrédient</label>

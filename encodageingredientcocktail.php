@@ -16,7 +16,7 @@ $idcocktail = (isset($_POST['idcocktail'])) ? $_POST['idcocktail'] : "";
 
 if(!empty($_POST)){
 
-$result = "Ajout d'avantage réalisé avec succes";
+$result = "Ajout d'ingrédient pour cocktail réalisé avec succes";
 
 
 $req = $bdd->prepare('INSERT INTO contenir(qte, idingredient, idingredient_INGREDIENTS) VALUES(:qte ,:idingredient , :idingredient_INGREDIENTS)');

@@ -39,7 +39,9 @@
 										</li>
 										<li class="drop"><a href="#">Modification</a>
                                     		<ul class="drop-down level3">
-												<li><a href="modificationimage.php">Image 2</a></li>
+                                    			<li><a href="modificationimage1.php">Image 1</a></li>
+												<li><a href="modificationimage2.php">Image 2</a></li>
+												<li><a href="modificationimage3.php">Image 3</a></li>
 											</ul>
 										</li>
                                     </ul>
