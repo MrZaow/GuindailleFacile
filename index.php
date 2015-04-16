@@ -15,6 +15,11 @@ $sql6 = "SELECT COUNT(idingredient) AS bieresreferencees
         FROM bieres
 ";
 
+/*Jeux référencées*/
+$sql7 = "SELECT COUNT(idjeu) AS jeuxreferences
+        FROM jeux
+";
+
 /*Degré d'alcool total*/
 $sql5 = "SELECT SUM(idingredient) AS degretotal
         FROM boissons
@@ -289,7 +294,7 @@ $sql5 = "SELECT SUM(idingredient) AS degretotal
             <div class="title-section">
                 <div class="container triggerAnimation animated" data-animate="bounceIn">
                     <h1>Les incontournables</h1>
-                    <p>Alcools les plus populaires </p>
+                    <p>Cocktails les plus populaires </p>
                 </div>
             </div>
             <div class="portfolio-box triggerAnimation animated" data-animate="pulse">
@@ -379,9 +384,9 @@ $sql5 = "SELECT SUM(idingredient) AS degretotal
                             <div class="statistic-post">
                                 <div class="statistic-counter">
                                     <i class="fa fa-star"></i>
-                                    
-                                    <p><span class="timer" data-from="0" data-to="25"></span></p>
-                                    
+                                    <?php foreach($bdd->query($sql7) as $row): ?>
+                                    <p><span class="timer" data-from="0" data-to="<?php echo $row['jeuxreferences']; ?>"></span></p>
+                                    <?php endforeach; ?>
                                     <p>Jeux d'alcools</p>
                                 </div>
                             </div>
