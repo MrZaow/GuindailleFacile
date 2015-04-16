@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Mer 15 Avril 2015 à 23:24
+-- Généré le :  Jeu 16 Avril 2015 à 17:27
 -- Version du serveur :  5.6.17
 -- Version de PHP :  5.5.12
 
@@ -378,6 +378,35 @@ INSERT INTO `ingredients` (`idingredient`, `nom`, `resume`, `description`, `unit
 -- --------------------------------------------------------
 
 --
+-- Structure de la table `jeux`
+--
+
+CREATE TABLE IF NOT EXISTS `jeux` (
+  `idjeu` int(11) NOT NULL AUTO_INCREMENT,
+  `nom` varchar(50) COLLATE utf8_bin NOT NULL,
+  `resume` varchar(100) COLLATE utf8_bin NOT NULL,
+  `nbjoueursmin` int(11) NOT NULL,
+  `description` mediumtext COLLATE utf8_bin NOT NULL,
+  `type` varchar(50) COLLATE utf8_bin NOT NULL,
+  `cotesur5` int(11) NOT NULL,
+  `popularite` int(11) NOT NULL,
+  `image1` varchar(50) COLLATE utf8_bin NOT NULL,
+  `image2` varchar(50) COLLATE utf8_bin NOT NULL,
+  `image3` varchar(50) COLLATE utf8_bin NOT NULL,
+  PRIMARY KEY (`idjeu`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=3 ;
+
+--
+-- Contenu de la table `jeux`
+--
+
+INSERT INTO `jeux` (`idjeu`, `nom`, `resume`, `nbjoueursmin`, `description`, `type`, `cotesur5`, `popularite`, `image1`, `image2`, `image3`) VALUES
+(1, 'Je n''ai jamais', 'Le meilleur outil pour arracher les secret de vos amis !', 2, 'Comment jouer ?\r\n\r\nLes règles sont simples, vous n''avez besoin de rien d''autre que votre imagination ou de nombreuses expériences originales qui forceront les autres joueurs à boire.\r\n\r\nÀ tour de rôle, chaque joueur doit affirmer quelque chose qu''il n''a jamais fait tel qu''une une anecdote, une expérience ou une histoire. Par contre les autres joueurs, qui ont réalisé celle-ci au moins une fois dans leur vie, boivent.\r\n\r\nExemple :\r\n"Je n''ai jamais été aux Pays-Bas".\r\nSi moi, j''ai déjà été aux Pays-Bas, je dois boire un coup.\r\n\r\nBien sur, la renommée de ce jeu vient du fait que l''on peut découvrir le secret des autres. Alors viennent tout un tas de sujet tel que le sexe, l''amour, les copines, les grosses soirées, etc.\r\n\r\nPar exemple, vous pouvez partir sur Je n''ai jamais fait l''amour dans tel ou tel lieu insolite. Ou de même des pratiques ou positions originales, si vous voyez ce que je veux dire. ;) \r\n\r\nVous pouvez même forcer les joueurs à partir sur ce genre de "Je n''ai jamais" (amusant, insolite et original). Sinon ça peut devenir n''importe quoi avec des trucs du genre "Je ne suis jamais né un X novembre" si vous connaissez la date de naissance de quelqu''un et que vous le ou la ciblez particulièrement pour qu''il ou elle finisse saoule. \r\n\r\nÀ ne pas oubliez :\r\n\r\nLe plus important, on pourrait même dire la règle numéro 1 : les participants doivent être totalement honnêtes. Sinon le jeu perd tout son intérêt.\r\n\r\nAyez beaucoup d''imagination pour dénicher les secrets de vos amis !', 'social', 4, 8, 'test.jpg', 'test2.jpg', 'test3.jpg'),
+(2, 'Dans ma Valise', 'La torture pour votre cerveau', 2, 'Ce jeu d''alcool peut être considéré comme un jeu à part entière ou une simple règle que l''on ajoute à d''autres jeux. \r\n\r\nChaque joueur commence en disant "dans ma valise, j''ai ...". Il énonce le contenu de la valise donné par les joueurs précédents et ajoute quelque chose avant de laisser le tour au joueur suivant.\r\n\r\nLe but est d''énumérer le contenu d''une valise virtuelle. Chaque joueur doit ajouter quelque chose à la valise et ainsi de suite. Le joueur incapable de donner tout le contenu perd et boit.\r\nExemple :\r\n\r\nPierre : Dans ma valise, j''ai un ours.\r\n\r\nLaurent : Dans ma valise, j''ai un ours et une voiture.\r\n\r\nLaura : Dans ma valise, j''ai un ours, une voiture et un clafoutis.\r\n\r\nÉlise : Dans ma valise, j''ai un ours, une voiture, un clafoutis et un pack de bière.\r\n\r\nTyler : Dans ma valise, j''ai un ours, une voiture, un clafoutis et ... je ne sais plus.\r\n\r\nIci Tyler boit car il ne se souvient plus du contenu de la valise.\r\n\r\nFaites marcher votre mémoire ! ', 'social', 2, 5, 'valise1.jpg', 'valise2.jpg', 'valise3.jpg');
+
+-- --------------------------------------------------------
+
+--
 -- Structure de la table `limite`
 --
 
@@ -387,7 +416,7 @@ CREATE TABLE IF NOT EXISTS `limite` (
   `poids` int(11) NOT NULL,
   `sexe` varchar(20) COLLATE utf8_bin NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=21 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=22 ;
 
 --
 -- Contenu de la table `limite`
@@ -413,7 +442,8 @@ INSERT INTO `limite` (`id`, `age`, `poids`, `sexe`) VALUES
 (17, 17, 56, 'fille'),
 (18, 19, 78, 'mec'),
 (19, 19, 65, 'fille'),
-(20, 22, 93, 'mec');
+(20, 22, 93, 'mec'),
+(21, 20, 72, 'mec');
 
 -- --------------------------------------------------------
 
