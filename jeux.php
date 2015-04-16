@@ -28,171 +28,42 @@
 				</div>
 				<div class="portfolio-box">
 					<ul class="filter center triggerAnimation animated" data-animate="bounceIn">
-						<li class="item"><a href="portfolio-4col.html#" class="active" data-filter="*">Tous</a></li>
-						<li class="item"><a href="portfolio-4col.html#" data-filter=".web-design">Cartes</a></li>
-						<li class="item"><a href="portfolio-4col.html#" data-filter=".branding">Dés</a></li>
-						<li class="item"><a href="portfolio-4col.html#" data-filter=".photography">Social</a></li>
-						<li class="item"><a href="portfolio-4col.html#" data-filter=".illustration">Chanson</a></li>
-						<li class="item"><a href="portfolio-4col.html#" data-filter=".branding">Jeu vidéo</a></li>
-						<li class="item"><a href="portfolio-4col.html#" data-filter=".branding">TV</a></li>
+						<li class="item"><a href="portfolio-4col.html#" class="active" data-filter="*">Tout</a></li>
+						<?php
+							$sql = "SELECT DISTINCT type
+                                   FROM jeux";
+							foreach ($bdd->query($sql) as $row) : ?>
+								<li class="item"><a href="portfolio-4col.html#" data-filter=".<?php echo $row['type']; ?>"><?php echo $row['type']; ?></a></li>
+							<?php endforeach; ?>
+
 					</ul>
 					<div class="masonry four-col triggerAnimation animated" data-animate="bounceIn">
-          
-						<div class="project-post web-design branding">
-							<div class="project-gal">
-								<img alt="" src="upload/portfolio/img1.jpg">
-								<div class="hover-box">
-									<a class="zoom" href="upload/portfolio/img1.jpg"><i class="fa fa-search-plus"></i></a>
-									<a class="link" href="descriptionjeux.php"><i class="fa fa-link"></i></a>
+							<?php
+								$sql = "SELECT *
+								FROM jeux
+						   		ORDER BY popularite DESC";
+
+							foreach ($bdd->query($sql) as $row) : ?>
+
+								<div class="project-post web-design <?php echo $row['type']; ?>">
+									<div class="project-gal">
+										<img src="images/min/<?php echo $row['image1']; ?>" alt="#">
+										<a href="descriptionjeux.php?id=<?php echo $row['idjeu']; ?>">
+											<p>
+												<i class="fa fa-star"></i> <?php echo $row['cotesur5']; ?>/5<br/>
+												<i class="fa fa-tag"></i> <?php echo $row['type']; ?><br/>
+												<i class="fa fa-group"></i> <?php echo $row['nbjoueursmin']; ?>+ joueurs<br/>
+											</p>
+										</a>
+									</div>
+								<div class="project-content">
+									<h2><?php echo $row['nom']; ?></h2>
+									<p><?php echo $row['resume']; ?></p>
 								</div>
 							</div>
-							<div class="project-content">
-								<h2>Aliquam tincidunt mauris eu risus.</h2>
-								<p>Vestibulum auctor dapibus neque.</p>
-							</div>
+
+						<?php endforeach;	?>
 						</div>
-          
-						<div class="project-post web-design">
-							<div class="project-gal">
-								<img alt="" src="upload/portfolio/img2.jpg">
-								<div class="hover-box">
-									<a class="zoom" href="upload/portfolio/img2.jpg"><i class="fa fa-search-plus"></i></a>
-									<a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
-								</div>
-							</div>
-							<div class="project-content">
-								<h2>Aliquam tincidunt mauris eu risus.</h2>
-								<p>Vestibulum auctor dapibus neque.</p>
-							</div>
-						</div>
-          
-						<div class="project-post photography branding">
-							<div class="project-gal">
-								<img alt="" src="upload/portfolio/img3.jpg">
-								<div class="hover-box">
-									<a class="zoom" href="upload/portfolio/img3.jpg"><i class="fa fa-search-plus"></i></a>
-									<a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
-								</div>
-							</div>
-							<div class="project-content">
-								<h2>Aliquam tincidunt mauris eu risus.</h2>
-								<p>Vestibulum auctor dapibus neque.</p>
-							</div>
-						</div>
-          
-						<div class="project-post illustration">
-							<div class="project-gal">
-								<img alt="" src="upload/portfolio/img4.jpg">
-								<div class="hover-box">
-									<a class="zoom" href="upload/portfolio/img4.jpg"><i class="fa fa-search-plus"></i></a>
-									<a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
-								</div>
-							</div>
-							<div class="project-content">
-								<h2>Aliquam tincidunt mauris eu risus.</h2>
-								<p>Vestibulum auctor dapibus neque.</p>
-							</div>
-						</div>
-          
-						<div class="project-post photography">
-							<div class="project-gal">
-								<img alt="" src="upload/portfolio/img5.jpg">
-								<div class="hover-box">
-									<a class="zoom" href="upload/portfolio/img5.jpg"><i class="fa fa-search-plus"></i></a>
-									<a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
-								</div>
-							</div>
-							<div class="project-content">
-								<h2>Aliquam tincidunt mauris eu risus.</h2>
-								<p>Vestibulum auctor dapibus neque.</p>
-							</div>
-						</div>
-          
-						<div class="project-post illustration branding">
-							<div class="project-gal">
-								<img alt="" src="upload/portfolio/img6.jpg">
-								<div class="hover-box">
-									<a class="zoom" href="upload/portfolio/img6.jpg"><i class="fa fa-search-plus"></i></a>
-									<a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
-								</div>
-							</div>
-							<div class="project-content">
-								<h2>Aliquam tincidunt mauris eu risus.</h2>
-								<p>Vestibulum auctor dapibus neque.</p>
-							</div>
-						</div>
-          
-						<div class="project-post photography illustration">
-							<div class="project-gal">
-								<img alt="" src="upload/portfolio/img7.jpg">
-								<div class="hover-box">
-									<a class="zoom" href="upload/portfolio/img7.jpg"><i class="fa fa-search-plus"></i></a>
-									<a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
-								</div>
-							</div>
-							<div class="project-content">
-								<h2>Aliquam tincidunt mauris eu risus.</h2>
-								<p>Vestibulum auctor dapibus neque.</p>
-							</div>
-						</div>
-          
-						<div class="project-post web-design branding">
-							<div class="project-gal">
-								<img alt="" src="upload/portfolio/img1.jpg">
-								<div class="hover-box">
-									<a class="zoom" href="upload/portfolio/img1.jpg"><i class="fa fa-search-plus"></i></a>
-									<a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
-								</div>
-							</div>
-							<div class="project-content">
-								<h2>Aliquam tincidunt mauris eu risus.</h2>
-								<p>Vestibulum auctor dapibus neque.</p>
-							</div>
-						</div>
-          
-						<div class="project-post web-design illustration">
-							<div class="project-gal">
-								<img alt="" src="upload/portfolio/img2.jpg">
-								<div class="hover-box">
-									<a class="zoom" href="upload/portfolio/img2.jpg"><i class="fa fa-search-plus"></i></a>
-									<a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
-								</div>
-							</div>
-							<div class="project-content">
-								<h2>Aliquam tincidunt mauris eu risus.</h2>
-								<p>Vestibulum auctor dapibus neque.</p>
-							</div>
-						</div>
-          
-						<div class="project-post photography branding">
-							<div class="project-gal">
-								<img alt="" src="upload/portfolio/img3.jpg">
-								<div class="hover-box">
-									<a class="zoom" href="upload/portfolio/img3.jpg"><i class="fa fa-search-plus"></i></a>
-									<a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
-								</div>
-							</div>
-							<div class="project-content">
-								<h2>Aliquam tincidunt mauris eu risus.</h2>
-								<p>Vestibulum auctor dapibus neque.</p>
-							</div>
-						</div>
-          
-						<div class="project-post illustration">
-							<div class="project-gal">
-								<img alt="" src="upload/portfolio/img4.jpg">
-								<div class="hover-box">
-									<a class="zoom" href="upload/portfolio/img4.jpg"><i class="fa fa-search-plus"></i></a>
-									<a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
-								</div>
-							</div>
-							<div class="project-content">
-								<h2>Aliquam tincidunt mauris eu risus.</h2>
-								<p>Vestibulum auctor dapibus neque.</p>
-							</div>
-						</div>
-					 
-					</div>
 				</div>
 			</div>
 

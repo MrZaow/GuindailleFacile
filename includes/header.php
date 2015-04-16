@@ -26,6 +26,7 @@
 		                                        <li><a href="encodagebiere.php">Bière</a></li>
 		                                        <li><a href="encodagecocktail.php">Cocktail</a></li>
 		                                        <li><a href="encodagefort.php">Alcool fort</a></li>
+		                                        <li><a href="encodagejeux.php">Jeu d'alcool</a></li>
 		                                        <li><a href="encodageavantage.php">Avantage</a></li>
 		                                        <li><a href="encodageinconvenient.php">Inconvenient</a></li>
 		                                        <li><a href="encodagemeilleuralcool.php">Meilleur alcool</a></li>

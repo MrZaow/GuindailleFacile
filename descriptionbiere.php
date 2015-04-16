@@ -13,6 +13,7 @@ if(!$result)
 
 $lid = $_GET['id'];
 
+/*Avantages et inconvénients*/
 $sql = "SELECT nom 
 		FROM avantagesinconvenients AS a, avoir AS b
 		WHERE a.idavantage = b.idavantage
