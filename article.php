@@ -55,10 +55,10 @@ $sql = "SELECT id, titre, auteur, DAY(date) AS jour, MONTH(date) AS mois, conten
 
 
 										<div class="content-data">
-											<h2><?php echo $row['titre'] ?></h2>
-											<p><?php echo $row['auteur'] ?></p>
+											<h2><?php echo htmlspecialchars($row['titre']) ?></h2>
+											<p><?php echo htmlspecialchars($row['auteur']) ?></p>
 										</div>
-										<p><?php echo $row['contenu']; ?></p>
+										<p><?php echo htmlspecialchars($row['contenu']); ?></p>
 
 										<div class="share-tag-box">
 											<span>Partager cette article sur</span>

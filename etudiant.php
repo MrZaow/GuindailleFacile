@@ -51,9 +51,9 @@ $sql3 = "SELECT DISTINCT categorie
 
 									<div class="content-data">
 										<h2><a href="article.php?id=<?php echo $row['id'] ?>"><?php echo $row['titre'] ?></a></h2>
-										<p><?php echo $row['auteur'] ?></p>
+										<p><?php echo htmlspecialchars($row['auteur']) ?></p>
 									</div>
-									<p><?php echo substr($row['contenu'], 0, 340); ?></p>
+									<p><?php echo htmlspecialchars(substr($row['contenu'], 0, 340)); ?></p>
 								</div>
 							</div>
 							<?php endforeach; ?>
