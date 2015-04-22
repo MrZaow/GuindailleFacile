@@ -11,6 +11,21 @@ $sql2 = "SELECT titre, DAY(date) AS jour, MONTH(date) AS mois, id
 
 $sql3 = "SELECT DISTINCT categorie
 		FROM articles";
+		
+$Month_tab = array();
+$Month_Tab[1] = "Janvier";
+$Month_Tab[2] = "Fevrier";
+$Month_Tab[3] = "Mars";
+$Month_Tab[4] = "Avril";
+$Month_Tab[5] = "Mai";
+$Month_Tab[6] = "Juin";
+$Month_Tab[7] = "Juillet";
+$Month_Tab[8] = "Août";
+$Month_Tab[9] = "Septembre";
+$Month_Tab[10] = "Octobre";
+$Month_Tab[11] = "Novembre";
+$Month_Tab[12] = "Décembre";
+
  ?>
 <!doctype html>
 
@@ -46,7 +61,7 @@ $sql3 = "SELECT DISTINCT categorie
 							<div class="blog-post masonry triggerAnimation animated" data-animate="slideInUp">
 								<div class="post-content  <?php echo $row['categorie']?>">
 									<div class="post-date">
-											<p><span><?php echo $row['jour']?></span><?php echo $row['mois']?></p>
+											<p><span><?php echo $row['jour']?></span><?php echo $Month_Tab[$row['mois']]?></p>
 									</div>
 
 									<div class="content-data">
