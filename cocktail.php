@@ -28,14 +28,12 @@
 				</div>
 				<div class="portfolio-box">
 					<ul class="filter center triggerAnimation animated" data-animate="bounceIn">
+						
+						
 						<li class="item"><a href="portfolio-4col.html#" class="active" data-filter="*">Popuparité</a></li>
+
 						<li class="item"><a href="portfolio-4col.html#" data-filter=".web-design">Prix</a></li>
 						<li class="item"><a href="portfolio-4col.html#" data-filter=".branding">Degré</a></li>
-						<li class="item"><a href="portfolio-4col.html#" data-filter=".photography">Pils</a></li>
-						<li class="item"><a href="portfolio-4col.html#" data-filter=".illustration">Spéciales</a></li>
-						<li class="item"><a href="portfolio-4col.html#" data-filter=".branding">Trappistes</a></li>
-						<li class="item"><a href="portfolio-4col.html#" data-filter=".branding">Fruitées</a></li>
-						<li class="item"><a href="portfolio-4col.html#" data-filter=".branding">NA</a></li>
 					</ul>
 					<div class="masonry four-col triggerAnimation animated" data-animate="bounceIn">
           				<?php
