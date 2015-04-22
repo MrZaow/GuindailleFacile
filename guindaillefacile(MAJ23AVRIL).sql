@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Mer 22 Avril 2015 à 23:15
+-- Généré le :  Mer 22 Avril 2015 à 23:18
 -- Version du serveur :  5.6.17
 -- Version de PHP :  5.5.12
 
@@ -36,7 +36,6 @@ CREATE TABLE IF NOT EXISTS `alcoolsforts` (
 --
 
 INSERT INTO `alcoolsforts` (`idingredient`) VALUES
-(2),
 (47),
 (54);
 
@@ -174,8 +173,6 @@ CREATE TABLE IF NOT EXISTS `bieres` (
 --
 
 INSERT INTO `bieres` (`type`, `paysorigine`, `couleur`, `idingredient`) VALUES
-('Trappiste', 'Belgique', 'Brune', 1),
-('testt', 'test', 'test', 4),
 ('pils', 'belgique', 'blonde', 44),
 ('pils', 'zerez', 'blonde', 45),
 ('fruitée', 'belgique', 'ambrée', 46),
