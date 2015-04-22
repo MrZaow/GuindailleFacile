@@ -87,7 +87,6 @@ $sql3 = "SELECT DISTINCT categorie
 									<ul class="popular-list">
 										<?php foreach($bdd->query($sql2) as $row): ?>
 										<li>
-											<img alt="" src="upload/blog/b1.png">
 											<div class="side-content">
 												<h2><a href="article.php?id=<?php echo $row['id'] ?>"><?php echo $row['titre'] ?></a></h2>
 												<p><?php echo $row['jour']?>/<?php echo $row['mois']?></p>

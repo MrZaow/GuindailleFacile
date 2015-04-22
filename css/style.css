@@ -2197,9 +2197,7 @@ a.go-top:hover {
   -o-border-radius: 50%;
   border-radius: 50%;
 }
-.sidebar .widget ul.popular-list li .side-content {
-  margin-left: 80px;
-}
+
 .sidebar .widget ul.popular-list li .side-content h2 {
   color: #3a3d41;
   font-size: 14px;
