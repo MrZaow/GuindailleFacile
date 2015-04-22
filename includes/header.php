@@ -36,6 +36,8 @@
 										<li class="drop"><a href="#">Suppression</a>
                                     		<ul class="drop-down level3">
 												<li><a href="suppressionbiere.php">Bière</a></li>
+												<li><a href="suppressioncocktail.php">Cocktail</a></li>
+												<li><a href="suppressionfort.php">Alcool fort</a></li>
 											</ul>
 										</li>
 										<li class="drop"><a href="#">Modification</a>

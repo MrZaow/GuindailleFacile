@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Jeu 16 Avril 2015 à 17:27
+-- Généré le :  Mer 22 Avril 2015 à 23:15
 -- Version du serveur :  5.6.17
 -- Version de PHP :  5.5.12
 
@@ -37,8 +37,8 @@ CREATE TABLE IF NOT EXISTS `alcoolsforts` (
 
 INSERT INTO `alcoolsforts` (`idingredient`) VALUES
 (2),
-(42),
-(47);
+(47),
+(54);
 
 -- --------------------------------------------------------
 
@@ -176,15 +176,6 @@ CREATE TABLE IF NOT EXISTS `bieres` (
 INSERT INTO `bieres` (`type`, `paysorigine`, `couleur`, `idingredient`) VALUES
 ('Trappiste', 'Belgique', 'Brune', 1),
 ('testt', 'test', 'test', 4),
-('pils', 'Belgique', 'blonde', 5),
-('pils', 'belgique', 'blonde', 6),
-('pils', 'zerze', 'blonde', 26),
-('pils', 'aze', 'blonde', 27),
-('pils', 'zerze', 'blonde', 28),
-('pils', 'ezr', 'blonde', 29),
-('pils', 'zer', 'blonde', 30),
-('pils', 'ze', 'blonde', 31),
-('pils', 'belgique', 'blonde', 32),
 ('pils', 'belgique', 'blonde', 44),
 ('pils', 'zerez', 'blonde', 45),
 ('fruitée', 'belgique', 'ambrée', 46),
@@ -215,26 +206,17 @@ CREATE TABLE IF NOT EXISTS `boissons` (
 --
 
 INSERT INTO `boissons` (`pourcentagealcool`, `prixlitre`, `cotesur5`, `image1`, `image2`, `image3`, `idingredient`, `popularite`) VALUES
-(5.2, 5.6, 4, '', '', '', 5, NULL),
-(1.2, 2.1, 3.5, '', '', '', 6, NULL),
-(4, 1, 2, NULL, NULL, NULL, 26, NULL),
-(4, 1, 2, NULL, NULL, NULL, 27, NULL),
-(4, 1, 2, NULL, NULL, NULL, 28, NULL),
-(1, 2, 1, NULL, NULL, NULL, 29, NULL),
-(1, 2, 3, NULL, NULL, NULL, 30, NULL),
-(2, 1, 4, NULL, NULL, NULL, 31, NULL),
-(5, 3, 4, NULL, NULL, NULL, 32, NULL),
-(40, 2.3, 4, NULL, NULL, NULL, 42, NULL),
-(12.2, 14.5, 4.9, '1227220704.jpg', 'how-to-make-blue-lagoon.jpg', '4d36d775dbf48-blue-lagoon.jpg', 43, 7),
+(12.2, 14.5, 4.9, 'bluelagoon1.jpg', 'how-to-make-blue-lagoon.jpg', '4d36d775dbf48-blue-lagoon.jpg', 43, 7),
 (4.8, 5, 4, '713.JPG', 'Piedboeuf-Blond-75-1_1024x1024.jpg', 'Piedboeuf-Blond-75-1_1024x1024.jpg', 44, 3),
 (4, 5, 1, '632639721_small.jpg', 'br144.jpg', 'kaiserbeer.jpg', 45, 4),
 (5.4, 8.4, 4.2, 'despe1.JPG', 'Desperados.jpg', 'Desperados-ImagineOriginal.jpg', 46, 9),
-(14.6, 12.4, 3.5, '3571-1-poliakov-vodka.jpg', 'Brandons_Gin.jpg', 'hendricks-bottle.jpg', 47, 8),
+(14.6, 12.4, 3.5, 'gin1.jpg', 'Brandons_Gin.jpg', 'hendricks-bottle.jpg', 47, 8),
 (8.6, 7.5, 4.9, 'playa-y-fiesta-con.jpg', 'eliquid-mojito.jpg', 'perfect_serve_smirnoff_mojito.jpg', 48, 10),
 (12.8, 14.5, 4.2, '847f14f4341f4a8284003202ea774a7d.jpg', 'recette-pina-colada.jpg', 'Pina-colada-cigar-and-beach.jpg', 49, 9),
 (4.5, 7.8, 4.2, 'stella_artois_by_stavtov-d5bftr5.jpg', '5659796777_bf8d38c379_b.jpg', 'stella-artois.jpg', 51, 8),
 (3.4, 10.5, 2.1, '303282.jpg', 'bouteilles-vedett-blonde-6-x-33cl.jpg', 'vedett3.jpg', 52, 4),
-(6.8, 12.8, 4.1, '8289489243_7b5d8c64e8.jpg', '676.jpg', 'chouffe.jpg', 53, 7);
+(6.8, 12.8, 4.1, '8289489243_7b5d8c64e8.jpg', '676.jpg', 'chouffe.jpg', 53, 7),
+(40, 12, 4, 'vodka1.jpg', 'vodka2.jpg', 'vodka3.jpg', 54, 10);
 
 -- --------------------------------------------------------
 
@@ -327,7 +309,7 @@ CREATE TABLE IF NOT EXISTS `ingredients` (
   `description` text COLLATE utf8_bin,
   `unitemesure` varchar(25) COLLATE utf8_bin DEFAULT NULL,
   PRIMARY KEY (`idingredient`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=54 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=55 ;
 
 --
 -- Contenu de la table `ingredients`
@@ -338,8 +320,6 @@ INSERT INTO `ingredients` (`idingredient`, `nom`, `resume`, `description`, `unit
 (2, 'Vodka', 'Pour la mère Russie !', 'La vodka « petite eau » est une eau-de-vie alcoolisée (fermentée puis distillée), généralement produite à partir de céréales ou de pomme de terre, mais peut être élaborée à partir de n’importe quelle matière première agricole, comme des fruits ou des légumes (lire: les 400 principales vodkas du monde). Elle titre en moyenne 40° d’alcool.', 'l'),
 (3, 'Sucre', '', '', 'gr'),
 (4, 'Jupiler', 'Les hommes savent pourquoi', 'test', 'l'),
-(5, 'Jupiler', 'ezrez', 'Les hommes savent pourquoi', 'l'),
-(6, 'Piedboeuf blonde', 'A taaaaaaaable !', 'Prenez une Jupiler, retirez-lui 4% d''alcool et la moitié de son prix, mettez-la dans une bouteille 75 cl et tadaaaaaa ! Vous avez désormais entre vos main une bière très légère avec un bon goût de blonde bien comme on l''aime. Impossible de ne serait-ce que s''approcher d''un état d''hébriété avec ça cependant, mais pour passer une soirée au calme en sirotant son verre de bière ou en jouant à BoB, la Piedboeuf permet bien des choses.', 'l'),
 (18, 'Caca', 'miam', 'oh oui du bon gros caca \r\n', 'simple'),
 (19, 'Gros caca', 'azrazr', 'zerze zetze ', 'acoder'),
 (20, 'zerz', 'zetzetze', 'ezzeez', 'pincées'),
@@ -348,13 +328,6 @@ INSERT INTO `ingredients` (`idingredient`, `nom`, `resume`, `description`, `unit
 (23, 'ger', 'teztez', 'reter', 'l'),
 (24, 'ger', 'teztez', 'reter', 'l'),
 (25, 'testcaca', 'ezrtze', 'zetze', 'l'),
-(26, 'testcaca', 'ezrtze', 'zetze', 'l'),
-(27, 'testajout', 'ezr', 'zerze', 'l'),
-(28, 'ret', 'ezze', 'zer', 'l'),
-(29, 'zer', 'zer', 'ez', 'l'),
-(30, 'zer', 'ezr', 'zer', 'l'),
-(31, 'zer', 'zer', 'zer', 'l'),
-(32, 'Jupiler', 'Les hommes savent pourquoi', 'azraraz', 'l'),
 (33, 'zerze', 'zerze', 'ezzer', 'gr'),
 (34, 'ryt', 'er', 'ezrtze', 'cuillères à café'),
 (37, 'zreez', 'eztze', 'zerze', 'feuilles'),
@@ -362,7 +335,6 @@ INSERT INTO `ingredients` (`idingredient`, `nom`, `resume`, `description`, `unit
 (39, 'rete', 'tree', 'ertt', 'feuilles'),
 (40, 'ezrz', 'terer', 'zez', 'cuillères à soupe'),
 (41, 'Sel', 'So salty', 'Du sel de cuisine classique', 'pincées'),
-(42, 'Vodka', 'Mother russia', 'zerze', 'l'),
 (43, 'Blue lagoon', 'Bleu je veux', 'Appelé aussi le "lagon bleu" par sa traduction. Il fut créé par Andy MacElhone au Harry’s Bar à Paris en 1960. Andy MacElhone n''est autre que le fils de Harry, fondateur du Harry''s Bar et inventeur du White Lady. Au moment de l''apparition du curaçao bleu sur le marché des liqueurs, il a voulu rendre hommage à son père en réalisant une variante du White Lady, en remplaçant le triple sec par du curaçao (qui est aussi un triple sec, mais bleu) et le gin par la vodka.', 'l'),
 (44, 'Piedboeuf', 'swaggy', 'ezrzerzerze', 'l'),
 (45, 'Kaiser', 'zaeraze', 'ezrze', 'l'),
@@ -373,7 +345,8 @@ INSERT INTO `ingredients` (`idingredient`, `nom`, `resume`, `description`, `unit
 (50, 'Menthe', 'Mhm ça sent bon', 'La menthe se trouve dans ton cul bien profond', 'feuilles'),
 (51, 'Stella Artois', 'Belgique représente, ouesh !', 'La représentante officielle de la Belgique dans les rayons des pays étrangers. Et elle le fait bien ! Bon goût, forte juste comme il faut, elle a tout pour plaire. ', 'l'),
 (52, 'Vedett', 'Oh ouesh j''suis trop une vedett', 'Vous avez toujours rêvé d''avoir votre photo sur l''étiquette d''une bière? Eh ben Vedett en a fait son idée de marketting principale ! Alors bon, c''est fun, un peu, mais perso quand j''achète un bière je me fout de voir la tête de Micheline qui a réussi à se voir affichée après 34 769 essais parce qu''elle n''a que ça à faire de sa vie. En plus elle est moche Micheline. Ah, et le goût de la bière dans tout ça? Ben il passe, ça va. Mais toutes ces campagnes de pub rendent la bière chère et il est bizarre de la boire à la bouteille à cause de sa forme bizarre. ', 'l'),
-(53, 'Chouffe', 'La douceur ardennaise', 'La chouffe, brassée par de fiers ardennais (vous savez ceux qui font des concours de bras de fer avec les ours). Son goût fruité relevé par\r\nune touche de coriandre la fait passer comme du petit lait. Néanmoins ses 8% affichés vous feront très vite comprendre que ce \r\nn''est définitivement pas du lait qu''il y a dans votre verre. ', 'l');
+(53, 'Chouffe', 'La douceur ardennaise', 'La chouffe, brassée par de fiers ardennais (vous savez ceux qui font des concours de bras de fer avec les ours). Son goût fruité relevé par\r\nune touche de coriandre la fait passer comme du petit lait. Néanmoins ses 8% affichés vous feront très vite comprendre que ce \r\nn''est définitivement pas du lait qu''il y a dans votre verre. ', 'l'),
+(54, 'Vodka', 'Pour la mère Russie !', 'La vodka (du polonais : wódka, russe : водка, bulgare : водка) est une boisson alcoolisée incolore de 40 degrés. L''origine de cette eau-de-vie se situerait en Russie ou en Pologne selon les sources. Il s''agit généralement d''une eau-de-vie de pomme de terre ou de céréales, mais d''autres matières premières peuvent être utilisées1.\r\n\r\nElle est devenue l''alcool national de nombreux pays (Russie, Pologne, Ukraine, Finlande, etc.)2. Entre 4 000 et 5 000 marques de vodka sont présentes sur le marché. Aujourd''hui, on produit de la vodka dans de nombreux pays, à la fois dans les pays traditionnellement producteurs, mais aussi dans la plupart des pays consommateurs d''alcool.', 'cl');
 
 -- --------------------------------------------------------
 
@@ -416,7 +389,7 @@ CREATE TABLE IF NOT EXISTS `limite` (
   `poids` int(11) NOT NULL,
   `sexe` varchar(20) COLLATE utf8_bin NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=22 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=34 ;
 
 --
 -- Contenu de la table `limite`
@@ -443,7 +416,19 @@ INSERT INTO `limite` (`id`, `age`, `poids`, `sexe`) VALUES
 (18, 19, 78, 'mec'),
 (19, 19, 65, 'fille'),
 (20, 22, 93, 'mec'),
-(21, 20, 72, 'mec');
+(21, 20, 72, 'mec'),
+(22, 20, 70, 'fille'),
+(23, 15, 60, 'fille'),
+(24, 22, 69, 'mec'),
+(25, 20, 70, 'mec'),
+(26, 19, 78, 'mec'),
+(27, 19, 78, 'mec'),
+(28, 19, 78, 'mec'),
+(29, 18, 89, 'fille'),
+(30, 17, 56, 'mec'),
+(31, 17, 56, 'fille'),
+(32, 20, 89, 'mec'),
+(33, 19, 78, 'mec');
 
 -- --------------------------------------------------------
 

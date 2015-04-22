@@ -11,11 +11,12 @@ $identre = (isset($_POST['identre'])) ? $_POST['identre'] : "";
 
 if(!empty($_POST)){
 
-$result = "Suppression de la bière réalisée avec succès";
+$result = "Suppression de l'alcool fort réalisée avec succès";
 
 $bdd->exec("DELETE FROM avoir WHERE idingredient = $identre");
 $bdd->exec("DELETE FROM contenir WHERE idingredient = $identre");
-$bdd->exec("DELETE FROM bieres WHERE idingredient = $identre");
+$bdd->exec("DELETE FROM exemplariser WHERE idingredient = $identre");
+$bdd->exec("DELETE FROM alcoolsforts WHERE idingredient = $identre");
 $bdd->exec("DELETE FROM boissons WHERE idingredient = $identre");
 $bdd->exec("DELETE FROM ingredients WHERE idingredient = $identre");
 
@@ -38,7 +39,7 @@ $bdd->exec("DELETE FROM ingredients WHERE idingredient = $identre");
         ================================================== -->
     <div class="section-content page-banner error-page-banner">
         <div class="container">
-            <h1>Suppression de bière</h1>
+            <h1>Suppression d'alcool fort</h1>
         </div>
     </div>
 
@@ -49,11 +50,11 @@ $bdd->exec("DELETE FROM ingredients WHERE idingredient = $identre");
                     <?php if(!empty($result)){ echo '<div class="alert alert-success alert-dismissible" role="alert"> 
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>'; echo $result;  echo'</div>'; }?>
 
-                    <form action="suppressionbiere.php" method="post" enctype="multipart/form-data">
+                    <form action="suppressionfort.php" method="post" enctype="multipart/form-data">
 
                         <div class="form-group">
-                            <label>ID de la bière</label>
-                            <input type="number" required class="form-control" name="identre" id="identre" placeholder="L'id de la bière" value="<?php if(isset($identre)) echo $identre; ?>" autofocus>
+                            <label>ID de l'alcool fort</label>
+                            <input type="number" required class="form-control" name="identre" id="identre" placeholder="L'id de l'alcool fort" value="<?php if(isset($identre)) echo $identre; ?>" autofocus>
                             <?php if(isset($error['identre'])) echo $error['identre']; ?>
                         </div>
 
