@@ -26,6 +26,20 @@ $sql5 = "SELECT SUM(idingredient) AS degretotal
 ";
 
 
+$Month_tab = array();
+$Month_Tab[1] = "Janv";
+$Month_Tab[2] = "Févr";
+$Month_Tab[3] = "Mars";
+$Month_Tab[4] = "Avril";
+$Month_Tab[5] = "Mai";
+$Month_Tab[6] = "Juin";
+$Month_Tab[7] = "Juil";
+$Month_Tab[8] = "Août";
+$Month_Tab[9] = "Sept";
+$Month_Tab[10] = "Octo";
+$Month_Tab[11] = "Nove";
+$Month_Tab[12] = "Déce";
+
 ?>
 
 <!doctype html>
@@ -412,7 +426,7 @@ $sql5 = "SELECT SUM(idingredient) AS degretotal
                     <div class="item blog-post ">
                         <div class="post-content">
                             <div class="post-date">
-                                    <p><span><?php echo $row['jour']?></span><?php echo $row['mois']?></p>
+                                    <p><span><?php echo $row['jour']?></span><?php echo $Month_Tab[$row['mois']]?></p>
                             </div>
                             <div class="content-data">
                                 <h2><a href="article.php?id=<?php echo $row['id'] ?>"><?php echo $row['titre'] ?></a></h2>
