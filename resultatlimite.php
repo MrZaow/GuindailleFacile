@@ -72,32 +72,56 @@ $sql = "SELECT *
 									<?php foreach($bdd->query($sql) as $row): ?>
 									<?php 
 									if($row['sexe'] == "mec"){
-										if($row['poids'] > 77){
-											if($row['age'] > 17)
-												$etrebien = 8;
-											else
-												$etrebien = 6;
-											}
-										else{
-											if($row['age'] > 17)
-												$etrebien = 7;
-											else
-												$etrebien = 5;
-										}	
-									}
-									else{
-										if($row['poids'] > 67){
+										if($row['poids'] > 77 && $row['poids'] <= 87){/*77 à 87*/
 											if($row['age'] > 17)
 												$etrebien = 6;
 											else
 												$etrebien = 4;
 											}
-										else{
+											elseif($row['poids'] > 87 && $row['poids'] <= 400){/*87 à 400*/
+												if($row['age'] > 17)
+													$etrebien = 7;
+												else
+													$etrebien = 5;
+											}
+											elseif($row['poids'] <= 77 && $row['poids'] > 67){/*67 à 77*/
+												if($row['age'] > 17)
+													$etrebien = 6;
+												else
+													$etrebien = 4;
+											}
+											else{/*40 à 67*/
+												if($row['age'] > 17)
+													$etrebien = 5;
+												else
+													$etrebien = 3;
+											}	
+									}
+									else{
+										if($row['poids'] > 77 && $row['poids'] <= 87){/*77 à 87*/
 											if($row['age'] > 17)
-												$etrebien = 5;
+												$etrebien = 6;
 											else
-												$etrebien = 3;
-										}	
+												$etrebien = 5;
+											}
+											elseif($row['poids'] > 87 && $row['poids'] <= 400){/*87 à 400*/
+												if($row['age'] > 17)
+													$etrebien = 7;
+												else
+													$etrebien = 6;
+											}
+											elseif($row['poids'] <= 77 && $row['poids'] > 67){/*67 à 77*/
+												if($row['age'] > 17)
+													$etrebien = 5;
+												else
+													$etrebien = 4;
+											}
+											else{/*40 à 67*/
+												if($row['age'] > 17)
+													$etrebien = 4;
+												else
+													$etrebien = 3;
+											}	
 									}
 									 ?>
 									<p><span class="timer" data-from="0" data-to="<?php echo $etrebien; ?>"></span></p>
@@ -111,32 +135,56 @@ $sql = "SELECT *
 									<?php foreach($bdd->query($sql) as $row): ?>
 									<?php 
 									if($row['sexe'] == "mec"){
-										if($row['poids'] > 77){
-											if($row['age'] > 17)
-												$etrebourre = 12;
-											else
-												$etrebourre = 10;
-											}
-										else{
+										if($row['poids'] > 77 && $row['poids'] <= 87){/*77 à 87*/
 											if($row['age'] > 17)
 												$etrebourre = 11;
 											else
-												$etrebourre = 9;
-										}	
+												$etrebourre = 7;
+											}
+											elseif($row['poids'] > 87 && $row['poids'] <= 400){/*87 à 400*/
+												if($row['age'] > 17)
+													$etrebourre = 13;
+												else
+													$etrebourre = 9;
+											}
+											elseif($row['poids'] <= 77 && $row['poids'] > 67){/*67 à 77*/
+												if($row['age'] > 17)
+													$etrebourre = 9;
+												else
+													$etrebourre = 6;
+											}
+											else{/*40 à 67*/
+												if($row['age'] > 17)
+													$etrebourre = 8;
+												else
+													$etrebourre = 5;
+											}	
 									}
 									else{
-										if($row['poids'] > 67){
+										if($row['poids'] > 77 && $row['poids'] <= 87){/*77 à 87*/
 											if($row['age'] > 17)
-												$etrebourre = 10;
+												$etrebourre = 8;
 											else
-												$etrebourre = 6;
+												$etrebourre = 5;
 											}
-										else{
-											if($row['age'] > 17)
-												$etrebourre = 9;
-											else
-												$etrebourre = 7;
-										}	
+											elseif($row['poids'] > 87 && $row['poids'] <= 400){/*87 à 400*/
+												if($row['age'] > 17)
+													$etrebourre = 9;
+												else
+													$etrebourre = 6;
+											}
+											elseif($row['poids'] <= 77 && $row['poids'] > 67){/*67 à 77*/
+												if($row['age'] > 17)
+													$etrebourre = 7;
+												else
+													$etrebourre = 5;
+											}
+											else{/*40 à 67*/
+												if($row['age'] > 17)
+													$etrebourre = 6;
+												else
+													$etrebourre = 5;
+											}	
 									}
 									 ?>
 									<p><span class="timer" data-from="0" data-to="<?php echo $etrebourre; ?>"></span></p>
@@ -150,32 +198,56 @@ $sql = "SELECT *
 									<?php foreach($bdd->query($sql) as $row): ?>
 									<?php 
 									if($row['sexe'] == "mec"){
-										if($row['poids'] > 77){
+										if($row['poids'] > 77 && $row['poids'] <= 87){/*77 à 87*/
 											if($row['age'] > 17)
-												$etredefonce = 18;
+												$etredefonce = 19;
 											else
 												$etredefonce = 15;
 											}
-										else{
-											if($row['age'] > 17)
-												$etredefonce = 16;
-											else
-												$etredefonce = 14;
-										}	
+											elseif($row['poids'] > 87 && $row['poids'] <= 400){/*87 à 400*/
+												if($row['age'] > 17)
+													$etredefonce = 21;
+												else
+													$etredefonce = 17;
+											}
+											elseif($row['poids'] <= 77 && $row['poids'] > 67){/*67 à 77*/
+												if($row['age'] > 17)
+													$etredefonce = 17;
+												else
+													$etredefonce = 13;
+											}
+											else{/*40 à 67*/
+												if($row['age'] > 17)
+													$etredefonce = 14;
+												else
+													$etredefonce = 10;
+											}	
 									}
 									else{
-										if($row['poids'] > 67){
-											if($row['age'] > 17)
-												$etredefonce = 16;
-											else
-												$etredefonce = 14;
-											}
-										else{
+										if($row['poids'] > 77 && $row['poids'] <= 87){/*77 à 87*/
 											if($row['age'] > 17)
 												$etredefonce = 15;
 											else
-												$etredefonce = 13;
-										}	
+												$etredefonce = 11;
+											}
+											elseif($row['poids'] > 87 && $row['poids'] <= 400){/*87 à 400*/
+												if($row['age'] > 17)
+													$etredefonce = 16;
+												else
+													$etredefonce = 12;
+											}
+											elseif($row['poids'] <= 77 && $row['poids'] > 67){/*67 à 77*/
+												if($row['age'] > 17)
+													$etredefonce = 14;
+												else
+													$etredefonce = 9;
+											}
+											else{/*40 à 67*/
+												if($row['age'] > 17)
+													$etredefonce = 11;
+												else
+													$etredefonce = 7;
+											}	
 									}
 									 ?>
 									<p><span class="timer" data-from="0" data-to="<?php echo $etredefonce; ?>"></span></p>
@@ -200,7 +272,7 @@ $sql = "SELECT *
 							<div class="statistic-post">
 								<div class="statistic-counter">
 									<i class="fa fa-thumbs-up"></i>
-									<p><span class="timer" data-from="0" data-to="5"></span></p>
+									<p><span class="timer" data-from="0" data-to="4"></span></p>
 									<p>Verres/soirée pour être bien</p>
 								</div>
 							</div>
@@ -214,7 +286,7 @@ $sql = "SELECT *
 							<div class="statistic-post">
 								<div class="statistic-counter">
 									<i class="fa fa-ambulance"></i>
-									<p><span class="timer" data-from="0" data-to="13"></span></p>
+									<p><span class="timer" data-from="0" data-to="14"></span></p>
 									<p>Verres/soirée maximum avant blackout</p>
 								</div>
 							</div>

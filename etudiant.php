@@ -84,9 +84,7 @@ $Month_Tab[12] = "Déce";
 										</button>
 									</form>
 								</div>
-								<div class="buttons">
-									<a class="button-third" href="encodagearticle.php"> <i class="fa fa-pencil"></i> Écrire un post</a>
-								</div>
+								
 
 								<div class="category-widget widget">
 									<h3>Catégories</h3>
@@ -97,6 +95,9 @@ $Month_Tab[12] = "Déce";
 										<?php endforeach; ?>
 									</ul>
 								</div>
+
+								
+
 								<div class="popular-widget widget">
 									<h3>Articles populaires</h3>
 									<ul class="popular-list">
@@ -104,11 +105,15 @@ $Month_Tab[12] = "Déce";
 										<li>
 											<div class="side-content">
 												<h2><a href="article.php?id=<?php echo $row['id'] ?>"><?php echo $row['titre'] ?></a></h2>
-												<p><?php echo $row['jour']?>/<?php echo $row['mois']?></p>
+												<p><?php echo $row['jour']?> <?php echo $Month_Tab[$row['mois']]?></p>
 											</div>
 										</li>
 									<?php endforeach; ?>
 									</ul>
+								</div>
+
+								<div class="buttons">
+									<a class="button-third" href="encodagearticle.php"> <i class="fa fa-pencil"></i> Écrire un post</a>
 								</div>
 
 

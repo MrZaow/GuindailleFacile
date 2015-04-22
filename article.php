@@ -14,6 +14,21 @@ $sql = "SELECT id, titre, auteur, DAY(date) AS jour, MONTH(date) AS mois, conten
 		FROM articles
 		WHERE articles.id = $lid";
 
+
+$Month_tab = array();
+$Month_Tab[1] = "Janv";
+$Month_Tab[2] = "Févr";
+$Month_Tab[3] = "Mars";
+$Month_Tab[4] = "Avril";
+$Month_Tab[5] = "Mai";
+$Month_Tab[6] = "Juin";
+$Month_Tab[7] = "Juil";
+$Month_Tab[8] = "Août";
+$Month_Tab[9] = "Sept";
+$Month_Tab[10] = "Octo";
+$Month_Tab[11] = "Nove";
+$Month_Tab[12] = "Déce";
+
 ?>
 <!doctype html>
 
@@ -49,7 +64,7 @@ $sql = "SELECT id, titre, auteur, DAY(date) AS jour, MONTH(date) AS mois, conten
 									<?php foreach($bdd->query($sql) as $row) : ?>
 
 										<div class="post-date">
-											<p><span><?php echo $row['jour']?></span><?php echo $row['mois']?></p>
+											<p><span><?php echo $row['jour']?></span><?php echo $Month_Tab[$row['mois']];?></p>
 										</div>
 
 

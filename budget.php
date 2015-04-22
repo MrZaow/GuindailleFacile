@@ -1,12 +1,12 @@
 <?php include("includes/connectionpdo.php");
 
-$error['age'] = "";
+$error['budget'] = "";
 $error['poids'] = "";
 $error['sexe'] = "";
 
 $result = "";
 
-$age = (isset($_POST['age'])) ? $_POST['age'] : "";
+$budget = (isset($_POST['budget'])) ? $_POST['budget'] : "";
 $poids = (isset($_POST['poids'])) ? $_POST['poids'] : "";
 $sexe = (isset($_POST['sexe'])) ? $_POST['sexe'] : "";
 
@@ -26,7 +26,7 @@ if(!empty($_POST))
 	if($age < 12 || $age > 100)
 		$error['age'] = "Age impossible";
 
-	if($poids < 40 || $poids > 400)
+	if($poids < 20 || $poids > 400)
 		$error['poids'] = "Poids impossible";
 
 	if($sexe != "mec" && $sexe != "fille")
@@ -93,7 +93,7 @@ if(!empty($_POST))
 				================================================== -->
 			<div class="section-content page-banner shortcodes-page-banner">
 				<div class="container">
-					<h1>Le bibinomètre</h1>
+					<h1>Soirée à budget</h1>
 				</div>
 			</div>
 
@@ -105,8 +105,8 @@ if(!empty($_POST))
 						<div class="col-md-12">
 							<div class="single-project">
 								<div class="single-project-content">
-					                <h1>Le bibinomètre, c'est quoi ?</h1>
-					                <h3>Entrez votre age, votre poids ainsi que votre sexe, et le bibinomètre fera le reste. </h3>
+					                <h1>Soirée à budget, c'est quoi ?</h1>
+					                <h3>Entrez le budget de votre soirée ainsi que vos préférences d'alcool, et une proposition de liste de course sera générée. </h3>
 								</div>
 							</div>	
 						</div>
@@ -114,29 +114,24 @@ if(!empty($_POST))
 					<?php if(!empty($result)){ echo '<div class="alert alert-success alert-dismissible" role="alert"> 
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>'; echo $result;  echo'</div>'; }?>
 					<div class="row">
-						<div class="col-md-4">
+						<div class="col-md-6">
 							<div class="single-project">
 								<div class="single-project-content">
-					                <form action="limite.php" class="form" method="post">
+					                <form action="budget.php" class="form" method="post">
 					                	<div class="form-group">
-					                		<label for="age">Age</label>
-				                            <input type="number" required class="form-control" name="age" id="age" placeholder="Votre age" autofocus value="<?php if(isset($age)) echo $age; ?>" autofocus>
-				                            <?php if(isset($error['age'])) echo $error['age']; ?>
+					                		<label for="budget">Budget de la soirée</label>
+				                            <input type="number" required class="form-control" name="budget" id="budget" placeholder="Votre budget (en euros)" autofocus value="<?php if(isset($budget)) echo $budget; ?>" autofocus>
+				                            <?php if(isset($error['budget'])) echo $error['budget']; ?>
 				                        </div>
 				                        <div class="form-group">
-				                        	<label for="poids">Poids</label>
-				                            <input type="number" required class="form-control" name="poids" id="poids" placeholder="Votre poids (en kg)" value="<?php if(isset($poids)) echo $poids; ?>" autofocus>
-				                            <?php if(isset($error['poids'])) echo $error['poids']; ?>
-				                        </div>
-				                        <div class="form-group">
-				                        	<label for="sexe">Sexe</label>
-				                            <select class="form-control" name="sexe">
-				                                <option value="mec">Je suis un mec</option>
-				                                <option value="fille">Je suis une fille</option>
+				                        	<label for="budget">Préférence de type d'alcool </label>
+				                            <select class="form-control" name="type">
+				                                <option value="biere">Bières</option>
+				                                <option value="cocktail">Cocktails</option>
+				                                <option value="fort">Alcools forts</option>
 				                            </select>
-				                            <?php if(isset($error['sexe'])) echo $error['sexe']; ?>
+				                            <?php if(isset($error['type'])) echo $error['type']; ?>
 				                        </div>
-				                        <br>
 				                        <input type="submit" class="btn btn-default" name="submit" value="Envoyer"><br><br>
 					                </form>
 								</div>

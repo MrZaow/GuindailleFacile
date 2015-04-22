@@ -58,7 +58,7 @@
                                 <li><a href="#">Outils</a>
                                     <ul class="drop-down">
                                         <li><a href="limite.php">Le Bibinomètre</a></li>
-                                        <li><a href="404.php">Soirée à budget</a></li>
+                                        <li><a href="budget.php">Soirée à budget</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="jeux.php">Jeux d'alcool</a></li>
