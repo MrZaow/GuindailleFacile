@@ -13,18 +13,18 @@ $sql3 = "SELECT DISTINCT categorie
 		FROM articles";
 		
 $Month_tab = array();
-$Month_Tab[1] = "Janvier";
-$Month_Tab[2] = "Février";
+$Month_Tab[1] = "Janv";
+$Month_Tab[2] = "Févr";
 $Month_Tab[3] = "Mars";
 $Month_Tab[4] = "Avril";
 $Month_Tab[5] = "Mai";
 $Month_Tab[6] = "Juin";
-$Month_Tab[7] = "Juillet";
+$Month_Tab[7] = "Juil";
 $Month_Tab[8] = "Août";
-$Month_Tab[9] = "Septembre";
-$Month_Tab[10] = "Octobre";
-$Month_Tab[11] = "Novembre";
-$Month_Tab[12] = "Décembre";
+$Month_Tab[9] = "Sept";
+$Month_Tab[10] = "Octo";
+$Month_Tab[11] = "Nove";
+$Month_Tab[12] = "Déce";
 
  ?>
 <!doctype html>
