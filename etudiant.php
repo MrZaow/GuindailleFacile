@@ -14,7 +14,7 @@ $sql3 = "SELECT DISTINCT categorie
 		
 $Month_tab = array();
 $Month_Tab[1] = "Janvier";
-$Month_Tab[2] = "Fevrier";
+$Month_Tab[2] = "Février";
 $Month_Tab[3] = "Mars";
 $Month_Tab[4] = "Avril";
 $Month_Tab[5] = "Mai";
