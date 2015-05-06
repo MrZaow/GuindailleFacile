@@ -1,4 +1,5 @@
-<?php include("includes/connectionpdo.php") ?>
+<?php include("includes/connectionpdo.php");
+session_start(); ?>
 <?php include("includes/head.php") ?>
 <!doctype html>
 

@@ -1,4 +1,5 @@
 <?php include("includes/connectionpdo.php");
+session_start();
 
 $error['age'] = "";
 $error['poids'] = "";

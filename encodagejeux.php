@@ -1,4 +1,11 @@
 <?php  
+session_start();
+if(!isset($_SESSION['pseudo']))
+{
+    header('Location: index.php');
+}
+else
+{
 require_once("erreurencodagejeux.php");
 ?>
 <!doctype html>
@@ -112,3 +119,4 @@ require_once("erreurencodagejeux.php");
 
 </body>
 </html>
+<?php } ?>

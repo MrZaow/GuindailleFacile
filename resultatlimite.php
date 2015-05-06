@@ -1,5 +1,5 @@
 <?php include("includes/connectionpdo.php");
-
+session_start();
 
 if(isset($_GET["id"])) 
 { 

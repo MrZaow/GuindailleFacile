@@ -1,6 +1,13 @@
 <?php  
-include("includes/connectionpdo.php");
 
+session_start();
+if(!isset($_SESSION['pseudo']))
+{
+    header('Location: index.php');
+}
+else
+{
+include("includes/connectionpdo.php");
 
 $result = "";
 $identre = "";
@@ -74,3 +81,4 @@ $bdd->exec("DELETE FROM ingredients WHERE idingredient = $identre");
 
 </body>
 </html>
+<?php } ?>

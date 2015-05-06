@@ -1,4 +1,5 @@
 <?php include("includes/connectionpdo.php");
+session_start();
 
 $reponse = $bdd->prepare('SELECT *
 							FROM alcoolsforts AS b INNER JOIN ingredients AS i

@@ -1,4 +1,12 @@
 <?php  
+session_start();
+
+if(!isset($_SESSION['pseudo']))
+{
+    header('Location: index.php');
+}
+else
+{
 require_once("erreurencodagebiere.php");
 ?>
 <!doctype html>
@@ -147,3 +155,5 @@ require_once("erreurencodagebiere.php");
 
 </body>
 </html>
+
+<?php } ?>

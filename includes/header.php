@@ -1,3 +1,5 @@
+<?php
+	?>
 <header class="clearfix">
         <!-- Static navbar -->
         <div class="navbar navbar-default navbar-fixed-top">
@@ -17,6 +19,8 @@
 						<div class="navbar-collapse collapse">
 							<ul class="nav navbar-nav navbar-right">
 								<li><a class="active" href="index.php">Accueil</a></li>
+
+								<?php if(isset($_SESSION['pseudo'])) { ?>
 
 								<li><a href="#">Admin</a>
                                     <ul class="drop-down">
@@ -47,8 +51,11 @@
 												<li><a href="modificationimage3.php">Image 3</a></li>
 											</ul>
 										</li>
+										<li><a href="deconnexionadmin.php">Déconnexion</a></li>
                                     </ul>
                                 </li>
+								<?php } ?>
+
 								<li><a href="etudiant.php">Coin étudiant</a></li>
 								<li><a href="#">Alcools</a>
 									<ul class="drop-down">

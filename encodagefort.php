@@ -1,4 +1,11 @@
 <?php  
+session_start();
+if(!isset($_SESSION['pseudo']))
+{
+    header('Location: index.php');
+}
+else
+{
 require_once("erreurencodagefort.php");
 ?>
 <!doctype html>
@@ -119,3 +126,4 @@ require_once("erreurencodagefort.php");
 
 </body>
 </html>
+<?php } ?>

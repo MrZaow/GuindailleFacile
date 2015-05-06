@@ -1,4 +1,11 @@
 <?php  
+session_start();
+if(!isset($_SESSION['pseudo']))
+{
+    header('Location: index.php');
+}
+else
+{
 include("includes/connectionpdo.php");
 
 $a = "I";
@@ -91,3 +98,4 @@ $req = $bdd->prepare('INSERT INTO avoir(idingredient, idavantage) VALUES(:idingr
 
 </body>
 </html>
+<?php } ?>

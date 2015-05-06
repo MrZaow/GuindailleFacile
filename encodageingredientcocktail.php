@@ -1,4 +1,11 @@
 <?php  
+session_start();
+if(!isset($_SESSION['pseudo']))
+{
+    header('Location: index.php');
+}
+else
+{
 include("includes/connectionpdo.php");
 
 
@@ -93,3 +100,4 @@ $req = $bdd->prepare('INSERT INTO contenir(qte, idingredient, idingredient_INGRE
 
 </body>
 </html>
+<?php } ?>

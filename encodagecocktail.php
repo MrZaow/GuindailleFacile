@@ -1,4 +1,11 @@
 <?php  
+session_start();
+if(!isset($_SESSION['pseudo']))
+{
+    header('Location: index.php');
+}
+else
+{
 require_once("erreurencodagecocktail.php");
 ?>
 <!doctype html>
@@ -124,3 +131,5 @@ require_once("erreurencodagecocktail.php");
 
 </body>
 </html>
+
+<?php } ?>

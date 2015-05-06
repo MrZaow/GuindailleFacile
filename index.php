@@ -1,5 +1,7 @@
 <?php include("includes/connectionpdo.php");
 
+session_start();
+
 /*Les articles*/
 $sql3 = "SELECT id, titre, auteur, DAY(date) AS jour, MONTH(date) AS mois, contenu
                 FROM articles

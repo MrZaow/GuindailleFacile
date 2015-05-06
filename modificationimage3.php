@@ -1,4 +1,12 @@
 <?php  
+
+session_start();
+if(!isset($_SESSION['pseudo']))
+{
+    header('Location: index.php');
+}
+else
+{
 include("includes/connectionpdo.php");
 
 $identre = "";
@@ -101,3 +109,4 @@ $req = $bdd->prepare("UPDATE boissons SET image3 = :image3 WHERE idingredient = 
 
 </body>
 </html>
+<?php } ?>

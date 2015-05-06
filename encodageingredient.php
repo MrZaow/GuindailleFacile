@@ -1,4 +1,11 @@
 <?php  
+session_start();
+if(!isset($_SESSION['pseudo']))
+{
+    header('Location: index.php');
+}
+else
+{
 require_once("erreurencodageingredient.php");
 ?>
 <!doctype html>
@@ -81,3 +88,4 @@ require_once("erreurencodageingredient.php");
 
 </body>
 </html>
+<?php } ?>

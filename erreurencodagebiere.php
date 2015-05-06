@@ -1,5 +1,4 @@
 <?php 
-
 include("includes/connectionpdo.php");
 
 $error['nom'] = "";

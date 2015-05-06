@@ -1,4 +1,5 @@
 <?php include("includes/connectionpdo.php");
+session_start();
 
 $sql = "SELECT id, titre, auteur, DAY(date) AS jour, MONTH(date) AS mois, contenu, categorie
 		FROM articles 
@@ -99,7 +100,7 @@ $Month_Tab[12] = "Déce";
 								
 
 								<div class="popular-widget widget">
-									<h3>Articles populaires</h3>
+									<h3>Histoires populaires</h3>
 									<ul class="popular-list">
 										<?php foreach($bdd->query($sql2) as $row): ?>
 										<li>
