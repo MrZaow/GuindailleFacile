@@ -15,6 +15,17 @@ $sql = "SELECT id, titre, auteur, DAY(date) AS jour, MONTH(date) AS mois, conten
 		FROM articles
 		WHERE articles.id = $lid";
 
+$sql2 = "SELECT titre, id
+		FROM articles 
+		WHERE articles.id = $lid-1
+		LIMIT 1";
+
+$sql3 = "SELECT titre, id
+		FROM articles 
+		WHERE articles.id = $lid+1
+		LIMIT 1";
+
+
 
 $Month_tab = array();
 $Month_Tab[1] = "Janv";
@@ -75,6 +86,7 @@ $Month_Tab[12] = "Déce";
 											<p><?php echo htmlspecialchars($row['auteur']) ?></p>
 										</div>
 										<p><?php echo htmlspecialchars($row['contenu']); ?></p>
+									<?php endforeach; ?>
 
 										<div class="share-tag-box">
 											<span>Partager cette article sur</span>
@@ -84,14 +96,18 @@ $Month_Tab[12] = "Déce";
 										</div>
 										<div class="pagination-boxer">
 											<div class="prev-post">
-												<a href="single-post.html#" class="button-third"><i class="fa fa-angle-left"></i> Précédent</a>
-												<p>Robin a encore éclaté Florent au tennis de table !</p>
+												<?php foreach($bdd->query($sql2) as $row) : ?>
+												<a href="article.php?id=<?php echo $row['id']; ?>" class="button-third"><i class="fa fa-angle-left"></i> Précédent</a>
+												<p><?php echo htmlspecialchars($row['titre']) ?></p>
+												<?php endforeach; ?>
 											</div>
 											<div class="next-post">
-												<a href="single-post.html#" class="button-third">Suivant <i class="fa fa-angle-right"></i></a>
-												<p>Manger une carotte chaque matin pour mieux supporter l'alcool</p>
+												<?php foreach($bdd->query($sql3) as $row) : ?>
+												<a href="article.php?id=<?php echo $row['id']; ?>" class="button-third">Suivant <i class="fa fa-angle-right"></i></a>
+												<p><?php echo htmlspecialchars($row['titre']) ?></p>
+												<?php endforeach; ?>
 											</div>
-									<?php endforeach; ?>
+									
 										</div>
 									</div>
 								</div>

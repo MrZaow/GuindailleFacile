@@ -33,8 +33,17 @@ session_start(); ?>
 						
 						<li class="item"><a href="portfolio-4col.html#" class="active" data-filter="*">Popuparité</a></li>
 
-						<li class="item"><a href="portfolio-4col.html#" data-filter=".web-design">Prix</a></li>
-						<li class="item"><a href="portfolio-4col.html#" data-filter=".branding">Degré</a></li>
+						<?php
+							$sql = "SELECT DISTINCT nom
+                                   FROM ingredients, contenir, boissons, alcoolsforts
+                                   WHERE contenir.idingredient_INGREDIENTS = ingredients.idingredient
+                                   AND ingredients.idingredient = boissons.idingredient
+                                   AND boissons.idingredient = alcoolsforts.idingredient
+                                   ";
+							foreach ($bdd->query($sql) as $row) : ?>
+								<li class="item"><a href="portfolio-4col.html#" data-filter=".<?php echo $row['nom']; ?>"><?php echo $row['nom']; ?></a></li>
+							<?php endforeach; ?>
+
 					</ul>
 					<div class="masonry four-col triggerAnimation animated" data-animate="bounceIn">
           				<?php
@@ -47,7 +56,7 @@ session_start(); ?>
 
 						foreach ($bdd->query($sql) as $row) : ?>
 
-						<div class="project-post web-design branding">
+						<div class="project-post web-design <?php echo $row['nom']; ?>">
 							<div class="project-gal">
 								<img src="images/min/<?php echo $row['image1']; ?>" alt="#">
 								<a href="descriptioncocktail.php?id=<?php echo $row['idingredient']; ?>">
