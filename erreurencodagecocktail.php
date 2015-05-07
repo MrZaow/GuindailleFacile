@@ -10,6 +10,7 @@ $error['pourcentage'] = "";
 $error['prixaulitre'] = "";
 $error['cote'] = "";
 $error['popularite'] = "";
+$error['alcoolfortprincipal'] = "";
 $error['preparation'] = "";
 $error['image1'] = "";
 $error['image2'] = "";
@@ -28,6 +29,7 @@ $prixaulitre = (isset($_POST['prixaulitre'])) ? $_POST['prixaulitre'] : "";
 $cote = (isset($_POST['cote'])) ? $_POST['cote'] : "";
 $preparation = (isset($_POST['preparation'])) ? $_POST['preparation'] : "";
 $popularite = (isset($_POST['popularite'])) ? $_POST['popularite'] : "";
+$alcoolfortprincipal = (isset($_POST['alcoolfortprincipal'])) ? $_POST['alcoolfortprincipal'] : "";
 
 /*Pour les images*/
 if(!empty($_FILES)){
@@ -98,6 +100,9 @@ if(!empty($_POST))
 	if(empty($popularite))
 		$error['popularite'] = "Veuillez remplir la popularite";
 
+	if(empty($alcoolfortprincipal))
+		$error['alcoolfortprincipal'] = "Veuillez remplir la alcoolfortprincipal";
+
 	$test = 1;
 
 	foreach($error as $err)
@@ -136,9 +141,10 @@ if(!empty($_POST))
                         ));
             unset($pourcentage, $prixaulitre, $cote, $popularite);
 
-            $req = $bdd->prepare('INSERT INTO cocktails(preparation, idingredient) VALUES(:preparation ,(SELECT idingredient FROM ingredients ORDER BY idingredient DESC LIMIT 1))');
+            $req = $bdd->prepare('INSERT INTO cocktails(preparation, idingredient, alcoolfortprincipal) VALUES(:preparation ,(SELECT idingredient FROM ingredients ORDER BY idingredient DESC LIMIT 1), :alcoolfortprincipal)');
                     $req->execute(array(
                     	'preparation' => $preparation,
+                    	'alcoolfortprincipal' => $alcoolfortprincipal,
                         ));
         }
     }

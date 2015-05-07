@@ -17,7 +17,7 @@ $auteur = (isset($_POST['auteur'])) ? $_POST['auteur'] : "";
 
 if(!empty($_POST)){
 
-$result = "Histoire envoyée ! Les admins vont vérifier qu'elle est correcte (si ils ne sont pas saouls) puis elle sera postée.";
+$result = "Histoire envoyée ! Merci de t'être confessé(e).";
 
 $req = $bdd->prepare('INSERT INTO articles(id, titre, contenu, date, categorie, auteur) VALUES(:id ,:titre, :contenu, :date, :categorie, :auteur)');
                     $req->execute(array(
@@ -90,6 +90,9 @@ $req = $bdd->prepare('INSERT INTO articles(id, titre, contenu, date, categorie, 
                             <label>Auteur</label>
                             <input type="text" required class="form-control" name="auteur" id="auteur" placeholder="Votre pseudo (c'est anonyme) " value="<?php if(isset($auteur)) echo $auteur; ?>" >
                             <?php if(isset($error['auteur'])) echo $error['auteur']; ?>
+                        </div>
+                        <div class="form-group">
+                            <div class="g-recaptcha" data-sitekey="6LcEhwYTAAAAAD9BMmskM2H1kDgEisdj92d7yZmX"></div>
                         </div>
 
                         <input type="submit" class="btn btn-primary" name="submit" value="Envoyer">

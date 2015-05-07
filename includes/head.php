@@ -19,5 +19,8 @@
     <link rel="stylesheet" type="text/css" href="css/settings.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
     <link rel="stylesheet" type="text/css" href="http://nunforest.com/site/marble-demo/non-animation/css/fullwidth.css" media="screen" />
+
+
+    <script src='https://www.google.com/recaptcha/api.js'></script>/*SCRIPT GOOGLE CAPTCHA*/
     
 </head>

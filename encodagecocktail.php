@@ -92,6 +92,11 @@ require_once("erreurencodagecocktail.php");
                             <input type="number" required placeholder="La popularité (de 1 à 10 en nombre entier)" name="popularite" id="popularite" value="<?php if(isset($popularite)) echo $popularite; ?>" class="form-control">
                             <?php if(isset($error['popularite'])) echo $error['popularite']; ?>
                         </div>
+                        <div class="form-group">
+                            <label>Alcool fort principal</label><br>
+                            <input type="text" required placeholder="L'alcool fort principal (en minuscule)" name="alcoolfortprincipal" id="alcoolfortprincipal" value="<?php if(isset($alcoolfortprincipal)) echo $alcoolfortprincipal; ?>" class="form-control">
+                            <?php if(isset($error['alcoolfortprincipal'])) echo $error['alcoolfortprincipal']; ?>
+                        </div>
                         <h3>Les images</h3>
                         <p>Note : les images doivent être au format jpg et leur titre ne doit pas comporter d'accent ni caractère spécial.</p>
                         <div class="form-group">

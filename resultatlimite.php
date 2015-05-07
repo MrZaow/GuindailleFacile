@@ -294,6 +294,10 @@ $sql = "SELECT *
 					</div>
 
 					<div class="shortcodes-elem">
+						<p>Note : un "verre" correspond ici à environ 25cl de bière à 5% d'alcool ou 10cl de vin.</p>
+					</div>
+
+					<div class="shortcodes-elem">
 						<h1>Sache être raisonnable...</h1>
 						<div class="row">
 							<div class="col-md-4">

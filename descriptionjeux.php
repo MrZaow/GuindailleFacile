@@ -68,7 +68,7 @@ $sql3 = "SELECT *
 									<div class="col-md-12">
 										<div class="single-project-content">
 											<h1>À propos</h1>
-											<h3><?= $result['nom'];?> est un jeu de <?= $result['type']; ?> qui se joue à <?= $result['nbjoueursmin']; ?> 
+											<h3><?= $result['nom'];?> est un jeu sur base de <?= $result['type']; ?> qui se joue à <?= $result['nbjoueursmin']; ?> 
 												au minimum.
 											</h3>
 

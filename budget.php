@@ -94,7 +94,7 @@ if(!empty($_POST))
 				================================================== -->
 			<div class="section-content page-banner shortcodes-page-banner">
 				<div class="container">
-					<h1>Soirée à budget</h1>
+					<h1>Soirée à budget [PAS ENCORE FONCTIONNEL]</h1>
 				</div>
 			</div>
 
