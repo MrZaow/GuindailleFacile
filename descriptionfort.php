@@ -240,58 +240,35 @@ $sql4 = "SELECT *
 				</div>
 			</div>
 			<div class="container comment-section">
-				<h3>4 Commentaires</h3>
 
-				<ul class="comment-tree">
-					<li>
-						<div class="comment-box">
-							<img alt="" src="upload/testim1.jpg">
-							<div class="comment-content">
-								<h4>John Doe</h4>
-								<span>July 6, 2013. 8:30 pm.</span>
-								<p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</p>
-								<a href="single-post.html#">Reply</a>
-							</div>
-						</div>
-					</li>
+				<div id="disqus_thread"></div>
+			<script type="text/javascript">
+			    /* * * CONFIGURATION VARIABLES * * */
+			    var disqus_shortname = 'guindaillefacile';
+			    
+			    /* * * DON'T EDIT BELOW THIS LINE * * */
+			    (function() {
+			        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+			        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+			        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			    })();
+			</script>
+			<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 
-					<li>
-						<div class="comment-box">
-							<img alt="" src="upload/testim1.jpg">
-							<div class="comment-content">
-								<h4>John Doe</h4>
-								<span>July 6, 2013. 8:30 pm.</span>
-								<p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</p>
-								<a href="single-post.html#">Reply</a>
-							</div>
-						</div>
-					</li>
+			<script type="text/javascript">
+			    /* * * CONFIGURATION VARIABLES * * */
+			    var disqus_shortname = 'guindaillefacile';
+			    
+			    /* * * DON'T EDIT BELOW THIS LINE * * */
+			    (function () {
+			        var s = document.createElement('script'); s.async = true;
+			        s.type = 'text/javascript';
+			        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+			        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+			    }());
+			</script>
 
-					<li>
-						<div class="comment-box">
-							<img alt="" src="upload/testim3.jpg">
-							<div class="comment-content">
-								<h4>John Doe</h4>
-								<span>July 6, 2013. 8:30 pm.</span>
-								<p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</p>
-								<a href="single-post.html#">Reply</a>
-							</div>
-						</div>
-					</li>
-				</ul>
-				<form class="comment-form">
-					<h3>Laisser un commentaire</h3>
-					<div class="row">
-						<div class="col-md-6">
-							<input name="name" id="name" type="text" placeholder="Nom">
-						</div>
-						<div class="col-md-6">
-							<input name="mail" id="mail" type="text" placeholder="Prenom">
-						</div>
-					</div>
-					<textarea name="comment" id="comment" placeholder="Votre commentaire par rapport à l'alcool fort <?= $result['nom'];?>"></textarea>
-					<input type="submit" id="submit_contact" value="Envoyer">
-				</form>
+				
 			</div>
 
 		</div>
