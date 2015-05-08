@@ -4,6 +4,7 @@ session_start();
 
 $result = "";
 $titre = "";
+$captcha = "";
 $contenu = "";
 $categorie = "";
 $auteur = "";
@@ -13,6 +14,7 @@ $titre = (isset($_POST['titre'])) ? $_POST['titre'] : "";
 $contenu = (isset($_POST['contenu'])) ? $_POST['contenu'] : "";
 $categorie = (isset($_POST['categorie'])) ? $_POST['categorie'] : "";
 $auteur = (isset($_POST['auteur'])) ? $_POST['auteur'] : "";
+$captcha = (isset($_POST['g-recaptcha-response'])) ? $_POST['g-recaptcha-response'] : "";
 
 
 if(!empty($_POST)){
