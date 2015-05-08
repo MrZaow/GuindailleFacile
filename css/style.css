@@ -2040,7 +2040,7 @@ a.go-top:hover {
   padding: 50px 0;
 }
 .blog-section.with-sidebar .blog-post {
-  padding-bottom: 60px;
+  margin-bottom: 60px;
 }
 .blog-section.with-sidebar .blog-post .post-content > p {
   font-size: 13px;
