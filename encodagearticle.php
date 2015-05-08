@@ -19,17 +19,44 @@ $captcha = (isset($_POST['g-recaptcha-response'])) ? $_POST['g-recaptcha-respons
 
 if(!empty($_POST)){
 
-$result = "Histoire envoyée ! Merci de t'être confessé(e).";
+    if(empty($titre))
+        $error['titre'] = "Le titre ne peut pas être vide";
+    if(empty($captcha))
+        $error['captcha'] = "Veuillez remplir le captcha";
+    if(empty($contenu))
+        $error['contenu'] = "Veuillez remplir le contenu";
+    if(empty($categorie))
+        $error['categorie'] = "Veuillez remplir la catégorie";
+    if(empty($auteur))
+        $error['auteur'] = "Veuillez remplir l'auteur";
 
-$req = $bdd->prepare('INSERT INTO articles(id, titre, contenu, date, categorie, auteur) VALUES(:id ,:titre, :contenu, :date, :categorie, :auteur)');
-                    $req->execute(array(
-                            'id' => '',
-                            'titre' => $titre,
-                            'contenu' => $contenu,
-                            'date' => $date,
-                            'categorie' => $categorie,
-                            'auteur' => $auteur,
-                        ));
+
+    $test = 1;
+
+    foreach($error as $err)
+    { 
+        if(!empty($err))
+            $test = 0;
+        else
+            $test = $test * 1;
+    }
+
+    if($test == 1){
+
+
+    $result = "Histoire envoyée ! Merci de t'être confessé(e).";
+
+    $req = $bdd->prepare('INSERT INTO articles(id, titre, contenu, date, categorie, auteur) VALUES(:id ,:titre, :contenu, :date, :categorie, :auteur)');
+                        $req->execute(array(
+                                'id' => '',
+                                'titre' => $titre,
+                                'contenu' => $contenu,
+                                'date' => $date,
+                                'categorie' => $categorie,
+                                'auteur' => $auteur,
+                            ));
+
+    }
 
 
 
@@ -81,9 +108,12 @@ $req = $bdd->prepare('INSERT INTO articles(id, titre, contenu, date, categorie, 
                             <label>Catégorie</label><br>
                             <select class="form-control" name="categorie">
                                 <option value="soirée">Soirée</option>
-                                <option value="bourré">Bourré</option>
                                 <option value="coquin">Coquin</option>
                                 <option value="études">Études</option>
+                                <option value="travail">Travail</option>
+                                <option value="sport">Sport</option>
+                                <option value="jeux">Jeux</option>
+                                <option value="autre">Autre</option>
                             </select>
                             <?php if(isset($error['categorie'])) echo $error['categorie']; ?>
                         </div>

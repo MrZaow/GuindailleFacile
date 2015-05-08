@@ -154,7 +154,7 @@ $Month_Tab[12] = "Déce";
                              data-endspeed="500"
                              data-endeasing="Power4.easeIn"
                              data-captionhidden="on"
-                             style="z-index: 4">Avec un coin <br> spécial étudiants !
+                             style="z-index: 4">Avec un coin <br> spécial guindaille !
                         </div>
 
                         <!-- LAYER NR. 2 -->
@@ -180,7 +180,7 @@ $Month_Tab[12] = "Déce";
                              data-easing="Back.easeInOut"
                              data-endspeed="400"
                              data-endeasing="Back.easeIn"
-                             style="z-index: 14"><a class="button-large" href="etudiant.php">Le coin étudiant</a>
+                             style="z-index: 14"><a class="button-large" href="etudiant.php">Le coin guindaille</a>
                         </div>
 
                         <!-- LAYER NR. 4 -->
@@ -282,7 +282,7 @@ $Month_Tab[12] = "Déce";
                     <li>
                         <a href="index.php" class="btn slide-thumbs" id="slidethumb3" data-slide="3">
                             <span>3</span>
-                            <h2>Etudiants </h2>
+                            <h2>Guindailleurs </h2>
                             <p>Du contenu juste pour vous </p>
                         </a>
                     </li>
@@ -418,7 +418,7 @@ $Month_Tab[12] = "Déce";
             <div class="title-section">
                 <div class="container triggerAnimation animated" data-animate="bounceIn">
                     <h1>Posts récents</h1>
-                    <p>Publications récentes du Coin Étudiant</p>
+                    <p>Publications récentes du coin guindaille</p>
                 </div>
             </div>
             <div class="container triggerAnimation animated" data-animate="fadeInUp">

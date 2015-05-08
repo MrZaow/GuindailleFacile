@@ -46,7 +46,7 @@ $Month_Tab[12] = "Déce";
 	        ================================================== -->
 		<div class="section-content page-banner blog-page-banner">
 			<div class="container">
-				<h1>Le coin étudiant</h1>
+				<h1>Le coin guindaille</h1>
 			</div>
 		</div>
 
@@ -79,7 +79,7 @@ $Month_Tab[12] = "Déce";
 								
 								<div class="search-widget widget">
 									<form>
-										<input type="search" placeholder="Chercher un post"/>
+										<input type="search" placeholder="Chercher une histoire"/>
 										<button type="submit">
 											<i class="fa fa-search"></i>
 										</button>
@@ -114,7 +114,7 @@ $Month_Tab[12] = "Déce";
 								</div>
 
 								<div class="buttons">
-									<a class="button-third" href="encodagearticle.php"> <i class="fa fa-pencil"></i> Écrire un post</a>
+									<a class="button-third" href="encodagearticle.php"> <i class="fa fa-pencil"></i> Écrire une histoire</a>
 								</div>
 
 

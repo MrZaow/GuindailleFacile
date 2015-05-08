@@ -1,4 +1,52 @@
 <?php
+$alcoolrecherche = "";
+
+$error['alcoolrecherche'] = "";
+
+if(isset($_GET["alcoolrecherche"])) 
+{ 
+$alcoolrecherche = $_GET["alcoolrecherche"]; 
+}
+
+if(!empty($_GET)){
+
+    if(empty($alcoolrecherche))
+        $error['alcoolrecherche'] = "Entrez un alcool à rechercher";
+
+
+    $test = 1;
+
+    foreach($error as $err)
+    { 
+        if(!empty($err))
+            $test = 0;
+        else
+            $test = $test * 1;
+    }
+
+    if($test == 1){
+
+		$req = $bdd->prepare('INSERT INTO recherchealcool(id, alcoolrecherche) VALUES(:id ,:alcoolrecherche)');
+                        $req->execute(array(
+                                'id' => '',
+                                'alcoolrecherche' => $alcoolrecherche,
+                            ));
+
+
+        $sql= "SELECT id
+		FROM recherchealcool
+		ORDER BY id DESC LIMIT 1";
+
+
+	 	foreach($bdd->query($sql) as $row) :
+
+        header("Location: resultatrecherche.php?id=".$row['id']);
+
+        endforeach;
+
+    }
+
+}
 	?>
 <header class="clearfix">
         <!-- Static navbar -->
@@ -56,7 +104,7 @@
                                 </li>
 								<?php } ?>
 
-								<li><a href="etudiant.php">Coin étudiant</a></li>
+								<li><a href="etudiant.php">Coin guindaille</a></li>
 								<li><a href="#">Alcools</a>
 									<ul class="drop-down">
 										<li><a href="cocktail.php">Cocktails</a></li>
@@ -74,8 +122,8 @@
                                 
 
 								<li class="drop"><a href="#" class="open-search"><i class="fa fa-search"></i></a>
-									<form class="form-search">
-										<input type="search" placeholder="Chercher un alcool"/>
+									<form class="form-search" action="resultatrecherche.php">
+										<input type="search" name="alcoolrecherche" id="alcoolrecherche" placeholder="Chercher un alcool"/>
 										<button type="submit">
 											<i class="fa fa-search"></i>
 										</button>
