@@ -28,6 +28,7 @@ session_start(); ?>
 				</div>
 				<div class="portfolio-box">
 					<ul class="filter center triggerAnimation animated" data-animate="bounceIn">
+					</ul>
 					<div class="masonry four-col triggerAnimation animated" data-animate="bounceIn">
       					<?php
 								$sql = "SELECT *

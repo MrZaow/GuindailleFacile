@@ -123,7 +123,7 @@ if(!empty($_GET)){
 
 								<li class="drop"><a href="#" class="open-search"><i class="fa fa-search"></i></a>
 									<form class="form-search" action="resultatrecherche.php">
-										<input type="search" name="alcoolrecherche" id="alcoolrecherche" placeholder="Chercher un alcool"/>
+										<input type="search" name="alcoolrecherche" id="alcoolrecherche" placeholder="Alcool ou jeu d'alcool"/>
 										<button type="submit">
 											<i class="fa fa-search"></i>
 										</button>
