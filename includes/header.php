@@ -5,7 +5,7 @@ $error['alcoolrecherche'] = "";
 
 if(isset($_GET["alcoolrecherche"])) 
 { 
-$alcoolrecherche = $_GET["alcoolrecherche"]; 
+$alcoolrecherche = htmlspecialchars($_GET["alcoolrecherche"]); 
 }
 
 if(!empty($_GET)){
