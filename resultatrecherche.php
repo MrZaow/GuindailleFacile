@@ -39,12 +39,15 @@ $id = $_GET["id"];
 				<div class="portfolio-box">
 					<div class="masonry four-col triggerAnimation animated" data-animate="bounceIn">
           				<?php
+						$sousSql = "(SELECT LOWER(alcoolrecherche) FROM recherchealcool ORDER BY id DESC LIMIT 1)";
+						
+						
 							$sql = "SELECT *
 					    FROM ingredients INNER JOIN boissons
 					    ON ingredients.idingredient = boissons.idingredient
 					    INNER JOIN cocktails
 					    ON boissons.idingredient = cocktails.idingredient
-					    AND LOWER(ingredients.nom) LIKE (SELECT LOWER(alcoolrecherche) FROM recherchealcool ORDER BY id DESC LIMIT 1)
+					    AND LOWER(ingredients.nom) LIKE ('%".$sousSql."%')
 					    ";
 
 				    	$sql2 = "SELECT *
@@ -52,7 +55,7 @@ $id = $_GET["id"];
 					    ON ingredients.idingredient = boissons.idingredient
 					    INNER JOIN bieres
 					    ON boissons.idingredient = bieres.idingredient
-					    AND LOWER(ingredients.nom) LIKE (SELECT LOWER(alcoolrecherche) FROM recherchealcool ORDER BY id DESC LIMIT 1)
+					    AND LOWER(ingredients.nom) LIKE ('%".$sousSql."%')
 					    ";
 
 				    	$sql3 = "SELECT *
@@ -60,12 +63,12 @@ $id = $_GET["id"];
 					    ON ingredients.idingredient = boissons.idingredient
 					    INNER JOIN alcoolsforts
 					    ON boissons.idingredient = alcoolsforts.idingredient
-					    AND LOWER(ingredients.nom) LIKE (SELECT LOWER(alcoolrecherche) FROM recherchealcool ORDER BY id DESC LIMIT 1)
+					    AND LOWER(ingredients.nom) LIKE ('%".$sousSql."%')
 					    ";
 
 					    $sql4 = "SELECT *
 					    FROM jeux
-					    WHERE LOWER(jeux.nom) LIKE (SELECT LOWER(alcoolrecherche) FROM recherchealcool ORDER BY id DESC LIMIT 1)
+					    WHERE LOWER(jeux.nom) LIKE ('%".$sousSql."%')
 					    ";
 
 
