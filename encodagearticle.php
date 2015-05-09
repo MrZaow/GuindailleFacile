@@ -108,7 +108,7 @@ if(!empty($_POST)){
                             <label>Catégorie</label><br>
                             <select class="form-control" name="categorie">
                                 <option value="soirée">Soirée</option>
-                                <option value="coquin">Coquin</option>
+                                <option value="coquin">Amours</option>
                                 <option value="études">Études</option>
                                 <option value="travail">Travail</option>
                                 <option value="sport">Sport</option>
