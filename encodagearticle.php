@@ -117,6 +117,7 @@ if(!empty($_POST)){
                             </select>
                             <?php if(isset($error['categorie'])) echo $error['categorie']; ?>
                         </div>
+                        
 
                         <div class="form-group">
                             <label>Auteur</label>
@@ -128,6 +129,7 @@ if(!empty($_POST)){
                         </div>
 
                         <input type="submit" class="btn btn-primary" name="submit" value="Envoyer">
+                        <br><br>
                     </form>
                 </div>
             </div>

@@ -1,5 +1,12 @@
 <?php include("includes/connectionpdo.php");
-session_start(); ?>
+session_start();
+
+$tri = "";
+
+$tri = (isset($_POST['tri'])) ? $_POST['tri'] : "";
+
+
+ ?>
 
 <!doctype html>
 
@@ -27,7 +34,22 @@ session_start(); ?>
 						<h1>La bière est la preuve indéniable que Dieu nous aime et veut nous voir heureux</h1>
 						<p>Benjamin Franklin</p>
 					</div>
+					<br>
+					<form class="form-inline" action="biere.php" method="post">
+						<div class="form-group">
+	                        <label>Trier par </label>
+	                        <select class="form-control" name="tri">
+	                            <option value="popularité">popularité</option>
+	                            <option value="degré">degré</option>
+	                            <option value="prix">prix</option>
+	                        </select>
+	                        <?php if(isset($error['tri'])) echo $error['tri']; ?>
+	                    </div>
+	                    <input type="submit" class="btn btn-primary" name="submit" value="Envoyer">
+					</form>
 				</div>
+
+
 				<div class="portfolio-box">
 					<ul class="filter center triggerAnimation animated" data-animate="bounceIn">
 						<li class="item"><a href="portfolio-4col.html#" class="active" data-filter="*">Tout</a></li>
@@ -41,12 +63,44 @@ session_start(); ?>
 					</ul>
 					<div class="masonry four-col triggerAnimation animated" data-animate="bounceIn">
 							<?php
+								if(empty($_POST)){
 								$sql = "SELECT *
 						   FROM bieres AS b INNER JOIN ingredients AS i
 						   ON b.idingredient = i .idingredient
 						   INNER JOIN boissons AS b2
 						   ON b.idingredient = b2.idingredient
 						   ORDER BY b2.popularite DESC";
+						   }
+						   else{
+					   	   
+
+
+
+						   	if($tri == "degré"){
+					   			$sql = "SELECT *
+								FROM bieres AS b INNER JOIN ingredients AS i
+								ON b.idingredient = i .idingredient
+								INNER JOIN boissons AS b2
+								ON b.idingredient = b2.idingredient
+								ORDER BY b2.pourcentagealcool DESC";
+						   	}
+						   	if($tri == "popularité"){
+					   			$sql = "SELECT *
+							   FROM bieres AS b INNER JOIN ingredients AS i
+							   ON b.idingredient = i .idingredient
+							   INNER JOIN boissons AS b2
+							   ON b.idingredient = b2.idingredient
+							   ORDER BY b2.popularite DESC";
+						   	}
+						   	if($tri == "prix"){
+					   			$sql = "SELECT *
+								FROM bieres AS b INNER JOIN ingredients AS i
+								ON b.idingredient = i .idingredient
+								INNER JOIN boissons AS b2
+								ON b.idingredient = b2.idingredient
+								ORDER BY b2.prixlitre DESC";
+						   	}
+						   }
 
 							foreach ($bdd->query($sql) as $row) : ?>
 

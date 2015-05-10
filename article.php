@@ -98,13 +98,13 @@ $Month_Tab[12] = "Déce";
 										<div class="pagination-boxer">
 											<div class="prev-post">
 												<?php foreach($bdd->query($sql2) as $row) : ?>
-												<a href="article.php?id=<?php echo $row['id']; ?>" class="button-third"><i class="fa fa-angle-left"></i> Précédent</a>
+												<a href="article.php?id=<?php echo $row['id']; ?>" class="button-third"><i class="fa fa-angle-left"></i> Pré</a>
 												<p><?php echo htmlspecialchars($row['titre']) ?></p>
 												<?php endforeach; ?>
 											</div>
 											<div class="next-post">
 												<?php foreach($bdd->query($sql3) as $row) : ?>
-												<a href="article.php?id=<?php echo $row['id']; ?>" class="button-third">Suivant <i class="fa fa-angle-right"></i></a>
+												<a href="article.php?id=<?php echo $row['id']; ?>" class="button-third">Suiv <i class="fa fa-angle-right"></i></a>
 												<p><?php echo htmlspecialchars($row['titre']) ?></p>
 												<?php endforeach; ?>
 											</div>
