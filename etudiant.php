@@ -3,6 +3,7 @@ session_start();
 
 $sql = "SELECT id, titre, auteur, DAY(date) AS jour, MONTH(date) AS mois, contenu, categorie
 		FROM articles 
+		WHERE articles.supprime = 0
 		ORDER BY date DESC";
 
 $sql2 = "SELECT titre, DAY(date) AS jour, MONTH(date) AS mois, id

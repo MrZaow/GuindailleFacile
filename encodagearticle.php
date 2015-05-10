@@ -16,6 +16,13 @@ $categorie = (isset($_POST['categorie'])) ? $_POST['categorie'] : "";
 $auteur = (isset($_POST['auteur'])) ? $_POST['auteur'] : "";
 $captcha = (isset($_POST['g-recaptcha-response'])) ? $_POST['g-recaptcha-response'] : "";
 
+$error['titre'] = "";
+$error['captcha'] = "";
+$error['contenu'] = "";
+$error['categorie'] = "";
+$error['auteur'] = "";
+$error['taillecontenu'] = "";
+
 
 if(!empty($_POST)){
 
@@ -29,6 +36,9 @@ if(!empty($_POST)){
         $error['categorie'] = "Veuillez remplir la catégorie";
     if(empty($auteur))
         $error['auteur'] = "Veuillez remplir l'auteur";
+
+    if(strlen($contenu) < 30)
+        $error['taillecontenu'] = "Veuillez entrer une histoire d'au minimum 30 caractères";
 
 
     $test = 1;
@@ -102,6 +112,7 @@ if(!empty($_POST)){
                             <label>Histoire</label><br>
                             <textarea col="120" rows="6" required placeholder="Votre histoire" name="contenu" id="contenu" value="<?php if(isset($contenu)) echo $contenu; ?>" class="form-control"></textarea>
                             <?php if(isset($error['contenu'])) echo $error['contenu']; ?>
+                            <?php if(isset($error['taillecontenu'])) echo $error['taillecontenu']; ?>
                         </div>
 
                         <div class="form-group">

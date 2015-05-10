@@ -17,13 +17,17 @@ $sql = "SELECT id, titre, auteur, DAY(date) AS jour, MONTH(date) AS mois, conten
 
 $sql2 = "SELECT titre, id
 		FROM articles 
-		WHERE articles.id = $lid-1
-		LIMIT 1";
+		WHERE articles.supprime = 0
+		AND articles.id < $lid
+		AND articles.id = (SELECT MAX(id) FROM articles WHERE articles.id < $lid AND articles.supprime = 0)
+		";
 
 $sql3 = "SELECT titre, id
 		FROM articles 
-		WHERE articles.id = $lid+1
-		LIMIT 1";
+		WHERE articles.supprime = 0
+		AND articles.id > $lid
+		AND articles.id = (SELECT MIN(id) FROM articles WHERE articles.id > $lid AND articles.supprime = 0)
+		";
 
 
 
@@ -94,6 +98,13 @@ $Month_Tab[12] = "Déce";
 											<ul class="social-box">
 												<li><a class="facebook" href="single-post.html#"><i class="fa fa-facebook"></i></a></li>
 											</ul>
+											<?php if(isset($_SESSION['pseudo'])) { 
+											$idsupprime = $_GET['id'];
+
+												?>
+											<a href="suppressionarticle.php?id=<?php echo $idsupprime;?>" class="btn btn-danger" role="button">Supprimer l'article</a>
+											<br><br>
+											<?php } ?>
 										</div>
 										<div class="pagination-boxer">
 											<div class="prev-post">

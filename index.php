@@ -417,7 +417,7 @@ $Month_Tab[12] = "Déce";
         <div class="section-content blog-section">
             <div class="title-section">
                 <div class="container triggerAnimation animated" data-animate="bounceIn">
-                    <h1>Posts récents</h1>
+                    <h1>Histoires récentes</h1>
                     <p>Publications récentes du coin guindaille</p>
                 </div>
             </div>
@@ -440,7 +440,7 @@ $Month_Tab[12] = "Déce";
                 </div>
                 <div class="buttons">
                     <a class="owl-prev button-third" href="index.php"><i class="fa fa-angle-left"></i></a>
-                    <a class="button-third" href="etudiant.php">Voir tous les posts</a>
+                    <a class="button-third" href="etudiant.php">Voir toutes les histoires</a>
                     <a class="owl-next button-third" href="index.php"><i class="fa fa-angle-right"></i></a>
                 </div>
             </div>
