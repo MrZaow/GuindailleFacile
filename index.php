@@ -5,6 +5,7 @@ session_start();
 /*Les articles*/
 $sql3 = "SELECT id, titre, auteur, DAY(date) AS jour, MONTH(date) AS mois, contenu
                 FROM articles
+                WHERE supprime = 0
                 ORDER BY date DESC
                 LIMIT 10";
 
