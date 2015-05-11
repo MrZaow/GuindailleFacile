@@ -38,7 +38,7 @@ $tri = (isset($_POST['tri'])) ? $_POST['tri'] : "";
 					<form class="form-inline" action="biere.php" method="post">
 						<div class="form-group">
 	                        <label>Trier par </label>
-	                        <select class="form-control" name="tri" onchange="this.form.submit()">
+	                        <select class="form-control" name="tri">
 	                            <option value="popularité" <?php echo trim($tri) == 'popularité' ? 'selected="selected"' : '';?>>popularité</option>
 	                            <option value="degré" <?php echo trim($tri) == 'degré' ? 'selected="selected"' : '';?>>degré</option>
 	                            <option value="prix" <?php echo trim($tri) == 'prix' ? 'selected="selected"' : '';?>>prix</option>
