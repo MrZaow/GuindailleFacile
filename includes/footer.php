@@ -31,7 +31,7 @@
                 </div>
             </div>
             <div class="footer-line">
-                <p>Made with <i class="fa fa-heart"></i> by GuindailleFacile Dev-Team </p>
+                <p>Copyright 2015 'guindaille facile'. Made with <i class="fa fa-heart"></i> by GuindailleFacile Dev-Team </p>
             </div>
         </div>
     </div>
