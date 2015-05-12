@@ -58,13 +58,15 @@ require_once("erreurencodageingredient.php");
                         <div class="form-group">
                             <label>Unité de mesure</label><br>
                             <select class="form-control" name="unitemesure">
-                                <option value="l">l</option>
                                 <option value="cl">cl</option>
                                 <option value="gr">gr</option>
                                 <option value="pincées">pincées</option>
                                 <option value="cuillères à café">cuillères à café</option>
                                 <option value="cuillères à soupe">cuillères à soupe</option>
                                 <option value="feuilles">feuilles</option>
+                                <option value="l">l</option>
+                                <option value="poignées">poignées</option>
+                                <option value="unités">unités</option>
                             </select>
                         </div>
                         <?php if(isset($error['unitemesure'])) echo $error['unitemesure']; ?>

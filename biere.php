@@ -40,8 +40,10 @@ $tri = (isset($_POST['tri'])) ? $_POST['tri'] : "";
 	                        <label>Trier par </label>
 	                        <select class="form-control" name="tri">
 	                            <option value="popularité" <?php echo trim($tri) == 'popularité' ? 'selected="selected"' : '';?>>popularité</option>
-	                            <option value="degré" <?php echo trim($tri) == 'degré' ? 'selected="selected"' : '';?>>degré</option>
-	                            <option value="prix" <?php echo trim($tri) == 'prix' ? 'selected="selected"' : '';?>>prix</option>
+	                            <option value="prixasc" <?php echo trim($tri) == 'prixasc' ? 'selected="selected"' : '';?>>prix croissant</option>
+	                            <option value="prix" <?php echo trim($tri) == 'prix' ? 'selected="selected"' : '';?>>prix décroissant</option>
+	                            <option value="degréasc" <?php echo trim($tri) == 'degréasc' ? 'selected="selected"' : '';?>>degré d'alcool croissant</option>
+	                            <option value="degré" <?php echo trim($tri) == 'degré' ? 'selected="selected"' : '';?>>degré d'alcool décroissant</option>
 	                        </select>
 	                        <?php if(isset($error['tri'])) echo $error['tri']; ?>
 	                    </div>
@@ -74,8 +76,6 @@ $tri = (isset($_POST['tri'])) ? $_POST['tri'] : "";
 						   else{
 					   	   
 
-
-
 						   	if($tri == "degré"){
 					   			$sql = "SELECT *
 								FROM bieres AS b INNER JOIN ingredients AS i
@@ -83,6 +83,14 @@ $tri = (isset($_POST['tri'])) ? $_POST['tri'] : "";
 								INNER JOIN boissons AS b2
 								ON b.idingredient = b2.idingredient
 								ORDER BY b2.pourcentagealcool DESC";
+						   	}
+						   	if($tri == "degréasc"){
+					   			$sql = "SELECT *
+								FROM bieres AS b INNER JOIN ingredients AS i
+								ON b.idingredient = i .idingredient
+								INNER JOIN boissons AS b2
+								ON b.idingredient = b2.idingredient
+								ORDER BY b2.pourcentagealcool ASC";
 						   	}
 						   	if($tri == "popularité"){
 					   			$sql = "SELECT *
@@ -99,6 +107,14 @@ $tri = (isset($_POST['tri'])) ? $_POST['tri'] : "";
 								INNER JOIN boissons AS b2
 								ON b.idingredient = b2.idingredient
 								ORDER BY b2.prixlitre DESC";
+						   	}
+						   	if($tri == "prixasc"){
+					   			$sql = "SELECT *
+								FROM bieres AS b INNER JOIN ingredients AS i
+								ON b.idingredient = i .idingredient
+								INNER JOIN boissons AS b2
+								ON b.idingredient = b2.idingredient
+								ORDER BY b2.prixlitre ASC";
 						   	}
 						   }
 

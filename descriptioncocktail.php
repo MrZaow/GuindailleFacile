@@ -98,7 +98,7 @@ $sql5 = "SELECT i.nom, qte, unitemesure
 										<div class="single-project-content">
 											<h1>À propos</h1>
 											<h3>Le <?= $result['nom'];?> est un cocktail contenant <?= $result['pourcentagealcool']; ?> % d'alcool et coûtant en moyenne <?= $result['prixlitre']; ?> euros/litre en
-												le préparant soi-même.</h3>
+												magasin (varie fort selon les marques).</h3>
 										</div>
 									</div>
 								</div>
