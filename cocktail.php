@@ -32,21 +32,6 @@ $tri = (isset($_POST['tri'])) ? $_POST['tri'] : "";
 						<h1>Un cocktail, si il est bien fait, est la meilleure façon de chauffer l'ambiance</h1>
 						<p>En plus c'est super bon !</p>
 					</div>
-					<br>
-					<form class="form-inline" action="cocktail.php" method="post">
-						<div class="form-group">
-	                        <label>Trier par </label>
-	                        <select class="form-control" name="tri">
-	                            <option value="popularité" <?php echo trim($tri) == 'popularité' ? 'selected="selected"' : '';?>>popularité</option>
-	                            <option value="prixasc" <?php echo trim($tri) == 'prixasc' ? 'selected="selected"' : '';?>>prix croissant</option>
-	                            <option value="prix" <?php echo trim($tri) == 'prix' ? 'selected="selected"' : '';?>>prix décroissant</option>
-	                            <option value="degréasc" <?php echo trim($tri) == 'degréasc' ? 'selected="selected"' : '';?>>degré d'alcool croissant</option>
-	                            <option value="degré" <?php echo trim($tri) == 'degré' ? 'selected="selected"' : '';?>>degré d'alcool décroissant</option>
-	                        </select>
-	                        <?php if(isset($error['tri'])) echo $error['tri']; ?>
-	                    </div>
-	                    <input type="submit" class="btn btn-primary" name="submit" value="Envoyer">
-					</form>
 				</div>
 				<div class="portfolio-box">
 					<ul class="filter center triggerAnimation animated" data-animate="bounceIn">
@@ -125,9 +110,10 @@ $tri = (isset($_POST['tri'])) ? $_POST['tri'] : "";
 								<img src="images/min/<?php echo $row['image1']; ?>" alt="#">
 								<a href="descriptioncocktail.php?id=<?php echo $row['idingredient']; ?>">
 									<p>
-										<i class="fa fa-star"></i> <?php echo $row['cotesur5']; ?>/5<br/>
-										<i class="fa fa-glass"></i><?php echo $row['pourcentagealcool']; ?>°<br/>
-										<i class="fa fa-eur"></i><?php echo $row['prixlitre']; ?> euros/l<br/>
+										<br>
+										<i class="fa fa-star"></i> <?php echo $row['cotesur5']; ?>/5 <br>
+										  
+										  <br>
 									</p>
 								</a>
 							</div>
