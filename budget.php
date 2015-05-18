@@ -133,7 +133,7 @@ if(!empty($_POST))
 				                            </select>
 				                            <?php if(isset($error['type'])) echo $error['type']; ?>
 				                        </div>
-				                        <input type="submit" class="btn btn-default" name="submit" value="Envoyer"><br><br>
+				                        <input type="submit" class="btn btn-default button-coloration" name="submit" value="Envoyer"><br><br>
 					                </form>
 								</div>
 							</div>
