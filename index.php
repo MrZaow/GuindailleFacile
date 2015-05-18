@@ -311,7 +311,7 @@ $Month_Tab[12] = "Déce";
             <div class="title-section">
                 <div class="container triggerAnimation animated" data-animate="bounceIn">
                     <h1>Les incontournables</h1>
-                    <p>Cocktails les plus populaires </p>
+                    <p>Bières les plus populaires </p>
                 </div>
             </div>
             <div class="portfolio-box triggerAnimation animated" data-animate="pulse">
@@ -319,7 +319,7 @@ $Month_Tab[12] = "Déce";
 
                 <?php
                     $sql = "SELECT *
-              FROM cocktails AS b INNER JOIN ingredients AS i
+              FROM bieres AS b INNER JOIN ingredients AS i
               ON b.idingredient = i .idingredient
               INNER JOIN boissons AS b2
               ON b.idingredient = b2.idingredient
@@ -332,7 +332,7 @@ $Month_Tab[12] = "Déce";
                     <div class="item project-post">
                         <div class="project-gal">
                             <img src="images/min/<?php echo $row['image1']; ?>" alt="#">
-                                <a href="descriptioncocktail.php?id=<?php echo $row['idingredient']; ?>">
+                                <a href="descriptionbiere.php?id=<?php echo $row['idingredient']; ?>">
                                     <p>
                                         <i class="fa fa-star"></i> <?php echo $row['cotesur5']; ?>/5<br/>
                                         <i class="fa fa-glass"></i><?php echo $row['pourcentagealcool']; ?>°<br/>
@@ -349,15 +349,9 @@ $Month_Tab[12] = "Déce";
 
                 </div>
                 <div class="buttons">
-<<<<<<< HEAD
-                    <a class="owl-prev button-third" href="index.php"><i class="fa fa-angle-left"></i></a>
-                    <a class="button-third" href="cocktail.php">Voir tous les cocktails</a>
-                    <a class="owl-next button-third" href="index.php"><i class="fa fa-angle-right"></i></a>
-=======
                     <a class="owl-prev button-third button-coloration" href="index.php"><i class="fa fa-angle-left"></i></a>
-                    <a class="button-third button-coloration" href="cocktail.php">Voir tous les cocktails</a>
+                    <a class="button-third button-coloration" href="biere.php">Voir toutes les bières</a>
                     <a class="owl-next button-third button-coloration" href="index.php"><i class="fa fa-angle-right"></i></a>
->>>>>>> origin/phpclassique
                 </div>
             </div>
         </div>
