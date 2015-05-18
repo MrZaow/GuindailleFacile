@@ -349,9 +349,15 @@ $Month_Tab[12] = "Déce";
 
                 </div>
                 <div class="buttons">
+<<<<<<< HEAD
                     <a class="owl-prev button-third" href="index.php"><i class="fa fa-angle-left"></i></a>
                     <a class="button-third" href="cocktail.php">Voir toutes les bières</a>
                     <a class="owl-next button-third" href="index.php"><i class="fa fa-angle-right"></i></a>
+=======
+                    <a class="owl-prev button-third button-coloration" href="index.php"><i class="fa fa-angle-left"></i></a>
+                    <a class="button-third button-coloration" href="cocktail.php">Voir tous les cocktails</a>
+                    <a class="owl-next button-third button-coloration" href="index.php"><i class="fa fa-angle-right"></i></a>
+>>>>>>> origin/phpclassique
                 </div>
             </div>
         </div>
@@ -440,9 +446,9 @@ $Month_Tab[12] = "Déce";
                     <?php endforeach; ?>
                 </div>
                 <div class="buttons">
-                    <a class="owl-prev button-third" href="index.php"><i class="fa fa-angle-left"></i></a>
-                    <a class="button-third" href="etudiant.php">Voir toutes les histoires</a>
-                    <a class="owl-next button-third" href="index.php"><i class="fa fa-angle-right"></i></a>
+                    <a class="owl-prev button-third button-coloration" href="index.php"><i class="fa fa-angle-left"></i></a>
+                    <a class="button-third button-coloration" href="etudiant.php">Voir toutes les histoires</a>
+                    <a class="owl-next button-third button-coloration" href="index.php"><i class="fa fa-angle-right"></i></a>
                 </div>
             </div>
         </div>
