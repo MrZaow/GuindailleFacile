@@ -58,7 +58,6 @@ require_once("erreurencodagebiere.php");
                         <div class="form-group">
                             <label>Unité de mesure</label><br>
                             <select class="form-control" name="unitemesure">
-                                <option value="l">l</option>
                                 <option value="cl">cl</option>
                                 <option value="gr">gr</option>
                                 <option value="pincées">pincées</option>
@@ -72,7 +71,7 @@ require_once("erreurencodagebiere.php");
                             <label>Type</label><br>
                             <select class="form-control" name="type">
                                 <option value="pils">pils</option>
-                                <option value="d'abbaye">d'abbaye</option>
+                                <option value="abbaye">d'abbaye</option>
                                 <option value="trappiste">trappiste</option>
                                 <option value="blanche">blanche</option>
                                 <option value="spéciale">spéciale</option>
