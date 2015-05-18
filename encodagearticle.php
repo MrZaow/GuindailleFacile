@@ -139,7 +139,7 @@ if(!empty($_POST)){
                             <div class="g-recaptcha" data-sitekey="6LcEhwYTAAAAAD9BMmskM2H1kDgEisdj92d7yZmX"></div>
                         </div>
 
-                        <input type="submit" class="btn btn-primary" name="submit" value="Envoyer">
+                        <input type="submit" class="btn btn-primary button-coloration" name="submit" value="Envoyer">
                         <br><br>
                     </form>
                 </div>
