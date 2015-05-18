@@ -26,12 +26,14 @@
 /*-------------------------------------------------------*/
 .button-coloration
 {
+	color : white !important;
 	background-color : #e53b29 !important;
 	border-color : #e53b29 !important;
 }
 
 .button-coloration:hover
 {
+	color : white !important;
 	background-color : #bb2716 !important;
 	border-color : #bb2716 !important;
 }
