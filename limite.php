@@ -138,7 +138,7 @@ if(!empty($_POST))
 				                            <?php if(isset($error['sexe'])) echo $error['sexe']; ?>
 				                        </div>
 				                        <br>
-				                        <input type="submit" class="btn btn-default" name="submit" value="Envoyer"><br><br>
+				                        <input type="submit" class="btn btn-default button-coloration" name="submit" value="Envoyer"><br><br>
 					                </form>
 								</div>
 							</div>
