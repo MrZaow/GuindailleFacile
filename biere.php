@@ -119,24 +119,22 @@ $tri = (isset($_POST['tri'])) ? $_POST['tri'] : "";
 						   }
 
 							foreach ($bdd->query($sql) as $row) : ?>
-
-								<div class="project-post web-design <?php echo $row['type']; ?>">
-									<div class="project-gal">
-										<img src="images/min/<?php echo $row['image1']; ?>" alt="#">
-										<a href="descriptionbiere.php?id=<?php echo $row['idingredient']; ?>">
+							<div class="item project-post <?php echo $row['type']; ?>">
+								<div class="project-gal">
+									<img src="images/min/<?php echo $row['image1']; ?>" alt="#">
+										<a href="descriptioncocktail.php?id=<?php echo $row['idingredient']; ?>">
 											<p>
 												<i class="fa fa-star"></i> <?php echo $row['cotesur5']; ?>/5<br/>
 												<i class="fa fa-glass"></i><?php echo $row['pourcentagealcool']; ?>°<br/>
 												<i class="fa fa-eur"></i><?php echo $row['prixlitre']; ?> euros/l<br/>
 											</p>
 										</a>
-									</div>
+								</div>
 								<div class="project-content">
 									<h2><?php echo $row['nom']; ?></h2>
 									<p><?php echo $row['resume']; ?></p>
 								</div>
 							</div>
-
 						<?php endforeach;	?>
 						</div>
 					</div>

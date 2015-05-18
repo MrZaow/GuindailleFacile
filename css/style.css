@@ -4202,20 +4202,27 @@ footer .up-footer .footer-line p {
   a.go-top i {
     line-height: 45px;
   }
-  .blog-box.masonry {
-    width: 100%;
-    margin-left: 0;
-  }
-  .blog-box.masonry .blog-post {
-    width: 100%;
-    margin: 15px 0;
-  }
-  .masonry.three-col .project-post,
-  .masonry.four-col .project-post,
-  .masonry.five-col .project-post {
-    width: 100%;
-  }
+  
+  
 }
+
+@media ALL AND (max-width: 785px) 
+{
+	.blog-box.masonry {
+		width: 100%;
+		margin-left: 0;
+	  }
+	  .blog-box.masonry .blog-post {
+		width: 100%;
+		margin: 15px 0;
+	  }
+	.masonry.three-col .project-post,
+	  .masonry.four-col .project-post,
+	  .masonry.five-col .project-post {
+		width: 100%;
+	  }
+}
+
 @media (max-width: 581px) {
   .statistic-box.style2 .statistic-post {
     width: 100%;
