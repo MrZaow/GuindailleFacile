@@ -233,9 +233,9 @@ $sql4 = "SELECT *
 					 
 					</div>
 					<div class="buttons">
-						<a class="owl-prev button-third" href="single-project.html#"><i class="fa fa-angle-left"></i></a>
-						<a class="button-third" href="cocktail.php">Voir tous les cocktails</a>
-						<a class="owl-next button-third" href="single-project.html#"><i class="fa fa-angle-right"></i></a>
+						<a class="owl-prev button-third button-coloration" href="single-project.html#"><i class="fa fa-angle-left"></i></a>
+						<a class="button-third button-coloration" href="cocktail.php">Voir tous les cocktails</a>
+						<a class="owl-next button-third button-coloration" href="single-project.html#"><i class="fa fa-angle-right"></i></a>
 					</div>
 				</div>
 			</div>
