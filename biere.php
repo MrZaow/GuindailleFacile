@@ -47,7 +47,7 @@ $tri = (isset($_POST['tri'])) ? $_POST['tri'] : "";
 	                        </select>
 	                        <?php if(isset($error['tri'])) echo $error['tri']; ?>
 	                    </div>
-	                    <input type="submit" class="btn btn-primary" name="submit" value="Envoyer">
+	                    <input type="submit" class="btn btn-primary button-coloration" name="submit" value="Envoyer">
 					</form>
 				</div>
 

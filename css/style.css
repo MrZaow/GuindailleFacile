@@ -24,6 +24,18 @@
 /*-------------------------------------------------------*/
 /* 1. Isotope filtering
 /*-------------------------------------------------------*/
+.button-coloration
+{
+	background-color : #e53b29 !important;
+	border-color : #e53b29 !important;
+}
+
+.button-coloration:hover
+{
+	background-color : #bb2716 !important;
+	border-color : #bb2716 !important;
+}
+
 .isotope-item {
   z-index: 2;
 }
