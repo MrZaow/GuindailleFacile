@@ -115,7 +115,7 @@ $Month_Tab[12] = "Déce";
 								</div>
 
 								<div class="buttons">
-									<a class="button-third" href="encodagearticle.php"> <i class="fa fa-pencil"></i> Écrire une histoire</a>
+									<a class="button-third button-coloration" href="encodagearticle.php"> <i class="fa fa-pencil"></i> Écrire une histoire</a>
 								</div>
 
 
