@@ -78,15 +78,9 @@ $Month_Tab[12] = "Déce";
 						<div class="col-md-3">
 							<div class="sidebar triggerAnimation animated" data-animate="slideInUp">
 								
-								<div class="search-widget widget">
-									<form>
-										<input type="search" placeholder="Chercher une histoire"/>
-										<button type="submit">
-											<i class="fa fa-search"></i>
-										</button>
-									</form>
+								<div class="buttons">
+									<a class="button-third button-coloration" href="encodagearticle.php"> <i class="fa fa-pencil"></i> Écrire une histoire</a>
 								</div>
-								
 
 								<div class="category-widget widget">
 									<h3>Catégories</h3>
@@ -114,9 +108,7 @@ $Month_Tab[12] = "Déce";
 									</ul>
 								</div>
 
-								<div class="buttons">
-									<a class="button-third button-coloration" href="encodagearticle.php"> <i class="fa fa-pencil"></i> Écrire une histoire</a>
-								</div>
+								
 
 
 							</div>
