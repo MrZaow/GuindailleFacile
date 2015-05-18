@@ -115,8 +115,8 @@ $tri = (isset($_POST['tri'])) ? $_POST['tri'] : "";
 									<a href="descriptionfort.php?id=<?php echo $row['idingredient']; ?>">
 											<p>
 												<i class="fa fa-star"></i> <?php echo $row['cotesur5']; ?>/5<br/>
-												<i class="fa fa-glass"></i> <?php echo $row['pourcentagealcool']; ?>°<br/>
-												<i class="fa fa-eur"></i> <?php echo $row['prixlitre']; ?> euros/l<br/>
+												<i class="fa fa-glass"></i><?php echo $row['pourcentagealcool']; ?>°<br/>
+												<i class="fa fa-eur"></i><?php echo $row['prixlitre']; ?> euros/l<br/>
 											</p>
 										</a>
 								</div>
