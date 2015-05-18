@@ -213,10 +213,10 @@ $sql3 = "SELECT *
                 <?php endforeach;   ?>
 
 					</div>
-					<div class="buttons button-coloration">
-						<a class="owl-prev button-third" href="single-project.html#"><i class="fa fa-angle-left"></i></a>
-						<a class="button-third" href="biere.php">Voir toutes les bières</a>
-						<a class="owl-next button-third" href="single-project.html#"><i class="fa fa-angle-right"></i></a>
+					<div class="buttons">
+						<a class="owl-prev button-third button-coloration" href="single-project.html#"><i class="fa fa-angle-left"></i></a>
+						<a class="button-third button-coloration" href="biere.php">Voir toutes les bières</a>
+						<a class="owl-next button-third button-coloration" href="single-project.html#"><i class="fa fa-angle-right"></i></a>
 					</div>
 				</div>
 			</div>
