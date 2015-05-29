@@ -83,8 +83,6 @@ $Month_Tab[12] = "Déce";
 											<p><span><?php echo $row['jour']?></span><?php echo $Month_Tab[$row['mois']];?></p>
 										</div>
 
-
-
 										<div class="content-data">
 											<h2><?php echo htmlspecialchars($row['titre']) ?></h2>
 											<p><?php echo htmlspecialchars($row['auteur']) ?></p>
@@ -94,10 +92,6 @@ $Month_Tab[12] = "Déce";
 
 										<div class="share-tag-box">
 											<br><br>
-											<span>Partager cette article sur</span>
-											<ul class="social-box">
-												<li><a class="facebook" href="single-post.html#"><i class="fa fa-facebook"></i></a></li>
-											</ul>
 											<?php if(isset($_SESSION['pseudo'])) { 
 											$idsupprime = $_GET['id'];
 

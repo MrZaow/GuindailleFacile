@@ -68,7 +68,7 @@ if(!empty($_POST)){
 
     }
 
-
+    header("Location: etudiant.php");
 
 }
 
