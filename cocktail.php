@@ -29,7 +29,7 @@ $tri = (isset($_POST['tri'])) ? $_POST['tri'] : "";
 			<div class="section-content portfolio-section">
 				<div class="title-section white">
 					<div class="container triggerAnimation animated" data-animate="bounceIn">
-						<h1>Un cocktail, si il est bien fait, est la meilleure façon de chauffer l'ambiance</h1>
+						<h1>Un cocktail, s'il est bien fait, est la meilleure façon de chauffer l'ambiance</h1>
 						<p>En plus c'est super bon !</p>
 					</div>
 				</div>

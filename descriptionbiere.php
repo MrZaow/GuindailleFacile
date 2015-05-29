@@ -87,7 +87,7 @@ $sql3 = "SELECT *
 										<div class="single-project-content">
 											<h1>À propos</h1>
 											<h3>La <?= $result['nom'];?> est une bière <?= $result['type']; ?> <?= $result['couleur']; ?>
-											originaire de <?= $result['paysorigine']; ?>.
+											originaire de <?= ucfirst($result['paysorigine']); ?>.
 											Elle contient <?= $result['pourcentagealcool']; ?> % d'alcool et coûte en moyenne <?= $result['prixlitre']; ?> euros/litre en magasin.
 										</h3>
 
