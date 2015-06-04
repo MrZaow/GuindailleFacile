@@ -66,7 +66,7 @@ require_once("erreurencodagejeux.php");
                                 <option value="social">social</option>
                                 <option value="série">série</option>
                                 <option value="film">film</option>
-                                <option value="web">web</option>
+                                <option value="internet">internet</option>
                                 <option value="autre">autre</option>
                             </select>
                             <?php if(isset($error['type'])) echo $error['type']; ?>
