@@ -67,6 +67,9 @@ require_once("erreurencodageingredient.php");
                                 <option value="l">l</option>
                                 <option value="poignées">poignées</option>
                                 <option value="unités">unités</option>
+                                <option value="/ 2">moitié</option>
+                                <option value="/ 3">tier</option>
+                                <option value="/ 4">quart</option>
                             </select>
                         </div>
                         <?php if(isset($error['unitemesure'])) echo $error['unitemesure']; ?>

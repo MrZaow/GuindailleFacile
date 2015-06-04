@@ -203,7 +203,7 @@ $sql5 = "SELECT i.nom, qte, unitemesure
 									<?php foreach ($bdd->query($sql5) as $row) : ?>
 									<li>
 										<div class="list">
-											<h3>- <?php echo $row['qte']; ?> <?php echo $row['unitemesure']; ?> de <?php echo $row['nom']; ?></h3>
+											<h3>- <?php echo $row['nom']; ?></h3>
 										</div>
 									</li>
 									<?php endforeach;	?>
