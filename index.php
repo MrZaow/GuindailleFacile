@@ -50,6 +50,10 @@ $Month_Tab[12] = "Déce";
 <html lang="fr" class="no-js">
 
 <?php include("includes/head.php") ?>
+<head>
+  <title>Guindaille Facile, tout pour vos alcools de soirée</title>
+  <meta name="description" content="Le site de référence pour vos soirées et vos alcools. Bières, mélanges d'alcool, jeux d'alcool ou chants, tout y est !" />
+</head>
 
 <body>
 <!-- Container -->
@@ -78,7 +82,7 @@ $Month_Tab[12] = "Déce";
                              data-endspeed="500"
                              data-endeasing="Power4.easeIn"
                              data-captionhidden="on"
-                             style="z-index: 4">Guindaille facile
+                             style="z-index: 4">Guindaille Facile
                         </div>
 
                         <!-- LAYER NR. 2 -->
@@ -91,7 +95,7 @@ $Month_Tab[12] = "Déce";
                              data-easing="Back.easeInOut"
                              data-endspeed="400"
                              data-endeasing="Back.easeIn"
-                             style="z-index: 14"> La référence pour choisir vos alcools de soirée
+                             style="z-index: 14"> Tout pour organiser une bonne soirée
                         </div>
                     </li>
                     <!-- SLIDE  -->
@@ -110,7 +114,7 @@ $Month_Tab[12] = "Déce";
                              data-endspeed="500"
                              data-endeasing="Power4.easeIn"
                              data-captionhidden="on"
-                             style="z-index: 4">Bières, cocktails
+                             style="z-index: 4">Bières, mélanges d'alcool
                         </div>
 
                         <!-- LAYER NR. 2 -->
@@ -123,7 +127,7 @@ $Month_Tab[12] = "Déce";
                              data-easing="Back.easeInOut"
                              data-endspeed="400"
                              data-endeasing="Back.easeIn"
-                             style="z-index: 14">vous trouverez forcément votre bonheur !
+                             style="z-index: 14">Tous les meilleurs conseils !
                         </div>
 
                         <!-- LAYER NR. 3 -->
@@ -136,7 +140,7 @@ $Month_Tab[12] = "Déce";
                              data-easing="Back.easeInOut"
                              data-endspeed="400"
                              data-endeasing="Back.easeIn"
-                             style="z-index: 14"><a class="button-large" href="biere.php">Les bières</a><a class="button-large" href="cocktail.php">Les cocktails</a>
+                             style="z-index: 14"><a class="button-large" href="biere.php">Les bières</a><a class="button-large" href="cocktail.php">Les mélanges d'alcool</a>
                         </div>
                     </li>
                     <!-- SLIDE  -->
@@ -155,7 +159,7 @@ $Month_Tab[12] = "Déce";
                              data-endspeed="500"
                              data-endeasing="Power4.easeIn"
                              data-captionhidden="on"
-                             style="z-index: 4">Avec un coin <br> spécial guindaille !
+                             style="z-index: 4">Avec du contenu <br> spécial baptême !
                         </div>
 
                         <!-- LAYER NR. 2 -->
@@ -168,7 +172,7 @@ $Month_Tab[12] = "Déce";
                              data-easing="Back.easeInOut"
                              data-endspeed="400"
                              data-endeasing="Back.easeIn"
-                             style="z-index: 14">Des pires soirées aux plus épiques, balancez tout !
+                             style="z-index: 14">Des alcools, des chants et bien plus (coming soon) 
                         </div>
 
                         <!-- LAYER NR. 3 -->
@@ -181,7 +185,7 @@ $Month_Tab[12] = "Déce";
                              data-easing="Back.easeInOut"
                              data-endspeed="400"
                              data-endeasing="Back.easeIn"
-                             style="z-index: 14"><a class="button-large" href="etudiant.php">Le coin guindaille</a>
+                             style="z-index: 14">
                         </div>
 
                         <!-- LAYER NR. 4 -->
@@ -229,7 +233,7 @@ $Month_Tab[12] = "Déce";
                              data-endspeed="500"
                              data-endeasing="Power4.easeIn"
                              data-captionhidden="on"
-                             style="z-index: 10; font-size:50px">Les meilleurs jeux d'alcools, <br>super simples et bibitifs
+                             style="z-index: 10; font-size:50px">Les meilleurs jeux d'alcools, <br>super faciles à faire
                         </div>
 
                         <!-- LAYER NR. 3 -->
@@ -242,7 +246,7 @@ $Month_Tab[12] = "Déce";
                              data-easing="Back.easeInOut"
                              data-endspeed="400"
                              data-endeasing="Back.easeIn"
-                             style="z-index: 12">Une série TV, un jeu vidéo, des cartes, ou rien, tout est bon pour boire
+                             style="z-index: 12">Des cartes, des dés, ou sans accessoire, tout est bon pour boire
                         </div>
 
                         <!-- LAYER NR. 4 -->
@@ -270,28 +274,28 @@ $Month_Tab[12] = "Déce";
                         <a href="index.php" class="btn slide-thumbs" id="slidethumb1" data-slide="1">
                             <span>1</span>
                             <h2>Alcools </h2>
-                            <p>Découvrir plein de boissons</p>
+                            <p>Les meilleurs conseils</p>
                         </a>
                     </li>
                     <li>
                         <a href="index.php" class="btn slide-thumbs" id="slidethumb2" data-slide="2">
                             <span>2</span>
-                            <h2>Découvertes </h2>
-                            <p>Varier la bibine de soirée</p>
+                            <h2>Mélanges </h2>
+                            <p>Super simples à faire</p>
                         </a>
                     </li>
                     <li>
                         <a href="index.php" class="btn slide-thumbs" id="slidethumb3" data-slide="3">
                             <span>3</span>
-                            <h2>Guindailleurs </h2>
-                            <p>Du contenu juste pour vous </p>
+                            <h2>Baptême </h2>
+                            <p>Tout pour le baptême </p>
                         </a>
                     </li>
                     <li>
                         <a href="index.php" class="btn slide-thumbs" id="slidethumb4" data-slide="4">
                             <span>4</span>
-                            <h2>Fun</h2>
-                            <p>Des tonnes de jeux d'alcool</p>
+                            <h2>Jeux d'alcool</h2>
+                            <p>Pour des super soirées</p>
                         </a>
                     </li>
                 </ul>
@@ -310,7 +314,7 @@ $Month_Tab[12] = "Déce";
         <div class="section-content portfolio-section">
             <div class="title-section">
                 <div class="container triggerAnimation animated" data-animate="bounceIn">
-                    <h1>Les incontournables</h1>
+                    <h1>Les bières les plus connues</h1>
                     <p>Bières les plus populaires </p>
                 </div>
             </div>
@@ -331,7 +335,7 @@ $Month_Tab[12] = "Déce";
 
                     <div class="item project-post">
                         <div class="project-gal">
-                            <img src="images/min/<?php echo $row['image1']; ?>" alt="#">
+                            <img src="images/min/<?php echo $row['image1']; ?>" alt="Image de la bière <?php echo $row['nom']; ?>">
                                 <a href="descriptionbiere.php?id=<?php echo $row['idingredient']; ?>">
                                     <p>
                                         <i class="fa fa-star"></i> <?php echo $row['cotesur5']; ?>/5<br/>
@@ -369,7 +373,7 @@ $Month_Tab[12] = "Déce";
                                 <div class="statistic-counter">
                                     <i class="fa fa-beer"></i>
                                     <?php foreach($bdd->query($sql6) as $row): ?>
-                                    <p><span class="timer" data-from="0" data-to="<?php echo $row['bieresreferencees']; ?>"></span></p>
+                                    <p><span class="timer" data-from="<?php echo $row['bieresreferencees']; ?>" data-to="<?php echo $row['bieresreferencees']; ?>"></span></p>
                                     <?php endforeach; ?>
                                     <p>Bières référencées</p>
                                 </div>
@@ -380,9 +384,9 @@ $Month_Tab[12] = "Déce";
                                 <div class="statistic-counter">
                                     <i class="fa fa-glass"></i>
                                     <?php foreach($bdd->query($sql4) as $row): ?>
-                                    <p><span class="timer" data-from="0" data-to="<?php echo $row['cocktailsreferences']; ?>"></span></p>
+                                    <p><span class="timer" data-from="<?php echo $row['cocktailsreferences']; ?>" data-to="<?php echo $row['cocktailsreferences']; ?>"></span></p>
                                     <?php endforeach; ?>
-                                    <p>Cocktails référencés</p>
+                                    <p>Mélanges référencés</p>
                                 </div>
                             </div>
                         </div>
@@ -391,7 +395,7 @@ $Month_Tab[12] = "Déce";
                                 <div class="statistic-counter">
                                     <i class="fa fa-line-chart"></i>
                                     <?php foreach($bdd->query($sql5) as $row): ?>
-                                    <p><span class="timer" data-from="0" data-to="<?php echo $row['degretotal']; ?>"></span></p>
+                                    <p><span class="timer" data-from="<?php echo $row['degretotal']; ?>" data-to="<?php echo $row['degretotal']; ?>"></span></p>
                                     <?php endforeach; ?>
                                     <p>Degré d'alcool total</p>
                                 </div>
@@ -402,7 +406,7 @@ $Month_Tab[12] = "Déce";
                                 <div class="statistic-counter">
                                     <i class="fa fa-star"></i>
                                     <?php foreach($bdd->query($sql7) as $row): ?>
-                                    <p><span class="timer" data-from="0" data-to="<?php echo $row['jeuxreferences']; ?>"></span></p>
+                                    <p><span class="timer" data-from="<?php echo $row['jeuxreferences']; ?>" data-to="<?php echo $row['jeuxreferences']; ?>"></span></p>
                                     <?php endforeach; ?>
                                     <p>Jeux d'alcools</p>
                                 </div>
@@ -413,8 +417,9 @@ $Month_Tab[12] = "Déce";
             </div>
         </div>
 
-        <!-- blog-section
-            ================================================== -->
+        <!-- Histoires, à rajuster
+            
+            
         <div class="section-content blog-section">
             <div class="title-section">
                 <div class="container triggerAnimation animated" data-animate="bounceIn">
@@ -446,7 +451,8 @@ $Month_Tab[12] = "Déce";
                 </div>
             </div>
         </div>
-
+                -->
+                
         <div class="section-content shortcodes-section">
             <div class="container">
 
@@ -465,7 +471,7 @@ $Month_Tab[12] = "Déce";
                                 <div class="testimonial-post">
                                     <img src="upload/testim2.jpg" alt="">
                                     <h2> Miley Cirus - Chanteuse </h2>
-                                    <p> “ Je n'imaginais pas qu'on puisse se rendre plus ridicule que moi. Mais ça, c'était avant que je lise la rubrique "Coin étudiant". ”</p>
+                                    <p> “ Je n'imaginais pas qu'on puisse se rendre plus ridicule que moi. Mais ça, c'était avant que je lise la rubrique "Coin Guindaille". ”</p>
                                 </div>
                             </div>
                             <div class="col-sm-4">

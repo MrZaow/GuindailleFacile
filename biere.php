@@ -12,6 +12,8 @@ $tri = (isset($_POST['tri'])) ? $_POST['tri'] : "";
 
 <html lang="fr" class="no-js">
 <?php include("includes/head.php") ?>
+<head><title>Les Bières | Guindaille Facile, tout pour vos alcools de soirée</title>
+</head>
 
 <body>
 <!-- Container -->
@@ -22,24 +24,26 @@ $tri = (isset($_POST['tri'])) ? $_POST['tri'] : "";
 
 		<div id="content">
 
-			<div class="section-content page-banner portfolio-page-banner">
+			<div class="section-content page-banner blog-page-banner">
 				<div class="container">
-					<h1>Les Bières</h1>
+					<h1>Les bières</h1>
 				</div>
 			</div>
+
 
 			<div class="section-content portfolio-section">
 				<div class="title-section white">
 					<div class="container triggerAnimation animated" data-animate="bounceIn">
-						<h1>La bière est la preuve indéniable que Dieu nous aime et veut nous voir heureux</h1>
-						<p>Benjamin Franklin</p>
+						<h1>Toutes les meilleures bières belges</h1>
+						<h1>Des bières trappistes aux bières spéciales, en passant par les fruitées</h1>
 					</div>
 					<br>
-					<form class="form-inline" action="biere.php" method="post">
-						<div class="form-group">
+					<form class="form-inline" action="biere.php" method="post" >
+						<div class="form-group ">
 	                        <label>Trier par </label>
 	                        <select class="form-control" name="tri">
 	                            <option value="popularité" <?php echo trim($tri) == 'popularité' ? 'selected="selected"' : '';?>>popularité</option>
+	                            <option value="note" <?php echo trim($tri) == 'note' ? 'selected="selected"' : '';?>>cote sur 5</option>
 	                            <option value="prixasc" <?php echo trim($tri) == 'prixasc' ? 'selected="selected"' : '';?>>prix croissant</option>
 	                            <option value="prix" <?php echo trim($tri) == 'prix' ? 'selected="selected"' : '';?>>prix décroissant</option>
 	                            <option value="degréasc" <?php echo trim($tri) == 'degréasc' ? 'selected="selected"' : '';?>>degré d'alcool croissant</option>
@@ -116,12 +120,21 @@ $tri = (isset($_POST['tri'])) ? $_POST['tri'] : "";
 								ON b.idingredient = b2.idingredient
 								ORDER BY b2.prixlitre ASC";
 						   	}
+						   	if($tri == "note"){
+					   			$sql = "SELECT *
+								FROM bieres AS b INNER JOIN ingredients AS i
+								ON b.idingredient = i .idingredient
+								INNER JOIN boissons AS b2
+								ON b.idingredient = b2.idingredient
+								ORDER BY b2.cotesur5 DESC";
+						   	}
+						   
 						   }
 
 							foreach ($bdd->query($sql) as $row) : ?>
 							<div class="item project-post <?php echo $row['type']; ?>">
 								<div class="project-gal">
-									<img src="images/min/<?php echo $row['image1']; ?>" alt="#">
+									<img src="images/min/<?php echo $row['image1']; ?>" alt="Image de la bière <?php echo $row['nom']; ?>">
 										<a href="descriptionbiere.php?id=<?php echo $row['idingredient']; ?>">
 											<p>
 												<i class="fa fa-star"></i> <?php echo $row['cotesur5']; ?>/5<br/>

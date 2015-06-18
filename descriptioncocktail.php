@@ -34,12 +34,16 @@ $sql3 = "SELECT preparation
 
 /*Cocktails similaires*/
 
+$alcoolprincipal = $result['alcoolfortprincipal'];
+
+
 $sql4 = "SELECT *
               FROM cocktails AS b INNER JOIN ingredients AS i
               ON b.idingredient = i .idingredient
               INNER JOIN boissons AS b2
               ON b.idingredient = b2.idingredient
-              AND b.idingredient <> $lid
+              WHERE b.idingredient <> $lid
+              AND b.alcoolfortprincipal LIKE '$alcoolprincipal'
               ORDER BY b2.popularite DESC LIMIT 10";
 
 /*Ingrédients*/
@@ -56,8 +60,17 @@ $sql5 = "SELECT i.nom, qte, unitemesure
 <html lang="fr" class="no-js">
 
 <?php include("includes/head.php") ?>
+<head><title><?= $result['nom']; ?> | Guindaille Facile</title></head>
 
 <body>
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <!-- Container -->
 <div id="container">
  
@@ -70,9 +83,9 @@ $sql5 = "SELECT i.nom, qte, unitemesure
 
 			<!-- page-banner 
 				================================================== -->
-			<div class="section-content page-banner portfolio-page-banner">
+			<div class="section-content page-banner blog-page-banner">
 				<div class="container">
-					<h1>Les Cocktails</h1>
+					<h1><?= $result['nom']; ?></h1>
 
 				</div>
 			</div>
@@ -82,13 +95,50 @@ $sql5 = "SELECT i.nom, qte, unitemesure
 			<div class="single-project">
 				<div class="container">
 
-
-					<div class="title-section white">
-						<div class="container triggerAnimation animated" data-animate="bounceIn">
-							<h1><?= $result['nom']; ?></h1>
-							<p><?= $result['resume']; ?></p>
-						</div>
-					</div>
+					<div class="row">
+    			  <div class="col-md-offset-3 col-md-6 col-sm-12 col-xs-12">
+        			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+              <!-- Pub adaptable dessus de description -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-3078792395695520"
+                   data-ad-slot="3717725692"
+                   data-ad-format="auto"></ins>
+              <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            </div>
+    			</div>
+    			<br>
+    			
+    			
+    			
+    			<script> 
+  
+          // Run after all the page elements have loaded
+          window.onload = function(){ 
+          
+            // This will take care of asynchronous Google ads
+            setTimeout(function() { 
+              
+              // We are targeting the first banner ad of AdSense
+              var ad = document.querySelector("ins.adsbygoogle");
+              
+              // If the ad contains no innerHTML, ad blockers are at work
+              if (ad && ad.innerHTML.replace(/\s/g, "").length == 0) {
+                
+                // Since ad blocks hide ads using CSS too
+                ad.style.cssText = 'display:block !important'; 
+                
+                // You can put any text, image or even IFRAME tags here
+                ad.innerHTML = "Salut, utilisateur adblock, nous non plus nous n'aimons pas la pub intrusive sur internet, et nous avons bien fait attention à rendre la nôtre discrète. Veux-tu essayer de désactiver adblock pour notre site juste un moment pour voir si la pub te dérange tant que ça? Merci et bonne continuation sur Guindaille Facile :) ";
+              
+              }
+              
+            }, 2000); // The ad blocker check is performed 2 seconds after the page load 
+          }; 
+          
+        </script>
 
 					<div class="row">
 						<div class="col-md-7">
@@ -97,8 +147,7 @@ $sql5 = "SELECT i.nom, qte, unitemesure
 									<div class="col-md-12">
 										<div class="single-project-content">
 											<h1>À propos</h1>
-											<h3>Le <?= $result['nom'];?> est un cocktail contenant <?= $result['pourcentagealcool']; ?> % d'alcool et coûtant en moyenne <?= $result['prixlitre']; ?> euros/litre en
-												magasin (varie fort selon les marques).</h3>
+											<h3>Le <?= $result['nom'];?> est un mélange contenant <?= $result['pourcentagealcool']; ?> % d'alcool et coûtant en moyenne <?= $result['prixlitre']; ?> euros/litre à réaliser (le prix exact varie selon les marques d'alcool).</h3>
 										</div>
 									</div>
 								</div>
@@ -169,16 +218,18 @@ $sql5 = "SELECT i.nom, qte, unitemesure
 							<div class="flexslider">
 								<ul class="slides">
 									<li>
-										<img src="images/min/<?= $result['image1']; ?>">
+										<img src="images/min/<?= $result['image1']; ?>" alt="Première image du mélange d'alcool <?= $result['nom'];?>">
 									</li>
 									<li>
-										<img src="images/min/<?= $result['image2']; ?>">
+										<img src="images/min/<?= $result['image2']; ?>" alt="Deuxième image du mélange d'alcool <?= $result['nom'];?>">
 									</li>
 									<li>
-										<img src="images/min/<?= $result['image3']; ?>">
+										<img src="images/min/<?= $result['image3']; ?>" alt="Troisième image du mélange d'alcool <?= $result['nom'];?>">
 									</li>
 								</ul>
 							</div>
+							<br><br>
+							<div class="fb-like col-sm-12 col-xs-12 hidden-xs" data-href="https://www.facebook.com/GuindailleFacile?fref=ts" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
 						</div>
 					</div>
 
@@ -188,11 +239,6 @@ $sql5 = "SELECT i.nom, qte, unitemesure
 				
 					<hr>
 					<div class="row">
-						<div class="title-section white">
-							<div class="container triggerAnimation animated" data-animate="bounceIn">
-								<h1>Comment le faire soi-même</h1>
-							</div>
-						</div>
 
 						<div class="col-md-6 ">
 							<div class="single-project-content">
@@ -232,7 +278,7 @@ $sql5 = "SELECT i.nom, qte, unitemesure
 			<div class="section-content portfolio-section">
 				<div class="title-section">
 					<div class="container triggerAnimation animated" data-animate="bounceIn">
-						<h1>Cocktails similaires</h1>
+						<h1>Mélanges similaires</h1>
 					</div>
 				</div>
 				<div class="portfolio-box triggerAnimation animated" data-animate="bounceIn">
@@ -242,7 +288,7 @@ $sql5 = "SELECT i.nom, qte, unitemesure
 
                     <div class="item project-post">
                         <div class="project-gal">
-                            <img src="images/min/<?php echo $row['image1']; ?>" alt="#">
+                            <img src="images/min/<?php echo $row['image1']; ?>" alt="Image du mélange d'alcool <?php echo $row['nom']; ?>">
                                 <a href="descriptioncocktail.php?id=<?php echo $row['idingredient']; ?>">
                                     <p>
                                         <i class="fa fa-star"></i> <?php echo $row['cotesur5']; ?>/5<br/>
@@ -260,7 +306,7 @@ $sql5 = "SELECT i.nom, qte, unitemesure
 					</div>
 					<div class="buttons">
 						<a class="owl-prev button-third button-coloration" href="single-project.html#"><i class="fa fa-angle-left"></i></a>
-						<a class="button-third button-coloration" href="cocktail.php">Voir tous les cocktails</a>
+						<a class="button-third button-coloration" href="cocktail.php">Voir tous les mélanges</a>
 						<a class="owl-next button-third button-coloration" href="single-project.html#"><i class="fa fa-angle-right"></i></a>
 					</div>
 				</div>

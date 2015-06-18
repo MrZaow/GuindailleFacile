@@ -50,6 +50,21 @@ $Month_Tab[12] = "Déce";
 				<h1>Le coin guindaille</h1>
 			</div>
 		</div>
+		
+		<div class="section-content shortcodes-section">
+		  <div class="container">
+  		<div class="row">
+  			<div class="col-md-12">
+  				<div class="single-project">
+  					<div class="single-project-content">
+              <h1>Le coin guindaille, c'est quoi ?</h1>
+              <h3>Un petit coin anonyme où vous pouvez raconter ce qui vous passe par la tête. Une soirée qui s'est mal finie, une histoire amoureuse horrible, un coup de pute que vous avez fait à vos potes, le gros caca que vous avez fait ce matin, balancez tout !</h3>
+  					</div>
+  				</div>	
+  			</div>
+  		</div>
+  		</div>
+		</div>
 
 		<!-- blog-section
 	        ================================================== -->
@@ -70,7 +85,6 @@ $Month_Tab[12] = "Déce";
 										<h2><a href="article.php?id=<?php echo $row['id'] ?>"><?php echo htmlspecialchars($row['titre']) ?></a></h2>
 										<p><?php echo htmlspecialchars($row['auteur']) ?></p>
 									</div>
-									<p><?php echo htmlspecialchars(substr($row['contenu'], 0, 340)); ?></p>
 								</div>
 							</div>
 							<?php endforeach; ?>

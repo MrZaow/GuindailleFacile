@@ -1,8 +1,8 @@
 <footer>
     <div class="social-section">
         <ul class="social-icons triggerAnimation animated" data-animate="tada">
-            <li><a class="facebook" href="index.php"><i class="fa fa-facebook"></i></a></li>
-            <li><a class="twitter" href="index.php"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="facebook" href="https://www.facebook.com/GuindailleFacile" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="https://twitter.com/EasyGuindaille" target="_blank"><i class="fa fa-twitter"></i></a></li>
         </ul>
     </div>
     <div class="up-footer">
@@ -12,10 +12,8 @@
                 <div class="col-md-6">
                     <div class="widget footer-widget text-widget">
                         <h1>À propos</h1>
-                        <p>Guindaille facile est un site réalisé entièrement par des étudiants en informatique à Liège. </p>
-                        <p>En cherchant après des bonnes idées d'alcools à boire en soirée, un étudiant s'est rendu compte qu'il y avait peu de bons sites 
-                           qui présentent des listes de cocktails, bières ou alcools forts, d'une façon vraiment pratique et facile. Il a donc décidé de créer son propre site
-                           avec l'aide de quelques amis programmeurs, et c'est ainsi qu'est né Guindaille facile.  
+                        <p>Guindaille Facile est un site réalisé entièrement par des étudiants en informatique à Liège destiné à apporter 
+                           à toute personne en quête d'idée d'alcool à boire en soirée du contenu de qualité, présenté de façon simple et pratique. 
                         </p>
                         <img src="images/footer-logo.png" alt="">
                     </div>

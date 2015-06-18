@@ -10,6 +10,9 @@ $tri = (isset($_POST['tri'])) ? $_POST['tri'] : "";
 
 <html lang="fr" class="no-js">
 <?php include("includes/head.php") ?>
+<head><title>Les Mélanges d'alcool | Guindaille Facile</title>
+</head>
+
 
 <body>
 <!-- Container -->
@@ -22,16 +25,33 @@ $tri = (isset($_POST['tri'])) ? $_POST['tri'] : "";
 
 			<div class="section-content page-banner blog-page-banner">
 				<div class="container">
-					<h1>Les Cocktails</h1>
+					<h1>Les mélanges d'alcool</h1>
 				</div>
 			</div>
+
 
 			<div class="section-content portfolio-section">
 				<div class="title-section white">
 					<div class="container triggerAnimation animated" data-animate="bounceIn">
-						<h1>Un cocktail, s'il est bien fait, est la meilleure façon de chauffer l'ambiance</h1>
-						<p>En plus c'est super bon !</p>
+						<h1>Plein de bons mélanges d'alcool</h1>
+						<h1>Tous les mélanges d'alcool simples et faciles à faire</h1>
 					</div>
+					<br>
+					<form class="form-inline" action="cocktail.php" method="post">
+						<div class="form-group">
+	                        <label>Trier par </label>
+	                        <select class="form-control" name="tri">
+	                            <option value="popularité" <?php echo trim($tri) == 'popularité' ? 'selected="selected"' : '';?>>popularité</option>
+	                            <option value="note" <?php echo trim($tri) == 'note' ? 'selected="selected"' : '';?>>cote sur 5</option>
+	                            <option value="prixasc" <?php echo trim($tri) == 'prixasc' ? 'selected="selected"' : '';?>>prix croissant</option>
+	                            <option value="prix" <?php echo trim($tri) == 'prix' ? 'selected="selected"' : '';?>>prix décroissant</option>
+	                            <option value="degréasc" <?php echo trim($tri) == 'degréasc' ? 'selected="selected"' : '';?>>degré d'alcool croissant</option>
+	                            <option value="degré" <?php echo trim($tri) == 'degré' ? 'selected="selected"' : '';?>>degré d'alcool décroissant</option>
+	                        </select>
+	                        <?php if(isset($error['tri'])) echo $error['tri']; ?>
+	                    </div>
+	                    <input type="submit" class="btn btn-primary button-coloration" name="submit" value="Envoyer">
+					</form>
 				</div>
 				<div class="portfolio-box">
 					<ul class="filter center triggerAnimation animated" data-animate="bounceIn">
@@ -101,13 +121,21 @@ $tri = (isset($_POST['tri'])) ? $_POST['tri'] : "";
 								ON b.idingredient = b2.idingredient
 								ORDER BY b2.prixlitre ASC";
 						   	}
+						   	if($tri == "note"){
+					   			$sql = "SELECT *
+								FROM cocktails AS b INNER JOIN ingredients AS i
+								ON b.idingredient = i .idingredient
+								INNER JOIN boissons AS b2
+								ON b.idingredient = b2.idingredient
+								ORDER BY b2.cotesur5 DESC";
+						   	}
 						   }
 
 						foreach ($bdd->query($sql) as $row) : ?>
 
 						<div class="project-post web-design <?php echo $row['alcoolfortprincipal']; ?>">
 							<div class="project-gal">
-								<img src="images/min/<?php echo $row['image1']; ?>" alt="#">
+								<img src="images/min/<?php echo $row['image1']; ?>" alt="Image du mélange d'alcool <?php echo $row['nom']; ?>">
 								<a href="descriptioncocktail.php?id=<?php echo $row['idingredient']; ?>">
 									<p>
 										<i class="fa fa-star"></i> <?php echo $row['cotesur5']; ?>/5<br/>

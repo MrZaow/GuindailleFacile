@@ -80,6 +80,7 @@ if(!empty($_POST))
 <html lang="fr" class="no-js">
 
 <?php include("includes/head.php") ?>
+<head><title>Le Bibinomètre | Guindaille Facile</title></head>
 
 <body>
 <!-- Container -->
@@ -94,7 +95,7 @@ if(!empty($_POST))
 				================================================== -->
 			<div class="section-content page-banner shortcodes-page-banner">
 				<div class="container">
-					<h1>Le bibinomètre</h1>
+					<h1>Le Bibinomètre</h1>
 				</div>
 			</div>
 
@@ -106,8 +107,8 @@ if(!empty($_POST))
 						<div class="col-md-12">
 							<div class="single-project">
 								<div class="single-project-content">
-					                <h1>Le bibinomètre, c'est quoi ?</h1>
-					                <h3>Entrez votre age, votre poids ainsi que votre sexe, et le bibinomètre fera le reste. </h3>
+					                <h1>Calculer sa résistance à l'alcool</h1>
+					                <h3>Regardez combien de verres il vous faut pour être bourré</h3>
 								</div>
 							</div>	
 						</div>

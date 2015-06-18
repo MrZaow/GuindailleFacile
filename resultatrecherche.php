@@ -87,8 +87,8 @@ $id = $_GET["id"];
 								<a href="descriptioncocktail.php?id=<?php echo $row['idingredient']; ?>">
 									<p>
 										<i class="fa fa-star"></i> <?php echo $row['cotesur5']; ?>/5<br/>
-										<i class="fa fa-glass"></i><?php echo $row['pourcentagealcool']; ?>°<br/>
-										<i class="fa fa-eur"></i><?php echo $row['prixlitre']; ?> euros/l<br/>
+										<i class="fa fa-glass"></i> <?php echo $row['pourcentagealcool']; ?>°<br/>
+										<i class="fa fa-eur"></i> <?php echo $row['prixlitre']; ?> euros/l<br/>
 									</p>
 								</a>
 							</div>
@@ -107,8 +107,8 @@ $id = $_GET["id"];
 								<a href="descriptionbiere.php?id=<?php echo $row['idingredient']; ?>">
 									<p>
 										<i class="fa fa-star"></i> <?php echo $row['cotesur5']; ?>/5<br/>
-										<i class="fa fa-glass"></i><?php echo $row['pourcentagealcool']; ?>°<br/>
-										<i class="fa fa-eur"></i><?php echo $row['prixlitre']; ?> euros/l<br/>
+										<i class="fa fa-glass"></i> <?php echo $row['pourcentagealcool']; ?>°<br/>
+										<i class="fa fa-eur"></i> <?php echo $row['prixlitre']; ?> euros/l<br/>
 									</p>
 								</a>
 							</div>
@@ -127,8 +127,8 @@ $id = $_GET["id"];
 								<a href="descriptionfort.php?id=<?php echo $row['idingredient']; ?>">
 									<p>
 										<i class="fa fa-star"></i> <?php echo $row['cotesur5']; ?>/5<br/>
-										<i class="fa fa-glass"></i><?php echo $row['pourcentagealcool']; ?>°<br/>
-										<i class="fa fa-eur"></i><?php echo $row['prixlitre']; ?> euros/l<br/>
+										<i class="fa fa-glass"></i> <?php echo $row['pourcentagealcool']; ?>°<br/>
+										<i class="fa fa-eur"></i> <?php echo $row['prixlitre']; ?> euros/l<br/>
 									</p>
 								</a>
 							</div>
@@ -147,8 +147,8 @@ $id = $_GET["id"];
 								<a href="descriptionjeux.php?id=<?php echo $row['idjeu']; ?>">
 									<p>
 										<i class="fa fa-star"></i> <?php echo $row['cotesur5']; ?>/5<br/>
-										<i class="fa fa-glass"></i><?php echo $row['type']; ?>°<br/>
-										<i class="fa fa-eur"></i><?php echo $row['nbjoueursmin']; ?> euros/l<br/>
+										<i class="fa fa-tag"></i> <?php echo $row['type']; ?>°<br/>
+										<i class="fa fa-users"></i> <?php echo $row['nbjoueursmin']; ?> euros/l<br/>
 									</p>
 								</a>
 							</div>

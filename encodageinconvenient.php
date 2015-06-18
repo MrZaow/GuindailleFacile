@@ -77,7 +77,7 @@ $req = $bdd->prepare('INSERT INTO avoir(idingredient, idavantage) VALUES(:idingr
                         </div>
 
                         <div class="form-group">
-                            <label>Texte de l'avantage</label>
+                            <label>Texte de l'inconvénient</label>
                             <input type="text" required class="form-control" name="nom" id="nom" placeholder="Le nom" value="<?php if(isset($nom)) echo $nom; ?>" autofocus>
                             <?php if(isset($error['nom'])) echo $error['nom']; ?>
                         </div>

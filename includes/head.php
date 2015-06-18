@@ -1,10 +1,10 @@
 <head>
-    <title>Guindaille Facile</title>
-
+    
     <meta charset="utf-8">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   
 
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,700,300,100,200' rel='stylesheet' type='text/css'>
 
@@ -23,6 +23,6 @@
     <link rel="icon" href="images/favicon.ico" />
 
 
-    <script src='https://www.google.com/recaptcha/api.js'></script>/*SCRIPT GOOGLE CAPTCHA*/
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     
 </head>

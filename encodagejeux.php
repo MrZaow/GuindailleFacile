@@ -53,6 +53,7 @@ require_once("erreurencodagejeux.php");
                             <input type="number" required placeholder="Le nombre de joueur minimum" name="nbjoueursmin" id="nbjoueursmin" value="<?php if(isset($nbjoueursmin)) echo $nbjoueursmin; ?>" class="form-control">
                             <?php if(isset($error['nbjoueursmin'])) echo $error['nbjoueursmin']; ?>
                         </div>
+                        <p>Note : pour les descriptions, pour pouvez utiliser <"br"> sans les guillemets pour faire des passages à la ligne où c'est utile.</p>
                         <div class="form-group">
                             <label>Description</label><br>
                             <textarea col="120" required placeholder="La description" name="description" id="description" value="<?php if(isset($description)) echo $description; ?>" class="form-control"></textarea>

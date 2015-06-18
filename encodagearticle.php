@@ -136,7 +136,7 @@ if(!empty($_POST)){
                             <?php if(isset($error['auteur'])) echo $error['auteur']; ?>
                         </div>
                         <div class="form-group">
-                            <div class="g-recaptcha" data-sitekey="6LcEhwYTAAAAAD9BMmskM2H1kDgEisdj92d7yZmX"></div>
+                            <div class="g-recaptcha" data-sitekey="6LdvCAgTAAAAAOXQiJr7qt9em2lhq53ST_kf8zMZ"></div>
                         </div>
 
                         <input type="submit" class="btn btn-primary button-coloration" name="submit" value="Envoyer">
