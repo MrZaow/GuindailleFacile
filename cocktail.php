@@ -20,7 +20,7 @@ $tri = (isset($_POST['tri'])) ? $_POST['tri'] : "";
 
 		<div id="content">
 
-			<div class="section-content page-banner portfolio-page-banner">
+			<div class="section-content page-banner blog-page-banner">
 				<div class="container">
 					<h1>Les Cocktails</h1>
 				</div>
