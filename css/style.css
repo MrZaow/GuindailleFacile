@@ -423,8 +423,8 @@ header.one-page .navbar-nav > li > a span {
   background: #ffffff;
   border: none;
   float: right;
-  margin-top: -32px;
-  margin-right: 15px;
+  top : 2px;
+ 
   position: relative;
   z-index: 2;
 }
