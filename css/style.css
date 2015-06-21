@@ -411,7 +411,7 @@ header.one-page .navbar-nav > li > a span {
   color: #3a3d41;
   padding: 10px 12px;
   border: none;
-  width: 100%;
+  width: 85%;
   outline: none;
   transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -423,7 +423,7 @@ header.one-page .navbar-nav > li > a span {
   background: #ffffff;
   border: none;
   float: right;
-  top : 2px;
+  top : 8px;
  
   position: relative;
   z-index: 2;

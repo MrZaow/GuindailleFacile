@@ -127,62 +127,39 @@ if(!empty($_GET)){
 							<?php
 								include("includes/connectionpdo.php");
 								
-								$sql = "SELECT *
+								$sql = "SELECT nom
 								FROM ingredients INNER JOIN boissons
 								ON ingredients.idingredient = boissons.idingredient
 								INNER JOIN cocktails
 								ON boissons.idingredient = cocktails.idingredient
-								";
-								
-								$sql2 = "SELECT *
+								UNION
+								SELECT nom
 								FROM ingredients INNER JOIN boissons
 								ON ingredients.idingredient = boissons.idingredient
 								INNER JOIN bieres
 								ON boissons.idingredient = bieres.idingredient
-								";
-
-								$sql3 = "SELECT *
+								UNION
+								SELECT nom
 								FROM ingredients INNER JOIN boissons
 								ON ingredients.idingredient = boissons.idingredient
 								INNER JOIN alcoolsforts
 								ON boissons.idingredient = alcoolsforts.idingredient
-								";
-
-								$sql4 = "SELECT *
+								UNION
+								SELECT nom
 								FROM jeux
+								ORDER BY nom;
 								";
 							?>
 					
 							<li class="drop"><a href="#" class="open-search"><i class="fa fa-search"> <label for="alcoolrecherche" >Chercher</label></i></a>
 								<form class="form-search" action="resultatrecherche.php" method="get">
-									<input list="alcools" name="alcoolrecherche" id="alcoolrecherche" placeholder="Alcool ou jeu d'alcool" />
+									<input type="search" list="alcools" name="alcoolrecherche" id="alcoolrecherche" placeholder="Alcool ou jeu d'alcool" />
 									<datalist id="alcools" >
 										<?php
-											foreach($bdd->query($sql1) as $row)
+											foreach($bdd->query($sql) as $row)
 											{
 												?>
-													<option value=<?php echo $row['nom']; ?> />
-												<?php
-											}
-											
-											foreach($bdd->query($sql2) as $row)
-											{
-												?>
-													<option value=<?php echo $row['nom']; ?> />
-												<?php
-											}
-											
-											foreach($bdd->query($sql3) as $row)
-											{
-												?>
-													<option value=<?php echo $row['nom']; ?> />
-												<?php
-											}
-											
-											foreach($bdd->query($sql4) as $row)
-											{
-												?>
-													<option value=<?php echo $row['nom']; ?> />
+													<option value=<?php echo "'".$row['nom']."'"; ?> />
 												<?php
 											}
 										?>
