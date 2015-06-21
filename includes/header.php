@@ -159,7 +159,7 @@ if(!empty($_GET)){
 											foreach($bdd->query($sql) as $row)
 											{
 												?>
-													<option value=<?php echo "'".$row['nom']."'"; ?> />
+													<option value=<?php echo '"'.$row['nom'].'"'; ?> />
 												<?php
 											}
 										?>
