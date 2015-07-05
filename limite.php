@@ -80,7 +80,10 @@ if(!empty($_POST))
 <html lang="fr" class="no-js">
 
 <?php include("includes/head.php") ?>
-<head><title>Le Bibinomètre | Guindaille Facile</title></head>
+<head>
+<title>Le Bibinomètre | Guindaille Facile, tout pour vos soirées</title>
+<meta name="description" content="Calculez votre résistance à l'alcool et combien de verres il vous faut pour être bourré en fonction de votre âge et de votre poids." />
+</head>
 
 <body>
 <!-- Container -->

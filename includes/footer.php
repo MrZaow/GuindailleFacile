@@ -12,8 +12,8 @@
                 <div class="col-md-6">
                     <div class="widget footer-widget text-widget">
                         <h1>À propos</h1>
-                        <p>Guindaille Facile est un site réalisé entièrement par des étudiants en informatique à Liège destiné à apporter 
-                           à toute personne en quête d'idée d'alcool à boire en soirée du contenu de qualité, présenté de façon simple et pratique. 
+                        <p>Guindaille Facile est un site réalisé entièrement réalisé par des étudiants en informatique à Liège dont le but est d'apporter 
+                           des informations, des conseils et notre avis à propos d'alcools disponibles en magasin. L'abus d'alcool est dangereux et pour votre bien, vous devriez en consomer de façon raisonnable. 
                         </p>
                         <img src="images/footer-logo.png" alt="">
                     </div>

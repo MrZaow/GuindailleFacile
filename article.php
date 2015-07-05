@@ -1,3 +1,4 @@
+
 <?php include("includes/connectionpdo.php");
 session_start();
 
@@ -51,6 +52,9 @@ $Month_Tab[12] = "Déce";
 <html lang="fr" class="no-js">
 
 <?php include("includes/head.php") ?>
+<head>
+<title></title>
+</head>
 
 <body>
 <!-- Container -->

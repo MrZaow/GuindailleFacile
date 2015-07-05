@@ -11,7 +11,10 @@ $tri = (isset($_POST['tri'])) ? $_POST['tri'] : "";
 <html lang="fr" class="no-js">
 
 <?php include("includes/head.php") ?>
-<head><title>Jeux d'alcool | Guindaille Facile</title></head>
+<head>
+<title>Les jeux d'alcool - Guindaille Facile, tout pour vos soirées</title>
+<meta name="description" content="Découvrez les meilleurs jeux d'alcool simples pour vos soirées, avec plein d'informations pour vous aider dans votre choix." />
+</head>
 
 <body>
 <!-- Container -->

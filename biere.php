@@ -12,7 +12,9 @@ $tri = (isset($_POST['tri'])) ? $_POST['tri'] : "";
 
 <html lang="fr" class="no-js">
 <?php include("includes/head.php") ?>
-<head><title>Les Bières | Guindaille Facile, tout pour vos alcools de soirée</title>
+<head>
+<title>Les bières - Guindaille Facile, tout pour vos soirées</title>
+<meta name="description" content="Découvrez les meilleures bières pour vos soirées, classées par type, avec plein d'informations pour vous aider dans votre choix." />
 </head>
 
 <body>
@@ -133,20 +135,6 @@ $tri = (isset($_POST['tri'])) ? $_POST['tri'] : "";
 
 							foreach ($bdd->query($sql) as $row) : ?>
 							<div class="item project-post <?php echo $row['type']; ?>">
-							
-								<div class="rotate rotate-title">
-									<div class="skew">
-										<h2><?php echo $row['nom']; ?></h2>
-									</div>
-								</div>
-							
-								<div class="rotate">
-									<div class="skew">
-										<i class="fa fa-star"></i> <p><?php echo $row['cotesur5']; ?>/5</p>
-										<i class="fa fa-glass"></i><p><?php echo $row['pourcentagealcool']; ?>°</p>
-										<i class="fa fa-eur"></i><p><?php echo $row['prixlitre']; ?> euros/l</p>
-									</div>
-								</div>
 								<div class="project-gal">
 									<img src="images/min/<?php echo $row['image1']; ?>" alt="Image de la bière <?php echo $row['nom']; ?>">
 										<a href="descriptionbiere.php?id=<?php echo $row['idingredient']; ?>">

@@ -3,6 +3,7 @@
 include("includes/connectionpdo.php");
 
 $error['nom'] = "";
+$error['remarques'] = "";
 $error['resume'] = "";
 $error['paroles'] = "";
 $error['type'] = "";
@@ -15,6 +16,7 @@ $ID = "";
 
 $nom = (isset($_POST['nom'])) ? $_POST['nom'] : "";
 $resume = (isset($_POST['resume'])) ? $_POST['resume'] : "";
+$remarques = (isset($_POST['remarques'])) ? $_POST['remarques'] : "";
 $paroles = (isset($_POST['paroles'])) ? $_POST['paroles'] : "";
 $type = (isset($_POST['type'])) ? $_POST['type'] : "";
 $popularite = (isset($_POST['popularite'])) ? $_POST['popularite'] : "";
@@ -68,8 +70,8 @@ if(!empty($_POST))
         {
             $result = "Chant ajouté avec succès !";
 
-            $req = $bdd->prepare('INSERT INTO chants(idchant, nom, resume, paroles, type, popularite, image1) VALUES
-      				(:idjeu ,:nom, :resume, :paroles, :type, :popularite, :image1)');
+            $req = $bdd->prepare('INSERT INTO chants(idchant, nom, resume, paroles, type, popularite, image1, remarques) VALUES
+      				(:idjeu ,:nom, :resume, :paroles, :type, :popularite, :image1, :remarques)');
                     $req->execute(array(
                             'idjeu' => '',
                             'nom' => $nom,
@@ -78,8 +80,9 @@ if(!empty($_POST))
                             'type' => $type,
                             'popularite' => $popularite,
                             'image1' =>$image1['name'],
+                            'remarques' =>$remarques,
                         ));
-            unset($nom, $resume, $paroles, $type, $popularite);
+            unset($nom, $resume, $paroles, $type, $popularite, $remarques);
             
         }
     }

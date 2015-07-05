@@ -1,21 +1,14 @@
 <?php
 $alcoolrecherche = "";
-
 $error['alcoolrecherche'] = "";
-
 if(isset($_GET["alcoolrecherche"])) 
 { 
 $alcoolrecherche = htmlspecialchars($_GET["alcoolrecherche"]); 
 }
-
 if(!empty($_GET)){
-
     if(empty($alcoolrecherche))
         $error['alcoolrecherche'] = "Entrez un alcool à rechercher";
-
-
     $test = 1;
-
     foreach($error as $err)
     { 
         if(!empty($err))
@@ -23,29 +16,19 @@ if(!empty($_GET)){
         else
             $test = $test * 1;
     }
-
     if($test == 1){
-
 		$req = $bdd->prepare('INSERT INTO recherchealcool(id, alcoolrecherche) VALUES(:id ,:alcoolrecherche)');
                         $req->execute(array(
                                 'id' => '',
                                 'alcoolrecherche' => $alcoolrecherche,
                             ));
-
-
         $sql= "SELECT id
 		FROM recherchealcool
 		ORDER BY id DESC LIMIT 1";
-
-
 	 	foreach($bdd->query($sql) as $row) :
-
         header("Location: resultatrecherche.php?id=".$row['id']);
-
         endforeach;
-
     }
-
 }
 	?>
 <header class="clearfix">
@@ -60,7 +43,7 @@ if(!empty($_GET)){
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="index.php"><img alt="Logo de Guindaille Facile" src="images/logo8.png"></a>
+						<a class="navbar-brand" href="index.php"><img alt="Guindaille Facile" src="images/logo8.png"></a>
 					</div>
 				</div>
 				<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
@@ -127,7 +110,7 @@ if(!empty($_GET)){
 							<?php
 								include("includes/connectionpdo.php");
 								
-								$sql = "SELECT nom
+								$sql8 = "SELECT nom
 								FROM ingredients INNER JOIN boissons
 								ON ingredients.idingredient = boissons.idingredient
 								INNER JOIN cocktails
@@ -156,7 +139,7 @@ if(!empty($_GET)){
 									<input type="search" list="alcools" name="alcoolrecherche" id="alcoolrecherche" placeholder="Alcool ou jeu d'alcool" />
 									<datalist id="alcools" >
 										<?php
-											foreach($bdd->query($sql) as $row)
+											foreach($bdd->query($sql8) as $row)
 											{
 												?>
 													<option value=<?php echo '"'.$row['nom'].'"'; ?> />

@@ -30,7 +30,7 @@ $sql3 = "SELECT *
 <html lang="fr" class="no-js">
 
 <?php include("includes/head.php") ?>
-<head><title><?= $result['nom']; ?> | Guindaille Facile</title></head>
+<head><title><?= $result['nom']; ?> - Les chants - Guindaille Facile</title></head>
 
 <body>
   <div id="fb-root"></div>
@@ -63,53 +63,8 @@ $sql3 = "SELECT *
 				================================================== -->
 			<div class="single-project">
 				<div class="container">
-
 					<div class="row">
-    			  <div class="col-md-offset-3 col-md-6 col-sm-12 col-xs-12">
-        			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-              <!-- Pub adaptable dessus de description -->
-              <ins class="adsbygoogle"
-                   style="display:block"
-                   data-ad-client="ca-pub-3078792395695520"
-                   data-ad-slot="3717725692"
-                   data-ad-format="auto"></ins>
-              <script>
-              (adsbygoogle = window.adsbygoogle || []).push({});
-              </script>
-            </div>
-    			</div>
-    			<br>
-    			
-    			
-    			
-    			<script> 
-  
-          // Run after all the page elements have loaded
-          window.onload = function(){ 
-          
-            // This will take care of asynchronous Google ads
-            setTimeout(function() { 
-              
-              // We are targeting the first banner ad of AdSense
-              var ad = document.querySelector("ins.adsbygoogle");
-              
-              // If the ad contains no innerHTML, ad blockers are at work
-              if (ad && ad.innerHTML.replace(/\s/g, "").length == 0) {
-                
-                // Since ad blocks hide ads using CSS too
-                ad.style.cssText = 'display:block !important'; 
-                
-                // You can put any text, image or even IFRAME tags here
-                ad.innerHTML = "Salut, utilisateur adblock, nous non plus nous n'aimons pas la pub intrusive sur internet, et nous avons bien fait attention à rendre la nôtre discrète. Veux-tu essayer de désactiver adblock pour notre site juste un moment pour voir si la pub te dérange tant que ça? Merci et bonne continuation sur Guindaille Facile :) ";
-              
-              }
-              
-            }, 2000); // The ad blocker check is performed 2 seconds after the page load 
-          }; 
-          
-        </script>
-
-					<div class="row">
+					  <br>
 						<div class="col-md-7">
 							<div class="project-block triggerAnimation animated" data-animate="slideInLeft">
 								<div class="row">
@@ -121,11 +76,32 @@ $sql3 = "SELECT *
 										</div>
 									</div>
 								</div>
+								
+								<div class="single-project-content">
+									<h1>Écouter chanter <?= $result['nom'];?> </h1>
+									<br> 
+									<h3><?= $result['liensoundcloud']; ?></h3>
+								</div>
+								
 								<div class="single-project-content">
 									<h1>Les paroles</h1>
 									<br> 
 									<h3><?= $result['paroles']; ?></h3>
 								</div>
+								
+								
+								<?php if(strcmp(($result['remarques']), "") != 0) { ?>
+								  
+								<div class="single-project-content">
+									<h1>Remarques</h1>
+									<br> 
+									<h3><?= $result['remarques']; ?></h3>
+								</div>
+								<?php 
+								}
+								?>
+								
+								
 
 							</div>
 						</div>
@@ -181,6 +157,11 @@ $sql3 = "SELECT *
 				</div>
 			</div>
 			<div class="container comment-section">
+			  <div class="title-section">
+			    <div class="container triggerAnimation animated" data-animate="bounceIn">
+						<h1>Votre avis à propos du chant "<?= $result['nom']?>"</h1>
+					</div>
+			  </div>
 
 				<div id="disqus_thread"></div>
 			<script type="text/javascript">

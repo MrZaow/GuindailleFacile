@@ -55,6 +55,11 @@ require_once("erreurencodagechants.php");
                             <?php if(isset($error['paroles'])) echo $error['paroles']; ?>
                         </div>
                         <div class="form-group">
+                            <label>Remarques éventuelles</label><br>
+                            <textarea col="120" required placeholder="Les remarques" name="remarques" id="remarques" value="<?php if(isset($remarques)) echo $remarques; ?>" class="form-control"></textarea>
+                            <?php if(isset($error['remarques'])) echo $error['remarques']; ?>
+                        </div>
+                        <div class="form-group">
                             <label>Type</label><br>
                             <select class="form-control" name="type">
                                 <option value="sacré">sacré</option>
