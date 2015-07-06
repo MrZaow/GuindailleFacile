@@ -1,6 +1,8 @@
 <?php include("includes/connectionpdo.php");
 session_start();
 
+include("includes/renvoiformulaire.php");
+
 $error['age'] = "";
 $error['poids'] = "";
 $error['sexe'] = "";
@@ -110,8 +112,15 @@ if(!empty($_POST))
 						<div class="col-md-12">
 							<div class="single-project">
 								<div class="single-project-content">
-					                <h1>Calculer sa résistance à l'alcool</h1>
-					                <h3>Regardez combien de verres il vous faut pour être bourré</h3>
+	                <h1>Calculer sa résistance à l'alcool</h1>
+	                <h3>Regardez combien de verres il vous faut pour être bourré</h3>
+	                <p>Combien de verres vous faut-il pour être joyeux, bourré, ou encore faire un blackout? Grâce au magnifique,
+	                au sublimissime, à l'ouftissime Bibinomètre, l'outil de calcul de résistance à l'alcool incroyablement super magique de Guindaille Facile, 
+	                vous pouvez désormais le savoir en un clic
+	                </p>
+	                <br>
+	                <h1>Prêt ? C'est parti !</h1>
+	                <br>
 								</div>
 							</div>	
 						</div>

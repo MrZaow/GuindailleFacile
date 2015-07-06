@@ -1,6 +1,8 @@
 <?php include("includes/connectionpdo.php");
 session_start();
 
+include("includes/renvoiformulaire.php");
+
 $tri = "";
 
 $tri = (isset($_POST['tri'])) ? $_POST['tri'] : "";

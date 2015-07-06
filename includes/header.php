@@ -67,6 +67,7 @@ if(!empty($_GET)){
 					  <li><a href="encodageinconvenient.php">Inconvenient</a></li>
 					  <li><a href="encodagemeilleuralcool.php">Meilleur alcool</a></li>
 					  <li><a href="encodageingredientcocktail.php">Ingrédient pour cocktail</a></li>
+					  <li><a href="encodagearticle.php">Article</a></li>
 										</ul>
 									</li>
 									<li class="drop"><a href="#">Suppression</a>
@@ -100,6 +101,7 @@ if(!empty($_GET)){
 								</ul>
 							</li>
 							<li><a href="jeux.php">Jeux d'alcool</a></li>
+							<li><a href="blog.php">Blog</a></li>
 							<li><a href="#">Outils</a>
 								<ul class="drop-down">
 									<li><a href="limite.php">Le Bibinomètre</a></li>

@@ -56,7 +56,7 @@ require_once("erreurencodagechants.php");
                         </div>
                         <div class="form-group">
                             <label>Remarques éventuelles</label><br>
-                            <textarea col="120" required placeholder="Les remarques" name="remarques" id="remarques" value="<?php if(isset($remarques)) echo $remarques; ?>" class="form-control"></textarea>
+                            <textarea col="120"  placeholder="Les remarques" name="remarques" id="remarques" value="<?php if(isset($remarques)) echo $remarques; ?>" class="form-control"></textarea>
                             <?php if(isset($error['remarques'])) echo $error['remarques']; ?>
                         </div>
                         <div class="form-group">

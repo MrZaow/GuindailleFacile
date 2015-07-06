@@ -24,6 +24,11 @@
 /*-------------------------------------------------------*/
 /* 1. Isotope filtering
 /*-------------------------------------------------------*/
+
+a{
+  color : #e74c3c;
+}
+
 .button-coloration
 {
 	color : white !important;
@@ -2056,7 +2061,7 @@ a.go-top:hover {
   margin-bottom: 60px;
 }
 .blog-section.with-sidebar .blog-post .post-content > p {
-  font-size: 13px;
+  font-size: 15px;
   color: #dddddd;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
@@ -2064,7 +2069,7 @@ a.go-top:hover {
   margin: 0 0 24px;
   padding: 20px;
   margin-bottom: 0;
-  margin-left: 60px;
+  margin-left: 0;
   color: #999999;
 }
 .blog-section.with-sidebar .blog-post .post-content > a {

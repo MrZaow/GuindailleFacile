@@ -8,11 +8,11 @@ $reponse = $bdd->prepare('SELECT *
 $reponse->execute(array($_GET['id']));
 $result = $reponse->fetch();
 if(!$result)
-	header("Location: etudiant.php");
+	header("Location: blog.php");
 
 $lid = $_GET['id'];
 
-$sql = "SELECT id, titre, auteur, DAY(date) AS jour, MONTH(date) AS mois, contenu
+$sql = "SELECT id, titre, auteur, DAY(date) AS jour, MONTH(date) AS mois, contenu, image1
 		FROM articles
 		WHERE articles.id = $lid";
 
@@ -29,7 +29,15 @@ $sql3 = "SELECT titre, id
 		AND articles.id > $lid
 		AND articles.id = (SELECT MIN(id) FROM articles WHERE articles.id > $lid AND articles.supprime = 0)
 		";
-
+/*Articles populaires*/
+$sql4 = "SELECT titre, DAY(date) AS jour, MONTH(date) AS mois, id
+		FROM articles
+		ORDER BY popularite DESC
+		LIMIT 3";
+		
+/*Catégories*/
+$sql5 = "SELECT DISTINCT categorie
+		FROM articles";
 
 
 $Month_tab = array();
@@ -53,10 +61,19 @@ $Month_Tab[12] = "Déce";
 
 <?php include("includes/head.php") ?>
 <head>
-<title></title>
+<title><?= $result['titre']; ?> - le blog - Guindaille Facile</title>
+<meta name="description" content="<?= $result['resume']; ?>." />
 </head>
 
 <body>
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <!-- Container -->
 <div id="container">
 	<?php include("includes/header.php");
@@ -67,7 +84,7 @@ $Month_Tab[12] = "Déce";
 				================================================== -->
 			<div class="section-content page-banner blog-page-banner">
 				<div class="container">
-					<h1>Le Coin guindaille</h1>
+					<h1><?= $result['titre']; ?></h1>
 				</div>
 			</div>
 
@@ -75,59 +92,14 @@ $Month_Tab[12] = "Déce";
 				================================================== -->
 			<div class="section-content blog-section with-sidebar">
 				<div class="container">
-				  
-				  <div class="row">
-    			  <div class="col-md-offset-3 col-md-6">
-        			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-              <!-- Pub adaptable dessus de description -->
-              <ins class="adsbygoogle"
-                   style="display:block"
-                   data-ad-client="ca-pub-3078792395695520"
-                   data-ad-slot="3717725692"
-                   data-ad-format="auto"></ins>
-              <script>
-              (adsbygoogle = window.adsbygoogle || []).push({});
-              </script>
-            </div>
-    			</div>
     			<br>
-    			
-    			
-    			
-    			<script> 
-  
-          // Run after all the page elements have loaded
-          window.onload = function(){ 
-          
-            // This will take care of asynchronous Google ads
-            setTimeout(function() { 
-              
-              // We are targeting the first banner ad of AdSense
-              var ad = document.querySelector("ins.adsbygoogle");
-              
-              // If the ad contains no innerHTML, ad blockers are at work
-              if (ad && ad.innerHTML.replace(/\s/g, "").length == 0) {
-                
-                // Since ad blocks hide ads using CSS too
-                ad.style.cssText = 'display:block !important'; 
-                
-                // You can put any text, image or even IFRAME tags here
-                ad.innerHTML = "Salut, utilisateur adblock, nous non plus nous n'aimons pas la pub intrusive sur internet, et nous avons bien fait attention à rendre la nôtre discrète. Veux-tu essayer de désactiver adblock pour notre site juste un moment pour voir si la pub te dérange tant que ça? Merci et bonne continuation sur Guindaille Facile :) ";
-              
-              }
-              
-            }, 2000); // The ad blocker check is performed 2 seconds after the page load 
-          }; 
-          
-        </script>
-        
-          			<div class="blog-box">
-          				<div class="row">
-          					<div class="col-md-12">
-
-          						<div class="blog-post single-post triggerAnimation animated" data-animate="slideInUp">
+    			<div class="blog-box">
+    				<div class="row">
+    					<div class="col-lg-9 col-md-9 col-sm-9">
+                <?php foreach($bdd->query($sql) as $row) : ?>
+    						<div class="blog-post single-post triggerAnimation animated" data-animate="slideInUp">
+    						  <img src="images/min/<?php echo $row['image1']; ?>" class="attachment-post-thumbnail wp-post-image" alt="Image de l'article <?php echo htmlspecialchars($row['titre']) ?>">
 									<div class="post-content">
-									<?php foreach($bdd->query($sql) as $row) : ?>
 
 										<div class="post-date">
 											<p><span><?php echo $row['jour']?></span><?php echo $Month_Tab[$row['mois']];?></p>
@@ -135,13 +107,11 @@ $Month_Tab[12] = "Déce";
 
 										<div class="content-data">
 											<h2><?php echo htmlspecialchars($row['titre']) ?></h2>
-											<p><?php echo htmlspecialchars($row['auteur']) ?></p>
+											<p>Écrit par : <?php echo htmlspecialchars($row['auteur']) ?></p>
 										</div>
-										<p><?php echo htmlspecialchars($row['contenu']); ?></p>
+										<p><?php echo $row['contenu']; ?></p>
 									<?php endforeach; ?>
 
-										<div class="share-tag-box">
-											<br><br>
 											<?php if(isset($_SESSION['pseudo'])) { 
 											$idsupprime = $_GET['id'];
 
@@ -149,36 +119,71 @@ $Month_Tab[12] = "Déce";
 											<a href="suppressionarticle.php?id=<?php echo $idsupprime;?>" class="btn btn-danger" role="button">Supprimer l'article</a>
 											<br><br>
 											<?php } ?>
-										</div>
+										<br>
+						        <div class="fb-like col-sm-12 col-xs-12 hidden-xs" data-href="https://www.facebook.com/GuindailleFacile?fref=ts" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
 										<div class="pagination-boxer">
 											<div class="prev-post">
 												<?php foreach($bdd->query($sql2) as $row) : ?>
-												<a href="article.php?id=<?php echo $row['id']; ?>" class="button-third"><i class="fa fa-angle-left"></i> Pré</a>
+												<a href="article.php?id=<?php echo $row['id']; ?>" class="button-third"><i class="fa fa-angle-left"></i> Préc</a>
+												<br><br><br>
 												<p><?php echo htmlspecialchars($row['titre']) ?></p>
 												<?php endforeach; ?>
 											</div>
 											<div class="next-post">
 												<?php foreach($bdd->query($sql3) as $row) : ?>
 												<a href="article.php?id=<?php echo $row['id']; ?>" class="button-third">Suiv <i class="fa fa-angle-right"></i></a>
+											  <br><br><br>
 												<p><?php echo htmlspecialchars($row['titre']) ?></p>
 												<?php endforeach; ?>
 											</div>
-									
 										</div>
 									</div>
+									
 								</div>
 
-          					</div>
-          					<div class="col-md-3">
-          						
-          					</div>
-          				</div>
+    					</div>
+    					<div class="col-md-3">
+							<div class="sidebar triggerAnimation animated" data-animate="slideInUp">
+                
+								<div class="category-widget widget">
+									<h3>Catégories</h3>
+									<ul class="category-list filter">
+										<li><a href="blog-rightsidebar.html#" data-filter="*">Tout</a></li>
+										<?php foreach($bdd->query($sql5) as $row): ?>
+										<li><a href="#" data-filter=".<?php echo $row['categorie'];?>"><?php echo ucfirst($row['categorie']); ?></a></li>
+										<?php endforeach; ?>
+									</ul>
+								</div>
+
+								
+
+								<div class="popular-widget widget">
+									<h3>Articles populaires</h3>
+									<ul class="popular-list">
+										<?php foreach($bdd->query($sql4) as $row): ?>
+										<li>
+											<div class="side-content">
+												<h2><a href="article.php?id=<?php echo $row['id'] ?>"><?php echo $row['titre'] ?></a></h2>
+												<p><?php echo $row['jour']?> <?php echo $Month_Tab[$row['mois']]?></p>
+											</div>
+										</li>
+									<?php endforeach; ?>
+									</ul>
+								</div>
+							</div>
+						</div>
+    				</div>
 					</div>
-          		</div>
-          		<a class="go-top" href="single-post.html#"><i class="fa fa-arrow-circle-o-up"></i></a>
+    		</div>
+    		<a class="go-top" href="single-post.html#"><i class="fa fa-arrow-circle-o-up"></i></a>
 			</div>
 
 			<div class="container comment-section">
+			  <div class="title-section">
+			    <div class="container triggerAnimation animated" data-animate="bounceIn">
+						<h1>Votre avis à propos de cet article</h1>
+					</div>
+			  </div>
 
 				<div id="disqus_thread"></div>
 			<script type="text/javascript">
