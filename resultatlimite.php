@@ -52,7 +52,16 @@ $sql = "SELECT *
 				================================================== -->
 			<div class="section-content shortcodes-section">
 				<div class="container">
-  			
+  					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Money -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9081957914760143"
+     data-ad-slot="5301151312"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 					<div class="shortcodes-elem">
 						<h1>Vos stats personnelles</h1>
 						<!-- Nav tabs -->

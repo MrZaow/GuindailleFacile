@@ -127,7 +127,16 @@ $sql3 = "SELECT *
 							<div class="fb-like col-sm-12 col-xs-12 hidden-xs" data-href="https://www.facebook.com/GuindailleFacile?fref=ts" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
 						</div>
 					</div>
-
+					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Money -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9081957914760143"
+     data-ad-slot="5301151312"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 				</div>
 			</div>
 
